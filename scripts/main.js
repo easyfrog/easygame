@@ -4,7 +4,6 @@ if (!Detector.webgl) {
 }
 
 var container = document.getElementById('container');
-console.log(container);
 var game = new Game(container, {
 	rendererConfig: {
 		antialias: true,
@@ -13,10 +12,14 @@ var game = new Game(container, {
 	debug: true
 });
 
-// regisite components
-game.registerComponents(['com_Test2', 'com_Kao']);
+var jbd, jbt, tong, tea;
+var jbd_visible = false, jbt_visible = false;
 
-game.load('resources/model/sea3d/test.sea', 'inno');
+// regisite components
+game.registerComponents([]);
+
+// load scene
+game.load('resources/model/sea3d/bar.sea', 'inno');
 
 game.addEventListener(Game.PROGRESS, function(p) {
 	console.log((p * 100).toFixed(1) + '%');
@@ -24,100 +27,64 @@ game.addEventListener(Game.PROGRESS, function(p) {
 
 game.addEventListener(Game.LOADCOMPLETE, onLoadComplete);
 
-game.addEventListener(Game.PICKED, function(obj) {
-	if (obj.name == 'zhuban') {
-		console.log('you pressed zhuban object');
-		alone(game.sh.root, 'zhuban');
-	}
-});
-
-game.addEventListener(Game.KEYDOWN, function(key) {
-	if (key == 32) {				// space
-		if (tmpAnim) {
-			tmpAnim.play('box_light_anim');
-		}
-	}
-});
-
-var tmpAnim;
 function onLoadComplete() {
 	game.removeEventListener(Game.LOADCOMPLETE, onLoadComplete);
 
-	game.letTextureEmissive(1, 1); 
+	// 材质自发光
+	game.letTextureEmissive(1, 1);
 
-	var mesh = game.sea.getMesh('Box001');
-	var mesh2 = mesh.clone();
-	mesh2.name = 'b2';
-	mesh2.position.x = 100;
-	game.scene.add(mesh2);
+	var mainCamera = game.sea.getCamera('mainCamera');
+	game.camera.position.copy(mainCamera.position);
+	game.camera.rotation.copy(mainCamera.rotation);
 
-	mesh.addComponent('com_Kao');
-	mesh2.addComponent('com_Test2');
+	jbd = game.sea.getMesh('jbd');
+	jbt = game.sea.getMesh('jbt');
+	jbd.visible = jbt.visible = false;
 
-	var sphereGeo = new THREE.SphereGeometry(30);
-	var sphereMat = new THREE.MeshLambertMaterial({color: 0xEF4343});
-	var sphereMesh = new THREE.Mesh(sphereGeo, sphereMat);
-	game.scene2 = new THREE.Scene();
-	game.scene2.add(sphereMesh);
-	var light = new THREE.HemisphereLight(0xEF4343, 0xEF4343, 1.7);
-	game.scene2.add(light);
+	tong = game.sea.getMesh('tong');
+	tea = game.sea.getMesh('tea');
+	chouti = game.sea.getMesh('chouti');
 
-	game.cameraController.maxPolarAngle = Math.PI / 2;
-
-	var camera2 = new THREE.PerspectiveCamera(60, 1, 0.1, 1000);
-	camera2.target = new THREE.Vector3(0, 0, 0);
-	camera2.position.z = 400;
-	camera2.aspect = game.camera.aspect;
-	camera2.updateProjectionMatrix();
-
-	game.renderer.autoClear = false;
-	game.addEventListener(Game.POSTUPDATE, function() {
-		var val = Math.sin(game.getTime()) + 1;
-
-		sphereMesh.scale.set(val, val, val);
-
-		game.renderer.clear(false, true, false);
-		game.renderer.render(game.scene2, camera2);
-	});
-
-	// game.renderer.setViewport();
-
-	var dummy = new THREE.Object3D();
-	dummy.position.set(100,100,100);
-	dummy.rotation.set(0, Math.PI / 2, 0);
-
-	utils.transfromTo(mesh, dummy, 1, ztc.Tween.easeOutQuad);
-
-	/*
-	// 鹅的变形动画
-	var goose = game.sea.getMesh('goose1');
-	utils.morphObject(game, goose, {duration: 2000});
-
-	// 湖水的变形动画
-	var lake = game.sea.getMesh('lake');
-	utils.morphObject(game, lake, {duration: 2000});
-
-	var ground = game.sea.getMesh('ground');
-
-	var nuanLight = game.sea.getLight('nuanLight');
-	var lengLight = game.sea.getLight('lengLight');
-	nuanLight.intensity = .7;
-	lengLight.intensity = .7;
-
-	// grow up animation
-	// ground.scale.setY(0.04);
-	ztc.Tween.isDom = false;
-
-	var mainCam = game.sea.getCamera('mainCam');
-
-	utils.sameTransform(game.camera, mainCam);
-
-	// game.addEventListener(Game.UPDATE, function() {
-	// 	nuanLight.intensity = Math.abs(Math.sin(game.getTime() + 0.2));
-	// 	lengLight.intensity = Math.abs(Math.sin(game.getTime() + 0.2));
-	// });
-	
-	// 整体的基本动画
-	game.playGeneralAnimation('normal');
-	//*/
+	chouti.animation.onComplete = function(anim) {
+		if (!chouti.picked) {
+			delete tong.picked;
+			delete tea.picked;
+			jbt_visible = jbd_visible = false;
+			tong.animation.timeScale = tea.animation.timeScale = 1;
+			utils.setAnimationTime(tong.animation, 'open', 'end');
+			utils.setAnimationTime(tea.animation, 'open', 'end');
+		}
+	}
 }
+
+// 点击物体
+game.addEventListener(Game.PICKED, function(obj) {
+	// if (game.currentPicked) {
+		// var obj = game.currentPicked;
+		if (['chouti', 'tong', 'tea'].indexOf(obj.name) > -1) {
+			if ('picked' in obj) {
+				obj.animation.timeScale = -obj.animation.timeScale;
+				obj.picked = !obj.picked
+			} else {
+				obj.picked = true;
+			}
+
+			if (obj.name == 'tong') {
+				jbd_visible = obj.picked;
+			}
+
+			if (obj.name == 'tea') {
+				jbt_visible = obj.picked
+			}
+
+			if (obj.name == 'chouti') {
+				if (obj.picked) {
+					jbd.visible = jbd_visible;
+					jbt.visible = jbt_visible;
+				}
+			}
+
+			obj.animation.play('open');
+		}
+	// }
+});

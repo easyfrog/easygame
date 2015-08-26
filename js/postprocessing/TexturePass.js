@@ -2,26 +2,28 @@
  * @author alteredq / http://alteredqualia.com/
  */
 
-THREE.ShaderPass = function ( shader, textureID ) {
+THREE.TexturePass = function ( texture, opacity ) {
 
-	this.textureID = ( textureID !== undefined ) ? textureID : "tDiffuse";
+	if ( THREE.CopyShader === undefined )
+		console.error( "THREE.TexturePass relies on THREE.CopyShader" );
+
+	var shader = THREE.CopyShader;
 
 	this.uniforms = THREE.UniformsUtils.clone( shader.uniforms );
 
+	this.uniforms[ "opacity" ].value = ( opacity !== undefined ) ? opacity : 1.0;
+	this.uniforms[ "tDiffuse" ].value = texture;
+
 	this.material = new THREE.ShaderMaterial( {
 
-        	defines: shader.defines || {},
 		uniforms: this.uniforms,
 		vertexShader: shader.vertexShader,
 		fragmentShader: shader.fragmentShader
 
 	} );
 
-	this.renderToScreen = false;
-
 	this.enabled = true;
-	this.needsSwap = true;
-	this.clear = false;
+	this.needsSwap = false;
 
 
 	this.camera = new THREE.OrthographicCamera( -1, 1, 1, -1, 0, 1 );
@@ -32,27 +34,13 @@ THREE.ShaderPass = function ( shader, textureID ) {
 
 };
 
-THREE.ShaderPass.prototype = {
+THREE.TexturePass.prototype = {
 
 	render: function ( renderer, writeBuffer, readBuffer, delta ) {
 
-		if ( this.uniforms[ this.textureID ] ) {
-
-			this.uniforms[ this.textureID ].value = readBuffer;
-
-		}
-
 		this.quad.material = this.material;
 
-		if ( this.renderToScreen ) {
-
-			renderer.render( this.scene, this.camera );
-
-		} else {
-
-			renderer.render( this.scene, this.camera, writeBuffer, this.clear );
-
-		}
+		renderer.render( this.scene, this.camera, readBuffer );
 
 	}
 

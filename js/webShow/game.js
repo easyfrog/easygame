@@ -23,6 +23,30 @@
  * 							onPicked, onRemoveonKeyDown, onKeyUp
  */
 (function(parent) {
+
+	// ================ private fields Start ================
+	/**
+	 * SSOA
+	*/
+	/*
+	var depthShader = THREE.ShaderLib.depthRGBA;
+	var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
+
+	var depthMaterial = new THREE.ShaderMaterial( { 
+		fragmentShader: depthShader.fragmentShader, 
+		vertexShader: depthShader.vertexShader, 
+		uniforms: depthUniforms 
+	} );
+
+
+	var depthTarget = new THREE.WebGLRenderTarget( 512, 512, { 
+		minFilter: THREE.LinearFilter, 
+		magFilter: THREE.LinearFilter, 
+		format: THREE.RGBAFormat 
+	} );
+	*/
+	// ================ private fields End ================
+
 	var Game = function(container, config) {
 		var s = this;
 
@@ -47,6 +71,20 @@
 		s.sh = new SceneHandler('', s.scene, config.seaStandard);
 		s.sea = s.sh.root;
 		s.rootContainer = s.sh.container;
+
+		// 效果合成器
+		/*
+		s.composer = new THREE.EffectComposer(s.renderer);
+		s.composer.addPass(new THREE.RenderPass(s.scene, s.camera));
+
+		var effect = new THREE.ShaderPass( THREE.SSAOShader );
+		effect.uniforms[ 'tDepth' ].value = depthTarget;
+		effect.uniforms[ 'size' ].value.set( 512, 512 );
+		effect.uniforms[ 'cameraNear' ].value = s.camera.near;
+		effect.uniforms[ 'cameraFar' ].value = s.camera.far;
+		effect.renderToScreen = true;
+		s.composer.addPass( effect );
+		*/
 
 		// 是否暂停
 		s.pause = false;
@@ -131,13 +169,13 @@
 		document.addEventListener('keyup', onKeyUp, false);
 
 		function onKeyDown(e) {
-			s.invokeComponentFunction(this, 'onKeyDown', e.keyCode);
-			s.invoke('keydown', e.keyCode);
+			s.invokeComponentFunction(this, 'onKeyDown', e);
+			s.invoke('keydown', e);
 		}
 
 		function onKeyUp(e) {
-			s.invokeComponentFunction(this, 'onKeyUp', e.keyCode);
-			s.invoke('keyup', e.keyCode);
+			s.invokeComponentFunction(this, 'onKeyUp', e);
+			s.invoke('keyup', e);
 		}
 
 		function onMouseDown(e) {
@@ -148,6 +186,7 @@
 			var p = getPick(e);
 			var object = s.getPickObject(p);
 			s.currentPicked = object;
+			curMouse = getPick(e);
 
 			s.invokeComponentFunction(object, 'onMouseDown', e);
 			s.invoke('mousedown', e);
@@ -172,8 +211,9 @@
 			if (!e.touches) {
 				curMouse = getPick(e);
 			}
+
 			if ((e.button == 0 || e.touches) && (s.enabledPickEvent || s.debug) && _lastMousePick.distanceTo(curMouse) < 5) {
-				var object = s.getPickObject(curMouse);
+				var object = s.currentPicked;
 				if (object) {
 					s.invokeComponentFunction(object, 'onPicked', e);
 					s.invoke(Game.PICKED, object);
@@ -194,7 +234,7 @@
 		var vector = new THREE.Vector3(mx, my, 1);
 		vector.unproject(s.camera);
 		var ray = new THREE.Raycaster(s.camera.position, vector.sub(s.camera.position).normalize());
-		
+
 		objects = objects || (s.canPicked.length == 0 ? s.scene.children : s.canPicked);
 		var intersections = ray.intersectObjects(objects, true);
 		if (intersections.length > 0) {
@@ -345,23 +385,31 @@
 			return;
 		}
 
+		var _delta = this.getDeltaTime() * 1000;
+
 		this.sh.update();
+		THREE.Sound3D.update(this.camera);
 
 		// component update 
 		this.invokeComponentFunction(this, 'update');
 
 		// update functions
-		this.invoke(Game.UPDATE);
+		this.invoke(Game.UPDATE, _delta);
 		// update animations
 		for (var i = 0; i < this.animations.length; i++) {
-			this.animations[i].update(this.getDeltaTime() * 1000);
+			this.animations[i].update(_delta);
 		};
 
 		if (this.cameraController) {
 			this.cameraController.update();
 		}
+		// composer
+		// this.scene.overrideMaterial = depthMaterial;
+		// this.renderer.render(this.scene, this.camera, depthTarget);
+		// this.scene.overrideMaterial = null;
+		// this.composer.render(_delta);
 		this.renderer.render(this.scene, this.camera);
-		this.invoke(Game.POSTUPDATE);
+		this.invoke(Game.POSTUPDATE, _delta);
 	};
 
 	/**
@@ -460,6 +508,14 @@
 		console.log('position:', p.x.toFixed(2) + ',' + p.y.toFixed(2) + ',' + p.z.toFixed(2), 
 					'rotation:', r.x.toFixed(2) + ',' + r.y.toFixed(2) + ',' + r.z.toFixed(2),
 					'target:', t.x.toFixed(2) + ',' + t.y.toFixed(2) + ',' + t.z.toFixed(2));
+	};
+
+	/**
+	 * 设置相机
+	 */
+	Game.prototype.setCamera = function(camera) {
+		this.camera = camera;
+		this.cameraController.object = this.camera;
 	};
 
 	parent.Game = Game;

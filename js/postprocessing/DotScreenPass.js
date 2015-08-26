@@ -2,26 +2,30 @@
  * @author alteredq / http://alteredqualia.com/
  */
 
-THREE.ShaderPass = function ( shader, textureID ) {
+THREE.DotScreenPass = function ( center, angle, scale ) {
 
-	this.textureID = ( textureID !== undefined ) ? textureID : "tDiffuse";
+	if ( THREE.DotScreenShader === undefined )
+		console.error( "THREE.DotScreenPass relies on THREE.DotScreenShader" );
+
+	var shader = THREE.DotScreenShader;
 
 	this.uniforms = THREE.UniformsUtils.clone( shader.uniforms );
 
+	if ( center !== undefined ) this.uniforms[ "center" ].value.copy( center );
+	if ( angle !== undefined ) this.uniforms[ "angle"].value = angle;
+	if ( scale !== undefined ) this.uniforms[ "scale"].value = scale;
+
 	this.material = new THREE.ShaderMaterial( {
 
-        	defines: shader.defines || {},
 		uniforms: this.uniforms,
 		vertexShader: shader.vertexShader,
 		fragmentShader: shader.fragmentShader
 
 	} );
 
-	this.renderToScreen = false;
-
 	this.enabled = true;
+	this.renderToScreen = false;
 	this.needsSwap = true;
-	this.clear = false;
 
 
 	this.camera = new THREE.OrthographicCamera( -1, 1, 1, -1, 0, 1 );
@@ -32,15 +36,12 @@ THREE.ShaderPass = function ( shader, textureID ) {
 
 };
 
-THREE.ShaderPass.prototype = {
+THREE.DotScreenPass.prototype = {
 
 	render: function ( renderer, writeBuffer, readBuffer, delta ) {
 
-		if ( this.uniforms[ this.textureID ] ) {
-
-			this.uniforms[ this.textureID ].value = readBuffer;
-
-		}
+		this.uniforms[ "tDiffuse" ].value = readBuffer;
+		this.uniforms[ "tSize" ].value.set( readBuffer.width, readBuffer.height );
 
 		this.quad.material = this.material;
 
@@ -50,7 +51,7 @@ THREE.ShaderPass.prototype = {
 
 		} else {
 
-			renderer.render( this.scene, this.camera, writeBuffer, this.clear );
+			renderer.render( this.scene, this.camera, writeBuffer, false );
 
 		}
 

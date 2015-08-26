@@ -125,3 +125,24 @@ utils.toWorldPosition = function(mousePosition, camera, z) {
 	var vector = new THREE.Vector3(mx, my, z);
 	return vector.unproject(camera);
 };
+
+/**
+ * 设置动画到指定的时间
+ * example: time = 0 || 'end'
+ */
+utils.setAnimationTime = function(animation, stateName, time) {
+	if (stateName in animation.states) {
+		try {
+			if (time == 'end') {
+				animation.states[stateName].node.setTime(animation.states[stateName].node.duration);
+			} else {
+				animation.states[stateName].node.setTime(time);
+			}
+			animation.updateAnimation(stateName);
+		} catch (e) {
+			console.log(e.message);	
+		}
+	} else {
+		console.warn('Not have ' + stateName + ' state!');
+	}
+}

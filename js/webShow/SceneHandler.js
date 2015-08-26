@@ -68,7 +68,7 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
         s.fileName = fileName;
     }
 
-    var ctn = new THREE.Object3D();
+    var ctn = new THREE.Group();
     ctn.name = groupName;
     s.root.container = ctn;
 
@@ -78,6 +78,13 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
 SceneHandler.prototype.update = function () {
     this.deltaTime = this.clock.getDelta();
     SEA3D.AnimationHandler.update(this.deltaTime);
+    // var anims = SEA3D.AnimationHandler.animations;
+    // for (var i = 0; i < anims.length; i++) {
+    //     var anim = anims[i];
+    //     if (!('autoUpdate' in anim) || anim.autoUpdate == true) {
+    //         anim.update(this.deltaTime);
+    //     }
+    // };
 };
 
 SceneHandler.prototype.play = function(name,speed,repeat) {

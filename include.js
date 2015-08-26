@@ -16,10 +16,10 @@
 	var build = 'build/build.min.js';
 
 	if (window.location.protocol == 'http:') {
-		document.write("<script src='" + build + "?rnd=" + Math.random() + "'></script>");  
+		document.write("<script src='" + build + "?v=" + Math.random() + "'></script>");  
 	} else {
 		for (var i = 0; i < scripts.length; i++) {
-			document.write("<script src='" + scripts[i] + "?rnd=" + Math.random() + "'></script>");  
+			document.write("<script src='" + scripts[i] + "?v=" + Math.random() + "'></script>");  
 		};
 	}
 }());

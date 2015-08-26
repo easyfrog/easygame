@@ -32,3 +32,63 @@ THREE.MorphAnimation.prototype.update = ( function () {
 		}
 	}
 } )();
+
+/**
+ * SEAD.AnimationHandler
+ */
+SEA3D.AnimationHandler.prototype.updateAnimation = function(stateName) {
+	var dataCount = this.animationSet.dataCount;		
+	var nodes = this.animationSet.animations;
+	var currentNode = stateName == undefined ? this.currentState.node : this.getStateByName(stateName).node;
+	
+	for(var i = 0; i < dataCount; i++) {
+		for(var n = 0; n < nodes.length; n++) {
+			var node = nodes[n],
+				state = this.states[n],
+				data = node.dataList[i],				
+				iFunc = SEA3D.Animation.DefaultLerpFuncs[data.kind],
+				frame;
+			
+			if (n == 0) {
+				frame = currentNode.getInterpolationFrame(currentNode.dataList[i], iFunc);
+				
+				var _fr = this.timeScale >= 0 ? Math.floor(currentNode.frame) : Math.ceil(currentNode.frame);
+				if (_fr != this._lastFrame) {
+					this._lastFrame =_fr;
+					var _frame = _fr + '';
+					// keyframe event
+					if (this.keyframeEvents) {
+						if (this.keyframeEvents[_frame]) {
+							this.keyframeEvents[_frame]();
+						}
+					}
+
+					if (!currentNode.repeat && 
+						((this.timeScale > 0 && currentNode.frame == currentNode.numFrames - 1) ||
+						(this.timeScale < 0 && currentNode.frame == 0))) {
+						if (this.onComplete)
+							this.onComplete( this );
+
+						// !repeat 停止
+						this.pause();
+					}
+				}
+			}
+			
+			if (node != currentNode) {
+				if (state.weight > 0)
+				{													
+					iFunc(
+						frame.data, 
+						node.getInterpolationFrame(data, iFunc).data, 
+						state.weight
+					);	
+				}
+			}
+						
+			if (this.updateAnimationFrame)
+				this.updateAnimationFrame(frame, data.kind);
+		
+		}
+	}
+}

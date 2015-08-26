@@ -2,25 +2,36 @@
  * @author alteredq / http://alteredqualia.com/
  */
 
-THREE.ShaderPass = function ( shader, textureID ) {
+THREE.SavePass = function ( renderTarget ) {
 
-	this.textureID = ( textureID !== undefined ) ? textureID : "tDiffuse";
+	if ( THREE.CopyShader === undefined )
+		console.error( "THREE.SavePass relies on THREE.CopyShader" );
+
+	var shader = THREE.CopyShader;
+
+	this.textureID = "tDiffuse";
 
 	this.uniforms = THREE.UniformsUtils.clone( shader.uniforms );
 
 	this.material = new THREE.ShaderMaterial( {
 
-        	defines: shader.defines || {},
 		uniforms: this.uniforms,
 		vertexShader: shader.vertexShader,
 		fragmentShader: shader.fragmentShader
 
 	} );
 
-	this.renderToScreen = false;
+	this.renderTarget = renderTarget;
+
+	if ( this.renderTarget === undefined ) {
+
+		this.renderTargetParameters = { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat, stencilBuffer: false };
+		this.renderTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, this.renderTargetParameters );
+
+	}
 
 	this.enabled = true;
-	this.needsSwap = true;
+	this.needsSwap = false;
 	this.clear = false;
 
 
@@ -32,7 +43,7 @@ THREE.ShaderPass = function ( shader, textureID ) {
 
 };
 
-THREE.ShaderPass.prototype = {
+THREE.SavePass.prototype = {
 
 	render: function ( renderer, writeBuffer, readBuffer, delta ) {
 
@@ -44,15 +55,7 @@ THREE.ShaderPass.prototype = {
 
 		this.quad.material = this.material;
 
-		if ( this.renderToScreen ) {
-
-			renderer.render( this.scene, this.camera );
-
-		} else {
-
-			renderer.render( this.scene, this.camera, writeBuffer, this.clear );
-
-		}
+		renderer.render( this.scene, this.camera, this.renderTarget, this.clear );
 
 	}
 
