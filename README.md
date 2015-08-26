@@ -120,7 +120,7 @@ utils.setAnimationTime(animation, stateName, time);
 mesh.animation.onComplete = function(anim) {};
 
 // 帧事件 注: 尽量不要在第一帧与最后一帧上绑定事件
-mesh.keyframeEvents = {
+mesh.animation.keyframeEvents = {
 	'1': function() {},
 	'8': function() {},
 	...

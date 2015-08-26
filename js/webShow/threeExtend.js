@@ -39,6 +39,8 @@ THREE.MorphAnimation.prototype.update = ( function () {
 SEA3D.AnimationHandler.prototype.updateAnimation = function(stateName) {
 	var dataCount = this.animationSet.dataCount;		
 	var nodes = this.animationSet.animations;
+
+	// easyfrog modify
 	var currentNode = stateName == undefined ? this.currentState.node : this.getStateByName(stateName).node;
 	
 	for(var i = 0; i < dataCount; i++) {
@@ -52,10 +54,12 @@ SEA3D.AnimationHandler.prototype.updateAnimation = function(stateName) {
 			if (n == 0) {
 				frame = currentNode.getInterpolationFrame(currentNode.dataList[i], iFunc);
 				
+				// make sure invoke one time
 				var _fr = this.timeScale >= 0 ? Math.floor(currentNode.frame) : Math.ceil(currentNode.frame);
 				if (_fr != this._lastFrame) {
 					this._lastFrame =_fr;
 					var _frame = _fr + '';
+
 					// keyframe event
 					if (this.keyframeEvents) {
 						if (this.keyframeEvents[_frame]) {
@@ -69,7 +73,7 @@ SEA3D.AnimationHandler.prototype.updateAnimation = function(stateName) {
 						if (this.onComplete)
 							this.onComplete( this );
 
-						// !repeat 停止
+						// !repeat pause
 						this.pause();
 					}
 				}
