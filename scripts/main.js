@@ -12,14 +12,17 @@ var game = new Game(container, {
 	debug: true
 });
 
+var glo = glo || {};
+
 var jbd, jbt, tong, tea;
 var jbd_visible = false, jbt_visible = false;
 
 // regisite components
-game.registerComponents([]);
+game.registerComponents(['com_PointLockController']);
+game.registerComponents(['com_Pickable'], 'scripts/');
 
 // load scene
-game.load('resources/model/sea3d/bar.sea', 'inno');
+game.load('resources/model/sea3d/table.tjs.sea', 'inno');
 
 game.addEventListener(Game.PROGRESS, function(p) {
 	console.log((p * 100).toFixed(1) + '%');
@@ -31,60 +34,22 @@ function onLoadComplete() {
 	game.removeEventListener(Game.LOADCOMPLETE, onLoadComplete);
 
 	// 材质自发光
-	game.letTextureEmissive(1, 1);
+	game.letTextureEmissive(.5, .5);
 
 	var mainCamera = game.sea.getCamera('mainCamera');
 	game.camera.position.copy(mainCamera.position);
 	game.camera.rotation.copy(mainCamera.rotation);
 
+	game.camera.addComponent('com_PointLockController');
+
 	jbd = game.sea.getMesh('jbd');
 	jbt = game.sea.getMesh('jbt');
-	jbd.visible = jbt.visible = false;
 
 	tong = game.sea.getMesh('tong');
 	tea = game.sea.getMesh('tea');
 	chouti = game.sea.getMesh('chouti');
 
-	chouti.animation.onComplete = function(anim) {
-		if (!chouti.picked) {
-			delete tong.picked;
-			delete tea.picked;
-			jbt_visible = jbd_visible = false;
-			tong.animation.timeScale = tea.animation.timeScale = 1;
-			utils.setAnimationTime(tong.animation, 'open', 'end');
-			utils.setAnimationTime(tea.animation, 'open', 'end');
-		}
-	}
+	tong.addComponent('com_Pickable');
+	tea.addComponent('com_Pickable');
+	chouti.addComponent('com_Pickable');
 }
-
-// 点击物体
-game.addEventListener(Game.PICKED, function(obj) {
-	// if (game.currentPicked) {
-		// var obj = game.currentPicked;
-		if (['chouti', 'tong', 'tea'].indexOf(obj.name) > -1) {
-			if ('picked' in obj) {
-				obj.animation.timeScale = -obj.animation.timeScale;
-				obj.picked = !obj.picked
-			} else {
-				obj.picked = true;
-			}
-
-			if (obj.name == 'tong') {
-				jbd_visible = obj.picked;
-			}
-
-			if (obj.name == 'tea') {
-				jbt_visible = obj.picked
-			}
-
-			if (obj.name == 'chouti') {
-				if (obj.picked) {
-					jbd.visible = jbd_visible;
-					jbt.visible = jbt_visible;
-				}
-			}
-
-			obj.animation.play('open');
-		}
-	// }
-});

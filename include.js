@@ -10,6 +10,7 @@
 		"js/webShow/Tween.js",
 		"js/webShow/game.js",
 		"js/webShow/utils.js",
+		// 'scripts/lenovop1.js'
 		'scripts/main.js'
 	];
 
@@ -19,7 +20,7 @@
 		document.write("<script src='" + build + "?v=" + Math.random() + "'></script>");  
 	} else {
 		for (var i = 0; i < scripts.length; i++) {
-			document.write("<script src='" + scripts[i] + "?v=" + Math.random() + "'></script>");  
+			document.write("<script src='" + scripts[i] + "?v=" + Math.random() + "'></script>");
 		};
 	}
 }());

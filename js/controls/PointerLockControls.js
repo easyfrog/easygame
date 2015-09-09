@@ -18,6 +18,7 @@ THREE.PointerLockControls = function ( camera ) {
 	var PI_2 = Math.PI / 2;
 
 	var onMouseMove = function ( event ) {
+		console.log('asdf');
 
 		if ( scope.enabled === false ) return;
 

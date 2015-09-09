@@ -58,12 +58,13 @@ utils.include = function(file, httpuse) {
 /**
  * 将 from 的位置,旋转,缩放设置为与 to 一至
  */
-utils.sameTransform = function(from, to, nop, nor, nos) {
+utils.sameTransform = function(from, to, inverse, nop, nor, nos) {
+	var p = inverse ? -1 : 1;
 	if (!nop) {
 		from.position.set(to.position.x, to.position.y, to.position.z);
 	}
 	if (!nor) {
-		from.rotation.set(to.rotation.x, to.rotation.y, to.rotation.z);
+		from.rotation.set(p * to.rotation.x, p * to.rotation.y, to.rotation.z);
 	}
 	if (!nos) {
 		from.scale.set(to.scale.x, to.scale.y, to.scale.z);
@@ -73,7 +74,7 @@ utils.sameTransform = function(from, to, nop, nor, nos) {
 /**
  * 将一个物体的位置与旋转属性渐变至另一个物体处
  */
-utils.transfromTo = function(from, to, time, cv, over, update) {
+utils.transformTo = function(from, to, time, cv, over, update) {
 	if (!ztc.Tween) {
 		console.warn('utils.cameraFlyTo: Do not have ztc.Tween!');
 		return;
@@ -81,19 +82,26 @@ utils.transfromTo = function(from, to, time, cv, over, update) {
 
 	cv = cv || ztc.Tween.easeOutQuad;
 
+	var qm = new THREE.Quaternion();
+	var qa = from.quaternion.clone();
+	var qb = to.quaternion;
+
 	ztc.Tween.isDom = false;
     if (!time) {time = 1};
-    ztc.Tween.actionArrayProps([from.position, from.rotation], time, 
-							   [{
-							   		x:to.position.x,
-							   		y:to.position.y,
-							   		z:to.position.z		
-							   },{
-							   		x:to.rotation.x,
-							   		y:to.rotation.y,
-							   		z:to.rotation.z
-							   }], cv, over, update);
+    ztc.Tween.actionArrayProps([from.position], time, 
+	   [{
+	   		x:to.position.x,
+	   		y:to.position.y,
+	   		z:to.position.z		
+	   }], cv, over, function(f) {
+		   	THREE.Quaternion.slerp(qa, qb, qm, f);
+		   	from.quaternion.set(qm.x, qm.y, qm.z, qm.w);
+		   	if (update) {
+		   		update(f);
+		   	}
+	});
 };
+
 
 /**
  * 将3D世界的点,转化为屏幕坐标
@@ -127,22 +135,57 @@ utils.toWorldPosition = function(mousePosition, camera, z) {
 };
 
 /**
- * 设置动画到指定的时间
- * example: time = 0 || 'end'
+ * 设置动画到指定的时间位置(百分比)
+ * example: time = 0 ~ 1
  */
-utils.setAnimationTime = function(animation, stateName, time) {
+utils.setAnimationTime = function(animation, stateName, percent) {
 	if (stateName in animation.states) {
 		try {
-			if (time == 'end') {
-				animation.states[stateName].node.setTime(animation.states[stateName].node.duration);
-			} else {
-				animation.states[stateName].node.setTime(time);
+			if (percent < 0) {
+				percent = 0;
+			} else if (percent > 1) {
+				percent = 1;
 			}
+			var duration = animation.states[stateName].node.duration;
+			animation.stop();
+			animation.states[stateName].node.setTime(percent * duration);
 			animation.updateAnimation(stateName);
 		} catch (e) {
 			console.log(e.message);	
 		}
 	} else {
 		console.warn('Not have ' + stateName + ' state!');
+	}
+}
+
+/**
+ * 设置所有物体的指定动画的时间百分比
+ */
+utils.setAllAnimationTime = function(game, stateName, percent) {
+	for (var i = 0; i < game.sea.meshes.length; i++) {
+		var mesh = game.sea.meshes[i];
+		if (mesh.animation) {
+			utils.setAnimationTime(mesh.animation, stateName, percent);
+		}
+	};
+};
+
+/**
+ * 让物体跟随一个物体的动画去改变位置与旋转
+ */
+utils.followAnimation = function(game, obj, target, stateName, inverse, complete) {
+	function _tmp() {
+		utils.sameTransform(obj, target, inverse);
+	}
+
+	game.addEventListener(Game.UPDATE, _tmp);
+	target.animation.play(stateName);
+
+	target.animation.onComplete = function() {
+		target.animation.onComplete = null;
+		game.removeEventListener(Game.UPDATE, _tmp);
+		if (complete) {
+			complete();
+		}
 	}
 }

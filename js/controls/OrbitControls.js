@@ -338,7 +338,6 @@ THREE.OrbitControls = function ( object, domElement ) {
 			lastQuaternion.copy (this.object.quaternion );
 
 		}
-
 	};
 
 
@@ -699,7 +698,6 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	// force an update at start
 	this.update();
-
 };
 
 THREE.OrbitControls.prototype = Object.create( THREE.EventDispatcher.prototype );

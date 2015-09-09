@@ -96,3 +96,4 @@ SEA3D.AnimationHandler.prototype.updateAnimation = function(stateName) {
 		}
 	}
 }
+

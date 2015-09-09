@@ -77,7 +77,9 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
 
 SceneHandler.prototype.update = function () {
     this.deltaTime = this.clock.getDelta();
-    SEA3D.AnimationHandler.update(this.deltaTime);
+    if (SEA3D.AnimationHandler) {
+        SEA3D.AnimationHandler.update(this.deltaTime);
+    }
     // var anims = SEA3D.AnimationHandler.animations;
     // for (var i = 0; i < anims.length; i++) {
     //     var anim = anims[i];

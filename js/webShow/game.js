@@ -21,6 +21,8 @@
  * component's property: 	enabled, object
  * component's events: 		start, update, onMouseDown, onMouseUp, onMouseMove \
  * 							onPicked, onRemoveonKeyDown, onKeyUp
+ *
+ * mesh: mouseEnabled  是否可以被 getPickedObject
  */
 (function(parent) {
 
@@ -61,16 +63,22 @@
 		}
 		s.renderer = new THREE.WebGLRenderer(rendererConfig);
 		s.container.appendChild(s.renderer.domElement);
-		s.camera = new THREE.PerspectiveCamera(45, container.offsetWidth/container.offsetHeight, 0.1, 10000);
+		// s.renderer.domElement.style.width = '100%';
+		// s.renderer.domElement.style.height = '100%';
+		s.camera = new THREE.PerspectiveCamera(50, container.offsetWidth/container.offsetHeight, 0.1, 10000);
 		s.camera.position.set(0,50,400);
 		if (config.seaStandard) {
 			s.camera.scale.set(-1,1,1);
 		}
-		s.cameraController = new THREE.OrbitControls(s.camera, container);
+		s.cameraController;
+		// s.cameraController = new THREE.OrbitControls(s.camera, container);
 		s.scene = new THREE.Scene();
 		s.sh = new SceneHandler('', s.scene, config.seaStandard);
 		s.sea = s.sh.root;
 		s.rootContainer = s.sh.container;
+		s.mouseMovement = new THREE.Vector2(0, 0);
+		s.width = 100;
+		s.height = 100;
 
 		// 效果合成器
 		/*
@@ -147,12 +155,18 @@
 		s._start();
 		s._update();
 
-		window.onresize = function() {
-			s.setSize(window.innerWidth, window.innerHeight);
-		};
+		window.addEventListener('resize', function() {
+			s.width = game.container.offsetWidth;
+			s.height = game.container.offsetHeight;
+			s.setSize(s.width, s.height);
+		});
 	};
 
-	var _lastMousePick, curMouse;
+	Game.prototype.setOrbitController = function() {
+		this.cameraController = new THREE.OrbitControls(this.camera, this.container);
+	};
+
+	var _lastMousePick, curMouse, lastMouse;
 	Game.prototype.addEvents = function() {
 		var s = this;
 
@@ -182,11 +196,11 @@
 			e.preventDefault();
 			s.isMouseDown = true;
 			_lastMousePick = getPick(e);
+			lastMouse = _lastMousePick;
 
-			var p = getPick(e);
-			var object = s.getPickObject(p);
+			var object = s.getPickObject(_lastMousePick);
 			s.currentPicked = object;
-			curMouse = getPick(e);
+			lastMouse = curMouse = _lastMousePick;
 
 			s.invokeComponentFunction(object, 'onMouseDown', e);
 			s.invoke('mousedown', e);
@@ -194,8 +208,12 @@
 
 		function onMouseMove(e) {
 			e.preventDefault();
-			if (e.touches) {
+			// if (e.touches) {
 				curMouse = getPick(e);
+			// }
+			if (lastMouse) {
+				s.mouseMovement = curMouse.clone().sub(lastMouse);
+				lastMouse = curMouse;
 			}
 
 			s.invokeComponentFunction(s.currentPicked, 'onMouseMove', e);
@@ -226,6 +244,8 @@
 
 	/**
 	 * get picked object
+	 * 给Mesh物体添加了一个 mouseEnabled 属性
+	 * 如果这个没有这个属性, 则默认视为 mouseEnabled = true
 	 */
 	Game.prototype.getPickObject = function(mousePosition, objects) {
 		var s = this;
@@ -238,7 +258,14 @@
 		objects = objects || (s.canPicked.length == 0 ? s.scene.children : s.canPicked);
 		var intersections = ray.intersectObjects(objects, true);
 		if (intersections.length > 0) {
-			return intersections[0].object;
+			// check if mouse enabled
+			for (var i = 0; i < intersections.length; i++) {
+				var obj = intersections[i].object;
+				if (!('mouseEnabled' in obj) || obj.mouseEnabled) {
+					return obj;
+				}
+			};
+			return null;
 		}
 		return null;
 	}
@@ -247,7 +274,7 @@
 	 * 注册组件
 	 */
 	Game.prototype.registerComponents = function(componentsArr, path) {
-		path = path || 'scripts/';
+		path = path || 'js/coms/';
 		for (var i = 0; i < componentsArr.length; i++) {
 			var com = componentsArr[i];
 			utils.include(path + com + '.js');
@@ -335,7 +362,10 @@
 			h = this.container.offsetHeight;
 		}
 
+		this.width = w;
+		this.height = h;
 		this.renderer.setSize(w, h);
+		this.renderer.setPixelRatio(window.devicePixelRatio ? window.devicePixelRatio : 1);
 		this.camera.aspect = w / h;
 		this.camera.updateProjectionMatrix();
 	};
@@ -388,7 +418,10 @@
 		var _delta = this.getDeltaTime() * 1000;
 
 		this.sh.update();
-		THREE.Sound3D.update(this.camera);
+		
+		if (THREE.Sound3D) {
+			THREE.Sound3D.update(this.camera);
+		}
 
 		// component update 
 		this.invokeComponentFunction(this, 'update');
@@ -400,9 +433,9 @@
 			this.animations[i].update(_delta);
 		};
 
-		if (this.cameraController) {
-			this.cameraController.update();
-		}
+		// if (this.cameraController && this.cameraController.update) {
+		// 	this.cameraController.update();
+		// }
 		// composer
 		// this.scene.overrideMaterial = depthMaterial;
 		// this.renderer.render(this.scene, this.camera, depthTarget);
@@ -475,7 +508,7 @@
 	 * @param  {number} mapVal   有贴图的自发光强度
 	 * @param  {number} noMapVal 没有贴图的材质的自发光强度
 	 */
-	Game.prototype.letTextureEmissive = function(mapVal, noMapVal) {
+	Game.prototype.letTextureEmissive = function(mapVal, noMapVal, exceptMats) {
 		mapVal = mapVal || 1;
 		noMapVal = noMapVal || 0.6;
 
@@ -484,6 +517,9 @@
 			return;
 		}
 		for (var i = 0; i < mats.length; i++) {
+			if (exceptMats && exceptMats.indexOf(mats[i].name) != -1) {
+				return;
+			}
 			mats[i].emissive = new THREE.Color( mats[i].color ).multiplyScalar(
 				mats[i].map ? mapVal : noMapVal
 			);
@@ -493,9 +529,9 @@
 	/**
 	 * 播放基础P.R.S.动画
 	 */
-	Game.prototype.playGeneralAnimation = function(animationName) {
+	Game.prototype.playGeneralAnimation = function(animationName, timeScale, repeat) {
 		animationName = animationName || 'general';
-		game.sh.play(animationName);		
+		game.sh.play(animationName, timeScale, repeat);		
 	};
 
 	/**
