@@ -99,7 +99,7 @@ SceneHandler.prototype.play = function(name,speed,repeat) {
     for (var i = 0;i < s.root.meshes.length; i ++ ) {
         anim = s.root.meshes[i].animation;
 
-        if (anim) {
+        if (anim && anim.animationSet.animations[name]) {
             // repeat
             // for (var a in anim.animationSet.animations) {
             //     anim.animationSet.animations[a].repeat = repeat;

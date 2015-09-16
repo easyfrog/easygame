@@ -26,8 +26,9 @@ utils.fixMorphTargets = function(geometry) {
 
 /**
  * 变形物体动画
+ * params: {duration: 1000, loop: false}
  */
-utils.morphObject = function(game, mesh, params) {
+utils.morphObject = function(mesh, params) {
 	if (mesh.geometry instanceof THREE.BufferGeometry) {
 		var geo = new THREE.Geometry().fromBufferGeometry(mesh.geometry);
 		utils.fixMorphTargets(geo);
@@ -42,7 +43,7 @@ utils.morphObject = function(game, mesh, params) {
 
 	mor.play();
 
-	game.animations.push(mor);
+	Game.instance.animations.push(mor);
 }
 
 /**
@@ -64,7 +65,9 @@ utils.sameTransform = function(from, to, inverse, nop, nor, nos) {
 		from.position.set(to.position.x, to.position.y, to.position.z);
 	}
 	if (!nor) {
-		from.rotation.set(p * to.rotation.x, p * to.rotation.y, to.rotation.z);
+		// from.rotation.set(p * to.rotation.x, p * to.rotation.y, to.rotation.z);
+		var q = to.quaternion;
+		from.quaternion.set(p * q.x,p * q.y, q.z, q.w);
 	}
 	if (!nos) {
 		from.scale.set(to.scale.x, to.scale.y, to.scale.z);
@@ -76,7 +79,7 @@ utils.sameTransform = function(from, to, inverse, nop, nor, nos) {
  */
 utils.transformTo = function(from, to, time, cv, over, update) {
 	if (!ztc.Tween) {
-		console.warn('utils.cameraFlyTo: Do not have ztc.Tween!');
+		console.warn('utils.transformTo: Do not have ztc.Tween!');
 		return;
 	};
 
@@ -108,8 +111,8 @@ utils.transformTo = function(from, to, time, cv, over, update) {
  */
 utils.toScreenPosition = function(vector, camera) {
 	var _v = new THREE.Vector3(vector.x, vector.y, vector.z);
-    var widthHalf = 0.5 * Game.instance.container.offsetWidth;
-    var heightHalf = 0.5 * Game.instance.container.offsetHeight;
+    var widthHalf = 0.5 * Game.instance.width * g.stageScale;
+    var heightHalf = 0.5 * Game.instance.height * g.stageScale;
 
     _v.project(camera);
 
@@ -128,8 +131,9 @@ utils.toScreenPosition = function(vector, camera) {
  */
 utils.toWorldPosition = function(mousePosition, camera, z) {
 	z = z || 1;
-	var mx = ((mousePosition.x - s.container.offsetLeft) / s.container.offsetWidth) * 2 - 1;
-	var my = -((mousePosition.y - s.container.offsetTop) / s.container.offsetHeight) * 2 + 1;
+	var g = Game.instance;
+	var mx = ((mousePosition.x - s.container.offsetLeft) / (g.width * g.stageScale)) * 2 - 1;
+	var my = -((mousePosition.y - s.container.offsetTop) / (g.height * g.stageScale)) * 2 + 1;
 	var vector = new THREE.Vector3(mx, my, z);
 	return vector.unproject(camera);
 };
@@ -161,9 +165,9 @@ utils.setAnimationTime = function(animation, stateName, percent) {
 /**
  * 设置所有物体的指定动画的时间百分比
  */
-utils.setAllAnimationTime = function(game, stateName, percent) {
-	for (var i = 0; i < game.sea.meshes.length; i++) {
-		var mesh = game.sea.meshes[i];
+utils.setAllAnimationTime = function(stateName, percent) {
+	for (var i = 0; i < Game.instance.sea.meshes.length; i++) {
+		var mesh = Game.instance.sea.meshes[i];
 		if (mesh.animation) {
 			utils.setAnimationTime(mesh.animation, stateName, percent);
 		}
@@ -173,17 +177,17 @@ utils.setAllAnimationTime = function(game, stateName, percent) {
 /**
  * 让物体跟随一个物体的动画去改变位置与旋转
  */
-utils.followAnimation = function(game, obj, target, stateName, inverse, complete) {
+utils.followAnimation = function(obj, target, stateName, inverse, complete) {
 	function _tmp() {
 		utils.sameTransform(obj, target, inverse);
 	}
 
-	game.addEventListener(Game.UPDATE, _tmp);
 	target.animation.play(stateName);
+	Game.instance.addEventListener(Game.UPDATE, _tmp);
 
 	target.animation.onComplete = function() {
 		target.animation.onComplete = null;
-		game.removeEventListener(Game.UPDATE, _tmp);
+		Game.instance.removeEventListener(Game.UPDATE, _tmp);
 		if (complete) {
 			complete();
 		}

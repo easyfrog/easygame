@@ -1,0 +1,1756 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"get_env_path"
+			],
+			[
+				"cam",
+				"cameraController	{}"
+			],
+			[
+				"conta",
+				"container	{}"
+			],
+			[
+				"sta",
+				"stageScale"
+			],
+			[
+				"cpu",
+				"cpu_cam	(?)"
+			],
+			[
+				"up",
+				"updateProjectionMatrix()"
+			],
+			[
+				"show",
+				"showAll()"
+			],
+			[
+				"visi",
+				"visible	(bool)"
+			],
+			[
+				"ca",
+				"camera	{}"
+			],
+			[
+				"chaiji",
+				"chaijieCam	(?)"
+			],
+			[
+				"stag",
+				"stageScale	(?)"
+			],
+			[
+				"off",
+				"offsetWidth	(num)"
+			],
+			[
+				"inn",
+				"innerWidth	(num)"
+			],
+			[
+				"offs",
+				"offsetWidth	(num)"
+			],
+			[
+				"ta",
+				"target	{}"
+			],
+			[
+				"pla",
+				"playGeneralAnimation(animationName, timeScale, repeat)"
+			],
+			[
+				"camera",
+				"camera	{}"
+			],
+			[
+				"if",
+				"if	If"
+			],
+			[
+				"pro",
+				"PROGRESS	(str)"
+			],
+			[
+				"ch",
+				"changhong"
+			],
+			[
+				"remove",
+				"removeEventListener(type, listener)"
+			],
+			[
+				"add",
+				"addEventListener(type, listener)"
+			],
+			[
+				"Nearest",
+				"NearestMipMapNearestFilter	(?)"
+			],
+			[
+				"gen",
+				"generateMipmaps	(?)"
+			],
+			[
+				"set",
+				"setTimeout(f, ms)"
+			],
+			[
+				"getSym",
+				"getSymbolElement"
+			],
+			[
+				"getSy",
+				"getSymbolElement"
+			],
+			[
+				"de",
+				"debug	(?)"
+			],
+			[
+				"debug",
+				"debugText	(?)"
+			],
+			[
+				"setS",
+				"setSize(width, height, updateStyle)"
+			],
+			[
+				"lenovop",
+				"lenovop1"
+			],
+			[
+				"fir",
+				"firstIn()"
+			],
+			[
+				"an",
+				"animation"
+			],
+			[
+				"m",
+				"meshes	[]"
+			],
+			[
+				"upd",
+				"updateAnimation(stateName)"
+			],
+			[
+				"las",
+				"lastSym	(?)"
+			],
+			[
+				"chaij",
+				"isChaijie"
+			],
+			[
+				"ti",
+				"timeout	(?)"
+			],
+			[
+				"Ado",
+				"AdobeEdge"
+			],
+			[
+				"min",
+				"minDistance	(num)"
+			],
+			[
+				"zoo",
+				"zoomSpeed	(num)"
+			],
+			[
+				"c",
+				"cameraController	{}"
+			],
+			[
+				"Vec",
+				"Vector3(x, y, z)"
+			],
+			[
+				"mouse",
+				"MOUSEDOWN	(str)"
+			],
+			[
+				"mou",
+				"mouseMovement	{}"
+			],
+			[
+				"comP",
+				"com_PointLockControl(params)"
+			],
+			[
+				"rotat",
+				"rotateY(angle)"
+			],
+			[
+				"move",
+				"movementY	(num)"
+			],
+			[
+				"poi",
+				"PointerLockControls(camera)"
+			],
+			[
+				"camer",
+				"cameraController	{}"
+			],
+			[
+				"hemis",
+				"HemisphereLight(skyColor, groundColor, intensity)"
+			],
+			[
+				"keyframe",
+				"keyframeEvents	(?)"
+			],
+			[
+				"jbt",
+				"jbt_visible	(bool)"
+			],
+			[
+				"anim",
+				"animation	{}"
+			],
+			[
+				"time",
+				"timeScale	(num)"
+			],
+			[
+				"upda",
+				"update(delta)"
+			],
+			[
+				"depa",
+				"depthTarget	{}"
+			],
+			[
+				"dep",
+				"depthRGBA	{}"
+			],
+			[
+				"Se",
+				"SEA3D	{}"
+			],
+			[
+				"ani",
+				"AnimationHandler	{}"
+			],
+			[
+				"tar",
+				"target0	{}"
+			],
+			[
+				"came",
+				"camera	(?)"
+			],
+			[
+				"image",
+				"ImageUtils	{}"
+			],
+			[
+				"spri",
+				"Sprite(material)"
+			],
+			[
+				"com",
+				"componentNames	[]"
+			],
+			[
+				"matrix",
+				"Matrix4()"
+			],
+			[
+				"ne",
+				"needsUpdate()"
+			],
+			[
+				"Mou",
+				"MOUSEMOVE	(str)"
+			],
+			[
+				"proje",
+				"project(b)"
+			],
+			[
+				"invoke",
+				"invokeComponentFunction(object, functionName, param)"
+			],
+			[
+				"re",
+				"registeComponents(components, path)"
+			],
+			[
+				"cur",
+				"currentPicked	{}"
+			],
+			[
+				"invo",
+				"invokeComponentFunction(object, functionName, param)"
+			],
+			[
+				"in",
+				"invokeComponentFunction(functionName, param)"
+			],
+			[
+				"funct",
+				"functionName	(?)"
+			],
+			[
+				"compo",
+				"componentName"
+			],
+			[
+				"comp",
+				"components"
+			],
+			[
+				"sph",
+				"sphereMesh	{}"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"sphere",
+				"sphereMesh	{}"
+			],
+			[
+				"clear",
+				"clear(color, depth, stencil)"
+			],
+			[
+				"he",
+				"HemisphereLight(skyColor, groundColor, intensity)"
+			],
+			[
+				"por",
+				"PROGRESS	(str)"
+			],
+			[
+				"con",
+				"container	(?)"
+			],
+			[
+				"sphe",
+				"sphereMat	{}"
+			],
+			[
+				"sc",
+				"scene2	{}"
+			],
+			[
+				"Material",
+				"MeshLambertMaterial(parameters)"
+			],
+			[
+				"sphon",
+				"SphereGeometry(radius, widthSegments, heightSegments, phiStart, phiLength, thetaStart, thetaLength)"
+			],
+			[
+				"utils",
+				"GeometryUtils	{}"
+			],
+			[
+				"Scen",
+				"SceneUtils	{}"
+			],
+			[
+				"ease",
+				"easeOutQuad(val)"
+			],
+			[
+				"easeOut",
+				"easeOutQuad(val)"
+			],
+			[
+				"action",
+				"actionArrayProps(targets, time, attrs, y, z}], cvFunc, over, update)"
+			],
+			[
+				"lo",
+				"load(url, groupName)"
+			],
+			[
+				"val",
+				"val	(?)"
+			],
+			[
+				"gro",
+				"grow (fn/0)"
+			],
+			[
+				"a",
+				"atan2 (fn/2)"
+			],
+			[
+				"loc",
+				"location	{}"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"vec",
+				"Vector3(x, y, z)"
+			],
+			[
+				"load",
+				"loadNpmTasks	(?)"
+			],
+			[
+				"chil",
+				"getChildByName(a, b)"
+			],
+			[
+				"pos",
+				"position	{}"
+			],
+			[
+				"ea",
+				"easeOutBack(val)"
+			],
+			[
+				"ro",
+				"rotateZ(b)"
+			],
+			[
+				"play",
+				"play(name, crossfade, offset)"
+			],
+			[
+				"geo",
+				"geometry	(?)"
+			],
+			[
+				"goe",
+				"geometry"
+			],
+			[
+				"Bu",
+				"BufferGeometry()"
+			],
+			[
+				"mesh",
+				"meshMorph	{}"
+			],
+			[
+				"mor",
+				"morphTargets	[]"
+			],
+			[
+				"0x",
+				"0x00ffaa"
+			],
+			[
+				"La",
+				"MeshLambertMaterial(parameters)"
+			],
+			[
+				"Box",
+				"BoxGeometry(width, height, depth, widthSegments, heightSegments, depthSegments)"
+			],
+			[
+				"No",
+				"NoShading	(num)"
+			],
+			[
+				"Cull",
+				"CullFaceNone	(num)"
+			],
+			[
+				"shad",
+				"shadowMapCullFace	(num)"
+			],
+			[
+				"pcf",
+				"PCFSoftShadowMap	(num)"
+			],
+			[
+				"Ani",
+				"AnimationHandler	{}"
+			],
+			[
+				"mo",
+				"MorphAnimMesh(geometry, material)"
+			],
+			[
+				"Mor",
+				"MorphAnimMesh(geometry, material)"
+			],
+			[
+				"anima",
+				"MorphAnimation(mesh)"
+			],
+			[
+				"PCF",
+				"PCFSoftShadowMap	(num)"
+			],
+			[
+				"box_li",
+				"box_light_anim"
+			],
+			[
+				"shadowMap",
+				"shadowMapHeight	(num)"
+			],
+			[
+				"dis",
+				"distance	(num)"
+			],
+			[
+				"spot",
+				"SpotLight(color, intensity, distance, angle, exponent)"
+			],
+			[
+				"box",
+				"box_light	(?)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "projects/changhong/changhong.js",
+			"settings":
+			{
+				"buffer_size": 5038,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/webShow/utils.js",
+			"settings":
+			{
+				"buffer_size": 4716,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
+					""
+				],
+				[
+					"Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
+					"Compile"
+				],
+				[
+					"Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
+					"Harmony"
+				]
+			],
+			[
+				"Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 160.0,
+		"last_filter": "grunta",
+		"selected_items":
+		[
+			[
+				"grunta",
+				"GruntArgs"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"gruntargs",
+				"GruntArgs"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"gru",
+				"Grunt"
+			],
+			[
+				"grut",
+				"Grunt"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"eidt",
+				"Project: Edit"
+			],
+			[
+				"re",
+				"TernJS: Reload"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"gist ",
+				"Gist: Create Public Gist"
+			],
+			[
+				"",
+				"Build: New Build System"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"snippet",
+				"Snippet: easygamelibs"
+			],
+			[
+				"grunt ",
+				"Grunt"
+			],
+			[
+				"grun",
+				"Grunt"
+			],
+			[
+				"rel",
+				"TernJS: Reload"
+			],
+			[
+				"lsit",
+				"Themr: List themes"
+			],
+			[
+				"mp",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"push cur",
+				"Git: Push Current Branch"
+			],
+			[
+				"git add",
+				"Git: Add Remote"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"relo",
+				"TernJS: Reload"
+			],
+			[
+				"relaod",
+				"TernJS: Reload"
+			],
+			[
+				"Snippet: ",
+				"Snippet: metascalecache"
+			],
+			[
+				"jump",
+				"TernJS: Jump to definition"
+			],
+			[
+				"relad",
+				"TernJS: Reload"
+			],
+			[
+				"subl",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"sublimecod",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"sublimeCode",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"themr",
+				"Themr: List themes"
+			],
+			[
+				"gist open",
+				"Gist: Open Gist"
+			],
+			[
+				"gist in",
+				"Gist: Insert Gist"
+			],
+			[
+				"us",
+				"Preferences: Settings - User"
+			],
+			[
+				"main",
+				"OmniSharpSublime: Add New Interface"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"eid",
+				"Project: Edit"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"bui",
+				"Build With: WebBuilder"
+			],
+			[
+				"new s",
+				"Build: New Build System"
+			],
+			[
+				"Snippet: clas",
+				"Snippet: Class"
+			],
+			[
+				"relao",
+				"TernJS: Reload"
+			],
+			[
+				"reloa",
+				"TernJS: Reload"
+			],
+			[
+				"rela",
+				"TernJS: Reload"
+			],
+			[
+				"gis",
+				"Gist: Open Gist"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"open",
+				"Gist: Open Gist"
+			],
+			[
+				"upd",
+				"Gist: Update File"
+			],
+			[
+				"gistop",
+				"Gist: Open Gist"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"embe",
+				"Gist: Embed as script"
+			],
+			[
+				"isnert",
+				"Gist: Insert Gist"
+			],
+			[
+				"chang",
+				"Gist: Change Gist Description"
+			],
+			[
+				"dele",
+				"Gist: Delete Gist"
+			],
+			[
+				"Gist",
+				"Gist: Open Gist"
+			],
+			[
+				"hao",
+				"HaoGist: About"
+			],
+			[
+				"create",
+				"HaoGist: Create Public Gist"
+			],
+			[
+				"upda",
+				"HaoGist: Update Gist Description"
+			],
+			[
+				"haoset",
+				"HaoGist: Settings – User"
+			],
+			[
+				"hao upda",
+				"HaoGist: Update Gist Description"
+			],
+			[
+				"hoa",
+				"HaoGist: Open Gist"
+			],
+			[
+				"haoupda",
+				"HaoGist: Update Gist Description"
+			],
+			[
+				"oepn",
+				"Gist: Open Gist"
+			],
+			[
+				"gistcha",
+				"Gist: Change Gist Description"
+			],
+			[
+				"open git",
+				"Gist: Open Gist"
+			],
+			[
+				"gist ch",
+				"Gist: Change Gist Description"
+			],
+			[
+				"change",
+				"Gist: Change Gist Description"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"chan",
+				"Gist: Change Gist Description"
+			],
+			[
+				"l",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"tern",
+				"TernJS: Previous Occurance"
+			],
+			[
+				"ju",
+				"TernJS: Jump to definition"
+			],
+			[
+				"Ter",
+				"TernJS: Reload"
+			],
+			[
+				"ten",
+				"TernJS: Next Occurance"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgrade package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"sethtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"set jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"remvoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"set untiy",
+				"Set Syntax: Unity C#"
+			],
+			[
+				"set unity",
+				"Set Syntax: Unity C#"
+			],
+			[
+				"packagecontrol: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 514.0
+	},
+	"console":
+	{
+		"height": 291.0,
+		"history":
+		[
+			"window.files",
+			"run",
+			"run('dir');",
+			"window.show_quick_panel({'asdf', 'asdfjklasdjf'})",
+			"window.show_quick_panel({'asdf', 'asdfjklasdjf'}, undefined)",
+			"window.show_quick_panel({'asdf', 'asdfjklasdjf'}, null)",
+			"window.show_quick_panel()",
+			"window.show_quick_panel",
+			"window.show_quick_panel(['asdf','asdf'], null)",
+			"cmd:dir",
+			"show window",
+			"window",
+			"1+1",
+			"self",
+			"grunt create",
+			"grunt -v",
+			"scr",
+			"src",
+			"cls",
+			"clear",
+			"cls",
+			"clear",
+			"settings",
+			"view.score_selector(0)",
+			"view.score_selector",
+			"view",
+			"settings",
+			"Ternjs",
+			"Ternjs:reload",
+			"remove",
+			"ll",
+			"1+1",
+			"cls",
+			"clear",
+			"from __future__ import print_function",
+			"# ***** BEGIN LICENSE BLOCK *****",
+			"bye",
+			"exit",
+			"cls",
+			"1 + 1",
+			"hellow",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/myhost/inno studio"
+	],
+	"file_history":
+	[
+		"/C/Users/easyfrog/Desktop/command_base.py",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/main.py",
+		"/E/myhost/inno studio/projects/hello/hello_grunt.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/Default.sublime-commands",
+		"/E/myhost/inno studio/projects/changhong/changhong_grunt.js",
+		"/E/myhost/inno studio/projects/lenovop1/lenovop1_grunt.js",
+		"/E/myhost/inno studio/projects/hello/hello.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Minify/Minify.py",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/Main.sublime-menu",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/SublimeGrunt.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/expose.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/package-metadata.json",
+		"/C/Users/easyfrog/Desktop/windows_completion.py",
+		"/C/Users/easyfrog/Desktop/reloader.py",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/ShellCommand.sublime-keymap",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/ShellCommand/Default.sublime-commands",
+		"/E/myhost/inno studio/projects/lenovop1/lenovop1.js",
+		"/E/myhost/inno studio/templates/project.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/ShellCommand/Default.sublime-keymap",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/ShellCommand/ShellCommand.sublime-settings",
+		"/E/myhost/inno studio/projects/kkk/kkk.js",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
+		"/E/myhost/inno studio/projects/test/test_grunt.js",
+		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/E/myhost/inno studio/.gitignore",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/E/myhost/inno studio/projects/test.js",
+		"/E/myhost/inno studio/projects/'adsf'.js",
+		"/C/Users/easyfrog/Desktop/AdvancedNewFile.py",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/package.json",
+		"/E/myhost/inno studio/index.html",
+		"/E/myhost/inno studio/include.js",
+		"/E/myhost/inno studio/projects/lenovop1",
+		"/E/myhost/inno studio/scripts/com_Pickable.js",
+		"/E/myhost/inno studio/scripts/main.js",
+		"/E/myhost/inno studio/grunts/main_grunt.js",
+		"/E/myhost/inno studio/grunts/changhong_grunt.js",
+		"/E/build.min.js",
+		"/E/myhost/inno studio/build/easygame.min.js",
+		"/E/EdgeWorks/Lesson1/publish/web/index.html",
+		"/E/myhost/nubia Z9/main.js",
+		"/E/EdgeWorks/Demo/diyike/publish/web/index.html",
+		"/E/EdgeWorks/changhong/publish/web/index.html",
+		"/E/myhost/inno studio/grunts/demo_grunt.js",
+		"/E/myhost/inno studio/scripts/demo.js",
+		"/E/myhost/inno studio/cordovaScreenSaverUsed.md",
+		"/E/myhost/inno studio/README.md",
+		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
+		"/E/EdgeWorks/Demo/diyike/publish/web/main.js",
+		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/build/easygame_all.min.js",
+		"/E/EdgeWorks/changhong/publish/web/main.js",
+		"/E/EdgeWorks/changhong/publish/web/libs/Detector.js",
+		"/E/EdgeWorks/changhong/publish/web/libs/easygame.js",
+		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
+		"/E/PhoneGap_works/LenovoP1/www/edge.6.0.0.min.js",
+		"/E/EdgeWorks/changhong/publish/web/libs/edgeToolsBase.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/myhost/inno studio/js/postprocessing/BokehPass.js",
+		"/E/myhost/inno studio/scripts/lenovop1.js",
+		"/E/myhost/inno studio/build/build.min.js",
+		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/easygamelibs.sublime-snippet",
+		"/E/EdgeWorks/changhong/publish/web/changhong.html",
+		"/E/myhost/inno studio/grunts/lenovop1_grunt.js",
+		"/E/PhoneGap_works/LenovoP1/www/index.html",
+		"/E/EdgeWorks/changhong/publish/web/build.min.js",
+		"/E/PhoneGap_works/LenovoP1/www/build.min.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
+		"/E/myhost/inno studio/js/threejs/three.min.js",
+		"/E/myhost/inno studio/grunts/lenovop1.js",
+		"/E/myhost/inno studio/js/webShow/Tween.js",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/table/hello-world.html",
+		"/E/PhoneGap_works/LenovoP1/config.xml",
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/js/three.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
+		"/E/PhoneGap_works/Gionee/www/index.html",
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/table/js/sea3d.min.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/table/js/three.js",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/src/com/inno/lenovop1/Receiver.java",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/src/com/inno/lenovop1/Bridge.java",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/src/com/inno/lenovop1/MainActivity.java",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/src/com/inno/lenovop1/MyService.java",
+		"/E/PhoneGap_works/LenovoP1/plugins/android.json",
+		"/E/myhost/inno studio/cordovaScreenSaverUsed.html",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/AndroidManifest.xml",
+		"/E/PhoneGap_works/Gionee/plugins/android.json",
+		"/E/PhoneGap_works/LenovoP1/www/Lenovo.html",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/res/xml/config.xml",
+		"/E/PhoneGap_works/Gionee/platforms/android/res/xml/config.xml",
+		"/E/PhoneGap_works/LenovoP1/plugins/fetch.json",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/assets/www/cordova.js",
+		"/E/PhoneGap_works/LenovoP1/platforms/platforms.json",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/.project",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/build.gradle",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/settings.gradle",
+		"/E/PhoneGap_works/Gionee/platforms/android/AndroidManifest.xml",
+		"/E/PhoneGap_works/Gionee/platforms/android/bin/AndroidManifest.xml",
+		"/E/PhoneGap_works/Gionee/config.xml",
+		"/E/PhoneGap_works/Gionee/platforms/android/src/com/inno/gionee/MainActivity.java",
+		"/E/PhoneGap_works/LenovoP1/platforms/android/CordovaLib/AndroidManifest.xml",
+		"/E/PhoneGap_works/Gionee/platforms/android/src/com/inno/gionee/MyService.java",
+		"/E/PhoneGap_works/Gionee/platforms/android/src/com/inno/gionee/Bridge.java",
+		"/E/myhost/inno studio/build/build.js",
+		"/E/myhost/inno studio/js/controls/OrbitControls.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/Basics/hello-world.html",
+		"/C/Users/easyfrog/Desktop/table/hello-world.html",
+		"/C/Users/easyfrog/Desktop/table/js/three.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/Basics/keyframe.html",
+		"/E/myhost/inno studio/js/controls/PointerLockControlsKeyboard.js",
+		"/E/myhost/inno studio/js/controls/ztc_PointerLockControls.js",
+		"/E/myhost/inno studio/js/controls/PointerLockControls.js",
+		"/E/myhost/inno studio/scripts/pickable.js",
+		"/E/myhost/inno studio/js/postprocessing/EffectComposer.js",
+		"/E/myhost/inno studio/js/shaders/SSAOShader.js",
+		"/E/myhost/inno studio/js/postprocessing/RenderPass.js",
+		"/C/Users/easyfrog/AppData/Local/Autodesk/3dsMax/2015 - 64bit/ENU/scripts/SEA3D/SEA3D.config",
+		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/README.md",
+		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/SEA3D/SEA3D.ms",
+		"/D/Program Files/Autodesk/3ds Max 2015/3dsmax.exe.config"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Kill",
+			"self.window",
+			"on_done",
+			"stageScale",
+			"yepnope",
+			"targetPos",
+			"isAnimating",
+			"game.pause ",
+			"onLoadComplete",
+			"/**\n",
+			"s.width",
+			"yuzhi",
+			"mainCameraPos",
+			"game",
+			"camPath",
+			"alert",
+			"stageScale",
+			"viewportSize",
+			"width",
+			"resize",
+			"src",
+			"onDeviceReady",
+			"f",
+			"cordovar",
+			"WakeLock",
+			"wl",
+			"h",
+			"{\n",
+			"window",
+			"setS",
+			"inverse",
+			"enabled",
+			"set",
+			"getPickedObject",
+			"com_PointLockControl",
+			"0.001",
+			"1",
+			";\n",
+			"getPick",
+			"cameraController",
+			"_lastFrame",
+			"AnimationNode",
+			"Animator",
+			"AnimationNode",
+			"getFrameAt",
+			"setFrame",
+			"updateAnimationFrame",
+			"updateAnimationState",
+			"curMouse",
+			"prototype",
+			"TextureAnimation",
+			"animation",
+			"TextureAnimator",
+			"Sprite",
+			"f0f0c0",
+			"background",
+			"f1f1f1",
+			"rnd",
+			"s",
+			"canPicked",
+			"f0f0f0",
+			"componentsArr",
+			"components",
+			"invokeComponentFunction",
+			"enabled",
+			"vector",
+			"com_kao",
+			"componentNames",
+			"invokeComponentFunction",
+			"this",
+			"componentName",
+			"comTesta",
+			"comTest2",
+			"object",
+			"update",
+			"Update",
+			"UPDATE",
+			"update",
+			"UPDATE",
+			"Update",
+			"update",
+			"s.",
+			"p",
+			"camera2",
+			"loadComplete",
+			"container",
+			"cameraController",
+			"position",
+			"camera",
+			"s.",
+			"addEventListener",
+			"ztc",
+			"r71",
+			"Consolas",
+			"font",
+			"sidebar",
+			"font",
+			"sidebar",
+			"nuanlight",
+			"seaMap",
+			"projector",
+			"Projector",
+			"projector",
+			"webShow",
+			"mainCam",
+			"Projector",
+			"projector",
+			"oldValue",
+			"relative",
+			"loadComplete",
+			"webShow",
+			"ztc.",
+			"i",
+			"MorphAnimMesh",
+			"Geometry",
+			"deltaTime",
+			"light",
+			".mpha",
+			"mpha",
+			"delta",
+			"time",
+			"Morpha",
+			"window",
+			"setSize",
+			"spot",
+			"box_light",
+			"setTimeout(function() {\n			box_light.animation.pause();\n		}, 300);\n",
+			"debug"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"f0f0c0",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "projects/changhong/changhong.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5038,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_indent": true,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/webShow/utils.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2824,
+								2824
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 156.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 120.0
+	},
+	"output.git-init":
+	{
+		"height": 132.0
+	},
+	"output.git-push":
+	{
+		"height": 280.0
+	},
+	"output.log":
+	{
+		"height": 120.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 228.0
+	},
+	"output.variable_get":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "innoStudio.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"len",
+				"scripts\\lenovop1.js"
+			],
+			[
+				"game",
+				"js\\webShow\\game.js"
+			],
+			[
+				"gru",
+				"Gruntfile.js"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"main",
+				"main.js"
+			],
+			[
+				"edit",
+				"js\\controls\\EditorControls.js"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"the",
+				"js\\threejs\\three.js"
+			],
+			[
+				"gr",
+				"Gruntfile.js"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"gam",
+				"js\\webShow\\game.js"
+			],
+			[
+				"to",
+				"general\\tools.js"
+			],
+			[
+				"pr",
+				"preload.js"
+			],
+			[
+				"mycon",
+				"js\\controls\\myControls.js"
+			],
+			[
+				"tt",
+				"ttt.js"
+			],
+			[
+				"test",
+				"test.js"
+			],
+			[
+				"ttt",
+				"ttt.js"
+			],
+			[
+				"gui",
+				"gui.html"
+			],
+			[
+				"my",
+				"js\\controls\\myControls.js"
+			],
+			[
+				"base",
+				"js\\webShow\\BaseScene.js"
+			],
+			[
+				"tes",
+				"test.js"
+			],
+			[
+				"read",
+				"assets\\texture\\cubeMaps\\Bridge2\\readme.txt"
+			],
+			[
+				"edge",
+				"gui_edge.js"
+			],
+			[
+				"ocu",
+				"js\\controls\\OculusControls.js"
+			],
+			[
+				"fly",
+				"js\\controls\\FlyControls.js"
+			],
+			[
+				"thre",
+				"WebShow\\js\\threejs\\three.js"
+			],
+			[
+				"",
+				"WebShow\\js\\threejs\\Detector.js"
+			],
+			[
+				"sea",
+				"WebShow\\js\\loaders\\sea3d\\SEA3D.js"
+			],
+			[
+				"ed",
+				"E:\\EdgeWorks\\utils\\edgeUtils.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"uti",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"nor",
+				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
+			],
+			[
+				"uniti",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity.sublime-workspace"
+			],
+			[
+				"util",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"unit",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"u",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"unitywe",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"open",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"unity",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"unty",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"openshift",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"uit",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"unityweb",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"web",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"nub",
+				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
+			],
+			[
+				"op",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"nu",
+				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
+			],
+			[
+				"n",
+				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
+			],
+			[
+				"oppe",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"ope",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"ex",
+				"E:\\myhost\\ExpressTest\\ExpressTest.sublime-project"
+			],
+			[
+				"c",
+				"D:\\cabinet\\cabinet.sublime-project"
+			],
+			[
+				"re",
+				"E:\\UnityProjects\\shunyi\\Rex_Scene\\Rex.sublime-project"
+			],
+			[
+				"o",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"\\",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"no",
+				"E:\\myhost\\nodeWorks\\nodeWorks.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Ani",
+				"Animation"
+			]
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

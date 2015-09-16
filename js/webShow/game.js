@@ -63,9 +63,7 @@
 		}
 		s.renderer = new THREE.WebGLRenderer(rendererConfig);
 		s.container.appendChild(s.renderer.domElement);
-		// s.renderer.domElement.style.width = '100%';
-		// s.renderer.domElement.style.height = '100%';
-		s.camera = new THREE.PerspectiveCamera(50, container.offsetWidth/container.offsetHeight, 0.1, 10000);
+		s.camera = new THREE.PerspectiveCamera(50, container.offsetWidth/container.offsetHeight, 1, 10000);
 		s.camera.position.set(0,50,400);
 		if (config.seaStandard) {
 			s.camera.scale.set(-1,1,1);
@@ -79,6 +77,7 @@
 		s.mouseMovement = new THREE.Vector2(0, 0);
 		s.width = 100;
 		s.height = 100;
+		s.stageScale = window.t ? window.t.stageScale : 1;
 
 		// 效果合成器
 		/*
@@ -164,6 +163,7 @@
 
 	Game.prototype.setOrbitController = function() {
 		this.cameraController = new THREE.OrbitControls(this.camera, this.container);
+		this.cameraController.zoomSpeed = 0.5;
 	};
 
 	var _lastMousePick, curMouse, lastMouse;
@@ -249,8 +249,13 @@
 	 */
 	Game.prototype.getPickObject = function(mousePosition, objects) {
 		var s = this;
-		var mx = ((mousePosition.x - s.container.offsetLeft) / s.container.offsetWidth) * 2 - 1;
-		var my = -((mousePosition.y - s.container.offsetTop) / s.container.offsetHeight) * 2 + 1;
+		var mx = ((mousePosition.x - s.container.offsetLeft) / (s.width * s.stageScale)) * 2 - 1;
+		var my = -((mousePosition.y - s.container.offsetTop) / (s.height * s.stageScale)) * 2 + 1;
+		// var mx = ((mousePosition.x - s.container.offsetLeft) / window.innerWidth) * 2 - 1;
+		// var my = -((mousePosition.y - s.container.offsetTop) / window.innerHeight) * 2 + 1;
+		
+		// console.log(mousePosition.x, s.width * s.stageScale, window.innerWidth);
+
 		var vector = new THREE.Vector3(mx, my, 1);
 		vector.unproject(s.camera);
 		var ray = new THREE.Raycaster(s.camera.position, vector.sub(s.camera.position).normalize());
@@ -397,7 +402,11 @@
 	Game.prototype.invoke = function(type, param) {
 		var t = this[type];
 		if (this.debug && type != Game.UPDATE && type != Game.POSTUPDATE && type != Game.MOUSEMOVE) {
-			console.log('-> ', type, ' event: ', param);
+			if (type == Game.PROGRESS) {
+				console.log('-> ', type, ' event:', param.progress, ' type:', param.type);
+			} else {
+				console.log('-> ', type, ' event:', param);
+			}
 		};
 		for (var i = 0; i < t.length; i++) {
 			t[i](param);
@@ -469,7 +478,7 @@
 
 		s.sh.load(url, groupName);
 		s.sh.onProgress = function(p) {
-			s.invoke(Game.PROGRESS, p.progress);		
+			s.invoke(Game.PROGRESS, p);		
 		};
 		s.sh.onComplete = function() {
 			s.invoke(Game.LOADCOMPLETE, groupName);

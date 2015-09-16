@@ -3,7 +3,7 @@
 		this.enabled = true;
 		this.fade = 0.9;
 		this.fading = false;
-		this.yuzhi = 0.01;
+		this.threshold = 0.01;
 		this.movement = new THREE.Vector2();
 	};
 
@@ -31,14 +31,14 @@
 		});
 
 		game.addEventListener(Game.UPDATE, function() {
-			if (s.enabled && s.fading && (Math.abs(s.movement.x) >s.yuzhi || Math.abs(s.movement.y) > s.yuzhi)) {
+			if (s.enabled && s.fading && (Math.abs(s.movement.x) >s.threshold || Math.abs(s.movement.y) > s.threshold)) {
 				s.movement.x *= s.fade;
 				s.movement.y *= s.fade;
 				s.setRotation();
-				if (Math.abs(s.movement.x) < s.yuzhi) {
+				if (Math.abs(s.movement.x) < s.threshold) {
 					s.movement.x = 0;
 				}
-				if (Math.abs(s.movement.y) < s.yuzhi) {
+				if (Math.abs(s.movement.y) < s.threshold) {
 					s.movement.y = 0;
 				}
 			}
