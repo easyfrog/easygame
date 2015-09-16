@@ -25,9 +25,11 @@
 			"node_modules/**/*.js",
 			"**/*.min.js",
 			"**/build/*.js",
-			"projects/**/*.js",
-			"misc/**.js",
-			"templates/**.js"
+			"misc/*.js",
+			"templates/*.js",
+			"js/shaders/**.js",
+			"js/postprocessing/**.js",
+			"**/*_grunt.js"
 		],
 		"libs":
 		[
