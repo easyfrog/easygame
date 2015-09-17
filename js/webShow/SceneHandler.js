@@ -39,6 +39,23 @@ SceneHandler.prototype._onComplete = function() {
     for (var i = 0; i < len; i++) {
         s.root.meshes[i].castShadow     = s.castShadow;
         s.root.meshes[i].receiveShadow  = s.receiveShadow;
+
+        ////////////////////////////////////////
+        // fix x,y rotation flip bug 2015/09/17 //
+        ////////////////////////////////////////
+        if (s.root.meshes[i].animation) {
+            var anims = s.root.meshes[i].animation.animationSet.animations;
+            for (var j = 0; j < anims.length; j++) {
+                var anim = anims[j];
+                if (anim.dataList.length > 1 && anim.dataList[1].type == 106) { // 74: pos 106: rot
+                    var _data = anim.dataList[1].data;
+                    for (var k = 0; k < _data.length; k+=4) {
+                        _data[k] = -_data[k];
+                        _data[k+1] = -_data[k+1];
+                    };
+                }
+            };
+        }
     }
     root = s.root;
     s.container.add(s.root.container);
@@ -77,7 +94,7 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
 
 SceneHandler.prototype.update = function () {
     this.deltaTime = this.clock.getDelta();
-    if (SEA3D.AnimationHandler) {
+    if (SEA3D.AnimationHandler != undefined) {
         SEA3D.AnimationHandler.update(this.deltaTime);
     }
     // var anims = SEA3D.AnimationHandler.animations;
