@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 							 "js/controls/OrbitControls.js",
 							 "js/webShow/*.js",
 						],
-						dest: '<%= grunt.projectFolder %>/libs/easygame.js'
+						dest: '<%= grunt.projectFolder %>/libs/eg.js'
 					}, {
 						src: [
 							"js/tools/edgeToolsBase.js",

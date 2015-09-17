@@ -16,7 +16,7 @@ AdobeEdge.bootstrapCallback(function(compId) {
 		load:[
 			'libs/three.min.js',
 			'libs/sea3d.min.js',
-			'libs/easygame.js'
+			'libs/eg.js'
 		],
 		complete:function() {
 			init();
