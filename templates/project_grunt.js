@@ -29,8 +29,10 @@ module.exports = function(grunt) {
 			grunt.projectFolder = path;
 			// 设置grunt项目名
 			grunt.project = project;
-			// 设置当前任务
+			// 设置当前任务(可以为单任务或数组)
 			grunt.currentTask = 'uglify:' + project;
+			// 是否需要3D库文件
+			grunt.needLibs = true;
 
 			// 先执行将libs文件Copy到工程目录libs/下
 			grunt.task.run('withlibs');

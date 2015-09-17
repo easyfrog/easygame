@@ -40,7 +40,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('withlibs', 'copy libs files first', function() {
-		var taskList = ['copy:libs'].concat(grunt.currentTask);
+		var taskList;
+		if (grunt.needLibs) {
+			taskList = ['copy:libs'].concat(grunt.currentTask);
+		} else {
+			taskList = grunt.currentTask;
+		}
+		
 		grunt.task.run(taskList);
 	});
 
@@ -52,20 +58,27 @@ module.exports = function(grunt) {
 		var project = grunt.project = name;
 		var projectFolder = grunt.projectFolder = path;
 
-		grunt.file.copy('templates/project.js', 'projects/' + project + '/' + project + '.js', {
-			process: function(contents) {
-				return grunt.template.process(contents);
-			}
-		});
+		var jsfile = 'projects/' + project + '/' + project + '.js';
+		var gruntfile = 'projects/' + project + '/' + project + '_grunt.js';
 
-		grunt.file.copy('templates/project_grunt.js', 'projects/' + project + '/' + project + '_grunt.js', {
-			process: function(contents) {
-				return grunt.template.process(contents);
-			}
-		});
+		if (!grunt.file.exists(jsfile)) {
+			grunt.file.copy('templates/project.js', jsfile, {
+				process: function(contents) {
+					return grunt.template.process(contents);
+				}
+			});
+		}
+		
+		if (!grunt.file.exists(gruntfile)) {
+			grunt.file.copy('templates/project_grunt.js', gruntfile, {
+				process: function(contents) {
+					return grunt.template.process(contents);
+				}
+			});
+		}
 
 		grunt.file.mkdir(path + '/models');
-
+		grunt.file.copy('Gruntfile.js', 'Gruntfile.js'); // update
 		grunt.log.writeln(project + ' project create complete!');
 	});
 

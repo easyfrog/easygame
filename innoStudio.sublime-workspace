@@ -523,7 +523,23 @@
 			"file": "projects/changhong/changhong.js",
 			"settings":
 			{
-				"buffer_size": 5001,
+				"buffer_size": 5000,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 2102,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "projects/chuangwei/chuangwei_grunt.js",
+			"settings":
+			{
+				"buffer_size": 833,
 				"line_ending": "Windows"
 			}
 		}
@@ -555,21 +571,17 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 375.0,
-		"last_filter": "",
+		"height": 360.0,
+		"last_filter": "grunt",
 		"selected_items":
 		[
 			[
 				"grunt",
-				"GruntArgs"
+				"Grunt"
 			],
 			[
 				"run",
 				"RunCommands"
-			],
-			[
-				"runco",
-				"Run Commands"
 			],
 			[
 				"push",
@@ -578,6 +590,18 @@
 			[
 				"statu",
 				"Git: Status"
+			],
+			[
+				"eidt",
+				"Project: Edit"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"runco",
+				"Run Commands"
 			],
 			[
 				"r",
@@ -594,10 +618,6 @@
 			[
 				"reload",
 				"TernJS: Reload"
-			],
-			[
-				"eidt",
-				"Project: Edit"
 			],
 			[
 				"ru",
@@ -626,10 +646,6 @@
 			[
 				"grut",
 				"Grunt"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"in",
@@ -1079,6 +1095,16 @@
 	],
 	"file_history":
 	[
+		"/E/myhost/inno studio/projects/changhong/changhong_grunt.js",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
+		"/E/EdgeWorks/changhong/publish/web/main.js",
+		"/E/myhost/inno studio/.gitignore",
+		"/E/myhost/inno studio/package.json",
+		"/E/myhost/inno studio/README.md",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/E/myhost/inno studio/templates/project.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/main.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/RunCommands/runcommands.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/Default.sublime-commands",
@@ -1086,16 +1112,11 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/MyPlugins/RunCommands/runcommands.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/README.md",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/package-metadata.json",
-		"/E/myhost/inno studio/templates/project.js",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
 		"/C/Users/easyfrog/Desktop/edge.5.0.1.js",
-		"/E/myhost/inno studio/templates/project_grunt.js",
-		"/E/myhost/inno studio/.gitignore",
 		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/C/Users/easyfrog/Desktop/command_base.py",
 		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/projects/hello/hello_grunt.js",
-		"/E/myhost/inno studio/projects/changhong/changhong_grunt.js",
 		"/E/myhost/inno studio/projects/lenovop1/lenovop1_grunt.js",
 		"/E/myhost/inno studio/projects/hello/hello.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Minify/Minify.py",
@@ -1110,14 +1131,11 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/ShellCommand/Default.sublime-keymap",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/ShellCommand/ShellCommand.sublime-settings",
 		"/E/myhost/inno studio/projects/kkk/kkk.js",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/projects/test/test_grunt.js",
 		"/E/myhost/inno studio/projects/test.js",
 		"/E/myhost/inno studio/projects/'adsf'.js",
 		"/C/Users/easyfrog/Desktop/AdvancedNewFile.py",
 		"/E/myhost/inno studio/js/webShow/game.js",
-		"/E/myhost/inno studio/package.json",
 		"/E/myhost/inno studio/index.html",
 		"/E/myhost/inno studio/include.js",
 		"/E/myhost/inno studio/projects/lenovop1",
@@ -1134,12 +1152,10 @@
 		"/E/myhost/inno studio/grunts/demo_grunt.js",
 		"/E/myhost/inno studio/scripts/demo.js",
 		"/E/myhost/inno studio/cordovaScreenSaverUsed.md",
-		"/E/myhost/inno studio/README.md",
 		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/E/EdgeWorks/Demo/diyike/publish/web/main.js",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs",
 		"/E/myhost/inno studio/build/easygame_all.min.js",
-		"/E/EdgeWorks/changhong/publish/web/main.js",
 		"/E/EdgeWorks/changhong/publish/web/libs/Detector.js",
 		"/E/EdgeWorks/changhong/publish/web/libs/easygame.js",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
@@ -1224,6 +1240,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"targetPos",
 			"Kill",
 			"self.window",
 			"on_done",
@@ -1350,8 +1367,7 @@
 			"setSize",
 			"spot",
 			"box_light",
-			"setTimeout(function() {\n			box_light.animation.pause();\n		}, 300);\n",
-			"debug"
+			"setTimeout(function() {\n			box_light.animation.pause();\n		}, 300);\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1371,7 +1387,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1380,15 +1396,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5001,
+						"buffer_size": 5000,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
+								4703,
+								4703
 							]
 						],
 						"settings":
@@ -1400,10 +1416,68 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 3120.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "projects/chuangwei/chuangwei_grunt.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1458,7 +1532,7 @@
 	},
 	"output.git-push":
 	{
-		"height": 280.0
+		"height": 153.0
 	},
 	"output.log":
 	{
