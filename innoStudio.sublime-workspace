@@ -523,16 +523,8 @@
 			"file": "projects/changhong/changhong.js",
 			"settings":
 			{
-				"buffer_size": 5038,
+				"buffer_size": 5001,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "innoStudio.sublime-project",
-			"settings":
-			{
-				"buffer_size": 476,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -568,11 +560,39 @@
 		"selected_items":
 		[
 			[
+				"grunt",
+				"GruntArgs"
+			],
+			[
+				"run",
+				"RunCommands"
+			],
+			[
+				"runco",
+				"Run Commands"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"r",
+				"TernJS: Reload"
+			],
+			[
+				"re",
+				"TernJS: Reload"
+			],
+			[
 				"edit",
 				"Project: Edit"
 			],
 			[
-				"re",
+				"reload",
 				"TernJS: Reload"
 			],
 			[
@@ -582,22 +602,6 @@
 			[
 				"ru",
 				"Run Commands"
-			],
-			[
-				"statu",
-				"Git: Status"
-			],
-			[
-				"run",
-				"Run Commands"
-			],
-			[
-				"grunt",
-				"GruntArgs"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
 			],
 			[
 				"stats",
@@ -638,10 +642,6 @@
 			[
 				"lis",
 				"Package Control: List Packages"
-			],
-			[
-				"reload",
-				"TernJS: Reload"
 			],
 			[
 				"gist",
@@ -1003,6 +1003,21 @@
 		"height": 291.0,
 		"history":
 		[
+			"dir",
+			"view.run_command(\"dir\")",
+			"view.run_command(\"run_commands\")",
+			"clear",
+			" cls",
+			"view.run_command('run_commands')",
+			"view.run_command('run_commands');",
+			"view.run_command('dir');",
+			"dir();",
+			"dir",
+			"view.run_command('run_command');",
+			"view.run",
+			"view",
+			"view.run('run_commands');",
+			"asdf",
 			"window.files",
 			"run",
 			"run('dir');",
@@ -1060,21 +1075,25 @@
 	"expanded_folders":
 	[
 		"/E/myhost/inno studio",
-		"/E/myhost/inno studio/js",
-		"/E/myhost/inno studio/js/webShow"
+		"/E/myhost/inno studio/projects"
 	],
 	"file_history":
 	[
-		"/C/Users/easyfrog/Desktop/edge.5.0.1.js",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/main.py",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/RunCommands/runcommands.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/Default.sublime-commands",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/MyPlugins/RunCommands/Default.sublime-commands",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/MyPlugins/RunCommands/runcommands.py",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/README.md",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/package-metadata.json",
+		"/E/myhost/inno studio/templates/project.js",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/C/Users/easyfrog/Desktop/edge.5.0.1.js",
+		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/E/myhost/inno studio/.gitignore",
 		"/E/myhost/inno studio/js/webShow/utils.js",
-		"/E/myhost/inno studio/templates/project.js",
 		"/C/Users/easyfrog/Desktop/command_base.py",
 		"/E/myhost/inno studio/Gruntfile.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/main.py",
 		"/E/myhost/inno studio/projects/hello/hello_grunt.js",
 		"/E/myhost/inno studio/projects/changhong/changhong_grunt.js",
 		"/E/myhost/inno studio/projects/lenovop1/lenovop1_grunt.js",
@@ -1083,7 +1102,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/Main.sublime-menu",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/SublimeGrunt.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/expose.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/package-metadata.json",
 		"/C/Users/easyfrog/Desktop/windows_completion.py",
 		"/C/Users/easyfrog/Desktop/reloader.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/ShellCommand.sublime-keymap",
@@ -1188,11 +1206,7 @@
 		"/E/myhost/inno studio/js/controls/PointerLockControls.js",
 		"/E/myhost/inno studio/scripts/pickable.js",
 		"/E/myhost/inno studio/js/postprocessing/EffectComposer.js",
-		"/E/myhost/inno studio/js/shaders/SSAOShader.js",
-		"/E/myhost/inno studio/js/postprocessing/RenderPass.js",
-		"/C/Users/easyfrog/AppData/Local/Autodesk/3dsMax/2015 - 64bit/ENU/scripts/SEA3D/SEA3D.config",
-		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/README.md",
-		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/SEA3D/SEA3D.ms"
+		"/E/myhost/inno studio/js/shaders/SSAOShader.js"
 	],
 	"find":
 	{
@@ -1366,15 +1380,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5038,
+						"buffer_size": 5001,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								671,
-								671
+								55,
+								55
 							]
 						],
 						"settings":
@@ -1386,40 +1400,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "innoStudio.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 476,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								349,
-								349
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]

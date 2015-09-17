@@ -7,6 +7,27 @@ A threejs and sea3d 3D game engine.
 	- [Game类事件](#Game类事件)
 	- [Game类方法](#Game类方法)
 
+##创建新工程
+使用 [grunt](http://www.gruntjs.net/) 来创建新的 **easygame** 工程目录并生成标准js文件及此工程的grunt构建文件.
+
+** 目标路径的盘符后要加一个'\'进行转义. 使用'/'进行文件夹的分隔, 并且结尾不要加'/' **
+```
+grunt create:projectName:E\:/projects/projectName
+```
+
+并会在 `projects` 文件夹中生成工程的目录:  
+
+- projects
+	- projectName
+		- projectName.js
+		- projectName_grunt.js
+
+构建(发布)工程  
+直接使用 `grunt 工程名` 即可完成工程的打包及发布
+```
+grunt projectName
+```
+
 ##Game class
 The Game main class.
 
