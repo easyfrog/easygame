@@ -97,3 +97,11 @@ SEA3D.AnimationHandler.prototype.updateAnimation = function(stateName) {
 	}
 }
 
+SEA3D.AnimationHandler.update = function( delta ) {	
+	for(var i = 0, len = SEA3D.AnimationHandler.animations.length; i < len; i++) {
+		if (SEA3D.AnimationHandler.animations[i]) {
+			SEA3D.AnimationHandler.animations[i].update( delta * 1000 );
+		}
+	}
+}
+
