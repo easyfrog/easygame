@@ -13,9 +13,8 @@ module.exports = function(grunt) {
 		copy: {
 			libs:{
 				files:[
-					{src:"js/threejs/Detector.js", dest: "<%= grunt.projectFolder %>libs/Detector.js"},
-					{src:"js/threejs/three.min.js", dest: "<%= grunt.projectFolder %>libs/three.min.js"},
-					{src:"js/loaders/sea3d.min.js", dest: "<%= grunt.projectFolder %>libs/sea3d.min.js"},
+					{src:"js/threejs/three.min.js", dest: "<%= grunt.projectFolder %>/libs/th.js"},
+					{src:"js/loaders/sea3d.min.js", dest: "<%= grunt.projectFolder %>/libs/se.js"},
 				]
 			}
 		},
@@ -41,7 +40,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('withlibs', 'copy libs files first', function() {
 		var taskList;
-		if (grunt.needLibs) {
+		if (grunt.needLibs == true || grunt.needLibs == undefined) {
 			taskList = ['copy:libs'].concat(grunt.currentTask);
 		} else {
 			taskList = grunt.currentTask;

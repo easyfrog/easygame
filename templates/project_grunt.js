@@ -14,6 +14,7 @@ module.exports = function(grunt) {
 					}, {
 						src: [
 							"js/tools/edgeToolsBase.js",
+							"projects/<%= grunt.project %>/com_*.js",
 							"projects/<%= grunt.project %>/<%= grunt.project %>.js",
 						],
 						dest: '<%= grunt.projectFolder %>/main.js'
@@ -39,7 +40,7 @@ module.exports = function(grunt) {
 		});
 	})(
 		'<%= grunt.project %>',				// project name
-		'<%= grunt.projectFolder %>/'		// project path
+		'<%= grunt.projectFolder %>'		// project path
 	);
 
 };

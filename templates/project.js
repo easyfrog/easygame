@@ -14,8 +14,8 @@ AdobeEdge.bootstrapCallback(function(compId) {
     // yepnope async load libs
     yepnope({
 		load:[
-			'libs/three.min.js',
-			'libs/sea3d.min.js',
+			'libs/th.js',
+			'libs/se.js',
 			'libs/eg.js'
 		],
 		complete:function() {

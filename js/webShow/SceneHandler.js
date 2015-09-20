@@ -15,6 +15,8 @@ var SceneHandler = function( fileName, scene, standard ) {
     s.standard = standard;
 
     s.root = new THREE.SEA3D(standard);
+    // s.root.addClass(SEA3D.VertexAnimation);
+    // s.root.
     s.root.invertZ = !standard;
     s.root.invertCamera = standard;
     s.root.matrixAutoUpdate = true;
@@ -40,9 +42,9 @@ SceneHandler.prototype._onComplete = function() {
         s.root.meshes[i].castShadow     = s.castShadow;
         s.root.meshes[i].receiveShadow  = s.receiveShadow;
 
-        ////////////////////////////////////////
+        //////////////////////////////////////////
         // fix x,y rotation flip bug 2015/09/17 //
-        ////////////////////////////////////////
+        //////////////////////////////////////////
         if (s.root.meshes[i].animation) {
             var anims = s.root.meshes[i].animation.animationSet.animations;
             for (var j = 0; j < anims.length; j++) {
@@ -62,7 +64,7 @@ SceneHandler.prototype._onComplete = function() {
     
     // stop all animations
     SEA3D.AnimationHandler.stop();
-    
+
     if (s.onComplete) s.onComplete();
 };
 

@@ -2911,6 +2911,7 @@ SEA3D.MP3 = function(name, data, sea) {
 
 SEA3D.MP3.prototype.type = "mp3";
 
+
 //
 //	FILE FORMAT
 //
@@ -2954,6 +2955,9 @@ SEA3D.File = function(data) {
 	this.addClass(SEA3D.Container3D);
 	this.addClass(SEA3D.Properties);
 	this.addClass(SEA3D.FileInfo);
+
+	// ztc
+	// this.addClass( SEA3D.VertexAnimation );
 	
 	// UNIVERSAL
 	this.addClass(SEA3D.JPEG);
