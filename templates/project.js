@@ -43,7 +43,7 @@ function init() {
 
 	// loading
 	game.addEventListener(Game.PROGRESS, function(p) {
-		console.log((p.progress * 100).toFixed(1) + '%')
+		console.log((p.progress * 100).toFixed(1) + '%');
 	});
 
 	// load compete 

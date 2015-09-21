@@ -14,7 +14,8 @@ module.exports = function(grunt) {
 					}, {
 						src: [
 							"js/tools/edgeToolsBase.js",
-							"projects/<%= grunt.project %>/com_*.js",
+							// "js/coms/com_*.js",						// 打包easygame默认组件
+							"projects/<%= grunt.project %>/com_*.js",	// 打包项目组件
 							"projects/<%= grunt.project %>/<%= grunt.project %>.js",
 						],
 						dest: '<%= grunt.projectFolder %>/main.js'
