@@ -45,6 +45,7 @@ SceneHandler.prototype._onComplete = function() {
         //////////////////////////////////////////
         // fix x,y rotation flip bug 2015/09/17 //
         //////////////////////////////////////////
+        //*
         if (s.root.meshes[i].animation) {
             var anims = s.root.meshes[i].animation.animationSet.animations;
             for (var j = 0; j < anims.length; j++) {
@@ -58,6 +59,7 @@ SceneHandler.prototype._onComplete = function() {
                 }
             };
         }
+        //*/
     }
     root = s.root;
     s.container.add(s.root.container);

@@ -1,8 +1,14 @@
+/*THREE.SEA3D.Object3DAnimator.prototype.setRelative = function( val ) {
+	if (this.object3d.setAnimateMatrix) {
+		this.object3d.setAnimateMatrix( this.relative = val );
+	}
+}*/
 
 /**
  * MorphAnimation update function
  * 解决了开始播放时跳的问题
  */
+//*
 THREE.MorphAnimation.prototype.update = ( function () {
 	var lastFrame = 0;
 	var currentFrame = 0;
@@ -32,10 +38,12 @@ THREE.MorphAnimation.prototype.update = ( function () {
 		}
 	}
 } )();
+//*/
 
 /**
  * SEAD.AnimationHandler
  */
+//*
 SEA3D.AnimationHandler.prototype.updateAnimation = function(stateName) {
 	var dataCount = this.animationSet.dataCount;		
 	var nodes = this.animationSet.animations;
@@ -104,6 +112,7 @@ SEA3D.AnimationHandler.update = function( delta ) {
 		}
 	}
 }
+//*/
 
 /*
 //

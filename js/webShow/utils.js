@@ -150,7 +150,9 @@ utils.setAnimationTime = function(animation, stateName, percent) {
 			} else if (percent > 1) {
 				percent = 1;
 			}
+
 			var duration = animation.states[stateName].node.duration;
+			// animation.currentState = animation.states[stateName];
 			animation.stop();
 			animation.states[stateName].node.setTime(percent * duration);
 			animation.updateAnimation(stateName);
