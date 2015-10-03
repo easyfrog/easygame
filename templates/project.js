@@ -1,7 +1,8 @@
 
 var glo = window.glo || {};
 var isAnimating = false;
-var targetPos;
+var targetPos,
+	status = 0;
 
 var stage, game;
 // Edge Loaded 
@@ -10,6 +11,13 @@ AdobeEdge.bootstrapCallback(function(compId) {
 
     // scale to fix screen
     t.scaleToFixScreen(stage.getSymbolElement());
+
+    /**
+     * get platform and version
+     * 		glo.pf.platform = 'Android' / 'iPhone' ...
+     *   	glo.pf.version = 444 / 511 ...
+     */
+    glo.pf = t.getPlatform();
 
     // yepnope async load libs
     yepnope({

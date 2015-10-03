@@ -5,7 +5,23 @@
 		[
 			[
 				"anim",
-				"animationName	(str)"
+				"animation	(?)"
+			],
+			[
+				"setANi",
+				"setAnimateMatrix"
+			],
+			[
+				"get",
+				"getElementById(id)"
+			],
+			[
+				"mus",
+				"music	(?)"
+			],
+			[
+				"vid",
+				"videoo	(?)"
 			],
 			[
 				"pla",
@@ -90,10 +106,6 @@
 			[
 				"MOU",
 				"MOUSEUP	(str)"
-			],
-			[
-				"get",
-				"get_env_path"
 			],
 			[
 				"cam",
@@ -502,18 +514,6 @@
 			[
 				"mor",
 				"morphTargets	[]"
-			],
-			[
-				"0x",
-				"0x00ffaa"
-			],
-			[
-				"La",
-				"MeshLambertMaterial(parameters)"
-			],
-			[
-				"Box",
-				"BoxGeometry(width, height, depth, widthSegments, heightSegments, depthSegments)"
 			]
 		]
 	},
@@ -523,15 +523,23 @@
 			"file": "projects/changhong/changhong.js",
 			"settings":
 			{
-				"buffer_size": 9438,
+				"buffer_size": 10774,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "projects/lenovop1/lenovop1.js",
+			"file": "js/webShow/SceneHandler.js",
 			"settings":
 			{
-				"buffer_size": 7804,
+				"buffer_size": 4264,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/webShow/utils.js",
+			"settings":
+			{
+				"buffer_size": 4777,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,31 +547,23 @@
 			"file": "/E/EdgeWorks/changhong/publish/web/index.html",
 			"settings":
 			{
-				"buffer_size": 1328,
+				"buffer_size": 1822,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/webShow/game.js",
+			"file": "/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
 			"settings":
 			{
-				"buffer_size": 14494,
-				"line_ending": "Windows"
+				"buffer_size": 5812,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "projects/changhong/com_AutoRot.js",
+			"file": "/E/projects/flag/index.html",
 			"settings":
 			{
-				"buffer_size": 202,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/E/EdgeWorks/CHIQ2/publish/web/index.html",
-			"settings":
-			{
-				"buffer_size": 2168,
+				"buffer_size": 321,
 				"line_ending": "Windows"
 			}
 		}
@@ -595,10 +595,30 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 360.0,
-		"last_filter": "status",
+		"height": 375.0,
+		"last_filter": "list",
 		"selected_items":
 		[
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"re",
+				"TernJS: Reload"
+			],
 			[
 				"status",
 				"Git: Status"
@@ -612,28 +632,12 @@
 				"TernJS: Reload"
 			],
 			[
-				"list",
-				"Package Control: List Packages"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
-				"statu",
-				"Git: Status"
-			],
-			[
 				"edit",
 				"Project: Edit"
 			],
 			[
 				"grunt",
 				"Grunt"
-			],
-			[
-				"re",
-				"TernJS: Reload"
 			],
 			[
 				"ru",
@@ -650,10 +654,6 @@
 			[
 				"run",
 				"RunCommands"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"runco",
@@ -1051,6 +1051,7 @@
 		"height": 291.0,
 		"history":
 		[
+			"window.run_command('exec','dir');",
 			"div",
 			"grunt",
 			"dir",
@@ -1125,18 +1126,42 @@
 	"expanded_folders":
 	[
 		"/E/myhost/inno studio",
-		"/E/myhost/inno studio/projects",
-		"/E/myhost/inno studio/projects/changhong"
+		"/E/myhost/inno studio/build",
+		"/E/myhost/inno studio/js"
 	],
 	"file_history":
 	[
+		"/E/myhost/inno studio/build/easygame.min.js",
+		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/SEA3D/SEA3D.ms",
+		"/C/Users/easyfrog/Desktop/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/projects/test/test.js",
+		"/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Source/WebGL/Three.JS/SEA3DLoader.js",
+		"/C/Users/easyfrog/Desktop/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
+		"/E/EdgeWorks/CHIQ2/publish/web/js/edge.6.0.0.min.js",
+		"/E/EdgeWorks/changhong/publish/web/main.js",
+		"/E/EdgeWorks/changhong/publish/web/index.html",
+		"/E/EdgeWorks/CHIQ2/publish/web/html/index.html",
+		"/E/EdgeWorks/CHIQ2/publish/web/js/edgeToolsBase.js",
+		"/E/myhost/Intel_1111/index.html",
+		"/E/myhost/inno studio/projects/changhong/com_AutoRot.js",
+		"/E/EdgeWorks/CHIQ2/publish/web/CHIQ_edge.js",
+		"/D/libs/edge.5.0.1.js",
+		"/E/EdgeWorks/CHIQ2/publish/web/index.html",
+		"/E/EdgeWorks/CHIQ2/CHIQ_edge.js",
+		"/E/EdgeWorks/CHIQ2/publish/web/js/CHIQ_edge.js",
+		"/E/myhost/inno studio/projects/lenovop1/lenovop1.js",
 		"/C/Users/easyfrog/Desktop/index.html",
 		"/E/EdgeWorks/CHIQ2/publish/web/CHIQ4_edge.js",
-		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/EdgeWorks/CHIQ/publish/web/index.html",
-		"/E/EdgeWorks/CHIQ2/publish/web/index.html",
 		"/E/EdgeWorks/CHIQ/CHIQ.html",
-		"/E/myhost/inno studio/projects/changhong/com_AutoRot.js",
 		"/C/Users/easyfrog/Desktop/SuWeb/web5.7/web/u3d.html",
 		"/C/Users/easyfrog/Desktop/SuWeb/web5.7/web/pic26.html",
 		"/C/Users/easyfrog/Desktop/SuWeb/web5.7/web/outdoor.html",
@@ -1148,28 +1173,20 @@
 		"/C/Users/easyfrog/Desktop/TileOut9.22/history/history.css",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/EdgeWorks/CHIQ/publish/web/CHIQa_edge.js",
-		"/E/EdgeWorks/changhong/publish/web/index.html",
 		"/E/myhost/inno studio/projects/changhong/com_AutoScale.js",
-		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/PhoneGap_works/LenovoP1/www/index.html",
 		"/E/myhost/inno studio/projects/changhong/changhong_grunt.js",
 		"/E/myhost/inno studio/templates/project.js",
 		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
-		"/E/myhost/inno studio/js/webShow/game.js",
-		"/E/myhost/inno studio/js/webShow/threeExtend.js",
 		"/E/myhost/inno studio/README.md",
 		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Source/WebGL/SDK/SEA3D.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Source/WebGL/Three.JS/SEA3DLoader.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/Basics/bigmodel.html",
-		"/E/myhost/inno studio/projects/lenovop1/lenovop1.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Source/WebGL/Three.JS/SEA3DLegacyLoader.js",
 		"/E/myhost/inno studio/js/controls/OrbitControls.js",
-		"/E/EdgeWorks/changhong/publish/web/main.js",
 		"/E/myhost/inno studio/.gitignore",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/RunCommands/Default.sublime-keymap",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/RunCommands/runcommands.py",
@@ -1211,7 +1228,6 @@
 		"/E/myhost/inno studio/grunts/main_grunt.js",
 		"/E/myhost/inno studio/grunts/changhong_grunt.js",
 		"/E/build.min.js",
-		"/E/myhost/inno studio/build/easygame.min.js",
 		"/E/EdgeWorks/Lesson1/publish/web/index.html",
 		"/E/myhost/nubia Z9/main.js",
 		"/E/EdgeWorks/Demo/diyike/publish/web/index.html",
@@ -1229,7 +1245,6 @@
 		"/E/myhost/inno studio/js/postprocessing/BokehPass.js",
 		"/E/myhost/inno studio/scripts/lenovop1.js",
 		"/E/myhost/inno studio/build/build.min.js",
-		"/E/myhost/inno studio/js/threejs/three.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/easygamelibs.sublime-snippet",
 		"/E/EdgeWorks/changhong/publish/web/changhong.html",
 		"/E/myhost/inno studio/grunts/lenovop1_grunt.js",
@@ -1243,21 +1258,7 @@
 		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/js/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
 		"/E/PhoneGap_works/Gionee/www/index.html",
-		"/D/libs/Sea3D/sea3d-gh-pages/Examples/table/js/sea3d.min.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Examples/table/js/three.js",
-		"/E/PhoneGap_works/LenovoP1/platforms/android/src/com/inno/lenovop1/Receiver.java",
-		"/E/PhoneGap_works/LenovoP1/platforms/android/src/com/inno/lenovop1/Bridge.java",
-		"/E/PhoneGap_works/LenovoP1/platforms/android/src/com/inno/lenovop1/MainActivity.java",
-		"/E/PhoneGap_works/LenovoP1/platforms/android/src/com/inno/lenovop1/MyService.java",
-		"/E/PhoneGap_works/LenovoP1/plugins/android.json",
-		"/E/myhost/inno studio/cordovaScreenSaverUsed.html",
-		"/E/PhoneGap_works/LenovoP1/platforms/android/AndroidManifest.xml",
-		"/E/PhoneGap_works/Gionee/plugins/android.json",
-		"/E/PhoneGap_works/LenovoP1/www/Lenovo.html",
-		"/E/PhoneGap_works/LenovoP1/platforms/android/res/xml/config.xml",
-		"/E/PhoneGap_works/Gionee/platforms/android/res/xml/config.xml",
-		"/E/PhoneGap_works/LenovoP1/plugins/fetch.json",
-		"/E/PhoneGap_works/LenovoP1/platforms/android/assets/www/cordova.js"
+		"/D/libs/Sea3D/sea3d-gh-pages/Examples/table/js/sea3d.min.js"
 	],
 	"find":
 	{
@@ -1272,9 +1273,24 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"setRelative",
+			"THREE.SEA3D",
+			"show",
+			"glo.p1",
+			"glo.p1 ",
+			"蒙面歌王之夜，谁是王中之王？N种选择，不如选N",
+			"_getFullUrl",
+			"getFullURL",
+			"geturl",
+			"Dir",
+			"imagesDir",
+			"_getFullURL",
+			"getFullUrl",
+			"yepnope",
+			"AdobeEdge.loadComposition",
 			"key",
 			"currentConentSym",
 			"glo.load",
@@ -1387,22 +1403,7 @@
 			"f0f0f0",
 			"componentsArr",
 			"components",
-			"invokeComponentFunction",
-			"enabled",
-			"vector",
-			"com_kao",
-			"componentNames",
-			"invokeComponentFunction",
-			"this",
-			"componentName",
-			"comTesta",
-			"comTest2",
-			"object",
-			"update",
-			"Update",
-			"UPDATE",
-			"update",
-			"UPDATE"
+			"invokeComponentFunction"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1416,13 +1417,13 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": false
 	},
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1431,7 +1432,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9438,
+						"buffer_size": 10774,
 						"regions":
 						{
 							"bookmarks":
@@ -1441,56 +1442,56 @@
 								"regions":
 								[
 									[
-										1296,
-										1296
+										2288,
+										2288
 									],
 									[
-										1363,
-										1363
+										2355,
+										2355
 									],
 									[
-										4303,
-										4303
+										5640,
+										5640
 									],
 									[
-										6423,
-										6423
+										7760,
+										7760
 									],
 									[
-										6722,
-										6691
+										8059,
+										8028
 									],
 									[
-										6818,
-										6818
+										8155,
+										8155
 									],
 									[
-										6971,
-										6971
+										8308,
+										8308
 									],
 									[
-										7245,
-										7245
+										8582,
+										8582
 									],
 									[
-										7548,
-										7548
+										8885,
+										8885
 									],
 									[
-										8290,
-										8290
+										9647,
+										9647
 									],
 									[
-										8329,
-										8329
+										9686,
+										9686
 									],
 									[
-										8352,
-										8352
+										9709,
+										9709
 									],
 									[
-										8420,
-										8420
+										9777,
+										9777
 									]
 								],
 								"scope": "bookmarks"
@@ -1499,8 +1500,8 @@
 						"selection":
 						[
 							[
-								223,
-								223
+								1263,
+								1263
 							]
 						],
 						"settings":
@@ -1512,147 +1513,88 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 480.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "projects/lenovop1/lenovop1.js",
+					"file": "js/webShow/SceneHandler.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7804,
+						"buffer_size": 4264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7203,
-								7203
+								2018,
+								2018
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5340.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/E/EdgeWorks/changhong/publish/web/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1328,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								713,
-								713
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/webShow/game.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14494,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12714,
-								12714
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5198.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "projects/changhong/com_AutoRot.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 202,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								53,
-								53
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 720.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/E/EdgeWorks/CHIQ2/publish/web/index.html",
+					"buffer": 2,
+					"file": "js/webShow/utils.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2168,
+						"buffer_size": 4777,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1367,
-								1367
+								1019,
+								1019
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/EdgeWorks/changhong/publish/web/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1354,
+								1354
 							]
 						],
 						"settings":
@@ -1663,10 +1605,70 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 660.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1627,
+								1627
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1620.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/E/projects/flag/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								305,
+								305
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
