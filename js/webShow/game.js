@@ -544,6 +544,9 @@
 		game.sh.play(animationName, timeScale, repeat);		
 	};
 
+	/**
+	 * 指定物体(组), 来播放指定的动画
+	 */
 	Game.prototype.playAnimation = function(objects, animationName, timeScale, repeat, whenFirstComplete) {
 		animationName = animationName || 'general';
 		timeScale = timeScale || 1;

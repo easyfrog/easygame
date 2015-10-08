@@ -4,6 +4,9 @@ var isAnimating = false;
 var targetPos,
 	status = 0;
 
+// 是否能看3D内容
+glo.nengkan = true;
+
 var stage, game;
 // Edge Loaded 
 AdobeEdge.bootstrapCallback(function(compId) {
@@ -18,6 +21,9 @@ AdobeEdge.bootstrapCallback(function(compId) {
      *   	glo.pf.version = 444 / 511 ...
      */
     glo.pf = t.getPlatform();
+    if (glo.pf.isWX && glo.pfglo.pf.platform == 'Android' && glo.pf.version < 510) {
+    	glo.nengkan = false;
+    }
 
     // yepnope async load libs
     yepnope({
