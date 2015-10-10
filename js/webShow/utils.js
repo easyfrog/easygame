@@ -180,7 +180,7 @@ utils.setAllAnimationTime = function(stateName, percent) {
  * 让物体跟随一个物体的动画去改变位置与旋转
  */
 utils.followAnimation = function(obj, target, stateName, inverse, complete) {
-	function _tmp() {
+	var _tmp = function() {
 		utils.sameTransform(obj, target, inverse);
 	}
 
@@ -195,3 +195,21 @@ utils.followAnimation = function(obj, target, stateName, inverse, complete) {
 		}
 	}
 }
+
+/**
+ * 得到相机的方向向量
+ */
+utils.cameraDirection = function(camera) {
+	var vector = new THREE.Vector3(0, 0, -1);
+   	vector.applyEuler(camera.rotation, camera.eulerOrder);
+   	return vector;
+};
+
+/**
+ * 得到两个向量在平面上的点积(y值相等)
+ */
+utils.getVectorPlanDot = function(vec1, vec2) {
+	var _vec = vec2.copy();
+	_vec.y = vec1.y;
+	return vec1.dot(_vec);
+};

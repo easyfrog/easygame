@@ -267,6 +267,7 @@
 			for (var i = 0; i < intersections.length; i++) {
 				var obj = intersections[i].object;
 				if (!('mouseEnabled' in obj) || obj.mouseEnabled) {
+					game.lastPickedObj = obj;
 					return obj;
 				}
 			};

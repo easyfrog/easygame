@@ -55,6 +55,19 @@ function init() {
 	// load scene
 	game.load('models/<%= grunt.project %>.sea', 'inno');
 
+	// loading progress
+	game.addEventListener(Game.PROGRESS, function(p) {
+		console.log((p.progress * 100).toFixed(1) + '%');
+		/*
+		glo.progressText.html((p.progress * 100).toFixed(1) + '%');
+		if (p.type == 'sea3d_download') {
+			glo.progressStatus.html('下载中...');
+		} else {
+			glo.progressStatus.html('场景构建中...');
+		}
+		*/
+	});
+
 	// loading
 	game.addEventListener(Game.PROGRESS, function(p) {
 		console.log((p.progress * 100).toFixed(1) + '%');
