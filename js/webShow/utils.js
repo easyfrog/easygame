@@ -213,3 +213,16 @@ utils.getVectorPlanDot = function(vec1, vec2) {
 	_vec.y = vec1.y;
 	return vec1.dot(_vec);
 };
+
+/**
+ * 将反射/折射互换
+ */
+utils.switchFanSheZheShe = function(material, toZheShe) {
+	if (toZheShe == undefined) {
+		toZheShe = true;
+	}
+	if (material.envMap) {
+		material.envMap.mapping = toZheShe ? THREE.CubeRefractionMapping : THREE.CubeReflectionMapping;
+		material.needsUpdate = true;
+	}
+};

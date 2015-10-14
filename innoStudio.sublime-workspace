@@ -4,16 +4,48 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"if	If"
+			],
+			[
+				"line",
+				"linewidth	(num)"
+			],
+			[
+				"cam",
+				"cameraController	{}"
+			],
+			[
+				"ad",
+				"addEventListener(type, listener)"
+			],
+			[
+				"lad",
+				"load(url, groupName)"
+			],
+			[
 				"play",
-				"playGeneralAnimation (fn)"
+				"playSequence(n)"
+			],
+			[
+				"ti",
+				"titleParent	(?)"
+			],
+			[
+				"set",
+				"setOrbitController (fn)"
+			],
+			[
+				"Util",
+				"GeometryUtils (obj)"
+			],
+			[
+				"con",
+				"console (obj)"
 			],
 			[
 				"getSy",
 				"getSymbolElement (?)"
-			],
-			[
-				"cam",
-				"cameraToOrigin (fn)"
 			],
 			[
 				"ca",
@@ -32,10 +64,6 @@
 				"Vector3 (fn)"
 			],
 			[
-				"con",
-				"config (obj)"
-			],
-			[
 				"cu",
 				"curSym (?)"
 			],
@@ -46,10 +74,6 @@
 			[
 				"mod",
 				"models"
-			],
-			[
-				"set",
-				"setItem (fn)"
 			],
 			[
 				"add",
@@ -200,20 +224,12 @@
 				"voice2	(?)"
 			],
 			[
-				"ad",
-				"addComponent(comName)"
-			],
-			[
 				"when",
 				"whenFirstComplete	(?)"
 			],
 			[
 				"obj",
 				"objects	[]"
-			],
-			[
-				"ti",
-				"timeScale	(num)"
 			],
 			[
 				"time",
@@ -298,10 +314,6 @@
 			[
 				"camera",
 				"camera	{}"
-			],
-			[
-				"if",
-				"if	If"
 			],
 			[
 				"pro",
@@ -502,18 +514,6 @@
 			[
 				"sphere",
 				"sphereMesh	{}"
-			],
-			[
-				"he",
-				"HemisphereLight(skyColor, groundColor, intensity)"
-			],
-			[
-				"por",
-				"PROGRESS	(str)"
-			],
-			[
-				"sphe",
-				"sphereMat	{}"
 			]
 		]
 	},
@@ -523,39 +523,31 @@
 			"file": "projects/chuangwei/chuangwei.js",
 			"settings":
 			{
-				"buffer_size": 7377,
+				"buffer_size": 7985,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
+			"file": "/E/EdgeWorks/downloadpage/publish/web/index.html",
 			"settings":
 			{
-				"buffer_size": 117,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/tern.py",
-			"settings":
-			{
-				"buffer_size": 19854,
-				"line_ending": "Unix"
+				"buffer_size": 1163,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "js/webShow/utils.js",
 			"settings":
 			{
-				"buffer_size": 4777,
+				"buffer_size": 5122,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/PhoneGap_works/chuangwei/www/index.html",
+			"file": "js/webShow/game.js",
 			"settings":
 			{
-				"buffer_size": 1722,
+				"buffer_size": 14557,
 				"line_ending": "Windows"
 			}
 		},
@@ -564,14 +556,6 @@
 			"settings":
 			{
 				"buffer_size": 1073,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
-			"settings":
-			{
-				"buffer_size": 5812,
 				"line_ending": "Unix"
 			}
 		}
@@ -603,10 +587,50 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 185.0,
-		"last_filter": "upda",
+		"height": 375.0,
+		"last_filter": "re",
 		"selected_items":
 		[
+			[
+				"re",
+				"TernJS: Reload"
+			],
+			[
+				"snippet",
+				"Snippet: icon"
+			],
+			[
+				"snipp",
+				"Snippet: icon"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"STATU",
+				"Git: Status"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
 			[
 				"upda",
 				"Package Control: Upgrade Package"
@@ -624,32 +648,8 @@
 				"Gist: Insert Gist"
 			],
 			[
-				"edit",
-				"Project: Edit"
-			],
-			[
-				"user",
-				"Preferences: Settings - User"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
-				"status",
-				"Git: Status"
-			],
-			[
-				"re",
-				"TernJS: Reload"
-			],
-			[
 				"reload",
 				"TernJS: Reload"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"statu",
@@ -696,10 +696,6 @@
 				"GruntArgs"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"gruntargs",
 				"GruntArgs"
 			],
@@ -722,10 +718,6 @@
 			[
 				"stat",
 				"Git: Status"
-			],
-			[
-				"snippet",
-				"Snippet: easygamelibs"
 			],
 			[
 				"grunt ",
@@ -1134,51 +1126,66 @@
 	"expanded_folders":
 	[
 		"/E/myhost/inno studio",
-		"/E/myhost/inno studio/resources"
+		"/E/myhost/inno studio/js",
+		"/E/myhost/inno studio/projects",
+		"/E/myhost/inno studio/templates"
 	],
 	"file_history":
 	[
+		"/E/myhost/inno studio/projects/lenovop1/lenovop1.js",
+		"/E/myhost/inno studio/js/shaders/FresnelShader.js",
+		"/E/myhost/inno studio/templates/project.js",
+		"/E/myhost/inno studio/projects/lenovop1/lenovop1_grunt.js",
+		"/E/PhoneGap_works/LenovoP1/www/index.html",
+		"/E/EdgeWorks/downloadpage/publish/web/index.html",
+		"/E/PhoneGap_works/chuangwei/www/main.js",
+		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
+		"/E/PhoneGap_works/LenovoP1/config.xml",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/PhoneGap_works/chuangwei/www/index.html",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/icon.sublime-snippet",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/README.md",
+		"/E/myhost/inno studio/js/loaders/sea3d.js",
+		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
+		"/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/E/UnityProjects/lianzheng/Assets/Mega-Fiers/Scripts/MegaFiers/Modifiers/MegaModifyObject.cs",
+		"/E/UnityProjects/lianzheng/lianzheng.sln",
+		"/E/myhost/inno studio/js/controls/OrbitControls.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/tern.py",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
 		"/E/myhost/inno studio/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/package.json",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/tern.py",
 		"/E/myhost/inno studio/projects/changhong/changhong.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
-		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/js/webShow/game.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
 		"/E/myhost/inno studio/test.js",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/innoStudio.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
-		"/E/myhost/inno studio/templates/project.js",
-		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/changhong/changhong_grunt.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/wxurl.sublime-snippet",
 		"/E/EdgeWorks/changhong/publish/web/index.html",
 		"/E/myhost/inno studio/js/shaders/CopyShader.js",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.js",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
-		"/E/PhoneGap_works/chuangwei/www/index.html",
 		"/E/PhoneGap_works/chuangwei/www/js/index.js",
 		"/E/PhoneGap_works/chuangwei/plugins/cordova-plugin-whitelist/whitelist.js",
 		"/E/projects/flag/index.html",
 		"/E/PhoneGap_works/chuangwei/www/css/index.css",
 		"/E/PhoneGap_works/chuangwei/config.xml",
-		"/E/PhoneGap_works/LenovoP1/config.xml",
 		"/E/myhost/inno studio/projects/changhong/com_AutoRot.js",
 		"/E/myhost/inno studio/templates/project_grunt.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
 		"/C/Users/easyfrog/Desktop/test.js",
 		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/tern.py",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
 		"/E/myhost/inno studio/build/easygame.min.js",
-		"/E/myhost/inno studio/js/webShow/threeExtend.js",
 		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/SEA3D/SEA3D.ms",
@@ -1196,7 +1203,6 @@
 		"/E/EdgeWorks/CHIQ2/publish/web/index.html",
 		"/E/EdgeWorks/CHIQ2/CHIQ_edge.js",
 		"/E/EdgeWorks/CHIQ2/publish/web/js/CHIQ_edge.js",
-		"/E/myhost/inno studio/projects/lenovop1/lenovop1.js",
 		"/C/Users/easyfrog/Desktop/index.html",
 		"/E/EdgeWorks/CHIQ2/publish/web/CHIQ4_edge.js",
 		"/E/EdgeWorks/CHIQ/publish/web/index.html",
@@ -1210,16 +1216,13 @@
 		"/C/Users/easyfrog/Desktop/TileOut9.22/history/history.css",
 		"/E/EdgeWorks/CHIQ/publish/web/CHIQa_edge.js",
 		"/E/myhost/inno studio/projects/changhong/com_AutoScale.js",
-		"/E/PhoneGap_works/LenovoP1/www/index.html",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Gist.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
 		"/E/myhost/inno studio/README.md",
-		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Source/WebGL/SDK/SEA3D.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Source/WebGL/Three.JS/SEA3DLoader.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Examples/Programmer/WebGL/Three.JS/Basics/bigmodel.html",
 		"/D/libs/Sea3D/sea3d-gh-pages/Source/WebGL/Three.JS/SEA3DLegacyLoader.js",
-		"/E/myhost/inno studio/js/controls/OrbitControls.js",
 		"/E/myhost/inno studio/.gitignore",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/RunCommands/Default.sublime-keymap",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/RunCommands/runcommands.py",
@@ -1235,7 +1238,6 @@
 		"/C/Users/easyfrog/Desktop/edge.5.0.1.js",
 		"/C/Users/easyfrog/Desktop/command_base.py",
 		"/E/myhost/inno studio/projects/hello/hello_grunt.js",
-		"/E/myhost/inno studio/projects/lenovop1/lenovop1_grunt.js",
 		"/E/myhost/inno studio/projects/hello/hello.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Minify/Minify.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Grunt/Main.sublime-menu",
@@ -1257,15 +1259,7 @@
 		"/E/myhost/inno studio/projects/lenovop1",
 		"/E/myhost/inno studio/scripts/com_Pickable.js",
 		"/E/myhost/inno studio/scripts/main.js",
-		"/E/myhost/inno studio/grunts/main_grunt.js",
-		"/E/myhost/inno studio/grunts/changhong_grunt.js",
-		"/E/build.min.js",
-		"/E/EdgeWorks/Lesson1/publish/web/index.html",
-		"/E/myhost/nubia Z9/main.js",
-		"/E/EdgeWorks/Demo/diyike/publish/web/index.html",
-		"/E/myhost/inno studio/grunts/demo_grunt.js",
-		"/E/myhost/inno studio/scripts/demo.js",
-		"/E/myhost/inno studio/cordovaScreenSaverUsed.md"
+		"/E/myhost/inno studio/grunts/main_grunt.js"
 	],
 	"find":
 	{
@@ -1283,6 +1277,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"onDeviceReady",
+			"chaijieCam",
+			"titleParent",
+			"setOr",
 			"timeout",
 			"cameraToOrigin",
 			"camPathAnim",
@@ -1406,11 +1404,7 @@
 			"getFrameAt",
 			"setFrame",
 			"updateAnimationFrame",
-			"updateAnimationState",
-			"curMouse",
-			"prototype",
-			"TextureAnimation",
-			"animation"
+			"updateAnimationState"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1439,7 +1433,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7377,
+						"buffer_size": 7985,
 						"regions":
 						{
 							"bookmarks":
@@ -1449,12 +1443,12 @@
 								"regions":
 								[
 									[
-										1836,
-										1836
+										1876,
+										1876
 									],
 									[
-										4020,
-										4020
+										4095,
+										4095
 									]
 								],
 								"scope": "bookmarks"
@@ -1463,8 +1457,8 @@
 						"selection":
 						[
 							[
-								4522,
-								4522
+								1863,
+								1863
 							]
 						],
 						"settings":
@@ -1474,7 +1468,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4279.0,
+						"translation.y": 1380.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1482,107 +1476,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
+					"file": "/E/EdgeWorks/downloadpage/publish/web/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 117,
+						"buffer_size": 1163,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								33,
-								33
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/tern.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19854,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3367,
-								3367
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2351.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/webShow/utils.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4777,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1699,
-								1699
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1172.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/E/PhoneGap_works/chuangwei/www/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1722,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1232,
-								1232
+								827,
+								827
 							]
 						],
 						"settings":
@@ -1593,14 +1499,74 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 20.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 2,
+					"file": "js/webShow/utils.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1734,
+								1734
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1650.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/webShow/game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13308,
+								13308
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "/E/PhoneGap_works/chuangwei/config.xml",
 					"semi_transient": false,
 					"settings":
@@ -1612,8 +1578,8 @@
 						"selection":
 						[
 							[
-								168,
-								168
+								316,
+								316
 							]
 						],
 						"settings":
@@ -1627,37 +1593,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5812,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3841,
-								3841
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Soda.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1873,9 +1809,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "op",
 		"selected_items":
 		[
+			[
+				"op",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
 			[
 				"",
 				"E:\\myhost\\inno studio\\innoStudio.sublime-project"
@@ -1939,10 +1879,6 @@
 			[
 				"nub",
 				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
-			],
-			[
-				"op",
-				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
 			],
 			[
 				"nu",

@@ -29,7 +29,10 @@
 			"templates/*.js",
 			"js/shaders/**.js",
 			"js/postprocessing/**.js",
-			"**/*_grunt.js"
+			"**/*_grunt.js",
+			"projects/changhong/*.js",
+			"projects/chuangwei/*.js",
+			"projects/lenovop1/*.js"
 		],
 		"libs":
 		[
