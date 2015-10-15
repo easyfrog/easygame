@@ -27,6 +27,11 @@ module.exports = function(grunt) {
 
 	(function(project, path) {
 		grunt.registerTask(project, '', function() {
+			// 先判断项目是否存在或已关闭?
+			if (!grunt.file.exists('projects/' + project)) {
+				grunt.log.writeln('project "' + project + '" NOT EXISTS. OR is CLOSED! use grunt --no-color open:"' + project + '" first.' );
+				return;
+			}
 			// 设置项目目录位置
 			grunt.projectFolder = path;
 			// 设置grunt项目名

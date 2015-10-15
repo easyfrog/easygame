@@ -85,4 +85,56 @@ module.exports = function(grunt) {
 		grunt.log.writeln(project + ' project create complete!');
 	});
 
+	/**
+	 * 关闭项目
+	 * 使其不被ternjs检测到,避免js提示的杂乱
+	 * example: grunt --no-color close:changhong:lenovop1
+	 */
+	grunt.registerTask('close', 'close a easygame project', function() {
+		var closedPath = 'projects/_closed/';
+
+		if (arguments.length > 0) {
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				copyDir('projects/' + arg, closedPath + arg, function() {
+					grunt.log.writeln('project "' + arg + '" closed completed.');
+					grunt.file.delete('projects/' + arg);
+				});
+			};			
+		}
+	});	
+
+	/**
+	 * 打开项目
+	 * 使其可以被ternjs检测到.用于js代码提示
+	 * example: grunt --no-color open:changhong:lenovop1
+	 */
+	grunt.registerTask('open', 'open a easygame project', function() {
+		var openPath = 'projects/';
+
+		if (arguments.length > 0) {
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				copyDir('projects/_closed/' + arg, openPath + arg, function() {
+					grunt.log.writeln('project "' + arg + '" closed completed.');
+					grunt.file.delete('projects/_closed/' + arg);
+				});
+			};			
+		}
+	});
+
+	/**
+	 * 复制整个文件夹
+	 */
+	function copyDir(src, dest, callback) {
+		grunt.file.recurse(src, function(abspath, rootdir, subdir, filename) {
+			subdir = subdir ? subdir : '';
+			grunt.file.copy(abspath, dest + '/' + subdir + '/' + filename);
+		});
+
+		if (callback) {
+			callback();
+		}
+	};
+
 };

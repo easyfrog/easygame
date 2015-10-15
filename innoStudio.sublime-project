@@ -30,9 +30,7 @@
 			"js/shaders/**.js",
 			"js/postprocessing/**.js",
 			"**/*_grunt.js",
-			"projects/changhong/*.js",
-			"projects/chuangwei/*.js",
-			"projects/lenovop1/*.js"
+			"projects/_closed/**/*.js"
 		],
 		"libs":
 		[
