@@ -22,7 +22,7 @@ AdobeEdge.bootstrapCallback(function(compId) {
      * 		glo.pf.platform = 'Android' / 'iPhone' ...
      *   	glo.pf.version = 444 / 511 ...
      */
-    glo.pf = t.platform;
+    glo.pf = t.getPlatform();
     if (glo.pf.isWX && glo.pfglo.pf.platform == 'Android' && glo.pf.version < 510) {
     	glo.nengkan = false;
     }
