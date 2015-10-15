@@ -28,6 +28,16 @@ grunt create:projectName:E\:/projects/projectName
 grunt projectName
 ```
 
+如果你创建了很多项目时,因为默认ternjs会检测所有projects下面的js文件.所以在提示上会出现很多相似的内容.所以增加了可以`关闭/开启`项目的功能. 关闭的项目会自动的转移到`projects/_closed/`目录下面.相就的如果开启项目.此项目会转移回`projects`目录下.
+
+```
+// 关闭项目(支持多个项目一起关闭)
+grunt --no-color close:project1:...projectN
+
+// 开启项目(支持多个项目一起开启)
+grunt --no-color open:project1:...projectN
+```
+
 ##Game class
 The Game main class.
 
