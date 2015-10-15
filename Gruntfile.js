@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
 	// 载入每个不同的Project所对应的不同的构建文件
 	grunt.file.recurse('./projects', function(abspath, rootdir, subdir, filename) {
-		if (filename.indexOf('_grunt') > -1) {
+		if (abspath.indexOf('_closed') == -1 && filename.indexOf('_grunt') > -1) {
 			require('./' + abspath)(grunt);
 		}
 	});
