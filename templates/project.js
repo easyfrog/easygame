@@ -14,13 +14,15 @@ AdobeEdge.bootstrapCallback(function(compId) {
 
     // scale to fix screen
     t.scaleToFixScreen(stage.getSymbolElement());
+    // 统计
+    t.analyze('<%= grunt.project %>');
 
     /**
      * get platform and version
      * 		glo.pf.platform = 'Android' / 'iPhone' ...
      *   	glo.pf.version = 444 / 511 ...
      */
-    glo.pf = t.getPlatform();
+    glo.pf = t.platform;
     if (glo.pf.isWX && glo.pfglo.pf.platform == 'Android' && glo.pf.version < 510) {
     	glo.nengkan = false;
     }
