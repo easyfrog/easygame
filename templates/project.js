@@ -4,6 +4,9 @@ var isAnimating = false;
 var targetPos,
 	status = 0;
 
+// 项目名称
+var _projectName = '<%= grunt.project %>';
+
 // 是否能看3D内容
 glo.nengkan = true;
 
@@ -15,7 +18,7 @@ AdobeEdge.bootstrapCallback(function(compId) {
     // scale to fix screen
     t.scaleToFixScreen(stage.getSymbolElement());
     // 统计
-    t.analyze('<%= grunt.project %>');
+    t.analyze(_projectName);
 
     /**
      * get platform and version
@@ -76,6 +79,7 @@ function init() {
 
 function onLoadComplete() {
 	game.removeEventListener(Game.LOADCOMPLETE, onLoadComplete);
+	t.analyzeIncrease(_projectName, 'sandi');
 	
 	// scene load complete
 	
