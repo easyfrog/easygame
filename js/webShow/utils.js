@@ -84,6 +84,7 @@ utils.transformTo = function(from, to, time, cv, over, update) {
 	};
 
 	cv = cv || ztc.Tween.easeOutQuad;
+	over = over || utils.transformToComplete;
 
 	var qm = new THREE.Quaternion();
 	var qa = from.quaternion.clone();
@@ -225,4 +226,23 @@ utils.switchFanSheZheShe = function(material, toZheShe) {
 		material.envMap.mapping = toZheShe ? THREE.CubeRefractionMapping : THREE.CubeReflectionMapping;
 		material.needsUpdate = true;
 	}
+};
+
+/**
+ * 单独显示某个物体
+ */
+utils.alone = function(obj, all) {
+	all = all || Game.instance.sea.meshes;
+
+	for (var i = 0; i < all.length; i++) {
+		var m = all[i];
+
+		if (obj == null) {
+			m.visible = true;
+		} else {
+			if (m != obj && m.parent != obj && obj.parent != m) {
+				m.visible = false;
+			}
+		}
+	};
 };
