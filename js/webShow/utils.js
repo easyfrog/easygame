@@ -44,6 +44,7 @@ utils.morphObject = function(mesh, params) {
 	mor.play();
 
 	Game.instance.animations.push(mor);
+	return mor;
 }
 
 /**
@@ -60,17 +61,18 @@ utils.include = function(file, httpuse) {
  * 将 from 的位置,旋转,缩放设置为与 to 一至
  */
 utils.sameTransform = function(from, to, inverse, nop, nor, nos) {
-	var p = inverse ? -1 : 1;
+	var toap = to.getWorldPosition();
+	var toaq = to.getWorldQuaternion();
+	var toas = to.getWorldScale();
+
 	if (!nop) {
-		from.position.set(to.position.x, to.position.y, to.position.z);
+		from.position.set(toap.x, toap.y, toap.z);
 	}
 	if (!nor) {
-		// from.rotation.set(p * to.rotation.x, p * to.rotation.y, to.rotation.z);
-		var q = to.quaternion;
-		from.quaternion.set(p * q.x,p * q.y, q.z, q.w);
-	}
+		from.quaternion.set(toaq.x, toaq.y, toaq.z, toaq.w);
+		}
 	if (!nos) {
-		from.scale.set(to.scale.x, to.scale.y, to.scale.z);
+		from.scale.set(toas.x, toas.y, toas.z);
 	}
 };
 

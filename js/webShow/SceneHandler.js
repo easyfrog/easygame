@@ -14,11 +14,10 @@ var SceneHandler = function( fileName, scene, standard ) {
     if (standard == undefined) standard = false;
     s.standard = standard;
 
-    s.root = new THREE.SEA3D(standard);
+    s.root = new THREE.SEA3D();
     // s.root.addClass(SEA3D.VertexAnimation);
-    // s.root.
-    s.root.invertZ = !standard;
-    s.root.invertCamera = standard;
+    // s.root.invertZ = true;
+    // s.root.invertCamera = true;
     s.root.matrixAutoUpdate = true;
     s.root.parser = THREE.SEA3D.AUTO;
 
@@ -42,10 +41,14 @@ SceneHandler.prototype._onComplete = function() {
         s.root.meshes[i].castShadow     = s.castShadow;
         s.root.meshes[i].receiveShadow  = s.receiveShadow;
 
+        // update matrix
+        // s.root.meshes[i].matrixWorldNeedsUpdate = true;
+        // console.log(s.root.meshes[i].name, s.root.meshes[i].matrixWorldNeedsUpdate);
+
         //////////////////////////////////////////
         // fix x,y rotation flip bug 2015/09/17 //
         //////////////////////////////////////////
-        //*
+        /*
         if (s.root.meshes[i].animation) {
             var anims = s.root.meshes[i].animation.animationSet.animations;
             for (var j = 0; j < anims.length; j++) {
@@ -99,7 +102,8 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
 SceneHandler.prototype.update = function () {
     this.deltaTime = this.clock.getDelta();
     if (SEA3D.AnimationHandler != undefined) {
-        SEA3D.AnimationHandler.update(this.deltaTime);
+        THREE.SEA3D.AnimationHandler.update(this.deltaTime);
+        THREE.AnimationHandler.update(this.deltaTime);
     }
     // var anims = SEA3D.AnimationHandler.animations;
     // for (var i = 0; i < anims.length; i++) {

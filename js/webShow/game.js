@@ -480,10 +480,46 @@
 
 		s.sh.load(url, groupName);
 		s.sh.onProgress = function(p) {
-			s.invoke(Game.PROGRESS, p);		
+			if (!isNaN(p.progress)) {
+				s.invoke(Game.PROGRESS, p);		
+			}
 		};
 		s.sh.onComplete = function() {
 			s.invoke(Game.LOADCOMPLETE, groupName);
+		};
+	};
+
+	/**
+	 * load multiple sea files
+	 * _seas : {
+	 * 		inno: ['xx.sea', 'xx.sea'],
+	 * 		group2: ['xx.sea', 'xx.sea']
+	 * }
+	 * seas : ['xx.sea', 'xx.sea']
+	 */
+	Game.prototype.loadSeas = function(seas, groupName, callback) {
+		var s = this;
+		var count = 0;
+		function cb (gn, alldone) {
+			// console.log('--> loadSeas:' + gn + ' loaded. alldone: ' + alldone);
+			alldone = false;
+			count ++;
+			if (count == seas.length) {
+				alldone = true;
+			}
+			if (alldone) {
+				s.removeEventListener(Game.LOADCOMPLETE, cb);
+			}
+
+			callback(alldone, count, seas.length);
+		};
+
+		this.addEventListener(Game.LOADCOMPLETE, cb);
+
+		for (var i = 0; i < seas.length; i++) {
+			var sea = seas[i];
+
+			this.load(sea, groupName);
 		};
 	};
 

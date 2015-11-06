@@ -84,9 +84,10 @@ var game = new Game(domContainer, {
 * **Game.MOUSEUP**:      'mouseup'  
 
 ###Game类方法
-1. **得到点击的Mesh物体:**
+1. **得到点击的Mesh物体:(物体必须有UV信息才能正确被拾取,否则会报错)**
 ``` javascript
 game.getPickObject(mousePosition, objects)
+return object || null;
 ```
 
  * **mousePosition**:	鼠标屏幕位置
@@ -101,6 +102,28 @@ game.registerComponents(components)
 * __components__: (数组) 如: ['com_MyCom', 'com_OtherCom', ...]
 * __return__: null
 
+3. **载入单个sea文件**
+```
+game.load('url', 'gruntName');
+game.addEventListener(Game.LOADCOMPLETE, onLoadComplete);
+
+function onLoadComplete(groupName) {
+	game.removeEventListener(Game.LOADCOMPLETE, onLoadComplete);
+	...
+};
+```
+
+4. **同时载入多个sea文件**
+```
+game.loadSeas(seasArray, groupName, callback);
+game.loadSeas(['xx.sea, xx.sea'], 'groupName', function(alldone(boolean), count(int), allCount(int)) {});
+```
+
+5. 设置贴图的minFilter
+```
+material.map.minFilter = THREE.NearestFilter;
+material.map.needsUpdate = true;
+```
 ##continue...
 
 ###Component 组件
@@ -142,6 +165,11 @@ mesh.animation.states['open'].node.setTime(time);
 mesh.animation.updateAnimation();
 // 也可以使用工具类完成同样的操作
 utils.setAnimationTime(animation, stateName, time);
+
+// morph Animation
+mesh.setWeight('morphTarget', 0~1);
+or
+utils.morphObject(mesh, {duration: 1000, loop: false});
 ```
 
 **动画事件**
