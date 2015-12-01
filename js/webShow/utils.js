@@ -99,7 +99,15 @@ utils.transformTo = function(from, to, time, cv, over, update) {
 	   		x:to.position.x,
 	   		y:to.position.y,
 	   		z:to.position.z		
-	   }], cv, over, function(f) {
+	   }], cv, function() {
+	   		// default transform to function
+	   		if (utils.transformToComplete) {
+	   			utils.transformToComplete();
+	   		}
+	   		if (over) {
+	   			over();
+	   		}
+	   }, function(f) {
 		   	THREE.Quaternion.slerp(qa, qb, qm, f);
 		   	from.quaternion.set(qm.x, qm.y, qm.z, qm.w);
 		   	if (update) {

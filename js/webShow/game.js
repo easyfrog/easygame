@@ -369,6 +369,8 @@
 			h = this.container.offsetHeight;
 		}
 
+		// this.width = w * this.stageScale;
+		// this.height = h * this.stageScale;
 		this.width = w;
 		this.height = h;
 		this.renderer.setSize(w, h);
