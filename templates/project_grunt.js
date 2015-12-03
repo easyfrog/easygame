@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 							"js/tools/edgeToolsBase.js",
 							// "js/coms/com_*.js",						// 打包easygame默认组件
 							// "projects/<%= grunt.project %>/com_*.js",	// 打包项目组件 *instead with browserify*
-							"projects/<%= grunt.project %>/<%= grunt.project %>.browserify.js" // 合入模块后的 project.js
+							"build/<%= grunt.project %>.browserify.js" // 合入模块后的 project.js
 						],
 						dest: '<%= grunt.projectFolder %>/main.js'
 					}
