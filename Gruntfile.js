@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 			libs:{
 				files:[
 					{src:"js/threejs/three.min.js", dest: "<%= grunt.projectFolder %>/libs/th.js"},
-					{src:"js/loaders/sea3d.min.js", dest: "<%= grunt.projectFolder %>/libs/se.js"},
+					{src:"js/loaders/sea3d.min.js", dest: "<%= grunt.projectFolder %>/libs/se.js"}
 				]
 			}
 		},
@@ -34,6 +34,7 @@ module.exports = function(grunt) {
 	});
 
 	// 告诉grunt我们将使用插件
+	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
@@ -45,8 +46,15 @@ module.exports = function(grunt) {
 		} else {
 			taskList = grunt.currentTask;
 		}
-		
+
 		grunt.task.run(taskList);
+	});
+
+	/**
+	 * use to delete the template file
+	 */
+	grunt.registerTask('deletefile', 'delete a file', function(filename) {
+		grunt.file.delete(filename);
 	});
 
 	/**

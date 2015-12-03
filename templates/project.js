@@ -1,5 +1,5 @@
 
-var glo = window.glo || {};
+window.glo = window.glo || {};
 var isAnimating = false;
 var targetPos,
 	status = 0;

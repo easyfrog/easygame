@@ -1,5 +1,5 @@
 #easygame
-A threejs and sea3d 3D game engine.
+A threejs and sea3d 3D game engine. and use browserify to manange components.
 
 * [Game class](#Game class)
 	- [创建Game类](#创建Game类)
@@ -94,7 +94,7 @@ return object || null;
  * **objects**: 		 	计算RayCast的Mesh物体集合: 		objects = objects || (game.canPicked.length == 0 ? game.scene.children : game.canPicked);
  * **return**:			所拾取到的物体或null  
 
-2. **注册组件:**
+2. **注册组件: (弃用)**
 ``` javascript
 game.registerComponents(components)
 ```
@@ -134,15 +134,22 @@ material.map.needsUpdate = true;
 >start, update, onMouseDown, onMouseUp, onMouseMove
 onPicked, onRemoveonKeyDown, onKeyUp
 
-* **注册组件**
+* **注册组件 (弃用)**
 ```javascript
 game.registerComponents(['com_MyCom1', 'com_MyCom2', ...]);
 game.unregisterComponents(['com_MyCom1', 'com_MyCom2', ...]);
 ```
 
+* **新的组件使用方使**
+```javascript
+var com = require('./comName');
+mesh.addComponent(com);
+```
+
+mesh.addComponent(comNameOrFunc); 推荐使用 require 进来的 COM 类
 * **组件的一些方法**
 ```javascript
-mesh.addComponent('com_MyCom1');
+mesh.addComponent('com_MyCom1'); // 同上
 mesh.removeComponent('com_MyCom1');
 mesh.getComponent('com_MyCom1');
 ```

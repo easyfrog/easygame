@@ -4,12 +4,20 @@
 		"selected_items":
 		[
 			[
-				"shadowC",
-				"shadowCameraNear	(num)"
+				"tr",
+				"transformToComplete()"
 			],
 			[
 				"ca",
-				"castShadow	(bool)"
+				"cameraController	{}"
+			],
+			[
+				"inner",
+				"innerWidth	(num)"
+			],
+			[
+				"shadowC",
+				"shadowCameraNear	(num)"
 			],
 			[
 				"Shad",
@@ -50,10 +58,6 @@
 			[
 				"add",
 				"addEventListener"
-			],
-			[
-				"inner",
-				"innerHeight"
 			],
 			[
 				"j",
@@ -122,10 +126,6 @@
 			[
 				"matrix",
 				"matrixWorldNeedsUpdate	(bool)"
-			],
-			[
-				"tr",
-				"transformTo(from, to, time, cv, over, update)"
 			],
 			[
 				"s",
@@ -545,16 +545,32 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "ins",
+		"last_filter": "edit",
 		"selected_items":
 		[
 			[
-				"ins",
-				"Package Control: Install Package"
+				"edit",
+				"Project: Edit Project"
 			],
 			[
 				"push",
 				"Git: Push Current Branch"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"re",
+				"TernJS: Reload"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
 			],
 			[
 				"status",
@@ -573,19 +589,7 @@
 				"Preferences: Settings - User"
 			],
 			[
-				"edit",
-				"Project: Edit Project"
-			],
-			[
-				"reload",
-				"TernJS: Reload"
-			],
-			[
 				"rel",
-				"TernJS: Reload"
-			],
-			[
-				"re",
 				"TernJS: Reload"
 			],
 			[
@@ -599,10 +603,6 @@
 			[
 				"grunt",
 				"Grunt"
-			],
-			[
-				"statu",
-				"Git: Status"
 			],
 			[
 				"puhs",
@@ -1106,15 +1106,37 @@
 	},
 	"file_history":
 	[
+		"/E/myhost/inno studio/README.md",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
+		"/E/myhost/inno studio/package.json",
+		"/E/EdgeWorks/demo/publish/web/index.html",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/index.html",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/blueprint3d.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/three/three_controller.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/utils/utils.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/README.md",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/package.json",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/blueprint3d.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/model/wall.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/items.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/bootstrap.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/floorplanner/floorplanner.js",
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/example.js",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/C/Users/easyfrog/AppData/Local/Temp/blueprint3d-2015-12-1-16-44-19.txt",
 		"/E/myhost/inno studio/templates/project.js",
+		"/E/PhoneGap_works/chuangwei/www/main.js",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/projects/_closed/changhong/changhong.js",
+		"/E/myhost/inno studio/projects/demo/demo.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/E/EdgeWorks/demo/publish/web/demo.html",
 		"/E/myhost/inno studio/projects/_closed/lenovop1/lenovop1.js",
 		"/E/myhost/inno studio/projects/_closed/changhong/com_AutoRot.js",
 		"/E/myhost/inno studio/templates/project_grunt.js",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/C/Users/easyfrog/Desktop/会.txt",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/js/threejs/Detector.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/.gitignore",
 		"/E/UnityProjects/zhangqing/zhangqing.sublime-project",
 		"/E/UnityProjects/zhangqing/zhangqing",
@@ -1122,7 +1144,6 @@
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/E/myhost/inno studio/README.md",
 		"/E/myhost/inno studio/js/webShow/threeExtend.js",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
 		"/E/myhost/inno studio/Gruntfile.js",
@@ -1130,11 +1151,8 @@
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/hello-world.html",
-		"/E/myhost/inno studio/projects/_closed/changhong/changhong.js",
-		"/E/myhost/inno studio/projects/demo/demo.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Labs/Three.JS-NodeMaterial/index.html",
 		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
-		"/E/EdgeWorks/demo/publish/web/index.html",
 		"/E/myhost/inno studio/js/loaders/sea3d.js",
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Camera.cs",
 		"/E/UnityProjects/lianzheng/Assets/Scripts/AnimatorControl.cs",
@@ -1146,11 +1164,9 @@
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/Waiter.cs",
 		"/C/Users/easyfrog/AppData/Local/Temp/eg.js",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/musicInPart.cs",
-		"/E/PhoneGap_works/chuangwei/www/main.js",
 		"/E/PhoneGap_works/chuangwei/www/index.html",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/metascale.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/metascalecache.sublime-snippet",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Source/WebGL/Three.JS/SEA3DLoader.js",
 		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
@@ -1168,7 +1184,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/ThemrFavorites.sublime-settings",
 		"/D/libs/Flotr2-master/js/types/pie.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/main.sublime-snippet",
-		"/E/myhost/inno studio/package.json",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/project.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Local/Temp/main.js",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
@@ -1202,7 +1217,6 @@
 		"/E/myhost/inno studio/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/package.json",
 		"/E/myhost/inno studio/projects/changhong/changhong.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
 		"/E/myhost/inno studio/test.js",
 		"/E/myhost/inno studio/innoStudio.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
@@ -1219,21 +1233,7 @@
 		"/C/Users/easyfrog/Desktop/test.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/tern.py",
 		"/E/myhost/inno studio/build/easygame.min.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/SEA3D/SEA3D.ms",
-		"/C/Users/easyfrog/Desktop/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
-		"/E/myhost/inno studio/projects/test/test.js",
-		"/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Source/WebGL/Three.JS/SEA3DLoader.js",
-		"/C/Users/easyfrog/Desktop/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
-		"/E/EdgeWorks/CHIQ2/publish/web/js/edge.6.0.0.min.js",
-		"/E/EdgeWorks/changhong/publish/web/main.js",
-		"/E/EdgeWorks/CHIQ2/publish/web/html/index.html",
-		"/E/EdgeWorks/CHIQ2/publish/web/js/edgeToolsBase.js",
-		"/E/myhost/Intel_1111/index.html",
-		"/E/EdgeWorks/CHIQ2/publish/web/CHIQ_edge.js",
-		"/D/libs/edge.5.0.1.js",
-		"/E/EdgeWorks/CHIQ2/publish/web/index.html",
-		"/E/EdgeWorks/CHIQ2/CHIQ_edge.js",
-		"/E/EdgeWorks/CHIQ2/publish/web/js/CHIQ_edge.js"
+		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/SEA3D/SEA3D.ms"
 	],
 	"find":
 	{
@@ -1252,6 +1252,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"require",
+			"game.cameraController",
+			"titleParent",
+			"title",
+			"setSize",
+			" * this.stageScale",
+			"stageScale",
 			"reflection",
 			"_start",
 			"Game.START",
@@ -1372,14 +1379,7 @@
 			"isAnimating",
 			"autoRo",
 			"targetPos",
-			"cache_file_name",
-			"targetPos",
-			"Kill",
-			"self.window",
-			"on_done",
-			"stageScale",
-			"yepnope",
-			"targetPos"
+			"cache_file_name"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1471,6 +1471,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"ch",
+				"projects\\chuangwei\\chuangwei.js"
+			],
 			[
 				"utils",
 				"js\\webShow\\utils.js"
@@ -1641,9 +1649,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "open",
+		"last_filter": "util",
 		"selected_items":
 		[
+			[
+				"util",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
 			[
 				"open",
 				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
@@ -1699,10 +1711,6 @@
 			[
 				"uniti",
 				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity.sublime-workspace"
-			],
-			[
-				"util",
-				"E:\\EdgeWorks\\utils\\utils.sublime-project"
 			],
 			[
 				"unit",

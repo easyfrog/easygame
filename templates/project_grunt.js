@@ -15,12 +15,20 @@ module.exports = function(grunt) {
 						src: [
 							"js/tools/edgeToolsBase.js",
 							// "js/coms/com_*.js",						// 打包easygame默认组件
-							"projects/<%= grunt.project %>/com_*.js",	// 打包项目组件
-							"projects/<%= grunt.project %>/<%= grunt.project %>.js",
+							// "projects/<%= grunt.project %>/com_*.js",	// 打包项目组件 *instead with browserify*
+							"projects/<%= grunt.project %>/<%= grunt.project %>.browserify.js" // 合入模块后的 project.js
 						],
 						dest: '<%= grunt.projectFolder %>/main.js'
 					}
 				]
+			}
+		},
+
+		// browserify
+		browserify: {
+			demo: {
+				src: "projects/<%= grunt.project %>/<%= grunt.project %>.js",
+				dest: "build/<%= grunt.project %>.browserify.js" 
 			}
 		}
 	});
@@ -37,7 +45,9 @@ module.exports = function(grunt) {
 			// 设置grunt项目名
 			grunt.project = project;
 			// 设置当前任务(可以为单任务或数组)
-			grunt.currentTask = 'uglify:' + project;
+			grunt.currentTask = ['browserify:' + project, 
+								'uglify:' + project,
+								'deletefile:build/<%= grunt.project %>.browserify.js'];
 			// 是否需要3D库文件
 			grunt.needLibs = true;
 

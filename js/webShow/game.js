@@ -155,8 +155,8 @@
 		s._update();
 
 		window.addEventListener('resize', function() {
-			s.width = game.container.offsetWidth;
-			s.height = game.container.offsetHeight;
+			s.width = Game.instance.container.offsetWidth;
+			s.height = Game.instance.container.offsetHeight;
 			s.setSize(s.width, s.height);
 		});
 	};
@@ -267,7 +267,7 @@
 			for (var i = 0; i < intersections.length; i++) {
 				var obj = intersections[i].object;
 				if (!('mouseEnabled' in obj) || obj.mouseEnabled) {
-					game.lastPickedObj = obj;
+					Game.instance.lastPickedObj = obj;
 					return obj;
 				}
 			};
@@ -277,7 +277,7 @@
 	}
 
 	/**
-	 * 注册组件
+	 * 注册组件 (弃用)
 	 */
 	Game.prototype.registerComponents = function(componentsArr, path) {
 		path = path || 'js/coms/';
@@ -289,7 +289,7 @@
 	};
 
 	/**
-	 * 注销组件
+	 * 注销组件 (弃用)
 	 */
 	Game.prototype.unregisterComponents = function(componentsArr) {
 		for (var i = 0; i < componentsArr.length; i++) {
@@ -300,41 +300,58 @@
 	/**
 	 * 向物体上添加组件
 	 */
-	THREE.Object3D.prototype.addComponent = function(comName) {
+	THREE.Object3D.prototype.addComponent = function(comNameOrFunc) {
 		var s = this;
-		if (window[comName]) {
-			var com = new window[comName]();
-			com.object = this;
-			com.name = comName;
-			com.enabled = true;
-			s.components = this.components || [];
-			s.components.push(com);
+		var com;
 
-			Game.instance.components.push(com);
-			saveInvoke(com, 'start');
-			return com;
-		} else {
-			setTimeout(function() {
-				s.addComponent(comName);
-			}, 0);
+		if (typeof comNameOrFunc == 'string') {
+			if (window[comNameOrFunc]) {
+				com = new window[comNameOrFunc]();
+				com.name = comNameOrFunc;
+			} else {
+				console.log('addComponent: not have ' + comNameOrFunc + ' component yet.');
+				return null;
+			}
+		} else if (typeof comNameOrFunc == 'function') {
+			com = new comNameOrFunc();
+			com.name = com.name;
 		}
+
+		com.object = this;
+		com.enabled = true;
+		s.components = this.components || [];
+		s.components.push(com);
+
+		Game.instance.components.push(com);
+		saveInvoke(com, 'start');
+
+		console.log('-> addComponent3');
+
+		return com;
 	};
 
-	THREE.Object3D.prototype.getComponent = function(comName) {
+	THREE.Object3D.prototype.getComponent = function(comNameOrFunc) {
 		if (this.components) {
+			var isStr = typeof comNameOrFunc == 'string';
 			for (var i = 0; i < this.components.length; i++) {
 				var com = this.components[i];
-				if (com.name == comName) {
-					return com;
+				if (isStr) {
+					if (com.name == comNameOrFunc) {
+						return com;
+					}
+				} else {
+					if (com instanceof comNameOrFunc) {
+						return com;
+					}
 				}
 			};
 		}
 		return null;
 	}
 
-	THREE.Object3D.prototype.removeComponent = function(comName) {
+	THREE.Object3D.prototype.removeComponent = function(comNameOrFunc) {
 		if (this.components) {
-			var _com = this.getComponent(comName);
+			var _com = this.getComponent(comNameOrFunc);
 			saveInvoke(_com, 'onRemove');
 			var index = Game.instance.components.indexOf(_com);
 			Game.instance.components.splice(index, 1);
