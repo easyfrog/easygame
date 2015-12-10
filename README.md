@@ -140,7 +140,7 @@ game.registerComponents(['com_MyCom1', 'com_MyCom2', ...]);
 game.unregisterComponents(['com_MyCom1', 'com_MyCom2', ...]);
 ```
 
-* **新的组件使用方使**
+* **新的组件使用方式**
 ```javascript
 var com = require('./comName');
 mesh.addComponent(com);
