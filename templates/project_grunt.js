@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 
 		// browserify
 		browserify: {
-			demo: {
+			<%= grunt.project %>: {
 				src: "projects/<%= grunt.project %>/<%= grunt.project %>.js",
 				dest: "build/<%= grunt.project %>.browserify.js" 
 			}

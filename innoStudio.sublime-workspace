@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"instan",
+				"instanceof"
+			],
+			[
+				"get",
+				"getDeltaTime()"
+			],
+			[
+				"com_",
+				"com_test2	(?)"
+			],
+			[
+				"com",
+				"comNameOrFunc	(?)"
+			],
+			[
+				"co",
+				"comNameOrFunc	(?)"
+			],
+			[
+				"load",
+				"loadNpmTasks	(?)"
+			],
+			[
+				"brow",
+				"browserify"
+			],
+			[
 				"tr",
 				"transformToComplete()"
 			],
@@ -74,10 +102,6 @@
 			[
 				"l",
 				"loadSeas(seas, groupName, callback)"
-			],
-			[
-				"load",
-				"load(url, groupName)"
 			],
 			[
 				"lo",
@@ -246,10 +270,6 @@
 			[
 				"conta",
 				"container (?)"
-			],
-			[
-				"get",
-				"getPlatform (fn/0)"
 			],
 			[
 				"A",
@@ -494,26 +514,6 @@
 			[
 				"debug",
 				"debugText	(?)"
-			],
-			[
-				"setS",
-				"setSize(width, height, updateStyle)"
-			],
-			[
-				"lenovop",
-				"lenovop1"
-			],
-			[
-				"fir",
-				"firstIn()"
-			],
-			[
-				"an",
-				"animation"
-			],
-			[
-				"upd",
-				"updateAnimation(stateName)"
 			]
 		]
 	},
@@ -545,24 +545,40 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "edit",
+		"last_filter": "re",
 		"selected_items":
 		[
 			[
-				"edit",
-				"Project: Edit Project"
+				"re",
+				"TernJS: Reload"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"status",
+				"Git: Status"
 			],
 			[
 				"push",
 				"Git: Push Current Branch"
 			],
 			[
-				"statu",
-				"Git: Status"
+				"edit",
+				"Project: Edit Project"
 			],
 			[
-				"re",
+				"grunt",
+				"Grunt"
+			],
+			[
+				"rel",
 				"TernJS: Reload"
+			],
+			[
+				"statu",
+				"Git: Status"
 			],
 			[
 				"reload",
@@ -573,10 +589,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"status",
-				"Git: Status"
-			],
-			[
 				"Gist",
 				"Gist: Open Gist"
 			],
@@ -585,24 +597,12 @@
 				"Package Control: Install Package"
 			],
 			[
-				"user",
-				"Preferences: Settings - User"
-			],
-			[
-				"rel",
-				"TernJS: Reload"
-			],
-			[
 				"isn",
 				"Package Control: Install Package"
 			],
 			[
 				"snippet main",
 				"Snippet: main"
-			],
-			[
-				"grunt",
-				"Grunt"
 			],
 			[
 				"puhs",
@@ -1106,9 +1106,34 @@
 	},
 	"file_history":
 	[
-		"/E/myhost/inno studio/README.md",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
+		"/E/EdgeWorks/xmas/3d/publish/web/index.html",
+		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
+		"/E/myhost/inno studio/projects/xmas3d/xmas3d_grunt.js",
+		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/E/EdgeWorks/changhong/publish/web/index.html",
+		"/E/EdgeWorks/xmas/3d/index.html",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/E/myhost/inno studio/projects/demo/com_test.js",
+		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/package.json",
+		"/E/myhost/inno studio/templates/project.js",
+		"/E/myhost/inno studio/.gitignore",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
+		"/E/myhost/inno studio/projects/fuck/fuck_grunt.js",
+		"/E/myhost/inno studio/projects/fuck/fuck.js",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
+		"/E/myhost/inno studio/README.md",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/E/myhost/inno studio/build/demo.browserify.js",
+		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
+		"/E/EdgeWorks/demo/publish/web/main.js",
+		"/C/Users/easyfrog/Desktop/viewport.js",
+		"/C/Users/easyfrog/Documents/Tencent Files/24967427/FileRecv/viewport.js",
+		"/E/myhost/inno studio/projects/demo/demo.browserify.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
 		"/E/EdgeWorks/demo/publish/web/index.html",
 		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/index.html",
@@ -1123,30 +1148,21 @@
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/bootstrap.js",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/floorplanner/floorplanner.js",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/example.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/C/Users/easyfrog/AppData/Local/Temp/blueprint3d-2015-12-1-16-44-19.txt",
-		"/E/myhost/inno studio/templates/project.js",
 		"/E/PhoneGap_works/chuangwei/www/main.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/projects/_closed/changhong/changhong.js",
 		"/E/myhost/inno studio/projects/demo/demo.js",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/E/EdgeWorks/demo/publish/web/demo.html",
 		"/E/myhost/inno studio/projects/_closed/lenovop1/lenovop1.js",
 		"/E/myhost/inno studio/projects/_closed/changhong/com_AutoRot.js",
-		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/C/Users/easyfrog/Desktop/会.txt",
 		"/E/myhost/inno studio/js/threejs/Detector.js",
-		"/E/myhost/inno studio/.gitignore",
 		"/E/UnityProjects/zhangqing/zhangqing.sublime-project",
 		"/E/UnityProjects/zhangqing/zhangqing",
 		"/E/UnityProjects/zhangqing/",
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/js/webShow/threeExtend.js",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
@@ -1168,7 +1184,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/metascale.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/metascalecache.sublime-snippet",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Source/WebGL/Three.JS/SEA3DLoader.js",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Source/WebGL/SDK/SEA3D.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Advanced/droid.html",
@@ -1186,7 +1201,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/main.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/project.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Local/Temp/main.js",
-		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/C/Users/easyfrog/Desktop/SuWeb/tiku.xml",
 		"/E/myhost/inno studio/projects/_closed/lenovop1/lenovop1_grunt.js",
 		"/E/myhost/inno studio/projects/_closed/changhong/changhong_grunt.js",
@@ -1206,7 +1220,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/README.md",
-		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
 		"/E/UnityProjects/lianzheng/Assets/Mega-Fiers/Scripts/MegaFiers/Modifiers/MegaModifyObject.cs",
 		"/E/UnityProjects/lianzheng/lianzheng.sln",
@@ -1220,20 +1233,7 @@
 		"/E/myhost/inno studio/test.js",
 		"/E/myhost/inno studio/innoStudio.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
-		"/E/myhost/inno studio/projects/changhong/changhong_grunt.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/wxurl.sublime-snippet",
-		"/E/EdgeWorks/changhong/publish/web/index.html",
-		"/E/myhost/inno studio/js/shaders/CopyShader.js",
-		"/E/PhoneGap_works/chuangwei/www/js/index.js",
-		"/E/PhoneGap_works/chuangwei/plugins/cordova-plugin-whitelist/whitelist.js",
-		"/E/projects/flag/index.html",
-		"/E/PhoneGap_works/chuangwei/www/css/index.css",
-		"/E/myhost/inno studio/projects/changhong/com_AutoRot.js",
-		"/C/Users/easyfrog/Desktop/test.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/tern.py",
-		"/E/myhost/inno studio/build/easygame.min.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Exporter/3dsMax/SEA3D/SEA3D.ms"
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings"
 	],
 	"find":
 	{
@@ -1252,6 +1252,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"glo.myInfo",
+			"sym",
+			"build/",
+			"com_test",
+			"comName",
+			"com",
+			"com_test",
+			"load com_test",
+			"prototype.update",
+			"comNameOrFunc",
+			"comName",
+			"window",
+			"addcom",
 			"require",
 			"game.cameraController",
 			"titleParent",
@@ -1366,20 +1379,7 @@
 			"VertexAnimationMesh",
 			"isAniamting",
 			"isAnimating",
-			"isAniamting",
-			"isAnimating",
-			"isAniamting",
-			"glo.content",
-			"glo.content.",
-			"isAnimating",
-			"VertexAnimationMesh",
-			"vertex",
-			"AnimationData",
-			"dataType",
-			"isAnimating",
-			"autoRo",
-			"targetPos",
-			"cache_file_name"
+			"isAniamting"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1472,6 +1472,26 @@
 		"selected_items":
 		[
 			[
+				"de",
+				"js\\threejs\\Detector.js"
+			],
+			[
+				"g",
+				"js\\webShow\\game.js"
+			],
+			[
+				"ga",
+				"js\\webShow\\game.js"
+			],
+			[
+				"gam",
+				"js\\webShow\\game.js"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
 				"rea",
 				"README.md"
 			],
@@ -1482,10 +1502,6 @@
 			[
 				"utils",
 				"js\\webShow\\utils.js"
-			],
-			[
-				"gam",
-				"js\\webShow\\game.js"
 			],
 			[
 				"gmae",
@@ -1649,9 +1665,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "util",
+		"last_filter": "u",
 		"selected_items":
 		[
+			[
+				"u",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"uti",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
 			[
 				"util",
 				"E:\\EdgeWorks\\utils\\utils.sublime-project"
@@ -1693,16 +1717,8 @@
 				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
 			],
 			[
-				"u",
-				"E:\\EdgeWorks\\utils\\utils.sublime-project"
-			],
-			[
 				"op",
 				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
-			],
-			[
-				"uti",
-				"E:\\EdgeWorks\\utils\\utils.sublime-project"
 			],
 			[
 				"nor",
