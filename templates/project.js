@@ -26,9 +26,20 @@ AdobeEdge.bootstrapCallback(function(compId) {
      *   	glo.pf.version = 444 / 511 ...
      */
     glo.pf = t.getPlatform();
+
+    // nengkan by platform & version
+    //*
     if (glo.pf.isWX && glo.pf.platform == 'Android' && glo.pf.version < 510) {
     	glo.nengkan = false;
     }
+    //*/
+    
+    // nengkan by support webgl
+    /*
+    if (!t.supportWebGL()) {
+        glo.nengkan = false;  
+    }   
+    //*/
 
     // yepnope async load libs
     yepnope({
