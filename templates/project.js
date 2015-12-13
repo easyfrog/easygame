@@ -69,6 +69,7 @@ function init() {
 	targetPos = new THREE.Vector3(0, 0, 0);
 
 	// load scene
+    // game.loadSeas(['models/<%= grunt.project %>.sea], 'inno', function(alldone, count, allCount) { });
 	game.load('models/<%= grunt.project %>.sea', 'inno');
 
 	// loading progress
