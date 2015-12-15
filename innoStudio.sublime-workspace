@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"add",
+				"add(object)"
+			],
+			[
+				"getIn",
+				"getInfoCorutine()"
+			],
+			[
 				"instan",
 				"instanceof"
 			],
@@ -82,10 +90,6 @@
 			[
 				"gt",
 				"getPick(e)"
-			],
-			[
-				"add",
-				"addEventListener"
 			],
 			[
 				"j",
@@ -510,48 +514,9 @@
 			[
 				"de",
 				"debug	(?)"
-			],
-			[
-				"debug",
-				"debugText	(?)"
 			]
 		]
 	},
-	"buffers":
-	[
-		{
-			"file": "projects/xmas3d/xmas3d.js",
-			"settings":
-			{
-				"buffer_size": 1887,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "projects/xmas3d/edgeWorks.js",
-			"settings":
-			{
-				"buffer_size": 2597,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "projects/demo/demo.js",
-			"settings":
-			{
-				"buffer_size": 3762,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/E/EdgeWorks/xmas/3d/publish/web/index.html",
-			"settings":
-			{
-				"buffer_size": 2053,
-				"line_ending": "Windows"
-			}
-		}
-	],
 	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
 	"build_system_choices":
 	[
@@ -579,12 +544,12 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "",
+		"height": 374.0,
+		"last_filter": "push",
 		"selected_items":
 		[
 			[
-				"pus",
+				"push",
 				"Git: Push Current Branch"
 			],
 			[
@@ -596,12 +561,20 @@
 				"TernJS: Reload"
 			],
 			[
-				"user",
-				"Preferences: Settings - User"
+				"reload",
+				"TernJS: Reload"
 			],
 			[
-				"push",
+				"rel",
+				"TernJS: Reload"
+			],
+			[
+				"pus",
 				"Git: Push Current Branch"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
 			],
 			[
 				"edit",
@@ -612,16 +585,8 @@
 				"Grunt"
 			],
 			[
-				"rel",
-				"TernJS: Reload"
-			],
-			[
 				"statu",
 				"Git: Status"
-			],
-			[
-				"reload",
-				"TernJS: Reload"
 			],
 			[
 				"ins",
@@ -1139,29 +1104,25 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/E/myhost/inno studio",
-		"/E/myhost/inno studio/js",
-		"/E/myhost/inno studio/js/threejs",
-		"/E/myhost/inno studio/projects",
-		"/E/myhost/inno studio/templates"
-	],
 	"file_history":
 	[
+		"/E/UnityProjects/lianzheng/Assets/Scripts/RawImageClick.cs",
+		"/E/UnityProjects/lianzheng/Assets/Scripts/ztc/Viewer.cs",
+		"/E/myhost/inno studio/templates/project.js",
+		"/E/EdgeWorks/demo/publish/web/index.html",
+		"/E/EdgeWorks/demo/publish/web/main.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/E/myhost/inno studio/projects/demo/com_test.js",
+		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/js/threejs/Detector.js",
 		"/E/myhost/inno studio/README.md",
-		"/E/myhost/inno studio/templates/project_grunt.js",
-		"/E/myhost/inno studio/templates/project.js",
-		"/E/myhost/inno studio/projects/demo/com_test.js",
-		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/EdgeWorks/xmas/3d/publish/web/index.html",
 		"/E/myhost/inno studio/projects/xmas3d/xmas3d_grunt.js",
 		"/E/EdgeWorks/changhong/publish/web/index.html",
 		"/E/EdgeWorks/xmas/3d/index.html",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/package.json",
 		"/E/myhost/inno studio/.gitignore",
@@ -1173,12 +1134,10 @@
 		"/E/myhost/inno studio/innoStudio.sublime-project",
 		"/E/myhost/inno studio/build/demo.browserify.js",
 		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
-		"/E/EdgeWorks/demo/publish/web/main.js",
 		"/C/Users/easyfrog/Desktop/viewport.js",
 		"/C/Users/easyfrog/Documents/Tencent Files/24967427/FileRecv/viewport.js",
 		"/E/myhost/inno studio/projects/demo/demo.browserify.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
-		"/E/EdgeWorks/demo/publish/web/index.html",
 		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/index.html",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/blueprint3d.js",
@@ -1274,9 +1233,7 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/package.json",
 		"/E/myhost/inno studio/projects/changhong/changhong.js",
 		"/E/myhost/inno studio/test.js",
-		"/E/myhost/inno studio/innoStudio.tern-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings"
+		"/E/myhost/inno studio/innoStudio.tern-project"
 	],
 	"find":
 	{
@@ -1295,6 +1252,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"colliders",
+			"require",
+			"chang",
+			"changgu",
 			"getInfo",
 			"glo.getInfo",
 			"glo.myInfo",
@@ -1418,11 +1379,7 @@
 			"this.file.typeRead",
 			"VertexAnimation",
 			"File",
-			"VertexAnimation",
-			"readMesh",
-			"VertexAnimation",
-			"VertexAnimationMesh",
-			"isAniamting"
+			"VertexAnimation"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1439,140 +1396,6 @@
 		"whole_word": false,
 		"wrap": false
 	},
-	"groups":
-	[
-		{
-			"selected": 2,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "projects/xmas3d/xmas3d.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1887,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								173,
-								173
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 322.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "projects/xmas3d/edgeWorks.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2597,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								932,
-								932
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "projects/demo/demo.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3762,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1035,
-								1035
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/E/EdgeWorks/xmas/3d/publish/web/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2053,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1952,
-								1952
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1280.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 38.0
@@ -1637,7 +1460,6 @@
 		"height": 120.0
 	},
 	"pinned_build_system": "",
-	"project": "innoStudio.sublime-project",
 	"replace":
 	{
 		"height": 76.0
@@ -1994,7 +1816,6 @@
 		],
 		"width": 378.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
