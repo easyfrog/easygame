@@ -494,6 +494,7 @@
 	};
 
 	// 导入sea文件
+	// 
 	Game.prototype.load = function(url, groupName) {
 		var s = this;
 
@@ -530,7 +531,7 @@
 				s.removeEventListener(Game.LOADCOMPLETE, cb);
 			}
 
-			callback(alldone, count, seas.length);
+			callback(alldone, count, seas.length, gn);
 		};
 
 		this.addEventListener(Game.LOADCOMPLETE, cb);
@@ -568,6 +569,44 @@
 	Game.prototype.getGroup = function(groupName) {
 		return this.rootContainer.getObjectByName(groupName);
 	};
+
+	Game.prototype.getMesh = function(name) {
+		return getFromArray(this.sea.meshes, name);
+	};
+
+	Game.prototype.getCamera = function(name) {
+		return getFromArray(this.sea.cameras, name);
+	};
+
+	Game.prototype.getLight = function(name) {
+		return getFromArray(this.sea.lights, name);
+	};
+
+	Game.prototype.getDummy = function(name) {
+		return getFromArray(this.sea.dummys, name);
+	};
+
+	Game.prototype.getCubeMap = function(name) {
+		return getFromArray(this.sea.cubemaps, name);
+	};
+
+	Game.prototype.getTexture = function(name) {
+		return getFromArray(this.sea.textures, name);
+	};
+
+	Game.prototype.getMaterial = function(name) {
+		return getFromArray(this.sea.materials, name);
+	};
+
+	function getFromArray(arr, name) {
+		for (var i = 0; i < arr.length; i++) {
+			var item = arr[i];
+			if (item.name == name) {
+				return item;
+			}
+		};
+		return null;
+	}
 
 	/**
 	 * 让有贴图的材质自发光

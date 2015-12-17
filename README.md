@@ -124,6 +124,16 @@ game.loadSeas(['xx.sea, xx.sea'], 'groupName', function(alldone(boolean), count(
 material.map.minFilter = THREE.NearestFilter;
 material.map.needsUpdate = true;
 ```
+
+6. 得到 sea 中的物体:
+```
+	// 这个方法. 可以直接返回相应的类型,
+	// 如果使用game.sea.getMesh... 只能得到最后Load进来的sea文件里面的数据,并且类型为Object
+	game.getMesh(name);
+	getCamera, getLight, getMaterial, getDummy, getCubMap, getTexture
+```
+
+
 ##continue...
 
 ###Component 组件

@@ -116,6 +116,30 @@ utils.transformTo = function(from, to, time, cv, over, update) {
 	});
 };
 
+/**
+ * 简单的入场相机动画
+ * params: camera(obj), target(v3), over(fn), distacneScale(float), offset(v3)
+ */
+utils.simpleCameraEntrance = function(params) {
+	var game = Game.instance;
+	var mainCam = params.camera;
+	params.target = params.target || game.cameraController.target;
+	var distanceScale = params.distanceScale || .3;
+	var time = params.time || 1;
+
+	utils.sameTransform(game.camera, mainCam);
+	var distance = mainCam.position.distanceTo(params.target) * distanceScale;
+	var offset = params.offset || new THREE.Vector3(0, distance, 0);
+	var v = utils.cameraDirection(game.camera);
+	var from = v.multiplyScalar(-distance).add(offset).add(game.camera.position);
+	game.camera.position.set(from.x, from.y, from.z);
+	utils.transformTo(game.camera, mainCam, time, null, function() {
+	    if (params.over) {
+	    	params.over();
+	    }
+	});
+};
+
 
 /**
  * 将3D世界的点,转化为屏幕坐标
@@ -256,3 +280,12 @@ utils.alone = function(obj, all) {
 		}
 	};
 };
+
+/**
+ * javascript string endWidth function
+ */
+if (typeof String.prototype.endsWith != 'function') {
+    String.prototype.endsWith = function(suffix) {
+        return this.indexOf(suffix, this.length - suffix.length) !== -1;
+    };
+}

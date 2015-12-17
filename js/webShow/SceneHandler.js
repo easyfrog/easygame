@@ -31,10 +31,9 @@ var SceneHandler = function( fileName, scene, standard ) {
     s.root.onComplete = function() {s._onComplete();};
     s.root.onProgress = function(args) {s._onProgress(args);};
 };
-
 SceneHandler.prototype._onComplete = function() {
     var s = this;
-    var len = s.root.meshes.length;
+    var len = s.root.meshes ? s.root.meshes.length : 0;
     // get bounding
     s.bounding = (new THREE.Box3()).setFromObject(s.container);
     for (var i = 0; i < len; i++) {

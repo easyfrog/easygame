@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"cur",
+				"currentIndex	(num)"
+			],
+			[
+				"can",
+				"cameraController	{}"
+			],
+			[
+				"dis",
+				"distanceScale	(num)"
+			],
+			[
+				"cam",
+				"cameraController	{}"
+			],
+			[
+				"mu",
+				"multiplyScalar(scalar)"
+			],
+			[
+				"Vec",
+				"Vector3(x, y, z)"
+			],
+			[
+				"Ve",
+				"Vector3(x, y, z)"
+			],
+			[
+				"bone",
+				"boneGlowMesh	{}"
+			],
+			[
+				"get",
+				"getGlowMat"
+			],
+			[
+				"tran",
+				"transparent	(bool)"
+			],
+			[
+				"nee",
+				"needsUpdate(value)"
+			],
+			[
+				"ad",
+				"AdditiveBlending	(num)"
+			],
+			[
+				"Blen",
+				"AdditiveBlending	(num)"
+			],
+			[
 				"add",
 				"add(object)"
 			],
@@ -14,10 +66,6 @@
 			[
 				"instan",
 				"instanceof"
-			],
-			[
-				"get",
-				"getDeltaTime()"
 			],
 			[
 				"com_",
@@ -140,10 +188,6 @@
 				"herper2	{}"
 			],
 			[
-				"cam",
-				"camera	{}"
-			],
-			[
 				"Cam",
 				"CameraHelper(camera)"
 			],
@@ -222,10 +266,6 @@
 			[
 				"line",
 				"linewidth	(num)"
-			],
-			[
-				"ad",
-				"addEventListener(type, listener)"
 			],
 			[
 				"lad",
@@ -340,19 +380,11 @@
 				"playContinueId	(num)"
 			],
 			[
-				"cur",
-				"curIndex	(num)"
-			],
-			[
 				"for",
 				"for	for (…) {…}"
 			],
 			[
 				"mus",
-				"music	(?)"
-			],
-			[
-				"mu",
 				"music	(?)"
 			],
 			[
@@ -482,38 +514,6 @@
 			[
 				"inn",
 				"innerWidth	(num)"
-			],
-			[
-				"offs",
-				"offsetWidth	(num)"
-			],
-			[
-				"ta",
-				"target	{}"
-			],
-			[
-				"pro",
-				"PROGRESS	(str)"
-			],
-			[
-				"ch",
-				"changhong"
-			],
-			[
-				"remove",
-				"removeEventListener(type, listener)"
-			],
-			[
-				"gen",
-				"generateMipmaps	(?)"
-			],
-			[
-				"getSym",
-				"getSymbolElement"
-			],
-			[
-				"de",
-				"debug	(?)"
 			]
 		]
 	},
@@ -544,25 +544,33 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 374.0,
-		"last_filter": "push",
+		"height": 152.0,
+		"last_filter": "reload",
 		"selected_items":
 		[
 			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
-				"status",
-				"Git: Status"
+				"reload",
+				"TernJS: Reload"
 			],
 			[
 				"re",
 				"TernJS: Reload"
 			],
 			[
-				"reload",
+				"r",
 				"TernJS: Reload"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"status",
+				"Git: Status"
 			],
 			[
 				"rel",
@@ -583,10 +591,6 @@
 			[
 				"grunt",
 				"Grunt"
-			],
-			[
-				"statu",
-				"Git: Status"
 			],
 			[
 				"ins",
@@ -679,10 +683,6 @@
 			[
 				"runco",
 				"Run Commands"
-			],
-			[
-				"r",
-				"TernJS: Reload"
 			],
 			[
 				"stats",
@@ -1106,6 +1106,22 @@
 	},
 	"file_history":
 	[
+		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/ztc/Manager.cs",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
+		"/E/myhost/inno studio/projects/xmas3d/xmas3d.js",
+		"/E/myhost/inno studio/projects/xmas3d/xmas3d_grunt.js",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/js/controls/OrbitControls.js",
+		"/E/myhost/inno studio/js/shaders/FresnelShader.js",
+		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/config.txt",
+		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/data.txt",
+		"/E/UnityProjects/lianzheng/xx/tiku.xml",
+		"/D/程序/FTP/jump_user.html",
+		"/E/myhost/inno studio/projects/demo/changgu.js",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
+		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
+		"/E/PhoneGap_works/chuangwei/www/index.html",
 		"/E/UnityProjects/lianzheng/Assets/Scripts/RawImageClick.cs",
 		"/E/UnityProjects/lianzheng/Assets/Scripts/ztc/Viewer.cs",
 		"/E/myhost/inno studio/templates/project.js",
@@ -1115,21 +1131,17 @@
 		"/E/myhost/inno studio/projects/demo/com_test.js",
 		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/js/threejs/Detector.js",
 		"/E/myhost/inno studio/README.md",
 		"/E/EdgeWorks/xmas/3d/publish/web/index.html",
-		"/E/myhost/inno studio/projects/xmas3d/xmas3d_grunt.js",
 		"/E/EdgeWorks/changhong/publish/web/index.html",
 		"/E/EdgeWorks/xmas/3d/index.html",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/package.json",
 		"/E/myhost/inno studio/.gitignore",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
 		"/E/myhost/inno studio/projects/fuck/fuck_grunt.js",
 		"/E/myhost/inno studio/projects/fuck/fuck.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
 		"/E/myhost/inno studio/build/demo.browserify.js",
@@ -1138,7 +1150,6 @@
 		"/C/Users/easyfrog/Documents/Tencent Files/24967427/FileRecv/viewport.js",
 		"/E/myhost/inno studio/projects/demo/demo.browserify.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/index.html",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/blueprint3d.js",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/three/three_controller.js",
@@ -1166,7 +1177,6 @@
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
 		"/E/myhost/inno studio/js/webShow/threeExtend.js",
 		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
-		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/hello-world.html",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Labs/Three.JS-NodeMaterial/index.html",
@@ -1175,14 +1185,12 @@
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Camera.cs",
 		"/E/UnityProjects/lianzheng/Assets/Scripts/AnimatorControl.cs",
 		"/E/EdgeWorks/analyze/publish/web/index.html",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/data.txt",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Demo/20150817_Data/mainData",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/AniTarget.cs",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/NGUI/Scripts/UI/UIInput.cs",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/Waiter.cs",
 		"/C/Users/easyfrog/AppData/Local/Temp/eg.js",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/musicInPart.cs",
-		"/E/PhoneGap_works/chuangwei/www/index.html",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/metascale.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/metascalecache.sublime-snippet",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Source/WebGL/Three.JS/SEA3DLoader.js",
@@ -1214,7 +1222,6 @@
 		"/E/PhoneGap_works/chuangwei/config.xml",
 		"/E/EdgeWorks/downloadpage/publish/web/index.html",
 		"/E/myhost/inno studio/projects/lenovop1/lenovop1.js",
-		"/E/myhost/inno studio/js/shaders/FresnelShader.js",
 		"/E/myhost/inno studio/projects/lenovop1/lenovop1_grunt.js",
 		"/E/PhoneGap_works/LenovoP1/www/index.html",
 		"/E/PhoneGap_works/LenovoP1/config.xml",
@@ -1225,15 +1232,8 @@
 		"/D/libs/Sea3D/sea3d-c59e19feabf17381b46500e6a2c8da4f9275713e/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
 		"/E/UnityProjects/lianzheng/Assets/Mega-Fiers/Scripts/MegaFiers/Modifiers/MegaModifyObject.cs",
 		"/E/UnityProjects/lianzheng/lianzheng.sln",
-		"/E/myhost/inno studio/js/controls/OrbitControls.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/tern.py",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
-		"/E/myhost/inno studio/.tern-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/package.json",
-		"/E/myhost/inno studio/projects/changhong/changhong.js",
-		"/E/myhost/inno studio/test.js",
-		"/E/myhost/inno studio/innoStudio.tern-project"
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings"
 	],
 	"find":
 	{
@@ -1252,6 +1252,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"targetObj",
+			"target",
+			"j(",
+			"targetPos",
 			"colliders",
 			"require",
 			"chang",
@@ -1375,11 +1379,7 @@
 			"game.cameraController",
 			"VertexAni",
 			"attribs",
-			"THREE.SEA3D",
-			"this.file.typeRead",
-			"VertexAnimation",
-			"File",
-			"VertexAnimation"
+			"THREE.SEA3D"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1398,7 +1398,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 38.0
+		"height": 40.0
 	},
 	"input":
 	{
@@ -1429,7 +1429,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 159.0
+		"height": 121.0
 	},
 	"output.find_results":
 	{
@@ -1471,6 +1471,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"or",
+				"js\\controls\\OrbitControls.js"
+			],
+			[
+				"chuan",
+				"projects\\chuangwei\\chuangwei.js"
+			],
 			[
 				"uti",
 				"js\\webShow\\utils.js"
