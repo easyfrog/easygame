@@ -6,7 +6,7 @@
  *  author: 	easyfrog
  *  date:   	2015/5/10
  *  sea3d: 		17000
- *  threejs: 	r71
+ *  threejs: 	r72
  *
  * container: domElement
  * config: {

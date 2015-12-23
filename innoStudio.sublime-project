@@ -16,8 +16,7 @@
 	],
 	"ignored_packages":
 	[
-		"OmniSharp",
-		"ternjs"
+		"OmniSharp"
 	],
 	"ternjs":
 	{

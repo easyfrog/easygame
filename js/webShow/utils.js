@@ -93,7 +93,7 @@ utils.transformTo = function(from, to, time, cv, over, update) {
 	var qb = to.quaternion;
 
 	ztc.Tween.isDom = false;
-    if (!time) {time = 1};
+    if (time == undefined) {time = 1};
     ztc.Tween.actionArrayProps([from.position], time, 
 	   [{
 	   		x:to.position.x,
