@@ -31,6 +31,7 @@ var SceneHandler = function( fileName, scene, standard ) {
     s.root.onComplete = function() {s._onComplete();};
     s.root.onProgress = function(args) {s._onProgress(args);};
 };
+
 SceneHandler.prototype._onComplete = function() {
     var s = this;
     var len = s.root.meshes ? s.root.meshes.length : 0;
@@ -69,7 +70,14 @@ SceneHandler.prototype._onComplete = function() {
     // stop all animations
     SEA3D.AnimationHandler.stop();
 
-    if (s.onComplete) s.onComplete();
+    // 如果后面还有载入任务
+    if (loadSequence.length > 0) {
+        var next = loadSequence.shift();
+        s._load(next.fileName, next.groupName);
+    } else {
+        if (s.onComplete) s.onComplete();
+        isLoading = false;
+    }
 };
 
 SceneHandler.prototype._onProgress = function(args) {
@@ -77,11 +85,26 @@ SceneHandler.prototype._onProgress = function(args) {
     if (s.onProgress) s.onProgress(args);
 };
 
-
+var loadSequence = [];
 SceneHandler.groupIndex = 0;
+var isLoading = false;
 SceneHandler.prototype.load = function( fileName, groupName ) {
     var s = this;
 
+    // 加入载入队列
+    loadSequence.push({fileName:fileName, groupName: groupName});
+
+    // 如果当前没有下载
+    if (!isLoading) {
+        isLoading = true;
+        // 取出队列中的第一个
+        var work = loadSequence.shift();
+        s._load(work.fileName, work.groupName);
+    }
+};
+
+SceneHandler.prototype._load = function(fileName, groupName) {
+    var s = this;
     groupName = groupName || SceneHandler.groupIndex + '';
     SceneHandler.groupIndex ++;
 
@@ -91,12 +114,17 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
         s.fileName = fileName;
     }
 
-    var ctn = new THREE.Group();
-    ctn.name = groupName;
+    // 检测是否已经存在这个组, 如果存在就继续存入这个组中
+    var ctn = s.container.getObjectByName(groupName);
+    if (!ctn) {
+        ctn = new THREE.Group();
+        ctn.name = groupName;
+    }
+
     s.root.container = ctn;
 
     s.root.load(fileName);
-};
+}
 
 SceneHandler.prototype.update = function () {
     this.deltaTime = this.clock.getDelta();

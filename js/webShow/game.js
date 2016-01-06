@@ -46,7 +46,7 @@
 		magFilter: THREE.LinearFilter, 
 		format: THREE.RGBAFormat 
 	} );
-	*/
+	//*/
 	// ================ private fields End ================
 
 	var Game = function(container, config) {
@@ -86,12 +86,12 @@
 
 		var effect = new THREE.ShaderPass( THREE.SSAOShader );
 		effect.uniforms[ 'tDepth' ].value = depthTarget;
-		effect.uniforms[ 'size' ].value.set( 512, 512 );
+		effect.uniforms[ 'size' ].value.set( s.width, s.height );
 		effect.uniforms[ 'cameraNear' ].value = s.camera.near;
 		effect.uniforms[ 'cameraFar' ].value = s.camera.far;
 		effect.renderToScreen = true;
 		s.composer.addPass( effect );
-		*/
+		//*/
 
 		// 是否暂停
 		s.pause = false;
@@ -466,11 +466,14 @@
 		// if (this.cameraController && this.cameraController.update) {
 		// 	this.cameraController.update();
 		// }
+
 		// composer
-		// this.scene.overrideMaterial = depthMaterial;
-		// this.renderer.render(this.scene, this.camera, depthTarget);
-		// this.scene.overrideMaterial = null;
-		// this.composer.render(_delta);
+		/*
+		this.scene.overrideMaterial = depthMaterial;
+		this.renderer.render(this.scene, this.camera, depthTarget);
+		this.scene.overrideMaterial = null;
+		this.composer.render(_delta);
+		//*/
 		this.renderer.render(this.scene, this.camera);
 		this.invoke(Game.POSTUPDATE, _delta);
 	};
