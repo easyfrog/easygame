@@ -325,7 +325,7 @@
 		Game.instance.components.push(com);
 		saveInvoke(com, 'start');
 
-		console.log('-> addComponent3');
+		console.log('-> addComponent');
 
 		return com;
 	};
@@ -502,14 +502,19 @@
 		var s = this;
 
 		s.sh.load(url, groupName);
-		s.sh.onProgress = function(p) {
-			if (!isNaN(p.progress)) {
-				s.invoke(Game.PROGRESS, p);		
-			}
-		};
-		s.sh.onComplete = function() {
-			s.invoke(Game.LOADCOMPLETE, groupName);
-		};
+		if (!s.sh.onProgress) {
+			s.sh.onProgress = function(p) {
+				if (!isNaN(p.progress)) {
+					s.invoke(Game.PROGRESS, p);		
+				}
+			};
+		}
+
+		if (!s.sh.onComplete) {
+			s.sh.onComplete = function() {
+				s.invoke(Game.LOADCOMPLETE, groupName);
+			};			
+		}
 	};
 
 	/**

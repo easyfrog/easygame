@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"tr",
+				"transparent"
+			],
+			[
+				"n",
+				"needsUpdate"
+			],
+			[
+				"visi",
+				"visible	(bool)"
+			],
+			[
+				"G",
+				"Group()"
+			],
+			[
+				"getObject",
+				"getObjectByName(name)"
+			],
+			[
+				"load",
+				"loadSequence	[]"
+			],
+			[
+				"con",
+				"container	{}"
+			],
+			[
 				"pos",
 				"postprocessing"
 			],
@@ -108,16 +136,8 @@
 				"comNameOrFunc	(?)"
 			],
 			[
-				"load",
-				"loadNpmTasks	(?)"
-			],
-			[
 				"brow",
 				"browserify"
-			],
-			[
-				"tr",
-				"transformToComplete()"
 			],
 			[
 				"ca",
@@ -174,10 +194,6 @@
 			[
 				"ani",
 				"animatePosition	(?)"
-			],
-			[
-				"con",
-				"console	{}"
 			],
 			[
 				"l",
@@ -498,25 +514,36 @@
 			[
 				"MOU",
 				"MOUSEUP	(str)"
-			],
-			[
-				"sta",
-				"stageScale"
-			],
-			[
-				"cpu",
-				"cpu_cam	(?)"
-			],
-			[
-				"up",
-				"updateProjectionMatrix()"
-			],
-			[
-				"show",
-				"showAll()"
 			]
 		]
 	},
+	"buffers":
+	[
+		{
+			"file": "js/coms/analyzeScene.js",
+			"settings":
+			{
+				"buffer_size": 1738,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/project.js",
+			"settings":
+			{
+				"buffer_size": 2149,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/webShow/utils.js",
+			"settings":
+			{
+				"buffer_size": 6984,
+				"line_ending": "Windows"
+			}
+		}
+	],
 	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
 	"build_system_choices":
 	[
@@ -1104,20 +1131,37 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/E/myhost/inno studio",
+		"/E/myhost/inno studio/projects",
+		"/E/myhost/inno studio/templates"
+	],
 	"file_history":
 	[
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
+		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
+		"/E/myhost/inno studio/package.json",
+		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
+		"/E/myhost/inno studio/.gitignore",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/E/myhost/inno studio/js/webShow/Tween.js",
+		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
+		"/E/myhost/inno studio/projects/demo/com_test.js",
+		"/E/myhost/inno studio/projects/demo/changgu.js",
+		"/C/Users/easyfrog/Desktop/参考/年会宗旨.txt",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/E/EdgeWorks/shadow/publish/web/shadow.html",
 		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
 		"/E/myhost/inno studio/js/postprocessing/RenderPass.js",
-		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
-		"/E/myhost/inno studio/projects/demo/com_test.js",
 		"/E/myhost/inno studio/js/webShow/utils.js",
-		"/E/myhost/inno studio/.gitignore",
 		"/E/myhost/inno studio/projects/bone/edgeEvents.js",
 		"/E/myhost/inno studio/projects/bone/bone_grunt.js",
 		"/E/myhost/inno studio/js/controls/MouseControls.js",
 		"/E/myhost/inno studio/js/controls/VRControls.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/templates/project.js",
 		"/E/myhost/inno studio/projects/bone/config.js",
 		"/E/EdgeWorks/demo/publish/web/index.html",
@@ -1143,7 +1187,6 @@
 		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
 		"/E/myhost/inno studio/projects/xmas3d/xmas3d.js",
 		"/E/PhoneGap_works/bone/config.xml",
-		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/README.md",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/ztc/Manager.cs",
 		"/E/myhost/inno studio/projects/xmas3d/xmas3d_grunt.js",
@@ -1153,7 +1196,6 @@
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/data.txt",
 		"/E/UnityProjects/lianzheng/xx/tiku.xml",
 		"/D/程序/FTP/jump_user.html",
-		"/E/myhost/inno studio/projects/demo/changgu.js",
 		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
 		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
 		"/E/PhoneGap_works/chuangwei/www/index.html",
@@ -1161,12 +1203,10 @@
 		"/E/UnityProjects/lianzheng/Assets/Scripts/ztc/Viewer.cs",
 		"/E/EdgeWorks/demo/publish/web/main.js",
 		"/E/myhost/inno studio/templates/project_grunt.js",
-		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/myhost/inno studio/js/threejs/Detector.js",
 		"/E/EdgeWorks/xmas/3d/publish/web/index.html",
 		"/E/EdgeWorks/changhong/publish/web/index.html",
 		"/E/EdgeWorks/xmas/3d/index.html",
-		"/E/myhost/inno studio/package.json",
 		"/E/myhost/inno studio/projects/fuck/fuck_grunt.js",
 		"/E/myhost/inno studio/projects/fuck/fuck.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
@@ -1202,7 +1242,6 @@
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
 		"/E/myhost/inno studio/js/webShow/threeExtend.js",
-		"/E/myhost/inno studio/js/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/hello-world.html",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Labs/Three.JS-NodeMaterial/index.html",
 		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
@@ -1223,17 +1262,11 @@
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Source/WebGL/SDK/SEA3D.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Advanced/droid.html",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/car.html",
-		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/libs/tween.min.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Build/Three.JS/sea3d.tjs.min.js",
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Controller.cs",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/Default (Windows).sublime-keymap",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/ThemrFavorites.sublime-settings",
-		"/C/Users/easyfrog/Desktop/material.xml",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/ThemrFavorites.sublime-settings",
-		"/D/libs/Flotr2-master/js/types/pie.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/main.sublime-snippet",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/project.sublime-snippet"
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/ThemrFavorites.sublime-settings"
 	],
 	"find":
 	{
@@ -1252,6 +1285,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"work.",
+			"Scene",
+			"s.root.container",
 			"effect",
 			"lastTransform",
 			"Game.instance",
@@ -1376,10 +1412,7 @@
 			"glo.currentConentSym.show();",
 			"show",
 			"glo.currentConent",
-			"glo.ting",
-			"voice",
-			"addLayer",
-			"1.3"
+			"glo.ting"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1396,6 +1429,106 @@
 		"whole_word": false,
 		"wrap": false
 	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/coms/analyzeScene.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								789,
+								789
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/project.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1816,
+								1816
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/webShow/utils.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 442.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
 	"incremental_find":
 	{
 		"height": 40.0
@@ -1460,6 +1593,7 @@
 		"height": 120.0
 	},
 	"pinned_build_system": "",
+	"project": "innoStudio.sublime-project",
 	"replace":
 	{
 		"height": 76.0
@@ -1476,6 +1610,26 @@
 				"js\\webShow\\game.js"
 			],
 			[
+				"game",
+				"js\\webShow\\game.js"
+			],
+			[
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"ana",
+				"js\\coms\\analyzeScene.js"
+			],
+			[
+				"scene",
+				"js\\webShow\\SceneHandler.js"
+			],
+			[
+				"demo",
+				"projects\\demo\\demo.js"
+			],
+			[
 				"chan",
 				"projects\\demo\\changgu.js"
 			],
@@ -1490,10 +1644,6 @@
 			[
 				"bone",
 				"projects\\bone\\bone.js"
-			],
-			[
-				"uti",
-				"js\\webShow\\utils.js"
 			],
 			[
 				"edgeeven",
@@ -1572,16 +1722,8 @@
 				"projects\\demo\\demo.js"
 			],
 			[
-				"demo",
-				"projects\\demo\\demo.js"
-			],
-			[
 				"chuang",
 				"projects\\chuangwei\\chuangwei.js"
-			],
-			[
-				"game",
-				"js\\webShow\\game.js"
 			],
 			[
 				"u",
@@ -1709,9 +1851,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "open",
+		"last_filter": "u",
 		"selected_items":
 		[
+			[
+				"u",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"op",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
 			[
 				"open",
 				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
@@ -1727,10 +1877,6 @@
 			[
 				"",
 				"E:\\myhost\\inno studio\\innoStudio.sublime-project"
-			],
-			[
-				"u",
-				"E:\\EdgeWorks\\utils\\utils.sublime-project"
 			],
 			[
 				"util",
@@ -1763,10 +1909,6 @@
 			[
 				"web",
 				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
-			],
-			[
-				"op",
-				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
 			],
 			[
 				"nor",
@@ -1856,6 +1998,7 @@
 		],
 		"width": 378.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},

@@ -92,6 +92,9 @@ function init() {
 function onLoadComplete() {
 	game.removeEventListener(Game.LOADCOMPLETE, onLoadComplete);
 	t.analyzeIncrease(_projectName, 'sandi');
+
+    // 分析场景,通过Mesh或Material的名称标签做一些预处理
+    require('../../js/coms/analyzeScene')(game);
 	
 	// scene load complete
 	

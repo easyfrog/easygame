@@ -86,8 +86,8 @@ SceneHandler.prototype._onProgress = function(args) {
 };
 
 var loadSequence = [];
-SceneHandler.groupIndex = 0;
 var isLoading = false;
+SceneHandler.groupIndex = 0;
 SceneHandler.prototype.load = function( fileName, groupName ) {
     var s = this;
 
