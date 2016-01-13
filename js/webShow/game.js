@@ -644,7 +644,7 @@
 	 */
 	Game.prototype.playGeneralAnimation = function(animationName, timeScale, repeat) {
 		animationName = animationName || 'general';
-		game.sh.play(animationName, timeScale, repeat);		
+		Game.instance.sh.play(animationName, timeScale, repeat);		
 	};
 
 	/**

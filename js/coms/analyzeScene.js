@@ -4,23 +4,28 @@
  */
 module.exports = function(game) {
     // get all new loaded materials / meshes
-    var mats = [];
+    var mats   = [];
     var meshes = [];
+    var dumys  = [];
 
     var keys = Object.keys(game.sea.objects);
+
+    var i = 0;
     
     for (var i = 0; i < keys.length; i++) {
         var key = keys[i];
-        if (key.indexOf('mat/') == 0) {
+        if (key.indexOf('mat/') == 0) {             // 材质
             mats.push(game.sea.objects[key]);
-        } else if (key.indexOf('m3d/') == 0) {
+        } else if (key.indexOf('m3d/') == 0) {      // 模型
             meshes.push(game.sea.objects[key]);
+        } else if (key.indexOf('dmy') == 0) {       // 虚拟物体
+            dumys.push(game.sea.objects[key]);
         }
     };
 
-    // analyze meshes name 
-    for (var j = 0; j < meshes.length; j++) {
-        var mesh = meshes[j];
+    // 模型 
+    for (i = 0; i < meshes.length; i++) {
+        var mesh = meshes[i];
 
         doit(mesh, '-hide', function(o) {               // 隐藏, 同时隐藏子物体
             o.visible = false;
@@ -34,8 +39,15 @@ module.exports = function(game) {
         });
     };
 
-    // analyze material name
-    for (var i = 0; i < mats.length; i++) {
+    // 虚拟体
+    for (i = 0; i < dumys.length; i++) {            // 默认将所有的虚拟体,设置为不可见,但可点击.
+        var dumy = dumys[i];
+        dumy.material.transparent = true;
+        dumy.material.opacity = 0;
+    };
+
+    // 材质
+    for (i = 0; i < mats.length; i++) {
         var mat = mats[i];
 
         doit(mat, '-metal', function(o) {               // 金属
@@ -47,6 +59,10 @@ module.exports = function(game) {
         });
         doit(mat, '-refraction', function(o) {          // 折射      
             utils.switchFanSheZheShe(o);
+        });
+        doit(mat, '-nearest', function(o) {             // 贴图禁止 minmap
+            o.map.minFilter = THREE.NearestFilter;
+            o.map.needsUpdate = true;
         });
     };
 
