@@ -1,11 +1,28 @@
 /**
  * analyze sea3d objects with custom stuffix name
  */
-module.exports = function(game) {
+module.exports = function(game, lastOnly) {
     // get all new loaded materials / meshes
-    var mats   = game.sea.materials || [];
-    var meshes = game.sea.meshes || [];
-    var dumys  = game.sea.dummys || [];
+    var mats = [], meshes = [], dumys = [];
+    var i = 0;
+
+    var keys = Object.keys(game.sea.objects);
+    if (lastOnly) {                                 // 只针对最后一次导入的内容
+        for (var i = 0; i < keys.length; i++) {
+            var key = keys[i];
+            if (key.indexOf('m3d/') == 0) {
+                meshes.push(game.sea.objects[key]);
+            } else if (key.indexOf('dmy/') == 0) {
+                dumys.push(game.sea.objects[key]);
+            } else if (key.indexOf('mat/') == 0) {
+                mats.push(game.sea.objects[key]);
+            }
+        };
+    } else {
+        mats   = game.sea.materials || [];
+        meshes = game.sea.meshes || [];
+        dumys  = game.sea.dummys || [];
+    }
 
     // 模型 
     for (i = 0; i < meshes.length; i++) {
