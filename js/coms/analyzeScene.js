@@ -1,27 +1,11 @@
 /**
- * analyze sea3d materials with custom stuffix name
- * _metal, _opacity
+ * analyze sea3d objects with custom stuffix name
  */
 module.exports = function(game) {
     // get all new loaded materials / meshes
-    var mats   = [];
-    var meshes = [];
-    var dumys  = [];
-
-    var keys = Object.keys(game.sea.objects);
-
-    var i = 0;
-    
-    for (var i = 0; i < keys.length; i++) {
-        var key = keys[i];
-        if (key.indexOf('mat/') == 0) {             // 材质
-            mats.push(game.sea.objects[key]);
-        } else if (key.indexOf('m3d/') == 0) {      // 模型
-            meshes.push(game.sea.objects[key]);
-        } else if (key.indexOf('dmy') == 0) {       // 虚拟物体
-            dumys.push(game.sea.objects[key]);
-        }
-    };
+    var mats   = game.sea.materials || [];
+    var meshes = game.sea.meshes || [];
+    var dumys  = game.sea.dummys || [];
 
     // 模型 
     for (i = 0; i < meshes.length; i++) {

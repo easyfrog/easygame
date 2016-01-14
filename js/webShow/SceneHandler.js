@@ -70,12 +70,13 @@ SceneHandler.prototype._onComplete = function() {
     // stop all animations
     SEA3D.AnimationHandler.stop();
 
+    if (s.onComplete) s.onComplete();
+    
     // 如果后面还有载入任务
     if (loadSequence.length > 0) {
         var next = loadSequence.shift();
         s._load(next.fileName, next.groupName);
     } else {
-        if (s.onComplete) s.onComplete();
         isLoading = false;
     }
 };
