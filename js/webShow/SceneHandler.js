@@ -28,6 +28,7 @@ var SceneHandler = function( fileName, scene, standard ) {
     s.onComplete = undefined;
     s.onProgress = undefined;
     s.castShadow = s.receiveShadow = true;
+    s.currentGroup = '';
     s.root.onComplete = function() {s._onComplete();};
     s.root.onProgress = function(args) {s._onProgress(args);};
 };
@@ -70,7 +71,7 @@ SceneHandler.prototype._onComplete = function() {
     // stop all animations
     SEA3D.AnimationHandler.stop();
 
-    if (s.onComplete) s.onComplete();
+    if (s.onComplete) s.onComplete( s.currentGroup );
     
     // 如果后面还有载入任务
     if (loadSequence.length > 0) {
@@ -107,6 +108,7 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
 SceneHandler.prototype._load = function(fileName, groupName) {
     var s = this;
     groupName = groupName || SceneHandler.groupIndex + '';
+    s.currentGroup = groupName;
     SceneHandler.groupIndex ++;
 
     if (fileName == undefined) {

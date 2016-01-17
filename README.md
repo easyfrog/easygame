@@ -115,8 +115,8 @@ function onLoadComplete(groupName) {
 
 4. **同时载入多个sea文件**
 ```
-game.loadSeas(seasArray, groupName, callback);
-game.loadSeas(['xx.sea, xx.sea'], 'groupName', function(alldone(boolean), count(int), allCount(int)) {});
+game.loadSeas(seasArray, groupName, callback, groupName);
+game.loadSeas(['xx.sea, xx.sea'], 'groupName', function(alldone(boolean), count(int), allCount(int)) {}, groupName(str));
 ```
 
 5. 设置贴图的minFilter

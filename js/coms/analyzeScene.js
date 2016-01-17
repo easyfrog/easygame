@@ -7,7 +7,7 @@ module.exports = function(game, lastOnly) {
     var i = 0;
 
     var keys = Object.keys(game.sea.objects);
-    if (lastOnly) {                                 // 只针对最后一次导入的内容
+    if (lastOnly) {                                     // 只针对最后一次导入的内容
         for (var i = 0; i < keys.length; i++) {
             var key = keys[i];
             if (key.indexOf('m3d/') == 0) {
@@ -18,7 +18,7 @@ module.exports = function(game, lastOnly) {
                 mats.push(game.sea.objects[key]);
             }
         };
-    } else {
+    } else {                                            // 针对所有的物体
         mats   = game.sea.materials || [];
         meshes = game.sea.meshes || [];
         dumys  = game.sea.dummys || [];
@@ -41,7 +41,7 @@ module.exports = function(game, lastOnly) {
     };
 
     // 虚拟体
-    for (i = 0; i < dumys.length; i++) {            // 默认将所有的虚拟体,设置为不可见,但可点击.
+    for (i = 0; i < dumys.length; i++) {                // 默认将所有的虚拟体,设置为不可见,但可点击.
         var dumy = dumys[i];
         dumy.material.transparent = true;
         dumy.material.opacity = 0;

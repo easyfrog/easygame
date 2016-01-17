@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"du",
+				"dumys	[]"
+			],
+			[
+				"mesh",
+				"meshes	[]"
+			],
+			[
+				"las",
+				"lastOnly	(?)"
+			],
+			[
 				"tr",
 				"transparent"
 			],
@@ -502,48 +514,9 @@
 			[
 				"isAn",
 				"isAnimating	(bool)"
-			],
-			[
-				"da",
-				"dataList	(?)"
-			],
-			[
-				"not",
-				"notAutoRot()"
-			],
-			[
-				"MOU",
-				"MOUSEUP	(str)"
 			]
 		]
 	},
-	"buffers":
-	[
-		{
-			"file": "js/coms/analyzeScene.js",
-			"settings":
-			{
-				"buffer_size": 1738,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/project.js",
-			"settings":
-			{
-				"buffer_size": 2149,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/webShow/utils.js",
-			"settings":
-			{
-				"buffer_size": 6984,
-				"line_ending": "Windows"
-			}
-		}
-	],
 	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
 	"build_system_choices":
 	[
@@ -571,20 +544,24 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "re",
+		"height": 374.0,
+		"last_filter": "push",
 		"selected_items":
 		[
-			[
-				"re",
-				"TernJS: Reload"
-			],
 			[
 				"push",
 				"Git: Push Current Branch"
 			],
 			[
 				"status",
+				"Git: Status"
+			],
+			[
+				"re",
+				"TernJS: Reload"
+			],
+			[
+				"sta",
 				"Git: Status"
 			],
 			[
@@ -698,10 +675,6 @@
 			[
 				"ru",
 				"RunCommands"
-			],
-			[
-				"sta",
-				"Git: Status"
 			],
 			[
 				"gru",
@@ -1131,17 +1104,17 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/E/myhost/inno studio",
-		"/E/myhost/inno studio/projects",
-		"/E/myhost/inno studio/templates"
-	],
 	"file_history":
 	[
+		"/E/MyFolder/fuckDelete.txt",
+		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
+		"/E/myhost/inno studio/projects/demo/changgu.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/templates/project.js",
+		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
-		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/myhost/inno studio/package.json",
 		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
 		"/E/myhost/inno studio/.gitignore",
@@ -1149,20 +1122,16 @@
 		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/demo/com_test.js",
-		"/E/myhost/inno studio/projects/demo/changgu.js",
 		"/C/Users/easyfrog/Desktop/参考/年会宗旨.txt",
 		"/E/myhost/inno studio/js/threejs/three.js",
 		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/EdgeWorks/shadow/publish/web/shadow.html",
 		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
 		"/E/myhost/inno studio/js/postprocessing/RenderPass.js",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/projects/bone/edgeEvents.js",
 		"/E/myhost/inno studio/projects/bone/bone_grunt.js",
 		"/E/myhost/inno studio/js/controls/MouseControls.js",
 		"/E/myhost/inno studio/js/controls/VRControls.js",
-		"/E/myhost/inno studio/templates/project.js",
 		"/E/myhost/inno studio/projects/bone/config.js",
 		"/E/EdgeWorks/demo/publish/web/index.html",
 		"/E/myhost/inno studio/projects/bone/bone.js",
@@ -1181,7 +1150,6 @@
 		"/C/Users/easyfrog/Desktop/TernJS/ternjs/reloader.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/projects/xmas3d/edgeWorks.js",
 		"/E/myhost/inno studio/js/coms/analyzeMaterial.js",
 		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
@@ -1265,8 +1233,7 @@
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/libs/tween.min.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Build/Three.JS/sea3d.tjs.min.js",
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Controller.cs",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/Default (Windows).sublime-keymap",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/ThemrFavorites.sublime-settings"
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/Default (Windows).sublime-keymap"
 	],
 	"find":
 	{
@@ -1285,6 +1252,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Neares",
+			"k",
+			"j",
+			"analyze",
 			"work.",
 			"Scene",
 			"s.root.container",
@@ -1408,11 +1379,7 @@
 			"currentConentSym",
 			"glo.load",
 			"game.pause",
-			"currentConentSym",
-			"glo.currentConentSym.show();",
-			"show",
-			"glo.currentConent",
-			"glo.ting"
+			"currentConentSym"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1429,106 +1396,6 @@
 		"whole_word": false,
 		"wrap": false
 	},
-	"groups":
-	[
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "js/coms/analyzeScene.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1738,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								789,
-								789
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "templates/project.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2149,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1816,
-								1816
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 300.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/webShow/utils.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6984,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								604,
-								604
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark.tmTheme",
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 442.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 40.0
@@ -1593,7 +1460,6 @@
 		"height": 120.0
 	},
 	"pinned_build_system": "",
-	"project": "innoStudio.sublime-project",
 	"replace":
 	{
 		"height": 76.0
@@ -1605,6 +1471,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"s",
+				"js\\webShow\\SceneHandler.js"
+			],
 			[
 				"ga",
 				"js\\webShow\\game.js"
@@ -1998,7 +1868,6 @@
 		],
 		"width": 378.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
