@@ -50,31 +50,6 @@ module.exports = function(game, lastOnly) {
     console.log('analyzeScene complete.');
 };
 
-// 分析标签化的名称及参数 
-// {name: 'xxx', parameters: {kao: {v: 1}}}
-var analyzeName = function( name ) {
-    var arr = name.split('-');                          // 'kao-width_w:5.3_h:4.56-hide_v:true'     
-    res = {};
-    res['parameters'] = {};
-    res.name = arr[0];                                  // 'kao'
-
-    var subArr;
-    if (arr.length > 1) {
-        for (i = 1; i < arr.length; i++) {              // 'width_w:5.3_h:4.56'
-            var ar = arr[i].split('_');
-            var type = ar[0];
-            res['parameters'][type] = {};
-
-            for (var j = 1; j < ar.length; j++) {       // 'w:5.3' 'h:4.56'
-                var p = ar[j].split(':');
-                res['parameters'][type][p[0]] = p[1];
-            };
-        };
-    }
-
-    return res;
-}
-
 // 处理的所有注册方法
 var process = {
     'hide': function(o, p) {                            // mesh | dummy
@@ -111,6 +86,32 @@ var process = {
     }
 };
 
+// 分析标签化的名称及参数 
+// {name: 'xxx', parameters: {kao: {v: 1}}}
+var analyzeName = function( name ) {
+    var arr = name.split('-');                          // 'kao-width_w:5.3_h:4.56-hide_v:true'     
+    res = {};
+    res['parameters'] = {};
+    res.name = arr[0];                                  // 'kao'
+
+    var subArr;
+    if (arr.length > 1) {
+        for (i = 1; i < arr.length; i++) {              // 'width_w:5.3_h:4.56'
+            var ar = arr[i].split('_');
+            var type = ar[0];
+            res['parameters'][type] = {};
+
+            for (var j = 1; j < ar.length; j++) {       // 'w:5.3' 'h:4.56'
+                var p = ar[j].split(':');
+                res['parameters'][type][p[0]] = p[1];
+            };
+        };
+    }
+
+    return res;
+}
+
+
 var analyzeObject = function( arr ) {
     for (i = 0; i < arr.length; i++) {
         var obj = arr[i];
@@ -119,7 +120,7 @@ var analyzeObject = function( arr ) {
         var types = Object.keys(res.parameters);
 
         if (types.length == 0) {
-            return;
+            continue;
         }
 
         obj.name = res.name;
