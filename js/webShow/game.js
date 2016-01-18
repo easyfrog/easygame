@@ -503,12 +503,12 @@
 
 		function cb() {
 			s.removeEventListener(Game.LOADCOMPLETE, cb);
-			if (callback) {
-				callback(groupName);
-			}
+			callback(groupName);
 		}
 
-		s.addEventListener(Game.LOADCOMPLETE, cb);
+		if (callback) {
+			s.addEventListener(Game.LOADCOMPLETE, cb);
+		}
 
 		s.sh.load(url, groupName);
 		if (!s.sh.onProgress) {
@@ -528,16 +528,19 @@
 
 	/**
 	 * load multiple sea files
-	 * _seas : {
-	 * 		inno: ['xx.sea', 'xx.sea'],
-	 * 		group2: ['xx.sea', 'xx.sea']
-	 * }
+	 * _seas : [{
+	 * 		seas: ['xx.sea', 'xx.sea'],
+	 * 		groupName: 'xxx',
+	 * 		callback: function() {}
+	 * }]
 	 * seas : ['xx.sea', 'xx.sea']
 	 */
 	Game.prototype.loadSeas = function(seas, groupName, callback) {
 		var s = this;
 		var count = 0;
-		function cb (gn, alldone) {
+		var alldone = false;
+
+		function cb (gn) {
 			// console.log('--> loadSeas:' + gn + ' loaded. alldone: ' + alldone);
 			if (gn != groupName) {		// if not my groupName return
 				return;
@@ -546,20 +549,30 @@
 			count ++;
 			if (count == seas.length) {
 				alldone = true;
-			}
-			if (alldone) {
 				s.removeEventListener(Game.LOADCOMPLETE, cb);
 			}
 
-			callback(alldone, count, seas.length, gn);
+			if (callback) {
+				callback(alldone, count, seas.length, gn);
+			}
 		};
 
-		this.addEventListener(Game.LOADCOMPLETE, cb);
+		if (callback) {
+			this.addEventListener(Game.LOADCOMPLETE, cb);
+		}
+
+		if ((typeof seas) == 'string') {
+			seas = [seas];
+		} 
 
 		for (var i = 0; i < seas.length; i++) {
 			var sea = seas[i];
 
-			this.load(sea, groupName);
+			if (typeof sea == 'string') {
+				s.load(sea, groupName);
+			} else if (typeof sea == 'object') {
+				s.loadSeas(sea.seas, sea.groupName, sea.callback);
+			}
 		};
 	};
 

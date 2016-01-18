@@ -71,6 +71,8 @@ SceneHandler.prototype._onComplete = function() {
     // stop all animations
     SEA3D.AnimationHandler.stop();
 
+    // console.log('s.currentGroup: ' + s.currentGroup);
+
     if (s.onComplete) s.onComplete( s.currentGroup );
     
     // 如果后面还有载入任务
