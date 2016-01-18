@@ -47,7 +47,7 @@ module.exports = function(game, lastOnly) {
     };
     analyzeObject(dumys);
 
-    console.log('analyzeScene complete.');
+    console.log('-> analyzeScene complete.');
 };
 
 // 处理的所有注册方法
@@ -111,9 +111,8 @@ var analyzeName = function( name ) {
     return res;
 }
 
-
 var analyzeObject = function( arr ) {
-    for (i = 0; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         var obj = arr[i];
         var res = analyzeName(obj.name);
 

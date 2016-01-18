@@ -498,9 +498,17 @@
 	};
 
 	// 导入sea文件
-	// 
-	Game.prototype.load = function(url, groupName) {
+	Game.prototype.load = function(url, groupName, callback) {
 		var s = this;
+
+		function cb() {
+			s.removeEventListener(Game.LOADCOMPLETE, cb);
+			if (callback) {
+				callback(groupName);
+			}
+		}
+
+		s.addEventListener(Game.LOADCOMPLETE, cb);
 
 		s.sh.load(url, groupName);
 		if (!s.sh.onProgress) {
@@ -513,7 +521,7 @@
 
 		if (!s.sh.onComplete) {
 			s.sh.onComplete = function() {
-				s.invoke(Game.LOADCOMPLETE, groupName);
+				s.invoke(Game.LOADCOMPLETE, s.sh.currentGroup);
 			};			
 		}
 	};
@@ -531,6 +539,9 @@
 		var count = 0;
 		function cb (gn, alldone) {
 			// console.log('--> loadSeas:' + gn + ' loaded. alldone: ' + alldone);
+			if (gn != groupName) {		// if not my groupName return
+				return;
+			}
 			alldone = false;
 			count ++;
 			if (count == seas.length) {

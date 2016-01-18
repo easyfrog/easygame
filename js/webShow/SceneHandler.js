@@ -111,6 +111,8 @@ SceneHandler.prototype._load = function(fileName, groupName) {
     s.currentGroup = groupName;
     SceneHandler.groupIndex ++;
 
+    // console.log('s.currentGroup: ' + s.currentGroup);
+
     if (fileName == undefined) {
         fileName = s.fileName;
     } else {
