@@ -104,7 +104,7 @@ game.registerComponents(components)
 
 3. **载入单个sea文件**
 ```
-game.load('url', 'gruntName');
+game.load('url', 'gruntName', callback);
 game.addEventListener(Game.LOADCOMPLETE, onLoadComplete);
 
 function onLoadComplete(groupName) {
@@ -117,6 +117,20 @@ function onLoadComplete(groupName) {
 ```
 game.loadSeas(seasArray, groupName, callback, groupName);
 game.loadSeas(['xx.sea, xx.sea'], 'groupName', function(alldone(boolean), count(int), allCount(int)) {}, groupName(str));
+
+// config mode
+game.loadSeas([
+	{
+		seas:['xx.sea', 'xxx.sea'],
+		groupName: 'xxx',
+		callback: function(alldone, count, allCount, groupName) {}
+	},
+	{
+		seas:'xxxx.sea',
+		groupName: 'xxx',
+		callback: function(alldone, count, allCount, groupName) {}
+	}
+]);
 ```
 
 5. 设置贴图的minFilter
