@@ -1,14 +1,19 @@
 /**
  * analyze sea3d objects with custom stuffix name
+ * w: width
+ * h: height
+ * v: value
  */
-module.exports = function(game, lastOnly) {
-    // get all new loaded materials / meshes
-    var mats = [], meshes = [], dumys = [];
-    var i = 0;
 
+// get all new loaded materials / meshes
+var mats = [], meshes = [], dumys = [];
+var lines = [];
+var i = 0;
+
+module.exports = function(game, lastOnly) {
     var keys = Object.keys(game.sea.objects);
     if (lastOnly) {                                     // 只针对最后一次导入的内容
-        for (var i = 0; i < keys.length; i++) {
+        for (i = 0; i < keys.length; i++) {
             var key = keys[i];
             if (key.indexOf('m3d/') == 0) {
                 meshes.push(game.sea.objects[key]);
@@ -16,29 +21,23 @@ module.exports = function(game, lastOnly) {
                 dumys.push(game.sea.objects[key]);
             } else if (key.indexOf('mat/') == 0) {
                 mats.push(game.sea.objects[key]);
+            } else if (key.indexOf('line/') == 0) {
+                lines.push(game.sea.objects[key]);
             }
         };
     } else {                                            // 针对所有的物体
         mats   = game.sea.materials || [];
-        meshes = game.sea.meshes || [];
-        dumys  = game.sea.dummys || [];
+        meshes = game.sea.meshes    || [];
+        dumys  = game.sea.dummys    || [];
+        lines  = game.sea.lines     || [];
     }
 
     // 模型 
-    for (i = 0; i < meshes.length; i++) {
-        var mesh = meshes[i];
-
-        doit(mesh, '-hide', function(o) {               // 隐藏, 同时隐藏子物体
-            o.visible = false;
-        });
-        doit(mesh, '-transparenthide', function(o) {    // 使用材质的transparent,opacity方式隐藏,不影响子物体,并可点击
-            o.material.transparent = true;
-            o.material.opacity = 0;
-        });
-        doit(mesh, '-notpickable', function(o) {        // 使物体不接收点击
-            o.mouseEnabled = false;
-        });
-    };
+    analyzeObject(meshes)
+    // 材质
+    analyzeObject(mats);
+    // 线
+    analyzeObject(lines);
 
     // 虚拟体
     for (i = 0; i < dumys.length; i++) {                // 默认将所有的虚拟体,设置为不可见,但可点击.
@@ -46,33 +45,91 @@ module.exports = function(game, lastOnly) {
         dumy.material.transparent = true;
         dumy.material.opacity = 0;
     };
-
-    // 材质
-    for (i = 0; i < mats.length; i++) {
-        var mat = mats[i];
-
-        doit(mat, '-metal', function(o) {               // 金属
-            o.metal = true;
-            o.needsUpdate = true;
-        });
-        doit(mat, '-opacity', function(o) {             // 透明
-            o.transparent = true;
-        });
-        doit(mat, '-refraction', function(o) {          // 折射      
-            utils.switchFanSheZheShe(o);
-        });
-        doit(mat, '-nearest', function(o) {             // 贴图禁止 minmap
-            o.map.minFilter = THREE.NearestFilter;
-            o.map.needsUpdate = true;
-        });
-    };
+    analyzeObject(dumys);
 
     console.log('analyzeScene complete.');
 };
 
-var doit = function( obj, symbol, action ) {
-    if (obj.name.indexOf(symbol) > 0) {
-        action(obj);
-        obj.name = obj.name.replace(symbol, '');
+// 分析标签化的名称及参数 
+// {name: 'xxx', parameters: {kao: {v: 1}}}
+var analyzeName = function( name ) {
+    var arr = name.split('-');                          // 'kao-width_w:5.3_h:4.56-hide_v:true'     
+    res = {};
+    res['parameters'] = {};
+    res.name = arr[0];                                  // 'kao'
+
+    var subArr;
+    if (arr.length > 1) {
+        for (i = 1; i < arr.length; i++) {              // 'width_w:5.3_h:4.56'
+            var ar = arr[i].split('_');
+            var type = ar[0];
+            res['parameters'][type] = {};
+
+            for (var j = 1; j < ar.length; j++) {       // 'w:5.3' 'h:4.56'
+                var p = ar[j].split(':');
+                res['parameters'][type][p[0]] = p[1];
+            };
+        };
     }
+
+    return res;
 }
+
+// 处理的所有注册方法
+var process = {
+    'hide': function(o, p) {                            // mesh | dummy
+        o.visible = false;
+    },
+    'transparenthide': function(o, p) {
+        if (!o.material) {
+            return;
+        }
+        o.material.transparent = true;
+        o.material.opacity = 0; 
+    },
+    'notpickable': function(o, p) {
+        o.mouseEnabled = false;
+    },
+    'metal': function(o, p) {                           // mamteral
+        o.metal = true;
+        o.needsUpdate = true;    
+    },
+    'opacity': function(o, p) {
+        o.transparent = true;
+        o.opacity = p['opacity'].v || 0.5;
+    },
+    'refraction': function(o, p) {
+        utils.switchFanSheZheShe(o);
+    },
+    'nearest': function(o, p) {
+        o.map.minFilter = THREE.NearestFilter;
+        o.map.needsUpdate = true;
+    },
+    'line': function(o, p) {                            // line
+        var lineMat = o.material;
+        lineMat.lineWidth = parseFloat( p['line'].v );
+    }
+};
+
+var analyzeObject = function( arr ) {
+    for (i = 0; i < arr.length; i++) {
+        var obj = arr[i];
+        var res = analyzeName(obj.name);
+
+        var types = Object.keys(res.parameters);
+
+        if (types.length == 0) {
+            return;
+        }
+
+        obj.name = res.name;
+
+        for (var j = 0; j < types.length; j++) {
+            var type = types[j];
+
+            if (process[type]) {
+                process[type](obj, res.parameters);
+            }
+        };
+    };
+};

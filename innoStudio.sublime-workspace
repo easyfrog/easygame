@@ -553,8 +553,20 @@
 				"Git: Push Current Branch"
 			],
 			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
+			],
+			[
 				"status",
 				"Git: Status"
+			],
+			[
+				"relo",
+				"TernJS: Reload"
 			],
 			[
 				"re",
@@ -573,14 +585,6 @@
 				"Project: Edit Project"
 			],
 			[
-				"relo",
-				"TernJS: Reload"
-			],
-			[
-				"reload",
-				"TernJS: Reload"
-			],
-			[
 				"eidt",
 				"Project: Edit"
 			],
@@ -595,10 +599,6 @@
 			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"statu",
-				"Git: Status"
 			],
 			[
 				"rel",
@@ -1106,6 +1106,12 @@
 	},
 	"file_history":
 	[
+		"/E/myhost/inno studio/LICENSE.txt",
+		"/C/Users/easyfrog/Desktop/LICENSE.txt",
+		"/E/myhost/inno studio/js/webShow/Tween.js",
+		"/E/myhost/inno studio/README.md",
+		"/E/myhost/inno studio/package.json",
+		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/E/MyFolder/fuckDelete.txt",
 		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/projects/demo/changgu.js",
@@ -1115,11 +1121,9 @@
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
-		"/E/myhost/inno studio/package.json",
 		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
 		"/E/myhost/inno studio/.gitignore",
 		"/E/myhost/inno studio/Gruntfile.js",
-		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/demo/com_test.js",
 		"/C/Users/easyfrog/Desktop/参考/年会宗旨.txt",
@@ -1131,7 +1135,6 @@
 		"/E/myhost/inno studio/projects/bone/edgeEvents.js",
 		"/E/myhost/inno studio/projects/bone/bone_grunt.js",
 		"/E/myhost/inno studio/js/controls/MouseControls.js",
-		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/E/myhost/inno studio/projects/bone/config.js",
 		"/E/EdgeWorks/demo/publish/web/index.html",
 		"/E/myhost/inno studio/projects/bone/bone.js",
@@ -1155,7 +1158,6 @@
 		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
 		"/E/myhost/inno studio/projects/xmas3d/xmas3d.js",
 		"/E/PhoneGap_works/bone/config.xml",
-		"/E/myhost/inno studio/README.md",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/ztc/Manager.cs",
 		"/E/myhost/inno studio/projects/xmas3d/xmas3d_grunt.js",
 		"/E/myhost/inno studio/js/controls/OrbitControls.js",
@@ -1231,9 +1233,7 @@
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Advanced/droid.html",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/car.html",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/libs/tween.min.js",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Build/Three.JS/sea3d.tjs.min.js",
-		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Controller.cs",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/Default (Windows).sublime-keymap"
+		"/D/libs/Sea3D/sea3d-gh-pages_1025/Build/Three.JS/sea3d.tjs.min.js"
 	],
 	"find":
 	{
@@ -1472,6 +1472,10 @@
 		"selected_items":
 		[
 			[
+				"read",
+				"README.md"
+			],
+			[
 				"s",
 				"js\\webShow\\SceneHandler.js"
 			],
@@ -1682,10 +1686,6 @@
 			[
 				"tes",
 				"test.js"
-			],
-			[
-				"read",
-				"assets\\texture\\cubeMaps\\Bridge2\\readme.txt"
 			],
 			[
 				"edge",

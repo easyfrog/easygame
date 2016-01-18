@@ -7,6 +7,7 @@
  *  date:   	2015/5/10
  *  sea3d: 		17000
  *  threejs: 	r72
+ *  url:        https://github.com/easyfrog/easygame
  *
  * container: domElement
  * config: {
