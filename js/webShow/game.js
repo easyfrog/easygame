@@ -426,6 +426,8 @@
 		if (this.debug && type != Game.UPDATE && type != Game.POSTUPDATE && type != Game.MOUSEMOVE) {
 			if (type == Game.PROGRESS) {
 				console.log('-> ', type, ' event:', param.progress, ' type:', param.type);
+			} else if (type == Game.LOADCOMPLETE) {
+				console.log('-> ', type, ' event:', param.name);
 			} else {
 				console.log('-> ', type, ' event:', param);
 			}
@@ -529,7 +531,7 @@
 	/**
 	 * load multiple sea files
 	 * _seas : [{
-	 * 		seas: ['xx.sea', 'xx.sea'],
+	 * 		seas: ['xx.sea', 'xx.sea'],		// or single file string
 	 * 		groupName: 'xxx',
 	 * 		callback: function() {}
 	 * }]
@@ -540,9 +542,13 @@
 		var count = 0;
 		var alldone = false;
 
+		if (typeof seas == 'string') {
+			seas = [seas];
+		}
+
 		function cb (gn) {
 			// console.log('--> loadSeas:' + gn + ' loaded. alldone: ' + alldone);
-			if (gn != groupName) {		// if not my groupName return
+			if (gn.name != groupName) {		// if not my groupName return
 				return;
 			}
 			alldone = false;
@@ -560,10 +566,6 @@
 		if (callback) {
 			this.addEventListener(Game.LOADCOMPLETE, cb);
 		}
-
-		if ((typeof seas) == 'string') {
-			seas = [seas];
-		} 
 
 		for (var i = 0; i < seas.length; i++) {
 			var sea = seas[i];
@@ -629,6 +631,14 @@
 
 	Game.prototype.getMaterial = function(name) {
 		return getFromArray(this.sea.materials, name);
+	};
+
+	Game.prototype.getLine = function(name) {
+		return getFromArray(this.sea.lines, name);
+	}
+
+	Game.prototype.getSprite = function(name) {
+		return getFromArray(this.sea.sprites, name);
 	};
 
 	function getFromArray(arr, name) {

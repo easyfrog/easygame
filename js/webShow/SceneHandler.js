@@ -28,7 +28,7 @@ var SceneHandler = function( fileName, scene, standard ) {
     s.onComplete = undefined;
     s.onProgress = undefined;
     s.castShadow = s.receiveShadow = true;
-    s.currentGroup = '';
+    s.currentGroup = null;
     s.root.onComplete = function() {s._onComplete();};
     s.root.onProgress = function(args) {s._onProgress(args);};
 };
@@ -110,7 +110,6 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
 SceneHandler.prototype._load = function(fileName, groupName) {
     var s = this;
     groupName = groupName || SceneHandler.groupIndex + '';
-    s.currentGroup = groupName;
     SceneHandler.groupIndex ++;
 
     // console.log('s.currentGroup: ' + s.currentGroup);
@@ -127,6 +126,8 @@ SceneHandler.prototype._load = function(fileName, groupName) {
         ctn = new THREE.Group();
         ctn.name = groupName;
     }
+
+    s.currentGroup = ctn;
 
     s.root.container = ctn;
 
