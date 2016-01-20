@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"material"
+			],
+			[
+				"line",
+				"linewidth	(num)"
+			],
+			[
+				"createEle",
+				"createElementNS (fn/2)"
+			],
+			[
+				"add",
+				"addEventListener (fn)"
+			],
+			[
+				"l",
+				"lines	[]"
+			],
+			[
+				"load",
+				"loadSeas(seas, groupName, callback)"
+			],
+			[
+				"remo",
+				"removeEventListener(type, listener)"
+			],
+			[
+				"mat",
+				"mats	[]"
+			],
+			[
+				"ana",
+				"analyzeObject(arr)"
+			],
+			[
 				"du",
 				"dumys	[]"
 			],
@@ -34,10 +70,6 @@
 			[
 				"getObject",
 				"getObjectByName(name)"
-			],
-			[
-				"load",
-				"loadSequence	[]"
 			],
 			[
 				"con",
@@ -124,10 +156,6 @@
 				"AdditiveBlending	(num)"
 			],
 			[
-				"add",
-				"add(object)"
-			],
-			[
 				"getIn",
 				"getInfoCorutine()"
 			],
@@ -206,10 +234,6 @@
 			[
 				"ani",
 				"animatePosition	(?)"
-			],
-			[
-				"l",
-				"loadSeas(seas, groupName, callback)"
 			],
 			[
 				"lo",
@@ -314,10 +338,6 @@
 			[
 				"if",
 				"if	If"
-			],
-			[
-				"line",
-				"linewidth	(num)"
 			],
 			[
 				"lad",
@@ -494,26 +514,6 @@
 			[
 				"obj",
 				"objects	[]"
-			],
-			[
-				"addClass",
-				"addClass(className)"
-			],
-			[
-				"libs",
-				"libsLoaded	(bool)"
-			],
-			[
-				"isAni",
-				"isAnimating	(bool)"
-			],
-			[
-				"isA",
-				"isAniamting	(?)"
-			],
-			[
-				"isAn",
-				"isAnimating	(bool)"
 			]
 		]
 	},
@@ -544,32 +544,60 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 374.0,
-		"last_filter": "push",
+		"height": 400.0,
+		"last_filter": "user",
 		"selected_items":
 		[
 			[
-				"push",
-				"Git: Push Current Branch"
+				"user",
+				"Preferences: Settings - User"
 			],
 			[
-				"statu",
-				"Git: Status"
+				"tern",
+				"tern_for_sublime: Describe"
+			],
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"isnt",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"re",
+				"TernJS: Reload"
 			],
 			[
 				"reload",
 				"TernJS: Reload"
 			],
 			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
 				"status",
 				"Git: Status"
 			],
 			[
-				"relo",
-				"TernJS: Reload"
+				"statu",
+				"Git: Status"
 			],
 			[
-				"re",
+				"relo",
 				"TernJS: Reload"
 			],
 			[
@@ -581,20 +609,12 @@
 				"TernJS: Reload"
 			],
 			[
-				"edit",
-				"Project: Edit Project"
-			],
-			[
 				"eidt",
 				"Project: Edit"
 			],
 			[
 				"remove",
 				"Package Control: Remove Package"
-			],
-			[
-				"user",
-				"Preferences: Settings - User"
 			],
 			[
 				"ins",
@@ -657,20 +677,8 @@
 				"Git: Status"
 			],
 			[
-				"upda",
-				"Package Control: Upgrade Package"
-			],
-			[
-				"list",
-				"Package Control: List Packages"
-			],
-			[
 				"lis",
 				"Package Control: List Packages"
-			],
-			[
-				"gist",
-				"Gist: Insert Gist"
 			],
 			[
 				"ru",
@@ -953,10 +961,6 @@
 				"Set Syntax: JavaScript"
 			],
 			[
-				"tern",
-				"TernJS: Previous Occurance"
-			],
-			[
 				"ju",
 				"TernJS: Jump to definition"
 			],
@@ -1106,14 +1110,36 @@
 	},
 	"file_history":
 	[
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/myhost/inno studio/README.md",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/E/myhost/inno studio/.gitignore",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
+		"/E/myhost/inno studio/.tern-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.jshintrc",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.tern-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
+		"/c/users/easyfrog/appdata/local/temp/.tern-project",
+		"/E/myhost/inno studio/projects/demo/demo.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/test.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/.tern-project",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/C#/unity-project.sublime-snippet",
+		"/E/myhost/inno studio/projects/demo/m2.js",
+		"/E/EdgeWorks/demo/publish/web/index.html",
+		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
+		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
+		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
+		"/E/myhost/inno studio/projects/demo/com_test.js",
+		"/E/myhost/inno studio/js/coms/analyzeScene.js",
+		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Bridge.java",
+		"/E/myhost/inno studio/package.json",
 		"/E/myhost/inno studio/LICENSE.txt",
 		"/C/Users/easyfrog/Desktop/LICENSE.txt",
 		"/E/myhost/inno studio/js/webShow/Tween.js",
-		"/E/myhost/inno studio/README.md",
-		"/E/myhost/inno studio/package.json",
 		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/E/MyFolder/fuckDelete.txt",
-		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/projects/demo/changgu.js",
 		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/E/myhost/inno studio/js/webShow/utils.js",
@@ -1122,12 +1148,8 @@
 		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
 		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
-		"/E/myhost/inno studio/.gitignore",
 		"/E/myhost/inno studio/Gruntfile.js",
-		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
-		"/E/myhost/inno studio/projects/demo/com_test.js",
 		"/C/Users/easyfrog/Desktop/参考/年会宗旨.txt",
-		"/E/myhost/inno studio/js/threejs/three.js",
 		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/EdgeWorks/shadow/publish/web/shadow.html",
 		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
@@ -1136,10 +1158,8 @@
 		"/E/myhost/inno studio/projects/bone/bone_grunt.js",
 		"/E/myhost/inno studio/js/controls/MouseControls.js",
 		"/E/myhost/inno studio/projects/bone/config.js",
-		"/E/EdgeWorks/demo/publish/web/index.html",
 		"/E/myhost/inno studio/projects/bone/bone.js",
 		"/E/myhost/inno studio/projects/bone/sceneUp.js",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
 		"/E/myhost/inno studio/projects/bone/glow_effect_shader.js",
 		"/C/Users/easyfrog/AppData/Local/Temp/Rar$DIa0.962/说明.txt",
 		"/C/Users/easyfrog/Desktop/TernJS/tern.py",
@@ -1152,7 +1172,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
 		"/C/Users/easyfrog/Desktop/TernJS/ternjs/reloader.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/projects/xmas3d/edgeWorks.js",
 		"/E/myhost/inno studio/js/coms/analyzeMaterial.js",
 		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
@@ -1179,9 +1198,7 @@
 		"/E/EdgeWorks/xmas/3d/index.html",
 		"/E/myhost/inno studio/projects/fuck/fuck_grunt.js",
 		"/E/myhost/inno studio/projects/fuck/fuck.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
 		"/E/myhost/inno studio/build/demo.browserify.js",
-		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/C/Users/easyfrog/Desktop/viewport.js",
 		"/C/Users/easyfrog/Documents/Tencent Files/24967427/FileRecv/viewport.js",
 		"/E/myhost/inno studio/projects/demo/demo.browserify.js",
@@ -1201,7 +1218,6 @@
 		"/C/Users/easyfrog/AppData/Local/Temp/blueprint3d-2015-12-1-16-44-19.txt",
 		"/E/PhoneGap_works/chuangwei/www/main.js",
 		"/E/myhost/inno studio/projects/_closed/changhong/changhong.js",
-		"/E/myhost/inno studio/projects/demo/demo.js",
 		"/E/EdgeWorks/demo/publish/web/demo.html",
 		"/E/myhost/inno studio/projects/_closed/lenovop1/lenovop1.js",
 		"/E/myhost/inno studio/projects/_closed/changhong/com_AutoRot.js",
@@ -1221,19 +1237,7 @@
 		"/E/EdgeWorks/analyze/publish/web/index.html",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Demo/20150817_Data/mainData",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/AniTarget.cs",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/NGUI/Scripts/UI/UIInput.cs",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/Waiter.cs",
-		"/C/Users/easyfrog/AppData/Local/Temp/eg.js",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/musicInPart.cs",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/metascale.sublime-snippet",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/metascalecache.sublime-snippet",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Source/WebGL/Three.JS/SEA3DLoader.js",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/vertex-animation.html",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Source/WebGL/SDK/SEA3D.js",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Advanced/droid.html",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/car.html",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/libs/tween.min.js",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Build/Three.JS/sea3d.tjs.min.js"
+		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/NGUI/Scripts/UI/UIInput.cs"
 	],
 	"find":
 	{
@@ -1252,6 +1256,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"v",
+			"i",
+			"meshes",
+			"mesh",
+			"-(.*)((?=-))",
+			"-(.*)((?=-)|$)",
+			"-(.*)((?=-))",
 			"Neares",
 			"k",
 			"j",
@@ -1372,14 +1383,7 @@
 			"Dir",
 			"imagesDir",
 			"_getFullURL",
-			"getFullUrl",
-			"yepnope",
-			"AdobeEdge.loadComposition",
-			"key",
-			"currentConentSym",
-			"glo.load",
-			"game.pause",
-			"currentConentSym"
+			"getFullUrl"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1472,28 +1476,48 @@
 		"selected_items":
 		[
 			[
-				"read",
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"rea",
 				"README.md"
 			],
 			[
-				"s",
-				"js\\webShow\\SceneHandler.js"
+				"de",
+				"projects\\demo\\demo.js"
+			],
+			[
+				".",
+				".tern-project"
 			],
 			[
 				"ga",
 				"js\\webShow\\game.js"
 			],
 			[
-				"game",
-				"js\\webShow\\game.js"
-			],
-			[
-				"uti",
-				"js\\webShow\\utils.js"
+				"read",
+				"README.md"
 			],
 			[
 				"ana",
 				"js\\coms\\analyzeScene.js"
+			],
+			[
+				"gam",
+				"js\\webShow\\game.js"
+			],
+			[
+				"m2",
+				"projects\\demo\\m2.js"
+			],
+			[
+				"s",
+				"js\\webShow\\SceneHandler.js"
+			],
+			[
+				"game",
+				"js\\webShow\\game.js"
 			],
 			[
 				"scene",
@@ -1552,24 +1576,12 @@
 				"projects\\xmas3d\\xmas3d.js"
 			],
 			[
-				"de",
-				"js\\threejs\\Detector.js"
-			],
-			[
 				"g",
-				"js\\webShow\\game.js"
-			],
-			[
-				"gam",
 				"js\\webShow\\game.js"
 			],
 			[
 				"grunt",
 				"Gruntfile.js"
-			],
-			[
-				"rea",
-				"README.md"
 			],
 			[
 				"ch",
@@ -1721,9 +1733,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "u",
+		"last_filter": "li",
 		"selected_items":
 		[
+			[
+				"li",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
 			[
 				"u",
 				"E:\\EdgeWorks\\utils\\utils.sublime-project"
@@ -1759,10 +1775,6 @@
 			[
 				"zhang",
 				"E:\\UnityProjects\\zhangqing\\zhangqing.sublime-project"
-			],
-			[
-				"li",
-				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
 			],
 			[
 				"lia",

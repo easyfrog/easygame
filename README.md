@@ -1,11 +1,17 @@
 #easygame
-A threejs and sea3d 3D game engine. and use browserify to manange components.
+A [threejs](https://github.com/mrdoob/three.js) and [sea3d](https://github.com/sunag/sea3d) 3D game engine. 
+and use browserify to manange components.
+use Grunt to publish.
 
-* [Game class](#Game class)
-	- [创建Game类](#创建Game类)
-	- [Game类属性](#Game类属性)
-	- [Game类事件](#Game类事件)
-	- [Game类方法](#Game类方法)
+#### edit tool:	
+- sublime text 3
+
+#### plugins:
+- Git
+- grunt
+- grunt-browserify
+- [TernJs](https://github.com/emmetio/sublime-tern)
+
 
 ##创建新工程
 使用 [grunt](http://www.gruntjs.net/) 来创建新的 **easygame** 工程目录并生成标准js文件及此工程的grunt构建文件.

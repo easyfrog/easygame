@@ -44,6 +44,8 @@ module.exports = function(game, lastOnly) {
         var dumy = dumys[i];
         dumy.material.transparent = true;
         dumy.material.opacity = 0;
+        dumy.type = 'Dummy';                            // 默认为Mesh, 可能是Bug
+        dumy.renderOrder = 100;
     };
     analyzeObject(dumys);
 
@@ -61,6 +63,7 @@ var process = {
         }
         o.material.transparent = true;
         o.material.opacity = 0; 
+        o.renderOrder = 100;
     },
     'notpickable': function(o, p) {
         o.mouseEnabled = false;

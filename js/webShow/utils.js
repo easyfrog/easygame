@@ -282,6 +282,68 @@ utils.alone = function(obj, all) {
 };
 
 /**
+ * 淡入淡出
+ * inout: true 淡入 | false 淡出
+ */
+utils.fade = function(obj, inout, time, callback) {
+	if (time == undefined) {
+		time = 1;
+	}
+
+	var mats = utils.collectMaterials(obj);
+
+	ztc.Tween.fadeTo(time, function(t) {
+		for (var i = 0; i < mats.length; i++) {
+			var mat = mats[i];
+			mat.transparent = true;
+			mat.opacity = inout ? t : 1 - t;
+		};
+	}, ztc.Tween.easeOutQuad, function() {
+		if (callback) {
+			callback();
+		}
+	})
+};
+
+/**
+ * 收集自身及所有子物体的材质
+ */
+utils.collectMaterials = function(obj) {
+	var mats = [];
+
+	// collect function
+	function cm(o) {
+		if (o.type && o.type != 'Dummy') {
+			if (o.material) {
+				if (o.material instanceof THREE.MultiMaterial) {
+					for (var i = 0; i < o.material.materials.length; i++) {
+						pushMat(o.material.materials[i]);
+					};
+				} else {
+					pushMat(o.material);		
+				}
+			}
+		}
+
+		for (var j = 0; j < o.children.length; j++) {
+			var c = o.children[j];
+			cm(c);
+		};
+	}
+
+	// invoke collect function
+	cm(obj);
+
+	function pushMat(mat) {
+		if (mats.indexOf(mat) < 0) {
+			mats.push(mat);
+		}
+	}
+
+	return mats;
+};
+
+/**
  * javascript string endWidth function
  */
 if (typeof String.prototype.endsWith != 'function') {
