@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"addCo",
+				"addComponent(comNameOrFunc)"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"e",
+				"easeOutQuad(val)"
+			],
+			[
+				"mat",
+				"material	(?)"
+			],
+			[
 				"ma",
 				"material"
 			],
@@ -30,10 +46,6 @@
 			[
 				"remo",
 				"removeEventListener(type, listener)"
-			],
-			[
-				"mat",
-				"mats	[]"
 			],
 			[
 				"ana",
@@ -138,10 +150,6 @@
 			[
 				"get",
 				"getGlowMat"
-			],
-			[
-				"tran",
-				"transparent	(bool)"
 			],
 			[
 				"nee",
@@ -506,14 +514,6 @@
 			[
 				"vo",
 				"voice2	(?)"
-			],
-			[
-				"when",
-				"whenFirstComplete	(?)"
-			],
-			[
-				"obj",
-				"objects	[]"
 			]
 		]
 	},
@@ -545,9 +545,21 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "user",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"re",
+				"TernJS: Reload"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
 			[
 				"user",
 				"Preferences: Settings - User"
@@ -573,24 +585,12 @@
 				"Package Control: List Packages"
 			],
 			[
-				"re",
-				"TernJS: Reload"
-			],
-			[
 				"reload",
 				"TernJS: Reload"
 			],
 			[
 				"upda",
 				"Package Control: Upgrade Package"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
-				"status",
-				"Git: Status"
 			],
 			[
 				"statu",
@@ -1110,9 +1110,12 @@
 	},
 	"file_history":
 	[
+		"/E/myhost/inno studio/js/coms/com_Angel.js",
+		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/E/myhost/inno studio/js/controls/OrbitControls.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/README.md",
-		"/E/myhost/inno studio/js/threejs/three.js",
 		"/E/myhost/inno studio/.gitignore",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
 		"/E/myhost/inno studio/.tern-project",
@@ -1128,7 +1131,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/C#/unity-project.sublime-snippet",
 		"/E/myhost/inno studio/projects/demo/m2.js",
 		"/E/EdgeWorks/demo/publish/web/index.html",
-		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/projects/demo/com_test.js",
@@ -1179,7 +1181,6 @@
 		"/E/PhoneGap_works/bone/config.xml",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/ztc/Manager.cs",
 		"/E/myhost/inno studio/projects/xmas3d/xmas3d_grunt.js",
-		"/E/myhost/inno studio/js/controls/OrbitControls.js",
 		"/E/myhost/inno studio/js/shaders/FresnelShader.js",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/config.txt",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/data.txt",
@@ -1236,8 +1237,7 @@
 		"/E/UnityProjects/lianzheng/Assets/Scripts/AnimatorControl.cs",
 		"/E/EdgeWorks/analyze/publish/web/index.html",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Demo/20150817_Data/mainData",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/AniTarget.cs",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/NGUI/Scripts/UI/UIInput.cs"
+		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/AniTarget.cs"
 	],
 	"find":
 	{
@@ -1256,6 +1256,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"this",
+			"friends",
+			"this",
 			"v",
 			"i",
 			"meshes",
@@ -1380,10 +1383,7 @@
 			"_getFullUrl",
 			"getFullURL",
 			"geturl",
-			"Dir",
-			"imagesDir",
-			"_getFullURL",
-			"getFullUrl"
+			"Dir"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1476,16 +1476,36 @@
 		"selected_items":
 		[
 			[
+				"m2",
+				"projects\\demo\\m2.js"
+			],
+			[
+				"de",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"thr",
+				"js\\threejs\\three.js"
+			],
+			[
+				"ori",
+				"js\\controls\\OrbitControls.js"
+			],
+			[
+				"game",
+				"js\\webShow\\game.js"
+			],
+			[
+				"twe",
+				"js\\webShow\\Tween.js"
+			],
+			[
 				"uti",
 				"js\\webShow\\utils.js"
 			],
 			[
 				"rea",
 				"README.md"
-			],
-			[
-				"de",
-				"projects\\demo\\demo.js"
 			],
 			[
 				".",
@@ -1508,16 +1528,8 @@
 				"js\\webShow\\game.js"
 			],
 			[
-				"m2",
-				"projects\\demo\\m2.js"
-			],
-			[
 				"s",
 				"js\\webShow\\SceneHandler.js"
-			],
-			[
-				"game",
-				"js\\webShow\\game.js"
 			],
 			[
 				"scene",

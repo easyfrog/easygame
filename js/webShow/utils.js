@@ -236,7 +236,7 @@ utils.followAnimation = function(obj, target, stateName, inverse, complete) {
  */
 utils.cameraDirection = function(camera) {
 	var vector = new THREE.Vector3(0, 0, -1);
-   	vector.applyEuler(camera.rotation, camera.eulerOrder);
+   	vector.applyEuler(camera.rotation, camera.rotation.order);
    	return vector;
 };
 
@@ -285,12 +285,10 @@ utils.alone = function(obj, all) {
  * 淡入淡出
  * inout: true 淡入 | false 淡出
  */
-utils.fade = function(obj, inout, time, callback) {
+utils.fade = function(mats, inout, time, callback) {
 	if (time == undefined) {
 		time = 1;
 	}
-
-	var mats = utils.collectMaterials(obj);
 
 	ztc.Tween.fadeTo(time, function(t) {
 		for (var i = 0; i < mats.length; i++) {
@@ -304,6 +302,19 @@ utils.fade = function(obj, inout, time, callback) {
 		}
 	})
 };
+
+/**
+ * 设置物体及其所有子物体的透明度
+ */
+utils.setOpacity = function( mats, opacity ) {
+	// var mats = utils.collectMaterials(obj);
+
+	for (var i = 0; i < mats.length; i++) {
+		var mat = mats[i];
+		mat.transparent = true;
+		mat.opacity = opacity;
+	};
+}
 
 /**
  * 收集自身及所有子物体的材质

@@ -301,20 +301,20 @@
 	/**
 	 * 向物体上添加组件
 	 */
-	THREE.Object3D.prototype.addComponent = function(comNameOrFunc) {
+	THREE.Object3D.prototype.addComponent = function(comNameOrFunc, params) {
 		var s = this;
 		var com;
 
 		if (typeof comNameOrFunc == 'string') {
 			if (window[comNameOrFunc]) {
-				com = new window[comNameOrFunc]();
+				com = new window[comNameOrFunc](params);
 				com.name = comNameOrFunc;
 			} else {
 				console.log('addComponent: not have ' + comNameOrFunc + ' component yet.');
 				return null;
 			}
 		} else if (typeof comNameOrFunc == 'function') {
-			com = new comNameOrFunc();
+			com = new comNameOrFunc(params);
 			com.name = com.name;
 		}
 
@@ -326,7 +326,7 @@
 		Game.instance.components.push(com);
 		saveInvoke(com, 'start');
 
-		console.log('-> addComponent');
+		console.log('-> addComponent:', com.name, params);
 
 		return com;
 	};
