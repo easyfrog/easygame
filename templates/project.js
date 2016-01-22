@@ -16,7 +16,8 @@ AdobeEdge.bootstrapCallback(function(compId) {
     stage = AdobeEdge.getComposition(compId).getStage();
 
     // scale to fix screen
-    t.scaleToFixScreen(stage.getSymbolElement());
+    var innerWidth = windwo.innerWidth < 640 ? 640 : window.innerWidth;
+    t.scaleToFixScreen(stage.getSymbolElement(), innerWidth);
     // 统计
     t.analyze(_projectName);
 

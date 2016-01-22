@@ -285,22 +285,27 @@ utils.alone = function(obj, all) {
  * 淡入淡出
  * inout: true 淡入 | false 淡出
  */
-utils.fade = function(mats, inout, time, callback) {
+utils.fade = function(obj, inout, time, callback) {
 	if (time == undefined) {
 		time = 1;
 	}
 
-	ztc.Tween.fadeTo(time, function(t) {
+	clearInterval(obj.fadeid);
+
+	var mats = utils.collectMaterials(obj);
+
+	obj.fadeid = ztc.Tween.fadeTo(time, function(t) {
 		for (var i = 0; i < mats.length; i++) {
 			var mat = mats[i];
 			mat.transparent = true;
 			mat.opacity = inout ? t : 1 - t;
 		};
 	}, ztc.Tween.easeOutQuad, function() {
+		delete obj.fadeid;
 		if (callback) {
 			callback();
 		}
-	})
+	});
 };
 
 /**
@@ -352,6 +357,21 @@ utils.collectMaterials = function(obj) {
 	}
 
 	return mats;
+};
+
+/**
+ * 从数组中得到所有给定名字的物体
+ */
+utils.getObjectsFromArray = function(arr, names) {
+	var ns = [].concat(names);
+	var res = [];
+	for (var i = 0; i < arr.length; i++) {
+		var itm = arr[i];
+		if (namse.indexOf(itm.name) > 0) {
+			res.push(itm);
+		}
+	};
+	return res;
 };
 
 /**

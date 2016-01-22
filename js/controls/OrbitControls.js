@@ -76,6 +76,18 @@ THREE.OrbitControls = function ( object, domElement ) {
 	// Mouse buttons
 	this.mouseButtons = { ORBIT: THREE.MOUSE.LEFT, ZOOM: THREE.MOUSE.MIDDLE, PAN: THREE.MOUSE.RIGHT };
 
+	// ztc 20160122
+	this.lastRotateLeft = 0;
+	this.lastRotateUp   = 0;
+	this.isMouseUp      = false;
+	this.fadeSpeed      = .1;
+	this.fadeMode       = true;
+	this.maxValue		= .1;
+
+	var movement = 0;
+	var isTouch = false;
+	var isWheel = false;
+
 	////////////
 	// internals
 
@@ -266,6 +278,45 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	};
 
+	// ztc
+	this.fade = function() {
+		if (Math.abs(this.lastRotateLeft) < EPS) {
+			this.lastRotateLeft = 0;
+		} else {
+			this.lastRotateLeft *= 1 - this.fadeSpeed;
+		}
+
+		if (this.lastRotateLeft < -this.maxValue) {
+			this.lastRotateLeft = -this.maxValue;
+		} else if (this.lastRotateLeft > this.maxValue) {
+			this.lastRotateLeft = this.maxValue;
+		}
+
+		if (Math.abs(this.lastRotateUp) < EPS) {
+			this.lastRotateUp = 0;
+		} else {
+			this.lastRotateUp *= 1 - this.fadeSpeed;
+		}
+
+		if (this.lastRotateUp < -this.maxValue) {
+			this.lastRotateUp = -this.maxValue;
+		} else if (this.lastRotateUp > this.maxValue) {
+			this.lastRotateUp = this.maxValue;
+		}
+	};
+
+	if (Game && Game.instance) {
+		Game.instance.addEventListener(Game.UPDATE, function() {
+			if (scope.fadeMode && state == STATE.NONE) {
+				if ((!isTouch && movement > 2) || (isTouch && movement > 6)) {
+					// console.log(scope.lastRotateLeft, scope.lastRotateUp);
+					scope.fade();
+					scope.update();
+				}
+			}
+		});	
+	}
+
 	this.update = function () {
 
 		var position = this.object.position;
@@ -289,8 +340,19 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		}
 
-		theta += thetaDelta;
-		phi += phiDelta;
+		// ztc 
+		if (scope.fadeMode && state == STATE.NONE && !isWheel) {
+			theta += this.lastRotateLeft;
+			phi += this.lastRotateUp;
+		} else {
+
+			theta += thetaDelta;
+			phi += phiDelta;
+
+			this.lastRotateLeft = thetaDelta;
+			this.lastRotateUp = phiDelta;
+		}
+	
 
 		// restrict theta to be between desired limits
 		theta = Math.max( this.minAzimuthAngle, Math.min( this.maxAzimuthAngle, theta ) );
@@ -385,6 +447,11 @@ THREE.OrbitControls = function ( object, domElement ) {
 		if ( scope.enabled === false ) return;
 		event.preventDefault();
 
+		// ztc
+		this.lastRotateLeft = this.lastRotateUp = 0;
+		isTouch = false;
+		isWheel = false;
+
 		if ( event.button === scope.mouseButtons.ORBIT ) {
 			if ( scope.noRotate === true ) return;
 
@@ -437,6 +504,9 @@ THREE.OrbitControls = function ( object, domElement ) {
 			// rotating up and down along whole screen attempts to go 360, but limited to 180
 			scope.rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed );
 
+			// ztc
+			movement = rotateStart.distanceTo(rotateEnd);
+
 			rotateStart.copy( rotateEnd );
 
 		} else if ( state === STATE.DOLLY ) {
@@ -476,7 +546,6 @@ THREE.OrbitControls = function ( object, domElement ) {
 	}
 
 	function onMouseUp( /* event */ ) {
-
 		if ( scope.enabled === false ) return;
 
 		document.removeEventListener( 'mousemove', onMouseMove, false );
@@ -492,6 +561,10 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		event.preventDefault();
 		event.stopPropagation();
+
+		// ztc
+		// movement = 0;
+		isWheel = true;
 
 		var delta = 0;
 
@@ -555,6 +628,9 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		if ( scope.enabled === false ) return;
 
+		// ztc
+		isWheel = false;
+
 		switch ( event.touches.length ) {
 
 			case 1:	// one-fingered touch: rotate
@@ -604,6 +680,9 @@ THREE.OrbitControls = function ( object, domElement ) {
 		event.preventDefault();
 		event.stopPropagation();
 
+		// ztc
+		isTouch = true;
+
 		var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
 
 		switch ( event.touches.length ) {
@@ -620,6 +699,9 @@ THREE.OrbitControls = function ( object, domElement ) {
 				scope.rotateLeft( 2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed );
 				// rotating up and down along whole screen attempts to go 360, but limited to 180
 				scope.rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed );
+
+				// ztc
+				movement = rotateStart.distanceTo(rotateEnd);
 
 				rotateStart.copy( rotateEnd );
 

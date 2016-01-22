@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"main",
+				"mainCam_taget	(?)"
+			],
+			[
+				"box",
+				"boxCollider"
+			],
+			[
+				"s",
+				"simpleCameraEntrance(params)"
+			],
+			[
+				"min",
+				"minOpacity	(num)"
+			],
+			[
+				"Vec",
+				"Vector4(x, y, z, w)"
+			],
+			[
+				"line",
+				"Line(geometry, material, mode)"
+			],
+			[
 				"addCo",
 				"addComponent(comNameOrFunc)"
 			],
@@ -22,10 +46,6 @@
 			[
 				"ma",
 				"material"
-			],
-			[
-				"line",
-				"linewidth	(num)"
 			],
 			[
 				"createEle",
@@ -134,10 +154,6 @@
 			[
 				"mu",
 				"multiplyScalar(scalar)"
-			],
-			[
-				"Vec",
-				"Vector3(x, y, z)"
 			],
 			[
 				"Ve",
@@ -286,10 +302,6 @@
 			[
 				"matrix",
 				"matrixWorldNeedsUpdate	(bool)"
-			],
-			[
-				"s",
-				"scene	{}"
 			],
 			[
 				"in",
@@ -502,18 +514,6 @@
 			[
 				"pla",
 				"playAnimation(objects, animationName, timeScale, repeat, whenFirstComplete)"
-			],
-			[
-				"ting",
-				"tingSym	(?)"
-			],
-			[
-				"en",
-				"enabled	(bool)"
-			],
-			[
-				"vo",
-				"voice2	(?)"
 			]
 		]
 	},
@@ -545,12 +545,28 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "",
+		"last_filter": "re",
 		"selected_items":
 		[
 			[
 				"re",
 				"TernJS: Reload"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"rel",
+				"TernJS: Reload"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
 			],
 			[
 				"push",
@@ -561,20 +577,12 @@
 				"Git: Status"
 			],
 			[
-				"user",
-				"Preferences: Settings - User"
-			],
-			[
 				"tern",
 				"tern_for_sublime: Describe"
 			],
 			[
 				"gist",
 				"Gist: Open Gist"
-			],
-			[
-				"edit",
-				"Project: Edit Project"
 			],
 			[
 				"isnt",
@@ -615,14 +623,6 @@
 			[
 				"remove",
 				"Package Control: Remove Package"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"rel",
-				"TernJS: Reload"
 			],
 			[
 				"pus",
@@ -1110,11 +1110,23 @@
 	},
 	"file_history":
 	[
-		"/E/myhost/inno studio/js/coms/com_Angel.js",
-		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
-		"/E/myhost/inno studio/js/threejs/three.js",
-		"/E/myhost/inno studio/js/controls/OrbitControls.js",
+		"/E/myhost/inno studio/projects/_closed/bone/sceneUp.js",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
+		"/E/myhost/inno studio/js/coms/analyzeScene.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/tern.py",
+		"/C/Users/easyfrog/Desktop/data.txt",
+		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
+		"/E/myhost/inno studio/projects/demo/m2.js",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/js/controls/OrbitControls.js",
+		"/E/myhost/inno studio/js/coms/com_Angel.js",
 		"/E/myhost/inno studio/README.md",
 		"/E/myhost/inno studio/.gitignore",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
@@ -1126,33 +1138,26 @@
 		"/E/myhost/inno studio/projects/demo/demo.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/test.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/.tern-project",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/C#/unity-project.sublime-snippet",
-		"/E/myhost/inno studio/projects/demo/m2.js",
 		"/E/EdgeWorks/demo/publish/web/index.html",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/projects/demo/com_test.js",
-		"/E/myhost/inno studio/js/coms/analyzeScene.js",
 		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Bridge.java",
 		"/E/myhost/inno studio/package.json",
 		"/E/myhost/inno studio/LICENSE.txt",
 		"/C/Users/easyfrog/Desktop/LICENSE.txt",
-		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/E/MyFolder/fuckDelete.txt",
 		"/E/myhost/inno studio/projects/demo/changgu.js",
 		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/templates/project.js",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
 		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
 		"/E/myhost/inno studio/Gruntfile.js",
 		"/C/Users/easyfrog/Desktop/参考/年会宗旨.txt",
-		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/EdgeWorks/shadow/publish/web/shadow.html",
 		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
 		"/E/myhost/inno studio/js/postprocessing/RenderPass.js",
@@ -1203,7 +1208,6 @@
 		"/C/Users/easyfrog/Desktop/viewport.js",
 		"/C/Users/easyfrog/Documents/Tencent Files/24967427/FileRecv/viewport.js",
 		"/E/myhost/inno studio/projects/demo/demo.browserify.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/index.html",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/blueprint3d.js",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/three/three_controller.js",
@@ -1228,16 +1232,12 @@
 		"/E/UnityProjects/zhangqing/",
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
-		"/E/myhost/inno studio/js/webShow/threeExtend.js",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/hello-world.html",
 		"/D/libs/Sea3D/sea3d-gh-pages_1025/Labs/Three.JS-NodeMaterial/index.html",
 		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
 		"/E/myhost/inno studio/js/loaders/sea3d.js",
 		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Camera.cs",
-		"/E/UnityProjects/lianzheng/Assets/Scripts/AnimatorControl.cs",
-		"/E/EdgeWorks/analyze/publish/web/index.html",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Demo/20150817_Data/mainData",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/AniTarget.cs"
+		"/E/UnityProjects/lianzheng/Assets/Scripts/AnimatorControl.cs"
 	],
 	"find":
 	{
@@ -1256,6 +1256,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"addComponent",
 			"this",
 			"friends",
 			"this",
@@ -1382,8 +1383,7 @@
 			"蒙面歌王之夜，谁是王中之王？N种选择，不如选N",
 			"_getFullUrl",
 			"getFullURL",
-			"geturl",
-			"Dir"
+			"geturl"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1476,12 +1476,36 @@
 		"selected_items":
 		[
 			[
-				"m2",
-				"projects\\demo\\m2.js"
+				"uti",
+				"js\\webShow\\utils.js"
 			],
 			[
 				"de",
 				"projects\\demo\\demo.js"
+			],
+			[
+				"m2",
+				"projects\\demo\\m2.js"
+			],
+			[
+				"com",
+				"js\\coms\\com_Angel.js"
+			],
+			[
+				"co",
+				"js\\coms\\com_Angel.js"
+			],
+			[
+				"ga",
+				"js\\webShow\\game.js"
+			],
+			[
+				"u",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"ut",
+				"js\\webShow\\utils.js"
 			],
 			[
 				"thr",
@@ -1500,20 +1524,12 @@
 				"js\\webShow\\Tween.js"
 			],
 			[
-				"uti",
-				"js\\webShow\\utils.js"
-			],
-			[
 				"rea",
 				"README.md"
 			],
 			[
 				".",
 				".tern-project"
-			],
-			[
-				"ga",
-				"js\\webShow\\game.js"
 			],
 			[
 				"read",
@@ -1542,10 +1558,6 @@
 			[
 				"chan",
 				"projects\\demo\\changgu.js"
-			],
-			[
-				"ut",
-				"js\\webShow\\utils.js"
 			],
 			[
 				"bo",
@@ -1622,10 +1634,6 @@
 			[
 				"chuang",
 				"projects\\chuangwei\\chuangwei.js"
-			],
-			[
-				"u",
-				"js\\webShow\\utils.js"
 			],
 			[
 				".ter",
@@ -1745,16 +1753,20 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "li",
+		"last_filter": "u",
 		"selected_items":
 		[
 			[
-				"li",
-				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
-			],
-			[
 				"u",
 				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"ut",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"li",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
 			],
 			[
 				"op",

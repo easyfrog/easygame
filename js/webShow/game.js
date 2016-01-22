@@ -63,6 +63,7 @@
 			alpha: true
 		}
 		s.renderer = new THREE.WebGLRenderer(rendererConfig);
+		// s.renderer = new THREE.CanvasRenderer(rendererConfig);
 		s.container.appendChild(s.renderer.domElement);
 		s.camera = new THREE.PerspectiveCamera(50, container.offsetWidth/container.offsetHeight, 1, 10000);
 		s.camera.position.set(0,50,400);

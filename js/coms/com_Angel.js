@@ -7,26 +7,44 @@
 var g;
 var delta;
 
+/**
+ * params:
+ *     direction,
+ *     horizontalOnly,
+ *     friends,
+ *     min,
+ *     max
+ */
+
 function com_Angel(params) {
     this.name = 'com_Angel';
     
     g = Game.instance;
     this.camera = g.camera;
-    this.friends = [].concat(params);
 
-    this.direction;
+    params.friends = params.friends || [];
 
-    this.min = .75;
-    this.max = .92;
+    this.friends = [].concat(params.friends);
 
-    this.isOnOff = false;
+    this.direction = params.direction;
+
+    this.min = params.min || .75;
+    this.max = params.max || .92;
+
+    this.minOpacity = params.minOpacity || 0;
+
     this.mats = [];
+
+    this.horizontalOnly = params.horizontalOnly;
+
+    if (this.horizontalOnly) {
+        this.direction = new THREE.Vector3(this.direction.x, 0, this.direction.z).normalize();
+    }
 };
 
 // Start
 com_Angel.prototype.start = function() {
-    this.direction = utils.cameraDirection(this.camera);
-
+    console.log(this.name, 'start');
     // collect materials
     cm(this);
 };
@@ -40,7 +58,7 @@ var cm = function(f) {
 }
 
 com_Angel.prototype.addFriends = function(friends) {
-    this.friends.concat(friends);
+    this.friends = this.friends.concat(friends);
     cm(this);
 };
 
@@ -48,16 +66,20 @@ com_Angel.prototype.addFriends = function(friends) {
 com_Angel.prototype.update = function() {
     var s = this;
     delta = s.max - s.min;
-    var dir = utils.cameraDirection(s.camera);
+    var dir = utils.cameraDirection(s.camera).normalize();
+
+    if (s.horizontalOnly) {
+        dir = new THREE.Vector3(dir.x, 0, dir.z).normalize();
+    }
 
     var v = dir.dot(s.direction);
     var op = 1;
     if (v <= s.min) {
-        op = 0;                    
+        op = s.minOpacity;                    
     } else if (v >= s.max) {
         op = 1;
     } else {
-        op = (v - s.min) / delta;
+        op = s.minOpacity + (v - s.min) / delta * ( 1- s.minOpacity );
     }
 
     utils.setOpacity(s.mats, op);
