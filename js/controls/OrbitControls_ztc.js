@@ -80,7 +80,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.lastRotateLeft = 0;
 	this.lastRotateUp   = 0;
 	this.isMouseUp      = false;
-	this.fadeSpeed      = .1;
+	this.fadeSpeed      = .08;
 	this.fadeMode       = true;
 	this.maxValue		= .1;
 
@@ -278,6 +278,16 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	};
 
+	function clamp(val, min, max) {
+		if (val < min) {
+			return min;
+		} else if (val > max) {
+			return max;
+		} else {
+			return val;
+		}
+	}
+
 	// ztc
 	this.fade = function() {
 		if (Math.abs(this.lastRotateLeft) < EPS) {
@@ -286,11 +296,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 			this.lastRotateLeft *= 1 - this.fadeSpeed;
 		}
 
-		if (this.lastRotateLeft < -this.maxValue) {
-			this.lastRotateLeft = -this.maxValue;
-		} else if (this.lastRotateLeft > this.maxValue) {
-			this.lastRotateLeft = this.maxValue;
-		}
+		this.lastRotateLeft = clamp(this.lastRotateLeft, -this.maxValue, this.maxValue);
 
 		if (Math.abs(this.lastRotateUp) < EPS) {
 			this.lastRotateUp = 0;
@@ -298,20 +304,17 @@ THREE.OrbitControls = function ( object, domElement ) {
 			this.lastRotateUp *= 1 - this.fadeSpeed;
 		}
 
-		if (this.lastRotateUp < -this.maxValue) {
-			this.lastRotateUp = -this.maxValue;
-		} else if (this.lastRotateUp > this.maxValue) {
-			this.lastRotateUp = this.maxValue;
-		}
+		this.lastRotateUp = clamp(this.lastRotateUp, -this.maxValue, this.maxValue);
 	};
 
 	if (Game && Game.instance) {
 		Game.instance.addEventListener(Game.UPDATE, function() {
 			if (scope.fadeMode && state == STATE.NONE) {
 				if ((!isTouch && movement > 2) || (isTouch && movement > 6)) {
-					// console.log(scope.lastRotateLeft, scope.lastRotateUp);
 					scope.fade();
 					scope.update();
+				} else {
+					scope.lastRotateLeft = scope.lastRotateUp = 0;
 				}
 			}
 		});	
@@ -342,10 +345,13 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		// ztc 
 		if (scope.fadeMode && state == STATE.NONE && !isWheel) {
-			theta += this.lastRotateLeft;
-			phi += this.lastRotateUp;
+			if (this.autoRotate && (Math.abs(this.lastRotateLeft) <= EPS && Math.abs(this.lastRotateUp) <= EPS)) {
+				theta += thetaDelta
+			} else {
+				theta += this.lastRotateLeft;
+				phi += this.lastRotateUp;
+			}
 		} else {
-
 			theta += thetaDelta;
 			phi += phiDelta;
 
@@ -356,7 +362,6 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		// restrict theta to be between desired limits
 		theta = Math.max( this.minAzimuthAngle, Math.min( this.maxAzimuthAngle, theta ) );
-
 		// restrict phi to be between desired limits
 		phi = Math.max( this.minPolarAngle, Math.min( this.maxPolarAngle, phi ) );
 

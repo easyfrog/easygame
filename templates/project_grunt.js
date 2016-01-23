@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 				files: [ 
 					{
 						src: [
-							 "js/controls/OrbitControls.js",
+							 "js/controls/OrbitControls_ztc.js",
 							 "js/webShow/*.js",
 						],
 						dest: '<%= grunt.projectFolder %>/libs/eg.js'
