@@ -85,7 +85,12 @@ var process = {
     },
     'line': function(o, p) {                            // line
         var lineMat = o.material;
-        lineMat.lineWidth = parseFloat( p['line'].v );
+        if (p.line.v) {                                 // width
+            lineMat.lineWidth = parseFloat( p.line.v );
+        }
+        if (p.line.c) {                                 // color
+            lineMat.color = new THREE.Color(p.line.c);
+        }
     }
 };
 
