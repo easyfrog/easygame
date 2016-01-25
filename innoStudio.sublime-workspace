@@ -4,16 +4,132 @@
 		"selected_items":
 		[
 			[
-				"main",
-				"mainCam_taget	(?)"
+				"Cub",
+				"CubeRefractionMapping	(num)"
+			],
+			[
+				"Cu",
+				"CubeReflectionMapping	(num)"
+			],
+			[
+				"dis",
+				"distanceToSquared(v)"
+			],
+			[
+				"com",
+				"com_Angel	{}"
+			],
+			[
+				"pro",
+				"previousAnimation	{}"
 			],
 			[
 				"box",
-				"boxCollider"
+				"boxParent (obj)"
+			],
+			[
+				"mai",
+				"mainCam_taget (obj)"
+			],
+			[
+				"set",
+				"setSize (fn/1)"
+			],
+			[
+				"ta",
+				"targetPos (fn/1)"
+			],
+			[
+				"fo",
+				"followAnimation"
+			],
+			[
+				"theta",
+				"thetaDelta"
+			],
+			[
+				"max",
+				"maxValue"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"st",
+				"stepMode"
 			],
 			[
 				"s",
-				"simpleCameraEntrance(params)"
+				"stepMode	(?)"
+			],
+			[
+				"las",
+				"lastRotateUp	(num)"
+			],
+			[
+				"last",
+				"lastRotateLeft	(num)"
+			],
+			[
+				"mose",
+				"mousedown	.mousedown()"
+			],
+			[
+				"auto",
+				"autoRotate	(bool)"
+			],
+			[
+				"Mou",
+				"MOUSEUP	(str)"
+			],
+			[
+				"add",
+				"add(object)"
+			],
+			[
+				"Shader",
+				"ShaderLib	{}"
+			],
+			[
+				"RG",
+				"RGBFormat	(num)"
+			],
+			[
+				"Cur",
+				"CubeRefractionMapping	(num)"
+			],
+			[
+				"uti",
+				"ImageUtils	{}"
+			],
+			[
+				"cla",
+				"clamp(min, max)"
+			],
+			[
+				"rota",
+				"rotateEnd	{}"
+			],
+			[
+				"fad",
+				"fadeSpeed	(num)"
+			],
+			[
+				"phi",
+				"phiDelta"
+			],
+			[
+				"ph",
+				"phiDelta	(num)"
+			],
+			[
+				"the",
+				"thetaDelta	(num)"
+			],
+			[
+				"main",
+				"mainCam_taget	(?)"
 			],
 			[
 				"min",
@@ -52,10 +168,6 @@
 				"createElementNS (fn/2)"
 			],
 			[
-				"add",
-				"addEventListener (fn)"
-			],
-			[
 				"l",
 				"lines	[]"
 			],
@@ -78,10 +190,6 @@
 			[
 				"mesh",
 				"meshes	[]"
-			],
-			[
-				"las",
-				"lastOnly	(?)"
 			],
 			[
 				"tr",
@@ -110,10 +218,6 @@
 			[
 				"pos",
 				"postprocessing"
-			],
-			[
-				"last",
-				"lastTransform"
 			],
 			[
 				"cam",
@@ -146,10 +250,6 @@
 			[
 				"can",
 				"cameraController	{}"
-			],
-			[
-				"dis",
-				"distanceScale	(num)"
 			],
 			[
 				"mu",
@@ -190,10 +290,6 @@
 			[
 				"com_",
 				"com_test2	(?)"
-			],
-			[
-				"com",
-				"comNameOrFunc	(?)"
 			],
 			[
 				"co",
@@ -260,10 +356,6 @@
 				"animatePosition	(?)"
 			],
 			[
-				"lo",
-				"lookAt(vector)"
-			],
-			[
 				"pu",
 				"public"
 			],
@@ -320,10 +412,6 @@
 				"transformToComplete"
 			],
 			[
-				"st",
-				"stageScale	(num)"
-			],
-			[
 				"hide",
 				"hideArr()"
 			],
@@ -366,10 +454,6 @@
 			[
 				"ti",
 				"titleParent	(?)"
-			],
-			[
-				"set",
-				"setOrbitController (fn)"
 			],
 			[
 				"Util",
@@ -430,90 +514,6 @@
 			[
 				"Test",
 				"TestClass (fn/0)"
-			],
-			[
-				"SEA",
-				"SEA3D (fn/0)"
-			],
-			[
-				"sy",
-				"symEnd (fn/0)"
-			],
-			[
-				"fu",
-				"funck (fn/3)"
-			],
-			[
-				"is",
-				"previousSym (fn)"
-			],
-			[
-				"Nearest",
-				"NearestFilter	(?)"
-			],
-			[
-				"wi",
-				"swiperight()"
-			],
-			[
-				"sw",
-				"swipeleft()"
-			],
-			[
-				"nex",
-				"nextSym(isForward)"
-			],
-			[
-				"pl",
-				"playContinueId	(num)"
-			],
-			[
-				"for",
-				"for	for (…) {…}"
-			],
-			[
-				"mus",
-				"music	(?)"
-			],
-			[
-				"music",
-				"musicOnOff"
-			],
-			[
-				"gr",
-				"progressText	(?)"
-			],
-			[
-				"clear",
-				"clearInterval(interval)"
-			],
-			[
-				"screent",
-				"screenMat	(?)"
-			],
-			[
-				"M",
-				"MOUSEMOVE	(str)"
-			],
-			[
-				"progre",
-				"progressProgress	(?)"
-			],
-			[
-				"anim",
-				"animation	(?)"
-			],
-			[
-				"setANi",
-				"setAnimateMatrix"
-			],
-			[
-				"vid",
-				"videoo	(?)"
-			],
-			[
-				"pla",
-				"playAnimation(objects, animationName, timeScale, repeat, whenFirstComplete)"
 			]
 		]
 	},
@@ -544,29 +544,49 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "re",
+		"height": 300.0,
+		"last_filter": "ss js",
 		"selected_items":
 		[
 			[
-				"re",
-				"TernJS: Reload"
+				"ss js",
+				"Set Syntax: JavaScript"
 			],
 			[
-				"ins",
-				"Package Control: Install Package"
+				"re",
+				"Set Syntax: Regular Expression"
 			],
 			[
 				"edit",
 				"Project: Edit Project"
 			],
 			[
-				"rel",
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"reload",
 				"TernJS: Reload"
 			],
 			[
-				"user",
-				"Preferences: Settings - User"
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
 			],
 			[
 				"push",
@@ -577,24 +597,20 @@
 				"Git: Status"
 			],
 			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"rel",
+				"TernJS: Reload"
+			],
+			[
 				"tern",
 				"tern_for_sublime: Describe"
 			],
 			[
-				"gist",
-				"Gist: Open Gist"
-			],
-			[
 				"isnt",
 				"Package Control: Install Package"
-			],
-			[
-				"list",
-				"Package Control: List Packages"
-			],
-			[
-				"reload",
-				"TernJS: Reload"
 			],
 			[
 				"upda",
@@ -623,10 +639,6 @@
 			[
 				"remove",
 				"Package Control: Remove Package"
-			],
-			[
-				"pus",
-				"Git: Push Current Branch"
 			],
 			[
 				"grunt",
@@ -723,10 +735,6 @@
 			[
 				"",
 				"Build: New Build System"
-			],
-			[
-				"stat",
-				"Git: Status"
 			],
 			[
 				"grunt ",
@@ -989,10 +997,6 @@
 				"Package Control: Upgrade Package"
 			],
 			[
-				"rem",
-				"Package Control: Remove Package"
-			],
-			[
 				"jav",
 				"Set Syntax: JavaScript"
 			],
@@ -1029,11 +1033,11 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 536.0
+		"width": 440.0
 	},
 	"console":
 	{
-		"height": 291.0,
+		"height": 321.0,
 		"history":
 		[
 			"window.run_command('exec','dir');",
@@ -1110,37 +1114,50 @@
 	},
 	"file_history":
 	[
-		"/E/myhost/inno studio/projects/_closed/bone/sceneUp.js",
-		"/E/myhost/inno studio/js/webShow/threeExtend.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
-		"/E/myhost/inno studio/js/coms/analyzeScene.js",
+		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
+		"/E/myhost/inno studio/.tern-project",
+		"/E/myhost/inno studio/js/coms/com_Angel.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/tern.py",
-		"/C/Users/easyfrog/Desktop/data.txt",
-		"/E/myhost/inno studio/js/webShow/Tween.js",
+		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/E/myhost/inno studio/js/controls/EditorControls.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
-		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
+		"/c/users/easyfrog/appdata/local/temp/.tern-project",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/.gitignore",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/.tern-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.no-sublime-package",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.tern-project",
 		"/E/myhost/inno studio/projects/demo/m2.js",
 		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
+		"/D/libs/three.js-r72/examples/js/libs/stats.min.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/C/Users/easyfrog/Desktop/BAO格式文件使用说明.txt",
 		"/E/myhost/inno studio/js/controls/OrbitControls.js",
-		"/E/myhost/inno studio/js/coms/com_Angel.js",
+		"/E/myhost/inno studio/js/threejs/Detector.js",
+		"/E/EdgeWorks/demo/publish/web/index.html",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/D/libs/mrdoob-three.js-d49bb0e/examples/js/renderers/CanvasRenderer.js",
+		"/C/Users/easyfrog/Desktop/CanvasRenderer.js",
+		"/E/myhost/inno studio/projects/_closed/bone/sceneUp.js",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
+		"/E/myhost/inno studio/js/coms/analyzeScene.js",
+		"/C/Users/easyfrog/Desktop/data.txt",
+		"/E/myhost/inno studio/js/webShow/Tween.js",
+		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/E/myhost/inno studio/README.md",
-		"/E/myhost/inno studio/.gitignore",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
-		"/E/myhost/inno studio/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.jshintrc",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
-		"/c/users/easyfrog/appdata/local/temp/.tern-project",
 		"/E/myhost/inno studio/projects/demo/demo.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/test.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/C#/unity-project.sublime-snippet",
-		"/E/EdgeWorks/demo/publish/web/index.html",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/projects/demo/com_test.js",
@@ -1151,12 +1168,10 @@
 		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/E/MyFolder/fuckDelete.txt",
 		"/E/myhost/inno studio/projects/demo/changgu.js",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/E/myhost/inno studio/templates/project.js",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
 		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
-		"/E/myhost/inno studio/Gruntfile.js",
 		"/C/Users/easyfrog/Desktop/参考/年会宗旨.txt",
 		"/E/EdgeWorks/shadow/publish/web/shadow.html",
 		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
@@ -1175,8 +1190,6 @@
 		"/C/Users/easyfrog/Desktop/TernJS/Default.sublime-keymap",
 		"/C/Users/easyfrog/Desktop/TernJS/Default.sublime-commands",
 		"/E/myhost/inno studio/projects/bone/test.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
 		"/C/Users/easyfrog/Desktop/TernJS/ternjs/reloader.py",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
 		"/E/myhost/inno studio/projects/xmas3d/edgeWorks.js",
@@ -1197,8 +1210,6 @@
 		"/E/UnityProjects/lianzheng/Assets/Scripts/RawImageClick.cs",
 		"/E/UnityProjects/lianzheng/Assets/Scripts/ztc/Viewer.cs",
 		"/E/EdgeWorks/demo/publish/web/main.js",
-		"/E/myhost/inno studio/templates/project_grunt.js",
-		"/E/myhost/inno studio/js/threejs/Detector.js",
 		"/E/EdgeWorks/xmas/3d/publish/web/index.html",
 		"/E/EdgeWorks/changhong/publish/web/index.html",
 		"/E/EdgeWorks/xmas/3d/index.html",
@@ -1230,14 +1241,7 @@
 		"/E/UnityProjects/zhangqing/zhangqing.sublime-project",
 		"/E/UnityProjects/zhangqing/zhangqing",
 		"/E/UnityProjects/zhangqing/",
-		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/js/three.js",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/hello-world.html",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Labs/Three.JS-NodeMaterial/index.html",
-		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.js",
-		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Camera.cs",
-		"/E/UnityProjects/lianzheng/Assets/Scripts/AnimatorControl.cs"
+		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs"
 	],
 	"find":
 	{
@@ -1256,6 +1260,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_js_file_reader",
+			"}\n",
+			"console",
+			"cameraController",
+			"minOpacity",
+			"movement",
+			"Shader",
+			"shader",
+			"Shader",
+			"shader",
+			"Shader",
+			"shader",
+			"Shader",
+			"shader",
+			"Shader",
+			"shader",
+			"movement",
+			"isWheel",
+			"movement",
+			"onMouseWheel",
+			"this",
+			"lastRotateLeft",
+			"rotateStart",
+			"console.log",
+			"rotateStart",
+			"thetaDelta",
+			"fadeMode",
+			"fade",
+			"this.fadeSpeed",
+			"this.isMouseUp",
+			"isMouseUp",
+			"thetaDelta",
+			"phiDelta",
+			"changeEvent",
+			"update",
+			"phi",
+			"RotateUp",
+			"rotateUp",
+			"rotateDelta",
 			"addComponent",
 			"this",
 			"friends",
@@ -1344,46 +1387,7 @@
 			"UPDATE",
 			"update",
 			"UPDATE",
-			"Update",
-			"update",
-			"t.",
-			"亚克",
-			"吸塑",
-			"双饰面板",
-			">\n",
-			"game.cameraController.enabled ",
-			"titleParent",
-			"status",
-			"_projectName",
-			"closedPath",
-			"'projects/_closed/'",
-			"isZheShe",
-			"zheshe",
-			"onDeviceReady",
-			"chaijieCam",
-			"titleParent",
-			"setOr",
-			"timeout",
-			"cameraToOrigin",
-			"camPathAnim",
-			"screen",
-			"Screen",
-			"screen",
-			"<script type=\"text/javascript\" charset=\"utf-8\" src=\"http://res.wx.qq.com/open/js/jweixin-1.0.0.js\"></script>",
-			"mainCamera",
-			"pause",
-			"autoRot()",
-			"autoRot",
-			"notAutoRot",
-			"setRelative",
-			"THREE.SEA3D",
-			"show",
-			"glo.p1",
-			"glo.p1 ",
-			"蒙面歌王之夜，谁是王中之王？N种选择，不如选N",
-			"_getFullUrl",
-			"getFullURL",
-			"geturl"
+			"Update"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1476,19 +1480,23 @@
 		"selected_items":
 		[
 			[
-				"uti",
-				"js\\webShow\\utils.js"
-			],
-			[
-				"de",
-				"projects\\demo\\demo.js"
-			],
-			[
 				"m2",
 				"projects\\demo\\m2.js"
 			],
 			[
-				"com",
+				"c",
+				"js\\coms\\com_Angel.js"
+			],
+			[
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
+				".",
+				".tern-project"
+			],
+			[
+				"com_",
 				"js\\coms\\com_Angel.js"
 			],
 			[
@@ -1496,8 +1504,24 @@
 				"js\\coms\\com_Angel.js"
 			],
 			[
+				"de",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"edit",
+				"js\\controls\\EditorControls.js"
+			],
+			[
+				"o",
+				"js\\controls\\OrbitControls.js"
+			],
+			[
 				"ga",
 				"js\\webShow\\game.js"
+			],
+			[
+				"com",
+				"js\\coms\\com_Angel.js"
 			],
 			[
 				"u",
@@ -1526,10 +1550,6 @@
 			[
 				"rea",
 				"README.md"
-			],
-			[
-				".",
-				".tern-project"
 			],
 			[
 				"read",
@@ -1654,10 +1674,6 @@
 			[
 				"main",
 				"main.js"
-			],
-			[
-				"edit",
-				"js\\controls\\EditorControls.js"
 			],
 			[
 				"in",

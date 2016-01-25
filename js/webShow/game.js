@@ -678,9 +678,9 @@
 	/**
 	 * 播放基础P.R.S.动画
 	 */
-	Game.prototype.playGeneralAnimation = function(animationName, timeScale, repeat) {
+	Game.prototype.playGeneralAnimation = function(animationName, timeScale, repeat, callback) {
 		animationName = animationName || 'general';
-		Game.instance.sh.play(animationName, timeScale, repeat);		
+		Game.instance.sh.play(animationName, timeScale, repeat, callback);		
 	};
 
 	/**

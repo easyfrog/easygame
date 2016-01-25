@@ -30,7 +30,7 @@ AdobeEdge.bootstrapCallback(function(compId) {
 
     // nengkan by platform & version
     //*
-    if (glo.pf.isWX && glo.pf.platform == 'Android' && glo.pf.version < 510) {
+    if (glo.pf.isWX && glo.pf.platform == 'Android' && glo.pf.version < 600) {
     	glo.nengkan = false;
     }
     //*/

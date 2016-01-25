@@ -149,15 +149,32 @@ SceneHandler.prototype.update = function () {
     // };
 };
 
-SceneHandler.prototype.play = function(name,speed,repeat) {
+SceneHandler.prototype.play = function(name,speed,repeat, callback) {
     var s = this,anim;
     if (repeat == undefined) repeat = false;
 
     name = name || 'normal';
     speed = speed || 1;
+    var completeAdded = false;
 
-    for (var i = 0;i < s.root.meshes.length; i ++ ) {
-        anim = s.root.meshes[i].animation;
+    // meshes && dummys
+    var objs = s.root.meshes.concat(s.root.dummys);
+
+    for (var i = 0;i < objs.length; i ++ ) {
+        anim = objs[i].animation;
+        if (anim && anim.animationSet.animations[name] && !anim.onComplete && callback && !completeAdded) {
+            completeAdded = true;
+            anim.onComplete = (function(anim, callback) {
+                var _a = anim;
+                var _c = callback;
+                return function() {
+                    _a.onComplete = null;
+                    if (_c) {
+                        _c();
+                    }
+                };
+            })(anim, callback);
+        }
 
         if (anim && anim.animationSet.animations[name]) {
             // repeat

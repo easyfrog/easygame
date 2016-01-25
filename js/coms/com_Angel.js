@@ -11,9 +11,13 @@ var delta;
  * params:
  *     direction,
  *     horizontalOnly,
- *     friends,
- *     min,
- *     max
+ *     friends,   // default opacity do together
+ *     min,       // angle begin
+ *     max,       // angle to 1
+ *     minValue,  // opacity or other property min value
+ *     maxValue,  // opacity or other property max value
+ *     stepMode,  // is true action(bool), is false action(0~1)
+ *     action     // function handler your self
  */
 
 function com_Angel(params) {
@@ -31,7 +35,12 @@ function com_Angel(params) {
     this.min = params.min || .75;
     this.max = params.max || .92;
 
-    this.minOpacity = params.minOpacity || 0;
+    this.action = params.action;
+    this.isIn = undefined;
+    this.stepMode = params.stepMode;
+
+    this.minValue = params.minValue || 0;
+    this.maxValue = params.maxValue || 1;
 
     this.mats = [];
 
@@ -73,16 +82,47 @@ com_Angel.prototype.update = function() {
     }
 
     var v = dir.dot(s.direction);
-    var op = 1;
-    if (v <= s.min) {
-        op = s.minOpacity;                    
-    } else if (v >= s.max) {
-        op = 1;
-    } else {
-        op = s.minOpacity + (v - s.min) / delta * ( 1- s.minOpacity );
+
+    function work(_b) {
+        s.isIn = _b;
+        if (s.action) {
+            s.action(_b);
+        } else {
+            utils.fade(s.object, {
+                mats: s.mats,
+                min: s.minValue,
+                max: s.maxValue,
+                inout: _b
+            });
+        }
     }
 
-    utils.setOpacity(s.mats, op);
+    var op = 1;
+    if (v <= s.min) {
+        op = s.minValue;                    
+        if (s.stepMode && (s.isIn || s.isIn == undefined)) {
+            work(false);
+        }
+    } else if (v >= s.max) {
+        op = 1;
+        if (s.stepMode && !s.isIn) {
+            work(true);
+        }
+    } else {
+        op = s.minValue + (v - s.min) / delta * ( 1- s.minValue );
+        if (s.stepMode && !s.isIn) {
+            work(true);
+        }
+    }
+
+    if (!s.stepMode) {
+        if (s.action) {
+            s.action(op);
+        } else {
+            utils.setOpacity(s.mats, op);
+        }
+    }
 };
 
 module.exports = com_Angel;
+

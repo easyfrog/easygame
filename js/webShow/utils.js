@@ -24,6 +24,7 @@ utils.fixMorphTargets = function(geometry) {
 	};
 };
 
+
 /**
  * 变形物体动画
  * params: {duration: 1000, loop: false}
@@ -215,20 +216,27 @@ utils.setAllAnimationTime = function(stateName, percent) {
  * 让物体跟随一个物体的动画去改变位置与旋转
  */
 utils.followAnimation = function(obj, target, stateName, inverse, complete) {
-	var _tmp = function() {
-		utils.sameTransform(obj, target, inverse);
-	}
+	(function(obj, target, stateName, inverse, complete) {
+		var oldComplete = target.animation.onComplete;
 
-	target.animation.play(stateName);
-	Game.instance.addEventListener(Game.UPDATE, _tmp);
-
-	target.animation.onComplete = function() {
-		target.animation.onComplete = null;
-		Game.instance.removeEventListener(Game.UPDATE, _tmp);
-		if (complete) {
-			complete();
+		var _tmp = function() {
+			utils.sameTransform(obj, target, inverse);
 		}
-	}
+
+		target.animation.play(stateName);
+		Game.instance.addEventListener(Game.UPDATE, _tmp);
+
+		target.animation.onComplete = function() {
+			if (oldComplete) {
+				oldComplete();
+			}
+			target.animation.onComplete = oldComplete;
+			Game.instance.removeEventListener(Game.UPDATE, _tmp);
+			if (complete) {
+				complete();
+			}
+		};
+	})(obj, target, stateName, inverse, complete);
 }
 
 /**
@@ -284,26 +292,35 @@ utils.alone = function(obj, all) {
 /**
  * 淡入淡出
  * inout: true 淡入 | false 淡出
+ * params:
+ * 		min, max, inout
  */
-utils.fade = function(obj, inout, time, callback) {
-	if (time == undefined) {
-		time = 1;
+utils.fade = function(obj, params) {
+	if (obj) {
+		clearInterval(obj.fadeid);
 	}
 
-	clearInterval(obj.fadeid);
+	var mats = params.mats || utils.collectMaterials(obj);
 
-	var mats = utils.collectMaterials(obj);
+	params.min = params.min || 0;
+	params.max = params.max || 1;
+	params.time = params.time || 1;
+	if (params.inout == undefined) {
+		params.inout = true;
+	}
 
-	obj.fadeid = ztc.Tween.fadeTo(time, function(t) {
+	var delta = params.max - params.min;
+
+	obj.fadeid = ztc.Tween.fadeTo(params.time, function(t) {
 		for (var i = 0; i < mats.length; i++) {
-			var mat = mats[i];
+			var mat = params.mats[i];
 			mat.transparent = true;
-			mat.opacity = inout ? t : 1 - t;
+			mat.opacity = params.inout ? (params.min + t * delta) : params.max - t * delta;
 		};
 	}, ztc.Tween.easeOutQuad, function() {
 		delete obj.fadeid;
-		if (callback) {
-			callback();
+		if (params.callback) {
+			params.callback();
 		}
 	});
 };

@@ -19,24 +19,24 @@
 		"OmniSharp"
 	],
 	"ternjs":
-	{
-		"exclude":
-		[
-			"node_modules/**/*.js",
-			"**/*.min.js",
-			"**/build/*.js",
-			"misc/*.js",
-			"templates/*.js",
-			"js/shaders/**.js",
-			"js/postprocessing/**.js",
-			"**/*_grunt.js",
-			"projects/_closed/**/*.js",
-			"js/coms/**"
-		],
-		"libs":
-		[
-			"browser",
-			"jquery"
-		]
-	}
+		{
+			"exclude":
+			[
+				"node_modules/**/*.js",
+				"**/*.min.js",
+				"**/build/*.js",
+				"misc/*.js",
+				"templates/*.js",
+				"js/shaders/**.js",
+				"js/postprocessing/**.js",
+				"**/*_grunt.js",
+				"projects/_closed/**/*.js"
+			],
+			"libs":
+			[
+				"browser",
+				"jquery"
+			]
+		}
+
 }
