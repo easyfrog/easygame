@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"wo",
+				"works	[]"
+			],
+			[
+				"work",
+				"workComplete"
+			],
+			[
+				"load",
+				"load(url, groupName, callback)"
+			],
+			[
+				"line",
+				"lineMat	{}"
+			],
+			[
 				"Cub",
 				"CubeRefractionMapping	(num)"
 			],
@@ -140,10 +156,6 @@
 				"Vector4(x, y, z, w)"
 			],
 			[
-				"line",
-				"Line(geometry, material, mode)"
-			],
-			[
 				"addCo",
 				"addComponent(comNameOrFunc)"
 			],
@@ -170,10 +182,6 @@
 			[
 				"l",
 				"lines	[]"
-			],
-			[
-				"load",
-				"loadSeas(seas, groupName, callback)"
 			],
 			[
 				"remo",
@@ -506,14 +514,6 @@
 			[
 				"scree",
 				"screenMat (obj)"
-			],
-			[
-				"Tes",
-				"TestClass (fn/0)"
-			],
-			[
-				"Test",
-				"TestClass (fn/0)"
 			]
 		]
 	},
@@ -544,10 +544,34 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 300.0,
-		"last_filter": "ss js",
+		"height": 152.0,
+		"last_filter": "reload",
 		"selected_items":
 		[
+			[
+				"reload",
+				"TernJS: Reload"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"rel",
+				"TernJS: Reload"
+			],
+			[
+				"reloa",
+				"TernJS: Reload"
+			],
 			[
 				"ss js",
 				"Set Syntax: JavaScript"
@@ -573,10 +597,6 @@
 				"Package Control: List Packages"
 			],
 			[
-				"reload",
-				"TernJS: Reload"
-			],
-			[
 				"rem",
 				"Package Control: Remove Package"
 			],
@@ -589,20 +609,8 @@
 				"Git: Push Current Branch"
 			],
 			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
-				"status",
-				"Git: Status"
-			],
-			[
 				"stat",
 				"Git: Status"
-			],
-			[
-				"rel",
-				"TernJS: Reload"
 			],
 			[
 				"tern",
@@ -615,10 +623,6 @@
 			[
 				"upda",
 				"Package Control: Upgrade Package"
-			],
-			[
-				"statu",
-				"Git: Status"
 			],
 			[
 				"relo",
@@ -853,10 +857,6 @@
 				"TernJS: Reload"
 			],
 			[
-				"reloa",
-				"TernJS: Reload"
-			],
-			[
 				"rela",
 				"TernJS: Reload"
 			],
@@ -1033,7 +1033,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 440.0
+		"width": 536.0
 	},
 	"console":
 	{
@@ -1114,27 +1114,31 @@
 	},
 	"file_history":
 	[
+		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/E/Away3D/NubiaZ9Mobile/src/NubiaZ9Mobile.as",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/.gitignore",
+		"/E/myhost/inno studio/templates/project.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/messages.json",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
 		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
 		"/E/myhost/inno studio/.tern-project",
 		"/E/myhost/inno studio/js/coms/com_Angel.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/tern.py",
-		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/js/controls/EditorControls.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
 		"/c/users/easyfrog/appdata/local/temp/.tern-project",
 		"/E/myhost/inno studio/js/webShow/game.js",
-		"/E/myhost/inno studio/.gitignore",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.no-sublime-package",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.tern-project",
 		"/E/myhost/inno studio/projects/demo/m2.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
 		"/D/libs/three.js-r72/examples/js/libs/stats.min.js",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/C/Users/easyfrog/Desktop/BAO格式文件使用说明.txt",
 		"/E/myhost/inno studio/js/controls/OrbitControls.js",
 		"/E/myhost/inno studio/js/threejs/Detector.js",
@@ -1148,7 +1152,6 @@
 		"/E/myhost/inno studio/js/coms/analyzeScene.js",
 		"/C/Users/easyfrog/Desktop/data.txt",
 		"/E/myhost/inno studio/js/webShow/Tween.js",
-		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/E/myhost/inno studio/README.md",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
@@ -1168,7 +1171,6 @@
 		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/E/MyFolder/fuckDelete.txt",
 		"/E/myhost/inno studio/projects/demo/changgu.js",
-		"/E/myhost/inno studio/templates/project.js",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
 		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
@@ -1239,9 +1241,7 @@
 		"/E/myhost/inno studio/projects/_closed/changhong/com_AutoRot.js",
 		"/C/Users/easyfrog/Desktop/会.txt",
 		"/E/UnityProjects/zhangqing/zhangqing.sublime-project",
-		"/E/UnityProjects/zhangqing/zhangqing",
-		"/E/UnityProjects/zhangqing/",
-		"/E/UnityProjects/lianzheng/Assets/(MMO)RPG Camera & Controller/Scripts/RPG_Animation.cs"
+		"/E/UnityProjects/zhangqing/zhangqing"
 	],
 	"find":
 	{
@@ -1260,6 +1260,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"this",
+			"addComponent",
+			"visi",
+			"callback",
 			"_js_file_reader",
 			"}\n",
 			"console",
@@ -1383,10 +1387,6 @@
 			"nengkan",
 			"VertexAnimationMesh",
 			"update",
-			"Update",
-			"UPDATE",
-			"update",
-			"UPDATE",
 			"Update"
 		],
 		"highlight": true,
@@ -1480,16 +1480,36 @@
 		"selected_items":
 		[
 			[
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"gam",
+				"js\\webShow\\game.js"
+			],
+			[
+				"de",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"u",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"ana",
+				"js\\coms\\analyzeScene.js"
+			],
+			[
+				"ga",
+				"js\\webShow\\game.js"
+			],
+			[
 				"m2",
 				"projects\\demo\\m2.js"
 			],
 			[
 				"c",
 				"js\\coms\\com_Angel.js"
-			],
-			[
-				"uti",
-				"js\\webShow\\utils.js"
 			],
 			[
 				".",
@@ -1504,10 +1524,6 @@
 				"js\\coms\\com_Angel.js"
 			],
 			[
-				"de",
-				"projects\\demo\\demo.js"
-			],
-			[
 				"edit",
 				"js\\controls\\EditorControls.js"
 			],
@@ -1516,16 +1532,8 @@
 				"js\\controls\\OrbitControls.js"
 			],
 			[
-				"ga",
-				"js\\webShow\\game.js"
-			],
-			[
 				"com",
 				"js\\coms\\com_Angel.js"
-			],
-			[
-				"u",
-				"js\\webShow\\utils.js"
 			],
 			[
 				"ut",
@@ -1554,14 +1562,6 @@
 			[
 				"read",
 				"README.md"
-			],
-			[
-				"ana",
-				"js\\coms\\analyzeScene.js"
-			],
-			[
-				"gam",
-				"js\\webShow\\game.js"
 			],
 			[
 				"s",
