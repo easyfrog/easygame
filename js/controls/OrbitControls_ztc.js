@@ -762,9 +762,20 @@ THREE.OrbitControls = function ( object, domElement ) {
 				rotateDelta.subVectors( rotateEnd, rotateStart );
 
 				// rotating across whole screen goes 360 degrees around
-				scope.rotateLeft( 2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed );
+				// ztc 20160224
+				var _xval =  2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed;
+				if (scope.mode == scope.modes.LOCK) {
+					_xval = _xval * scope.getDotFloat();
+				}
+				scope.rotateLeft( _xval );
+
 				// rotating up and down along whole screen attempts to go 360, but limited to 180
-				scope.rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed );
+				// ztc 20160224
+				var _yval = 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed;
+				if (scope.mode == scope.modes.LOCK) {
+					_yval = _yval * scope.getDotFloat();
+				}
+				scope.rotateUp( _yval );
 
 				// ztc
 				movement = rotateStart.distanceTo(rotateEnd);
