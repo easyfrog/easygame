@@ -76,17 +76,44 @@ THREE.OrbitControls = function ( object, domElement ) {
 	// Mouse buttons
 	this.mouseButtons = { ORBIT: THREE.MOUSE.LEFT, ZOOM: THREE.MOUSE.MIDDLE, PAN: THREE.MOUSE.RIGHT };
 
+	// ztc 20160224
+	this.modes = {NORMAL: 0, FADE: 1, LOCK: 2};
+
+	// lock mode record original position , quaternion and direction first
+	this.originalPosition   = this.object.position.clone();
+	this.originalQuaternion = this.object.quaternion.clone();
+	this.originalDirection  = utils.cameraDirection(this.object).clone();
+	this.minLockDirection = .5;
+
 	// ztc 20160122
-	this.lastRotateLeft = 0;
-	this.lastRotateUp   = 0;
-	this.isMouseUp      = false;
-	this.fadeSpeed      = .08;
-	this.fadeMode       = true;
-	this.maxValue		= .1;
+	this.lastRotateLeft    = 0;
+	this.lastRotateUp      = 0;
+	this.isMouseUp         = false;
+	this.fadeSpeed         = .08;
+	this.lockAutoBackSpeed = .08;
+	this.lockAutoBack      = true;
+	this.mode              = this.modes.FADE;	// default is FAD mode
+	this.maxValue          = .1;
 
 	var movement = 0;
 	var isTouch = false;
 	var isWheel = false;
+
+	this.getDotFloat = function() {
+		var _all = 1 - this.minLockDirection;
+		var _val = 1 - utils.cameraDirection(this.object).dot(this.originalDirection);
+		var kao = _val;
+		if (_val > _all) {
+			_val = _all
+		}
+		return 1 - _val / _all;
+	}
+
+	this.setOrigin = function() {
+		this.originalPosition   = this.object.position.clone();
+		this.originalQuaternion = this.object.quaternion.clone();
+		this.originalDirection  = utils.cameraDirection(this.object).clone();
+	}
 
 	////////////
 	// internals
@@ -149,6 +176,10 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		}
 
+		// if (scope.mode == scope.modes.LOCK) {
+		// 	angle = angle * scope.getDotFloat();
+		// }
+
 		thetaDelta -= angle;
 
 	};
@@ -160,6 +191,10 @@ THREE.OrbitControls = function ( object, domElement ) {
 			angle = getAutoRotationAngle();
 
 		}
+
+		// if (scope.mode == scope.modes.LOCK) {
+		// 	angle = angle * scope.getDotFloat();
+		// }
 
 		phiDelta -= angle;
 
@@ -309,16 +344,23 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	if (Game && Game.instance) {
 		Game.instance.addEventListener(Game.UPDATE, function() {
-			if (scope.fadeMode && state == STATE.NONE) {
+			if (scope.mode == scope.modes.FADE && state == STATE.NONE) {
 				if ((!isTouch && movement > 2) || (isTouch && movement > 6)) {
 					scope.fade();
 					scope.update();
 				} else {
 					scope.lastRotateLeft = scope.lastRotateUp = 0;
 				}
+			} else if (scope.mode == scope.modes.LOCK && state == STATE.NONE) {  // lock mode auto back to origin
+				if (scope.lockAutoBack) {
+					scope.object.position.lerp(scope.originalPosition, scope.lockAutoBackSpeed);
+					scope.object.quaternion.slerp(scope.originalQuaternion, scope.lockAutoBackSpeed);
+				}
 			}
 		});	
 	}
+
+	var firstUpdate = true;
 
 	this.update = function () {
 
@@ -337,20 +379,23 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 		phi = Math.atan2( Math.sqrt( offset.x * offset.x + offset.z * offset.z ), offset.y );
 
-		if ( this.autoRotate && state === STATE.NONE ) {
+		if ( this.autoRotate && state === STATE.NONE && this.mode != this.modes.LOCK) {
 
 			this.rotateLeft( getAutoRotationAngle() );
 
 		}
 
 		// ztc 
-		if (scope.fadeMode && state == STATE.NONE && !isWheel) {
+		if (scope.mode == scope.modes.FADE && state == STATE.NONE && !isWheel) {
 			if (this.autoRotate && (Math.abs(this.lastRotateLeft) <= EPS && Math.abs(this.lastRotateUp) <= EPS)) {
 				theta += thetaDelta
 			} else {
 				theta += this.lastRotateLeft;
 				phi += this.lastRotateUp;
 			}
+		} else if (scope.mode == scope.modes.LOCK) {
+			theta += thetaDelta;
+			phi += phiDelta;
 		} else {
 			theta += thetaDelta;
 			phi += phiDelta;
@@ -404,6 +449,12 @@ THREE.OrbitControls = function ( object, domElement ) {
 			lastPosition.copy( this.object.position );
 			lastQuaternion.copy (this.object.quaternion );
 
+		}
+
+		// ztc 20160224
+		if (firstUpdate) {
+			firstUpdate = false;
+			this.originalDirection = utils.cameraDirection(this.object);
 		}
 	};
 
@@ -503,11 +554,21 @@ THREE.OrbitControls = function ( object, domElement ) {
 			rotateEnd.set( event.clientX, event.clientY );
 			rotateDelta.subVectors( rotateEnd, rotateStart );
 
-			// rotating across whole screen goes 360 degrees around
-			scope.rotateLeft( 2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed );
+			// rotating across whole screen goes 360 degrees around 
+			// ztc 20160224
+			var _xval = 2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed;
+			if (scope.mode == scope.modes.LOCK) {
+				_xval = _xval * scope.getDotFloat();
+			}
+			scope.rotateLeft( _xval );
 
 			// rotating up and down along whole screen attempts to go 360, but limited to 180
-			scope.rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed );
+			// ztc 20160224
+			var _yval = 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed;
+			if (scope.mode == scope.modes.LOCK) {
+				_yval = _yval * scope.getDotFloat();
+			}
+			scope.rotateUp( _yval );
 
 			// ztc
 			movement = rotateStart.distanceTo(rotateEnd);

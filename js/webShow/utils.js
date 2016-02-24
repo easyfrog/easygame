@@ -403,7 +403,7 @@ if (typeof String.prototype.endsWith != 'function') {
 /**
  * 模拟 Unity3D C# 中的 coroutine
  * var cor = utils.coroutine();
- * cor.push(fun (on complete add cor.workComplete()), cor.wait(2), fun ...);
+ * cor.push(fun (cb), cor.wait(2), fun ...);
  * cor.next(); 	// for one by one 
  * cor.start();	// for sequence
  * cor.stop();
@@ -439,7 +439,7 @@ if (typeof String.prototype.endsWith != 'function') {
             if (w) {
                 s.isWorking = true;
                 s.done = false;
-                w(s.workComplete.bind(s));
+                w(s.workComplete.bind(s));  // cb( bool ); true: continue false: stop
             }
         };
 

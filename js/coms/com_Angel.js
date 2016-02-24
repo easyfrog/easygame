@@ -11,13 +11,13 @@ var delta;
  * params:
  *     direction,
  *     horizontalOnly,
- *     friends,   // default opacity do together
- *     min,       // angle begin
- *     max,       // angle to 1
- *     minValue,  // opacity or other property min value
- *     maxValue,  // opacity or other property max value
- *     stepMode,  // is true action(bool), is false action(0~1)
- *     action     // function handler your self
+ *     friends,         // default opacity do together
+ *     min,             // angle begin
+ *     max,             // angle to 1
+ *     minValue,        // opacity or other property min value
+ *     maxValue,        // opacity or other property max value
+ *     stepMode,        // is true action(bool), is false action(0~1)
+ *     action           // function handler your self
  */
 
 function com_Angel(params) {

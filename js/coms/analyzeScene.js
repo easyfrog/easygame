@@ -83,7 +83,7 @@ var process = {
         o.map.minFilter = THREE.NearestFilter;
         o.map.needsUpdate = true;
     },
-    'line': function(o, p) {                            // line
+    'line': function(o, p) {                            // line:   -line_v:.2_c:#e86f0b
         var lineMat = o.material;
         if (p.line.v) {                                 // width
             lineMat.lineWidth = parseFloat( p.line.v );

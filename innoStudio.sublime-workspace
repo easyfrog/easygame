@@ -4,16 +4,28 @@
 		"selected_items":
 		[
 			[
+				"upda",
+				"updateProjectionMatrix()"
+			],
+			[
+				"mainC",
+				"mainCamTarget	{}"
+			],
+			[
+				"load",
+				"load(url, groupName, callback)"
+			],
+			[
+				"Ori",
+				"OrbitControls(object, domElement)"
+			],
+			[
 				"wo",
 				"works	[]"
 			],
 			[
 				"work",
 				"workComplete"
-			],
-			[
-				"load",
-				"load(url, groupName, callback)"
 			],
 			[
 				"line",
@@ -502,18 +514,6 @@
 			[
 				"mode",
 				"module (obj)"
-			],
-			[
-				"ne",
-				"nextSym (fn/0)"
-			],
-			[
-				"S",
-				"SceneHandler (fn/3)"
-			],
-			[
-				"scree",
-				"screenMat (obj)"
 			]
 		]
 	},
@@ -553,15 +553,35 @@
 				"TernJS: Reload"
 			],
 			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
 				"push",
 				"Git: Push Current Branch"
 			],
 			[
-				"statu",
+				"status",
 				"Git: Status"
 			],
 			[
-				"status",
+				"statu",
 				"Git: Status"
 			],
 			[
@@ -579,22 +599,6 @@
 			[
 				"re",
 				"Set Syntax: Regular Expression"
-			],
-			[
-				"edit",
-				"Project: Edit Project"
-			],
-			[
-				"user",
-				"Preferences: Settings - User"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"list",
-				"Package Control: List Packages"
 			],
 			[
 				"rem",
@@ -639,10 +643,6 @@
 			[
 				"eidt",
 				"Project: Edit"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"grunt",
@@ -1114,28 +1114,47 @@
 	},
 	"file_history":
 	[
-		"/E/myhost/inno studio/templates/project_grunt.js",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
-		"/C/Users/easyfrog/Desktop/sn.txt",
-		"/E/Away3D/NubiaZ9Mobile/src/NubiaZ9Mobile.as",
+		"/E/myhost/inno studio/LICENSE.txt",
+		"/E/myhost/inno studio/projects/demo/changgu.js",
+		"/E/myhost/inno studio/js/coms/analyzeScene.js",
+		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Bridge.java",
+		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Receiver.java",
+		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/MyService.java",
+		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/MainActivity.java",
 		"/E/myhost/inno studio/js/webShow/utils.js",
-		"/E/myhost/inno studio/.gitignore",
-		"/E/myhost/inno studio/templates/project.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/messages.json",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
-		"/E/myhost/inno studio/.tern-project",
-		"/E/myhost/inno studio/js/coms/com_Angel.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/tern.py",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/E/myhost/inno studio/js/controls/EditorControls.js",
-		"/E/myhost/inno studio/js/threejs/three.js",
-		"/c/users/easyfrog/appdata/local/temp/.tern-project",
+		"/E/myhost/inno studio/projects/demo/s8.js",
+		"/E/myhost/inno studio/projects/demo/m2.js",
+		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/.tern-project",
+		"/E/myhost/inno studio/templates/project.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/myhost/inno studio/projects/demo/demo.js",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/E/CGLobal/progs/config.txt",
+		"/E/myhost/inno studio/js/coms/com_Angel.js",
+		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/UnityJavaScript.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/Default.sublime-keymap",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/Default (Windows).sublime-keymap",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/E/myhost/inno studio/projects/demo/skyBox.js",
+		"/E/myhost/inno studio/package.json",
+		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/E/myhost/inno studio/projects/_closed/changhong/com_AutoRot.js",
+		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/E/Away3D/NubiaZ9Mobile/src/NubiaZ9Mobile.as",
+		"/E/myhost/inno studio/.gitignore",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/messages.json",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/tern.py",
+		"/E/myhost/inno studio/js/controls/EditorControls.js",
+		"/c/users/easyfrog/appdata/local/temp/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.no-sublime-package",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.tern-project",
-		"/E/myhost/inno studio/projects/demo/m2.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
 		"/D/libs/three.js-r72/examples/js/libs/stats.min.js",
@@ -1149,28 +1168,21 @@
 		"/E/myhost/inno studio/projects/_closed/bone/sceneUp.js",
 		"/E/myhost/inno studio/js/webShow/threeExtend.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
-		"/E/myhost/inno studio/js/coms/analyzeScene.js",
 		"/C/Users/easyfrog/Desktop/data.txt",
-		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
 		"/E/myhost/inno studio/README.md",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.jshintrc",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
-		"/E/myhost/inno studio/projects/demo/demo.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/test.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/C#/unity-project.sublime-snippet",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
 		"/E/myhost/inno studio/projects/demo/com_test.js",
-		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Bridge.java",
-		"/E/myhost/inno studio/package.json",
-		"/E/myhost/inno studio/LICENSE.txt",
 		"/C/Users/easyfrog/Desktop/LICENSE.txt",
 		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/E/MyFolder/fuckDelete.txt",
-		"/E/myhost/inno studio/projects/demo/changgu.js",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
 		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
@@ -1229,19 +1241,7 @@
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/package.json",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/blueprint3d.js",
 		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/model/wall.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/items.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/bootstrap.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/floorplanner/floorplanner.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/example.js",
-		"/C/Users/easyfrog/AppData/Local/Temp/blueprint3d-2015-12-1-16-44-19.txt",
-		"/E/PhoneGap_works/chuangwei/www/main.js",
-		"/E/myhost/inno studio/projects/_closed/changhong/changhong.js",
-		"/E/EdgeWorks/demo/publish/web/demo.html",
-		"/E/myhost/inno studio/projects/_closed/lenovop1/lenovop1.js",
-		"/E/myhost/inno studio/projects/_closed/changhong/com_AutoRot.js",
-		"/C/Users/easyfrog/Desktop/会.txt",
-		"/E/UnityProjects/zhangqing/zhangqing.sublime-project",
-		"/E/UnityProjects/zhangqing/zhangqing"
+		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/items.js"
 	],
 	"find":
 	{
@@ -1260,6 +1260,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fadeMode",
+			"targetPos",
+			"isIn",
+			"ctrl+alt+p",
+			"project",
+			"stats",
+			"Stats",
+			"stats",
 			"this",
 			"addComponent",
 			"visi",
@@ -1379,15 +1387,7 @@
 			"jbl_mesh",
 			"to.animateScale",
 			"q.animateQuaternion",
-			"to.animatePosition",
-			"animateScale",
-			"animateQuaternion",
-			"animatePosition",
-			"CJ_BWG_ZS_40",
-			"nengkan",
-			"VertexAnimationMesh",
-			"update",
-			"Update"
+			"to.animatePosition"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1480,27 +1480,27 @@
 		"selected_items":
 		[
 			[
-				"uti",
-				"js\\webShow\\utils.js"
-			],
-			[
-				"gam",
-				"js\\webShow\\game.js"
-			],
-			[
 				"de",
 				"projects\\demo\\demo.js"
 			],
 			[
-				"u",
+				"c",
+				"projects\\demo\\changgu2.js"
+			],
+			[
+				"sk",
+				"projects\\demo\\skyBox.js"
+			],
+			[
+				"demo",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"util",
 				"js\\webShow\\utils.js"
 			],
 			[
-				"ana",
-				"js\\coms\\analyzeScene.js"
-			],
-			[
-				"ga",
+				"game",
 				"js\\webShow\\game.js"
 			],
 			[
@@ -1508,8 +1508,32 @@
 				"projects\\demo\\m2.js"
 			],
 			[
-				"c",
-				"js\\coms\\com_Angel.js"
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"m",
+				"projects\\demo\\m2.js"
+			],
+			[
+				"ana",
+				"js\\coms\\analyzeScene.js"
+			],
+			[
+				"s8",
+				"projects\\demo\\s8.js"
+			],
+			[
+				"u",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"gam",
+				"js\\webShow\\game.js"
+			],
+			[
+				"ga",
+				"js\\webShow\\game.js"
 			],
 			[
 				".",
@@ -1548,10 +1572,6 @@
 				"js\\controls\\OrbitControls.js"
 			],
 			[
-				"game",
-				"js\\webShow\\game.js"
-			],
-			[
 				"twe",
 				"js\\webShow\\Tween.js"
 			],
@@ -1570,10 +1590,6 @@
 			[
 				"scene",
 				"js\\webShow\\SceneHandler.js"
-			],
-			[
-				"demo",
-				"projects\\demo\\demo.js"
 			],
 			[
 				"chan",
@@ -1769,9 +1785,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "u",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"E:\\sublime_files\\maxscripts\\maxscripts.sublime-project"
+			],
 			[
 				"u",
 				"E:\\EdgeWorks\\utils\\utils.sublime-project"
@@ -1799,10 +1819,6 @@
 			[
 				"uti",
 				"E:\\EdgeWorks\\utils\\utils.sublime-project"
-			],
-			[
-				"",
-				"E:\\myhost\\inno studio\\innoStudio.sublime-project"
 			],
 			[
 				"util",
@@ -1927,7 +1943,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 206.0,
+	"side_bar_width": 201.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
