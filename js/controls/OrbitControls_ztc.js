@@ -109,7 +109,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 		return 1 - _val / _all;
 	}
 
-	this.setOrigin = function() {
+	this.setLockOrigin = function() {
 		this.originalPosition   = this.object.position.clone();
 		this.originalQuaternion = this.object.quaternion.clone();
 		this.originalDirection  = utils.cameraDirection(this.object).clone();
