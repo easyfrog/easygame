@@ -8,7 +8,7 @@
  * MorphAnimation update function
  * 解决了开始播放时跳的问题
  */
-//*
+/*
 THREE.MorphAnimation.prototype.update = ( function () {
 	var lastFrame = 0;
 	var currentFrame = 0;

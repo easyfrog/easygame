@@ -102,7 +102,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.getDotFloat = function() {
 		var _all = 1 - this.minLockDirection;
 		var _val = 1 - utils.cameraDirection(this.object).dot(this.originalDirection);
-		var kao = _val;
+		
 		if (_val > _all) {
 			_val = _all
 		}

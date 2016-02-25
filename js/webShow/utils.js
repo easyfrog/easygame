@@ -30,11 +30,13 @@ utils.fixMorphTargets = function(geometry) {
  * params: {duration: 1000, loop: false}
  */
 utils.morphObject = function(mesh, params) {
-	if (mesh.geometry instanceof THREE.BufferGeometry) {
+	/*if (mesh.geometry instanceof THREE.BufferGeometry) {
 		var geo = new THREE.Geometry().fromBufferGeometry(mesh.geometry);
 		utils.fixMorphTargets(geo);
 		mesh.geometry = geo;
-	}
+	}*/
+
+    params = params || {};
 
 	var mor = new THREE.MorphAnimation(mesh);
 	mor.duration = params.duration || 1000;

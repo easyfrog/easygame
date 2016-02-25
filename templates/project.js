@@ -79,9 +79,9 @@ function init() {
 		/*
 		glo.progressText.html((p.progress * 100).toFixed(1) + '%');
 		if (p.type == 'sea3d_download') {
-			glo.progressStatus.html('下载中...');
+			glo.progressStatus.text('下载中...');
 		} else {
-			glo.progressStatus.html('场景构建中...');
+			glo.progressStatus.text('场景构建中...');
 		}
 		*/
 	});

@@ -433,6 +433,7 @@
 				console.log('-> ', type, ' event:', param);
 			}
 		};
+
 		for (var i = 0; i < t.length; i++) {
 			t[i](param);
 		}
