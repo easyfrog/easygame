@@ -435,7 +435,9 @@
 		};
 
 		for (var i = 0; i < t.length; i++) {
-			t[i](param);
+			if (t[i](param)) {	// 如果在遍历的过程中,需要移除数据,需将 i 回退 1.
+				i--;
+			}
 		}
 	};
 
@@ -508,6 +510,7 @@
 		function cb() {
 			s.removeEventListener(Game.LOADCOMPLETE, cb);
 			callback(groupName);
+			return true;	// 因为需要在遍历中移除数组元素,所以需要此函数返回一个true值,使用遍历索引回退1.
 		}
 
 		if (callback) {
