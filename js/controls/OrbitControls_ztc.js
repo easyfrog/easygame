@@ -109,10 +109,11 @@ THREE.OrbitControls = function ( object, domElement ) {
 		return 1 - _val / _all;
 	}
 
-	this.setLockOrigin = function() {
+	this.setOrigin = function() {
 		this.originalPosition   = this.object.position.clone();
 		this.originalQuaternion = this.object.quaternion.clone();
 		this.originalDirection  = utils.cameraDirection(this.object).clone();
+		this.target0 = this.target.clone();
 	}
 
 	////////////
@@ -344,6 +345,9 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	if (Game && Game.instance) {
 		Game.instance.addEventListener(Game.UPDATE, function() {
+			if (!scope.enabled) {
+				return;
+			}
 			if (scope.mode == scope.modes.FADE && state == STATE.NONE) {
 				if ((!isTouch && movement > 2) || (isTouch && movement > 6)) {
 					scope.fade();
@@ -355,6 +359,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 				if (scope.lockAutoBack) {
 					scope.object.position.lerp(scope.originalPosition, scope.lockAutoBackSpeed);
 					scope.object.quaternion.slerp(scope.originalQuaternion, scope.lockAutoBackSpeed);
+					scope.target.copy(scope.target0);
 				}
 			}
 		});	
@@ -612,7 +617,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	}
 
 	function onMouseUp( /* event */ ) {
-		if ( scope.enabled === false ) return;
+		if ( scope.enabled === false && state == STATE.NONE) return;
 
 		document.removeEventListener( 'mousemove', onMouseMove, false );
 		document.removeEventListener( 'mouseup', onMouseUp, false );

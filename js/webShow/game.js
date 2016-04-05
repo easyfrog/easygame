@@ -81,6 +81,9 @@
 		s.height = 100;
 		s.stageScale = window.t ? window.t.stageScale : 1;
 
+		// custorm render
+		s.custormRenderFunction = null;
+
 		// 效果合成器
 		/*
 		s.composer = new THREE.EffectComposer(s.renderer);
@@ -121,8 +124,9 @@
 		// 如果数组为空,则针对 game.scene 下所有物体
 		// 些数组为了在场景物体数多的情况下
 		// 只计算此数组中的物体,从而提高性能
-		s.canPicked = [];
+		s.canPicked  = [];
 		s.components = [];
+		s.layers     = {};	// 层
 
 		// Animations
 		s.animations = [];
@@ -481,7 +485,12 @@
 		this.scene.overrideMaterial = null;
 		this.composer.render(_delta);
 		//*/
-		this.renderer.render(this.scene, this.camera);
+		if (this.custormRenderFunction) {
+			this.custormRenderFunction();	
+		} else {
+			this.renderer.render(this.scene, this.camera);
+		}
+		
 		this.invoke(Game.POSTUPDATE, _delta);
 	};
 
@@ -726,11 +735,15 @@
 	};
 
 	/**
-	 * 设置相机
+	 * 批量得到物体
 	 */
-	Game.prototype.setCamera = function(camera) {
-		this.camera = camera;
-		this.cameraController.object = this.camera;
+	Game.prototype.getObjects = function(nameArr, type) {
+		var res = [];
+		type = type || 'm3d';
+		for (var i = 0; i < nameArr.length; i++) {
+			res.push(this.sea.objects[type + '/' + nameArr[i]])
+		}
+		return res;
 	};
 
 	parent.Game = Game;

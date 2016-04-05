@@ -46,6 +46,11 @@ module.exports = function(game, lastOnly) {
         dumy.material.opacity = 0;
         dumy.type = 'Dummy';                            // 默认为Mesh, 可能是Bug
         dumy.renderOrder = 100;
+
+        // camera's target do not picked
+        if (dumy.name.endsWith('.Target')) {
+            dumy.mouseEnabled = false;
+        }
     };
     analyzeObject(dumys);
 
@@ -83,6 +88,9 @@ var process = {
         o.map.minFilter = THREE.NearestFilter;
         o.map.needsUpdate = true;
     },
+    'ambient': function(o, p) {                         // emissive
+
+    },
     'line': function(o, p) {                            // line:   -line_v:.2_c:#e86f0b
         var lineMat = o.material;
         if (p.line.v) {                                 // width
@@ -91,6 +99,12 @@ var process = {
         if (p.line.c) {                                 // color
             lineMat.color = new THREE.Color(p.line.c);
         }
+    },
+    'layer': function(o, p) {
+        if (!Game.instance.layers[p.layer.v]) {
+            Game.instance.layers[p.layer.v] = [];
+        }
+        Game.instance.layers[p.layers.v].push(o);
     }
 };
 
@@ -100,7 +114,7 @@ var analyzeName = function( name ) {
     var arr = name.split('-');                          // 'kao-width_w:5.3_h:4.56-hide_v:true'     
     res = {};
     res['parameters'] = {};
-    res.name = arr[0];                                  // 'kao'
+    var oldName = name;
 
     var subArr;
     if (arr.length > 1) {
@@ -114,6 +128,13 @@ var analyzeName = function( name ) {
                 res['parameters'][type][p[0]] = p[1];
             };
         };
+
+        var key = Object.keys(res.parameters)[0];
+        if (key in process) {
+            res.name = arr[0];                          // 'kao'
+        } else {
+            res.name = oldName;
+        }
     }
 
     return res;

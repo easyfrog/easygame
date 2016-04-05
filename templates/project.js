@@ -16,7 +16,7 @@ AdobeEdge.bootstrapCallback(function(compId) {
     stage = AdobeEdge.getComposition(compId).getStage();
 
     // scale to fix screen
-    var innerWidth = windwo.innerWidth < 640 ? 640 : window.innerWidth;
+    var innerWidth = window.innerWidth < 640 ? 640 : window.innerWidth;
     t.scaleToFixScreen(stage.getSymbolElement(), innerWidth);
     // 统计
     t.analyze(_projectName);
@@ -70,7 +70,7 @@ function init() {
 	targetPos = new THREE.Vector3(0, 0, 0);
 
 	// load scene
-    // game.loadSeas(['models/<%= grunt.project %>.sea], 'inno', function(alldone, count, allCount) { });
+    // game.loadSeas(['models/<%= grunt.project %>.sea'], 'inno', function(alldone, count, allCount) { });
 	game.load('models/<%= grunt.project %>.sea', 'inno');
 
 	// loading progress
@@ -83,7 +83,7 @@ function init() {
 		} else {
 			glo.progressStatus.text('场景构建中...');
 		}
-		*/
+		//*/
 	});
 
 	// load compete 

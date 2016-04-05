@@ -4,6 +4,270 @@
 		"selected_items":
 		[
 			[
+				"time",
+				"timeScale	(num)"
+			],
+			[
+				"cam",
+				"cameraController	{}"
+			],
+			[
+				"ca",
+				"camera	{}"
+			],
+			[
+				"fl",
+				"fly2()"
+			],
+			[
+				"addEve",
+				"addEventListener(type, listener)"
+			],
+			[
+				"win",
+				"wing2	(?)"
+			],
+			[
+				"c",
+				"comp	component"
+			],
+			[
+				"setCle",
+				"setClearColor(color, alpha)"
+			],
+			[
+				"ns",
+				"number_seq	(str)"
+			],
+			[
+				"num",
+				"number_seq	(str)"
+			],
+			[
+				"co",
+				"colorMap	{}"
+			],
+			[
+				"col",
+				"color_seq	(str)"
+			],
+			[
+				"re",
+				"repeat	{}"
+			],
+			[
+				"sm",
+				"smileComp	(?)"
+			],
+			[
+				"smile",
+				"smile	{}"
+			],
+			[
+				"reset",
+				"reset()"
+			],
+			[
+				"smi",
+				"smileComp	(?)"
+			],
+			[
+				"doo",
+				"doorCmop	{}"
+			],
+			[
+				"enab",
+				"enabled	(bool)"
+			],
+			[
+				"set",
+				"setFromRotationMatrix(m)"
+			],
+			[
+				"rota",
+				"rotationMatrix	{}"
+			],
+			[
+				"makeR",
+				"makeRotationAxis(axis, angle)"
+			],
+			[
+				"Vec",
+				"Vector3(x, y, z)"
+			],
+			[
+				"action",
+				"actionComp	{}"
+			],
+			[
+				"setA",
+				"setAnimationTime(animation, stateName, percent)"
+			],
+			[
+				"ins",
+				"instance"
+			],
+			[
+				"ani",
+				"animObjects	{}"
+			],
+			[
+				"auto",
+				"autoBackDelay"
+			],
+			[
+				"zhu",
+				"zhuan()"
+			],
+			[
+				"zh",
+				"zhuanpan	{}"
+			],
+			[
+				"t",
+				"Tween	{}"
+			],
+			[
+				"fie",
+				"feiStr	(?)"
+			],
+			[
+				"Tex",
+				"Texture(image, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy)"
+			],
+			[
+				"needs",
+				"needsUpdate(value)"
+			],
+			[
+				"n",
+				"normalScale	(?)"
+			],
+			[
+				"is",
+				"isLightOn	(bool)"
+			],
+			[
+				"au",
+				"autoBack	(?)"
+			],
+			[
+				"add",
+				"addComponent(comNameOrFunc, params, m, s})"
+			],
+			[
+				"du",
+				"dummys"
+			],
+			[
+				"play",
+				"playAnimation(objects, animationName, timeScale, repeat, whenFirstComplete)"
+			],
+			[
+				"clock",
+				"clock_s	{}"
+			],
+			[
+				"ori",
+				"originalQuaternion	(?)"
+			],
+			[
+				"lo",
+				"lookAt(vector)"
+			],
+			[
+				"St",
+				"STATE	{}"
+			],
+			[
+				"mou",
+				"isMouseUp	(bool)"
+			],
+			[
+				"l",
+				"lookAt(vector)"
+			],
+			[
+				"dum",
+				"dumyPick	(?)"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"mo",
+				"modes	{}"
+			],
+			[
+				"tar",
+				"target	{}"
+			],
+			[
+				"if",
+				"if	If"
+			],
+			[
+				"m",
+				"mainLight	{}"
+			],
+			[
+				"get",
+				"getSymbol	(?)"
+			],
+			[
+				"A",
+				"AmbientLight(color)"
+			],
+			[
+				"progr",
+				"progressStatus"
+			],
+			[
+				"pro",
+				"progressStatus"
+			],
+			[
+				"target",
+				"target0	{}"
+			],
+			[
+				"cub",
+				"CubeCamera(near, far, cubeResolution)"
+			],
+			[
+				"Cub",
+				"CubeCamera(near, far, cubeResolution)"
+			],
+			[
+				"nu",
+				"nuanLight1"
+			],
+			[
+				"getT",
+				"getTime()"
+			],
+			[
+				"cam2",
+				"cam2_target	{}"
+			],
+			[
+				"qu",
+				"quaternion"
+			],
+			[
+				"lock",
+				"lockAutoBackSpeed	(num)"
+			],
+			[
+				"fir",
+				"firstUpdate	(bool)"
+			],
+			[
+				"fa",
+				"FADE	(num)"
+			],
+			[
 				"upda",
 				"updateProjectionMatrix()"
 			],
@@ -32,10 +296,6 @@
 				"lineMat	{}"
 			],
 			[
-				"Cub",
-				"CubeRefractionMapping	(num)"
-			],
-			[
 				"Cu",
 				"CubeReflectionMapping	(num)"
 			],
@@ -48,20 +308,12 @@
 				"com_Angel	{}"
 			],
 			[
-				"pro",
-				"previousAnimation	{}"
-			],
-			[
 				"box",
 				"boxParent (obj)"
 			],
 			[
 				"mai",
 				"mainCam_taget (obj)"
-			],
-			[
-				"set",
-				"setSize (fn/1)"
 			],
 			[
 				"ta",
@@ -78,10 +330,6 @@
 			[
 				"max",
 				"maxValue"
-			],
-			[
-				"lo",
-				"log"
 			],
 			[
 				"st",
@@ -104,16 +352,8 @@
 				"mousedown	.mousedown()"
 			],
 			[
-				"auto",
-				"autoRotate	(bool)"
-			],
-			[
 				"Mou",
 				"MOUSEUP	(str)"
-			],
-			[
-				"add",
-				"add(object)"
 			],
 			[
 				"Shader",
@@ -134,10 +374,6 @@
 			[
 				"cla",
 				"clamp(min, max)"
-			],
-			[
-				"rota",
-				"rotateEnd	{}"
 			],
 			[
 				"fad",
@@ -164,10 +400,6 @@
 				"minOpacity	(num)"
 			],
 			[
-				"Vec",
-				"Vector4(x, y, z, w)"
-			],
-			[
 				"addCo",
 				"addComponent(comNameOrFunc)"
 			],
@@ -192,10 +424,6 @@
 				"createElementNS (fn/2)"
 			],
 			[
-				"l",
-				"lines	[]"
-			],
-			[
 				"remo",
 				"removeEventListener(type, listener)"
 			],
@@ -204,20 +432,12 @@
 				"analyzeObject(arr)"
 			],
 			[
-				"du",
-				"dumys	[]"
-			],
-			[
 				"mesh",
 				"meshes	[]"
 			],
 			[
 				"tr",
 				"transparent"
-			],
-			[
-				"n",
-				"needsUpdate"
 			],
 			[
 				"visi",
@@ -238,14 +458,6 @@
 			[
 				"pos",
 				"postprocessing"
-			],
-			[
-				"cam",
-				"camera	{}"
-			],
-			[
-				"addEve",
-				"addEventListener(type, listener, capture)"
 			],
 			[
 				"camer",
@@ -284,10 +496,6 @@
 				"boneGlowMesh	{}"
 			],
 			[
-				"get",
-				"getGlowMat"
-			],
-			[
 				"nee",
 				"needsUpdate(value)"
 			],
@@ -306,214 +514,6 @@
 			[
 				"instan",
 				"instanceof"
-			],
-			[
-				"com_",
-				"com_test2	(?)"
-			],
-			[
-				"co",
-				"comNameOrFunc	(?)"
-			],
-			[
-				"brow",
-				"browserify"
-			],
-			[
-				"ca",
-				"cameraController	{}"
-			],
-			[
-				"inner",
-				"innerWidth	(num)"
-			],
-			[
-				"shadowC",
-				"shadowCameraNear	(num)"
-			],
-			[
-				"Shad",
-				"BasicShadowMap	(num)"
-			],
-			[
-				"Shadow",
-				"BasicShadowMap	(num)"
-			],
-			[
-				"sh",
-				"shadowMapType	(num)"
-			],
-			[
-				"play",
-				"play(name, crossfade, offset, timeScale)"
-			],
-			[
-				"time",
-				"timeScale	(num)"
-			],
-			[
-				"tim",
-				"timeScale	(num)"
-			],
-			[
-				"getW",
-				"getWorldPosition(optionalTarget)"
-			],
-			[
-				"getPic",
-				"getPickObject(mousePosition, objects)"
-			],
-			[
-				"gt",
-				"getPick(e)"
-			],
-			[
-				"j",
-				"jbl_collider	(?)"
-			],
-			[
-				"ani",
-				"animatePosition	(?)"
-			],
-			[
-				"pu",
-				"public"
-			],
-			[
-				"color",
-				"setClearColor(color, alpha)"
-			],
-			[
-				"times",
-				"timescale	(num)"
-			],
-			[
-				"An",
-				"AnimationHandler	{}"
-			],
-			[
-				"LightH",
-				"DirectionalLightHelper(light, size)"
-			],
-			[
-				"he",
-				"herper2	{}"
-			],
-			[
-				"h",
-				"herper2	{}"
-			],
-			[
-				"Cam",
-				"CameraHelper(camera)"
-			],
-			[
-				"Ca",
-				"CameraHelper(camera)"
-			],
-			[
-				"matrix",
-				"matrixWorldNeedsUpdate	(bool)"
-			],
-			[
-				"in",
-				"invertZ	(bool)"
-			],
-			[
-				"camera",
-				"cameraController	{}"
-			],
-			[
-				"back",
-				"backTo3DBtn"
-			],
-			[
-				"trans",
-				"transformToComplete"
-			],
-			[
-				"hide",
-				"hideArr()"
-			],
-			[
-				"scr",
-				"screen_cam	(?)"
-			],
-			[
-				"p",
-				"PICKED	(str)"
-			],
-			[
-				"addE",
-				"addEventListener(type, listener)"
-			],
-			[
-				"close",
-				"closedPath	(str)"
-			],
-			[
-				"wr",
-				"writeln"
-			],
-			[
-				"need",
-				"needsUpdate	(bool)"
-			],
-			[
-				"CubeRe",
-				"CubeReflectionMapping	(num)"
-			],
-			[
-				"if",
-				"if	If"
-			],
-			[
-				"lad",
-				"load(url, groupName)"
-			],
-			[
-				"ti",
-				"titleParent	(?)"
-			],
-			[
-				"Util",
-				"GeometryUtils (obj)"
-			],
-			[
-				"material",
-				"MeshPhongMaterial (fn)"
-			],
-			[
-				"m",
-				"multiply (fn)"
-			],
-			[
-				"V",
-				"Vector3 (fn)"
-			],
-			[
-				"cu",
-				"curSym (?)"
-			],
-			[
-				"modu",
-				"module (obj)"
-			],
-			[
-				"mod",
-				"models"
-			],
-			[
-				"conta",
-				"container (?)"
-			],
-			[
-				"A",
-				"AnimationHandler (obj)"
-			],
-			[
-				"mode",
-				"module (obj)"
 			]
 		]
 	},
@@ -545,7 +545,7 @@
 	"command_palette":
 	{
 		"height": 152.0,
-		"last_filter": "reload",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -557,20 +557,40 @@
 				"Preferences: Settings - User"
 			],
 			[
-				"edit",
-				"Project: Edit Project"
+				"relo",
+				"TernJS: Reload"
 			],
 			[
-				"ins",
-				"Package Control: Install Package"
+				"r",
+				"TernJS: Reload"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"list",
+				"lis",
 				"Package Control: List Packages"
+			],
+			[
+				"snipp m",
+				"Snippet: module"
+			],
+			[
+				"sni",
+				"Snippet: main"
+			],
+			[
+				"sn",
+				"Snippet: main"
+			],
+			[
+				"utf",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"rel",
+				"TernJS: Reload"
 			],
 			[
 				"push",
@@ -581,12 +601,24 @@
 				"Git: Status"
 			],
 			[
-				"statu",
-				"Git: Status"
+				"remove",
+				"Package Control: Remove Package"
 			],
 			[
-				"rel",
-				"TernJS: Reload"
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"statu",
+				"Git: Status"
 			],
 			[
 				"reloa",
@@ -629,16 +661,8 @@
 				"Package Control: Upgrade Package"
 			],
 			[
-				"relo",
-				"TernJS: Reload"
-			],
-			[
 				"sta",
 				"Git: Status"
-			],
-			[
-				"r",
-				"TernJS: Reload"
 			],
 			[
 				"eidt",
@@ -691,10 +715,6 @@
 			[
 				"STATU",
 				"Git: Status"
-			],
-			[
-				"lis",
-				"Package Control: List Packages"
 			],
 			[
 				"ru",
@@ -1114,36 +1134,70 @@
 	},
 	"file_history":
 	[
-		"/E/myhost/inno studio/LICENSE.txt",
-		"/E/myhost/inno studio/projects/demo/changgu.js",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/action.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/smile.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/config.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/clock.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/door.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/dumyPick.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/secret.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/zhuanpan.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/myhost/inno studio/projects/_closed/bone/config.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
+		"/C/Users/easyfrog/AppData/Local/Temp/Rar$DIa0.533/8uftp.xml",
+		"/E/UnityProjects/lianzheng/Assets/Scripts/ztc/Manager.cs",
 		"/E/myhost/inno studio/js/coms/analyzeScene.js",
+		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
+		"/E/myhost/inno studio/LICENSE.txt",
+		"/E/myhost/inno studio/projects/_closed/demo/landscape.js",
+		"/E/myhost/inno studio/build/easygame.min.js",
+		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/data.txt",
+		"/C/Users/easyfrog/Desktop/SuWeb/JumpPage.js",
+		"/E/myhost/inno studio/templates/project.js",
+		"/E/百度云下载/web/buildWeb/20160321/JumpPage.js",
+		"/C/Users/easyfrog/Desktop/JumpPage.js",
+		"/E/UnityProjects/lianzheng/xx/data.txt",
+		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/C/Users/easyfrog/Desktop/README.md",
+		"/E/myhost/inno studio/projects/demo/m2.js",
+		"/E/myhost/inno studio/js/coms/com_Angel.js",
+		"/E/myhost/inno studio/projects/demo/skyBox.js",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/E/myhost/inno studio/projects/demo/demo.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/E/myhost/inno studio/package.json",
+		"/E/csharp_works/HelloWorld/HelloWorld.sln",
+		"/E/myhost/inno studio/misc/cordovaScreenSaverUsed.md",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/module.sublime-snippet",
+		"/C/Users/easyfrog/Desktop/index.html",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/wxshare.sublime-snippet",
+		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/E/myhost/inno studio/projects/demo/changgu2.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/D/setup/FlashFXPliehuo4.2.6/Cache/~flashfxp/64E11184_view.tmp/璇存槑.txt",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/E/myhost/inno studio/projects/demo/changgu.js",
 		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Bridge.java",
 		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Receiver.java",
 		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/MyService.java",
 		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/MainActivity.java",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/projects/demo/s8.js",
-		"/E/myhost/inno studio/projects/demo/m2.js",
 		"/E/myhost/inno studio/js/webShow/Tween.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/.tern-project",
-		"/E/myhost/inno studio/templates/project.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/E/myhost/inno studio/projects/demo/demo.js",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/E/CGLobal/progs/config.txt",
-		"/E/myhost/inno studio/js/coms/com_Angel.js",
-		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/UnityJavaScript.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/Default.sublime-keymap",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/Default (Windows).sublime-keymap",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
-		"/E/myhost/inno studio/projects/demo/skyBox.js",
-		"/E/myhost/inno studio/package.json",
-		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
-		"/E/myhost/inno studio/js/threejs/three.js",
 		"/E/myhost/inno studio/projects/_closed/changhong/com_AutoRot.js",
 		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/E/Away3D/NubiaZ9Mobile/src/NubiaZ9Mobile.as",
@@ -1162,11 +1216,9 @@
 		"/E/myhost/inno studio/js/controls/OrbitControls.js",
 		"/E/myhost/inno studio/js/threejs/Detector.js",
 		"/E/EdgeWorks/demo/publish/web/index.html",
-		"/E/myhost/inno studio/Gruntfile.js",
 		"/D/libs/mrdoob-three.js-d49bb0e/examples/js/renderers/CanvasRenderer.js",
 		"/C/Users/easyfrog/Desktop/CanvasRenderer.js",
 		"/E/myhost/inno studio/projects/_closed/bone/sceneUp.js",
-		"/E/myhost/inno studio/js/webShow/threeExtend.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
 		"/C/Users/easyfrog/Desktop/data.txt",
 		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
@@ -1184,7 +1236,6 @@
 		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/E/MyFolder/fuckDelete.txt",
 		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
-		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
 		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
 		"/C/Users/easyfrog/Desktop/参考/年会宗旨.txt",
 		"/E/EdgeWorks/shadow/publish/web/shadow.html",
@@ -1210,42 +1261,11 @@
 		"/E/myhost/inno studio/js/coms/analyzeMaterial.js",
 		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
 		"/E/myhost/inno studio/projects/xmas3d/xmas3d.js",
-		"/E/PhoneGap_works/bone/config.xml",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/Script/ztc/Manager.cs",
-		"/E/myhost/inno studio/projects/xmas3d/xmas3d_grunt.js",
-		"/E/myhost/inno studio/js/shaders/FresnelShader.js",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/config.txt",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/data.txt",
-		"/E/UnityProjects/lianzheng/xx/tiku.xml",
-		"/D/程序/FTP/jump_user.html",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei_grunt.js",
-		"/E/myhost/inno studio/projects/chuangwei/chuangwei.js",
-		"/E/PhoneGap_works/chuangwei/www/index.html",
-		"/E/UnityProjects/lianzheng/Assets/Scripts/RawImageClick.cs",
-		"/E/UnityProjects/lianzheng/Assets/Scripts/ztc/Viewer.cs",
-		"/E/EdgeWorks/demo/publish/web/main.js",
-		"/E/EdgeWorks/xmas/3d/publish/web/index.html",
-		"/E/EdgeWorks/changhong/publish/web/index.html",
-		"/E/EdgeWorks/xmas/3d/index.html",
-		"/E/myhost/inno studio/projects/fuck/fuck_grunt.js",
-		"/E/myhost/inno studio/projects/fuck/fuck.js",
-		"/E/myhost/inno studio/build/demo.browserify.js",
-		"/C/Users/easyfrog/Desktop/viewport.js",
-		"/C/Users/easyfrog/Documents/Tencent Files/24967427/FileRecv/viewport.js",
-		"/E/myhost/inno studio/projects/demo/demo.browserify.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/index.html",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/blueprint3d.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/three/three_controller.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/utils/utils.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/README.md",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/package.json",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/blueprint3d.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/src/model/wall.js",
-		"/C/Users/easyfrog/Desktop/blueprint3d-master/example/js/items.js"
+		"/E/PhoneGap_works/bone/config.xml"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 120.0
 	},
 	"find_in_files":
 	{
@@ -1260,6 +1280,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"// Update\naction.prototype.update = function() {\n    \n};\n",
+			"this",
+			"ba",
+			"actions",
+			"animObject",
+			"animObjects",
+			"object",
+			"animObjects",
+			"this",
+			"s.object",
+			"fei1",
+			"i",
+			"this",
+			"bigScale",
+			"glo.mainCamera",
+			"game",
+			"key",
+			"console",
+			"Game.instance",
+			"Event_21_1",
+			"2-",
+			"CJ_BWG_ZT_301",
+			"getPickObject",
+			"pic4",
+			"pic44",
+			"this.target",
+			"composer",
+			"html",
+			"isMouseDown",
+			"scope.mode",
+			"mode",
+			"_xval",
+			"RotateUp",
+			"rotateUp",
+			"scope",
+			"FADE",
+			"fade",
+			"FADE",
+			"fadeMode",
+			"FADEMODE",
+			"fadeMode",
+			"FADEMODE",
+			"thetaDelta",
+			"object",
+			"FADEMODE",
 			"fadeMode",
 			"targetPos",
 			"isIn",
@@ -1342,52 +1407,7 @@
 			"load",
 			"config",
 			"btn_nex",
-			"targetObj",
-			"target",
-			"j(",
-			"targetPos",
-			"colliders",
-			"require",
-			"chang",
-			"changgu",
-			"getInfo",
-			"glo.getInfo",
-			"glo.myInfo",
-			"sym",
-			"build/",
-			"com_test",
-			"comName",
-			"com",
-			"com_test",
-			"load com_test",
-			"prototype.update",
-			"comNameOrFunc",
-			"comName",
-			"window",
-			"addcom",
-			"require",
-			"game.cameraController",
-			"titleParent",
-			"title",
-			"setSize",
-			" * this.stageScale",
-			"stageScale",
-			"reflection",
-			"_start",
-			"Game.START",
-			"glo",
-			"getMesh",
-			"type",
-			"getMesh",
-			"\n  ",
-			"loadSeas",
-			"return",
-			"windowHalfX",
-			"jbl_collider",
-			"jbl_mesh",
-			"to.animateScale",
-			"q.animateQuaternion",
-			"to.animatePosition"
+			"targetObj"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1480,8 +1500,108 @@
 		"selected_items":
 		[
 			[
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"fir",
+				"projects\\firstroom\\firstroom.js"
+			],
+			[
+				"ga",
+				"js\\webShow\\game.js"
+			],
+			[
+				"gener",
+				"projects\\firstroom\\scripts\\general.js"
+			],
+			[
+				"ut",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"u",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"util",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"gen",
+				"projects\\firstroom\\scripts\\general.js"
+			],
+			[
+				"game",
+				"js\\webShow\\game.js"
+			],
+			[
+				"config",
+				"projects\\firstroom\\scripts\\config.js"
+			],
+			[
+				"confi",
+				"projects\\_closed\\bone\\config.js"
+			],
+			[
+				"action",
+				"projects\\firstroom\\scripts\\action.js"
+			],
+			[
+				"gern",
+				"projects\\firstroom\\scripts\\general.js"
+			],
+			[
+				"o",
+				"js\\controls\\OrbitControls_ztc.js"
+			],
+			[
+				"dumy",
+				"projects\\firstroom\\scripts\\dumyPick.js"
+			],
+			[
+				"ori",
+				"js\\controls\\OrbitControls_ztc.js"
+			],
+			[
+				"game.",
+				"js\\webShow\\game.js"
+			],
+			[
+				"orbi",
+				"js\\controls\\OrbitControls_ztc.js"
+			],
+			[
+				"anan",
+				"js\\coms\\analyzeScene.js"
+			],
+			[
+				"las",
+				"projects\\demo\\landscape.js"
+			],
+			[
+				"dem",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"land",
+				"projects\\demo\\landscape.js"
+			],
+			[
+				"demo",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"sky",
+				"projects\\demo\\skyBox.js"
+			],
+			[
 				"de",
 				"projects\\demo\\demo.js"
+			],
+			[
+				"chang",
+				"projects\\demo\\changgu2.js"
 			],
 			[
 				"c",
@@ -1492,24 +1612,8 @@
 				"projects\\demo\\skyBox.js"
 			],
 			[
-				"demo",
-				"projects\\demo\\demo.js"
-			],
-			[
-				"util",
-				"js\\webShow\\utils.js"
-			],
-			[
-				"game",
-				"js\\webShow\\game.js"
-			],
-			[
 				"m2",
 				"projects\\demo\\m2.js"
-			],
-			[
-				"uti",
-				"js\\webShow\\utils.js"
 			],
 			[
 				"m",
@@ -1524,15 +1628,7 @@
 				"projects\\demo\\s8.js"
 			],
 			[
-				"u",
-				"js\\webShow\\utils.js"
-			],
-			[
 				"gam",
-				"js\\webShow\\game.js"
-			],
-			[
-				"ga",
 				"js\\webShow\\game.js"
 			],
 			[
@@ -1552,24 +1648,12 @@
 				"js\\controls\\EditorControls.js"
 			],
 			[
-				"o",
-				"js\\controls\\OrbitControls.js"
-			],
-			[
 				"com",
 				"js\\coms\\com_Angel.js"
 			],
 			[
-				"ut",
-				"js\\webShow\\utils.js"
-			],
-			[
 				"thr",
 				"js\\threejs\\three.js"
-			],
-			[
-				"ori",
-				"js\\controls\\OrbitControls.js"
 			],
 			[
 				"twe",
@@ -1662,10 +1746,6 @@
 			[
 				"r",
 				"README.md"
-			],
-			[
-				"dem",
-				"projects\\demo\\demo.js"
 			],
 			[
 				"chuang",
@@ -1785,9 +1865,25 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "l",
 		"selected_items":
 		[
+			[
+				"l",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
+			[
+				"op",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"lian",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
+			[
+				"lai",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
 			[
 				"",
 				"E:\\sublime_files\\maxscripts\\maxscripts.sublime-project"
@@ -1803,10 +1899,6 @@
 			[
 				"li",
 				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
-			],
-			[
-				"op",
-				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
 			],
 			[
 				"open",

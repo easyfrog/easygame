@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 工具类
  */
 var utils = utils || {};
@@ -302,8 +302,8 @@ utils.fade = function(obj, params) {
 		clearInterval(obj.fadeid);
 	}
 
-	var mats = params.mats || utils.collectMaterials(obj);
-
+    params = params || {};
+    var mats = params.mats || utils.collectMaterials(obj);
 	params.min = params.min || 0;
 	params.max = params.max || 1;
 	params.time = params.time || 1;
@@ -315,7 +315,7 @@ utils.fade = function(obj, params) {
 
 	obj.fadeid = ztc.Tween.fadeTo(params.time, function(t) {
 		for (var i = 0; i < mats.length; i++) {
-			var mat = params.mats[i];
+			var mat = mats[i];
 			mat.transparent = true;
 			mat.opacity = params.inout ? (params.min + t * delta) : params.max - t * delta;
 		};
@@ -501,3 +501,37 @@ if (typeof String.prototype.endsWith != 'function') {
         };
     });
 };
+
+/**
+ * 相机飞向另一个相机
+ * cameraTarget.name = camera.name + '.Target'
+ */
+utils.cameraFly = function(to, time, mode, from, cb) {
+    from = from || Game.instance.camera;
+    if (mode == undefined) {
+        mode = Game.instance.cameraController.modes.LOCK;
+    }
+    if (time == undefined) {
+        time = 1;
+    }
+    Game.instance.cameraController.enabled = false;
+    utils.transformTo(from, to, time, null, function() {
+        var target = Game.instance.getDummy(to.name + '.Target');
+        if (target) {
+            Game.instance.cameraController.target = target.position.clone();
+            Game.instance.cameraController.setOrigin();
+        }
+        Game.instance.cameraController.mode = mode;
+        Game.instance.cameraController.enabled = true;
+        
+        if (cb) { cb(); }
+    });
+};
+
+utils.rotateAroundWorldAxis = function ( object, axis, radians ) {
+    var rotationMatrix = new THREE.Matrix4();
+    rotationMatrix.makeRotationAxis( axis.normalize(), radians );
+    rotationMatrix.multiply( object.matrix );                       // pre-multiply
+    object.matrix = rotationMatrix;
+    object.rotation.setFromRotationMatrix( object.matrix );
+}
