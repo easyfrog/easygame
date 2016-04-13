@@ -4,12 +4,152 @@
 		"selected_items":
 		[
 			[
-				"time",
-				"timeScale	(num)"
+				"dd",
+				"ddd_dmy	{}"
+			],
+			[
+				"fir",
+				"friend_items	[]"
+			],
+			[
+				"fri",
+				"friend_items	[]"
+			],
+			[
+				"hd",
+				"headimg	(?)"
+			],
+			[
+				"getS",
+				"getSymbolElement"
+			],
+			[
+				"friends",
+				"friends	[]"
+			],
+			[
+				"t",
+				"tools	{}"
+			],
+			[
+				"friend_",
+				"friend_name	(?)"
+			],
+			[
+				"fre",
+				"friend_headimg	(?)"
+			],
+			[
+				"he",
+				"headimgurl"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"unde",
+				"undefined	{}"
+			],
+			[
+				"add",
+				"add(object)"
+			],
+			[
+				"getWo",
+				"getWorldRotation(optionalTarget)"
+			],
+			[
+				"be",
+				"beginTime	(num)"
+			],
+			[
+				"doo",
+				"doorComp	{}"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"door",
+				"doorCmop	{}"
+			],
+			[
+				"zh",
+				"zhuanpanComp	(?)"
+			],
+			[
+				"getC",
+				"getComponent(comNameOrFunc)"
+			],
+			[
+				"st",
+				"stratagem"
+			],
+			[
+				"it",
+				"items"
+			],
+			[
+				"cur",
+				"curName	(?)"
+			],
+			[
+				"sho",
+				"showMsg"
+			],
+			[
+				"get",
+				"getSymbolElement"
+			],
+			[
+				"app",
+				"appendIcon"
+			],
+			[
+				"ms",
+				"msgTime"
+			],
+			[
+				"clea",
+				"clearTimeout(timeout)"
+			],
+			[
+				"stop",
+				"stopPropagation()"
+			],
+			[
+				"dia",
+				"dialogM	(?)"
+			],
+			[
+				"getm",
+				"getMesh(name)"
+			],
+			[
+				"hide",
+				"hideDialog"
+			],
+			[
+				"dil",
+				"dialogM	(?)"
 			],
 			[
 				"cam",
-				"cameraController	{}"
+				"cameraBack(time)"
+			],
+			[
+				"getSY",
+				"getSymbolElement"
+			],
+			[
+				"getSy",
+				"getSymbol"
+			],
+			[
+				"time",
+				"timeScale	(num)"
 			],
 			[
 				"ca",
@@ -52,10 +192,6 @@
 				"color_seq	(str)"
 			],
 			[
-				"re",
-				"repeat	{}"
-			],
-			[
 				"sm",
 				"smileComp	(?)"
 			],
@@ -70,10 +206,6 @@
 			[
 				"smi",
 				"smileComp	(?)"
-			],
-			[
-				"doo",
-				"doorCmop	{}"
 			],
 			[
 				"enab",
@@ -120,14 +252,6 @@
 				"zhuan()"
 			],
 			[
-				"zh",
-				"zhuanpan	{}"
-			],
-			[
-				"t",
-				"Tween	{}"
-			],
-			[
 				"fie",
 				"feiStr	(?)"
 			],
@@ -150,10 +274,6 @@
 			[
 				"au",
 				"autoBack	(?)"
-			],
-			[
-				"add",
-				"addComponent(comNameOrFunc, params, m, s})"
 			],
 			[
 				"du",
@@ -204,16 +324,8 @@
 				"target	{}"
 			],
 			[
-				"if",
-				"if	If"
-			],
-			[
 				"m",
 				"mainLight	{}"
-			],
-			[
-				"get",
-				"getSymbol	(?)"
 			],
 			[
 				"A",
@@ -258,10 +370,6 @@
 			[
 				"lock",
 				"lockAutoBackSpeed	(num)"
-			],
-			[
-				"fir",
-				"firstUpdate	(bool)"
 			],
 			[
 				"fa",
@@ -330,10 +438,6 @@
 			[
 				"max",
 				"maxValue"
-			],
-			[
-				"st",
-				"stepMode"
 			],
 			[
 				"s",
@@ -410,110 +514,6 @@
 			[
 				"e",
 				"easeOutQuad(val)"
-			],
-			[
-				"mat",
-				"material	(?)"
-			],
-			[
-				"ma",
-				"material"
-			],
-			[
-				"createEle",
-				"createElementNS (fn/2)"
-			],
-			[
-				"remo",
-				"removeEventListener(type, listener)"
-			],
-			[
-				"ana",
-				"analyzeObject(arr)"
-			],
-			[
-				"mesh",
-				"meshes	[]"
-			],
-			[
-				"tr",
-				"transparent"
-			],
-			[
-				"visi",
-				"visible	(bool)"
-			],
-			[
-				"G",
-				"Group()"
-			],
-			[
-				"getObject",
-				"getObjectByName(name)"
-			],
-			[
-				"con",
-				"container	{}"
-			],
-			[
-				"pos",
-				"postprocessing"
-			],
-			[
-				"camer",
-				"cameraController	(?)"
-			],
-			[
-				"on",
-				"onclick〔function〕"
-			],
-			[
-				"getSy",
-				"getSymbolElement"
-			],
-			[
-				"scale",
-				"scaleToFixScreen"
-			],
-			[
-				"cur",
-				"currentIndex	(num)"
-			],
-			[
-				"can",
-				"cameraController	{}"
-			],
-			[
-				"mu",
-				"multiplyScalar(scalar)"
-			],
-			[
-				"Ve",
-				"Vector3(x, y, z)"
-			],
-			[
-				"bone",
-				"boneGlowMesh	{}"
-			],
-			[
-				"nee",
-				"needsUpdate(value)"
-			],
-			[
-				"ad",
-				"AdditiveBlending	(num)"
-			],
-			[
-				"Blen",
-				"AdditiveBlending	(num)"
-			],
-			[
-				"getIn",
-				"getInfoCorutine()"
-			],
-			[
-				"instan",
-				"instanceof"
 			]
 		]
 	},
@@ -544,13 +544,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 152.0,
-		"last_filter": "",
+		"height": 400.0,
+		"last_filter": "sni",
 		"selected_items":
 		[
 			[
+				"sni",
+				"Snippet: wxurl"
+			],
+			[
 				"reload",
 				"TernJS: Reload"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"status",
+				"Git: Status"
 			],
 			[
 				"user",
@@ -573,10 +585,6 @@
 				"Snippet: module"
 			],
 			[
-				"sni",
-				"Snippet: main"
-			],
-			[
 				"sn",
 				"Snippet: main"
 			],
@@ -591,14 +599,6 @@
 			[
 				"rel",
 				"TernJS: Reload"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
-				"status",
-				"Git: Status"
 			],
 			[
 				"remove",
@@ -1134,20 +1134,38 @@
 	},
 	"file_history":
 	[
+		"/E/EdgeWorks/analyze/publish/web/index.html",
+		"/C/Users/easyfrog/Desktop/mongo-admin-20160413-011301.js",
+		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/myhost/inno studio/js/webShow/game.js",
+		"/C/Users/easyfrog/Documents/wxdb.js",
+		"/C/Users/easyfrog/Documents/jump_user.html",
+		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
+		"/C/Users/easyfrog/Documents/wxuser.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/action.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/icon.sublime-snippet",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/main.sublime-snippet",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/wxshare.sublime-snippet",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
+		"/C/Users/easyfrog/Documents/getOpenID.html",
+		"/C/Users/easyfrog/Documents/index1.html",
+		"/C/Users/easyfrog/Documents/index.html",
+		"/C/Users/easyfrog/Documents/jump_user2.html",
+		"/C/Users/easyfrog/Documents/getOpenIDChristmas.html",
+		"/C/Users/easyfrog/AppData/Local/Temp/Rar$DIa0.032/cv.txt",
+		"/E/myhost/inno studio/projects/firstroom/firstroom_grunt.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/door.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/zhuanpan.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/clock.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/item.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/action.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/smile.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/config.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/clock.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/door.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/dumyPick.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/secret.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/zhuanpan.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/projects/_closed/bone/config.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
 		"/C/Users/easyfrog/AppData/Local/Temp/Rar$DIa0.533/8uftp.xml",
 		"/E/UnityProjects/lianzheng/Assets/Scripts/ztc/Manager.cs",
 		"/E/myhost/inno studio/js/coms/analyzeScene.js",
@@ -1161,7 +1179,6 @@
 		"/E/百度云下载/web/buildWeb/20160321/JumpPage.js",
 		"/C/Users/easyfrog/Desktop/JumpPage.js",
 		"/E/UnityProjects/lianzheng/xx/data.txt",
-		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/myhost/inno studio/js/threejs/three.js",
 		"/C/Users/easyfrog/Desktop/README.md",
 		"/E/myhost/inno studio/projects/demo/m2.js",
@@ -1176,7 +1193,6 @@
 		"/E/myhost/inno studio/misc/cordovaScreenSaverUsed.md",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/module.sublime-snippet",
 		"/C/Users/easyfrog/Desktop/index.html",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/wxshare.sublime-snippet",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
 		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/projects/demo/changgu2.js",
@@ -1227,7 +1243,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.jshintrc",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/test.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/C#/unity-project.sublime-snippet",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
@@ -1246,26 +1261,11 @@
 		"/E/myhost/inno studio/js/controls/MouseControls.js",
 		"/E/myhost/inno studio/projects/bone/config.js",
 		"/E/myhost/inno studio/projects/bone/bone.js",
-		"/E/myhost/inno studio/projects/bone/sceneUp.js",
-		"/E/myhost/inno studio/projects/bone/glow_effect_shader.js",
-		"/C/Users/easyfrog/AppData/Local/Temp/Rar$DIa0.962/说明.txt",
-		"/C/Users/easyfrog/Desktop/TernJS/tern.py",
-		"/C/Users/easyfrog/Desktop/TernJS/TernJS.sublime-settings",
-		"/C/Users/easyfrog/Desktop/TernJS/Main.sublime-menu",
-		"/C/Users/easyfrog/Desktop/TernJS/Default.sublime-keymap",
-		"/C/Users/easyfrog/Desktop/TernJS/Default.sublime-commands",
-		"/E/myhost/inno studio/projects/bone/test.js",
-		"/C/Users/easyfrog/Desktop/TernJS/ternjs/reloader.py",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/E/myhost/inno studio/projects/xmas3d/edgeWorks.js",
-		"/E/myhost/inno studio/js/coms/analyzeMaterial.js",
-		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
-		"/E/myhost/inno studio/projects/xmas3d/xmas3d.js",
-		"/E/PhoneGap_works/bone/config.xml"
+		"/E/myhost/inno studio/projects/bone/sceneUp.js"
 	],
 	"find":
 	{
-		"height": 120.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -1280,6 +1280,35 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"t",
+			"Math.random() - 0.5",
+			"Math.random()",
+			"Math.random() > 0.5",
+			"_all",
+			"pause",
+			"doorCmop",
+			"audio",
+			"index",
+			"curSc",
+			"glo.use",
+			"glo.curName",
+			"curName",
+			"glo.msgOn",
+			"msgOn",
+			"glo.dummy",
+			"glo.dummys",
+			"glo.dummys ",
+			",",
+			"{},",
+			"{}, ",
+			"glo.config.items",
+			"glo.item",
+			"items",
+			"glo",
+			"playAnimation",
+			"glo.actions",
+			"6",
+			"ps",
 			"// Update\naction.prototype.update = function() {\n    \n};\n",
 			"this",
 			"ba",
@@ -1378,36 +1407,7 @@
 			"rotateDelta",
 			"addComponent",
 			"this",
-			"friends",
-			"this",
-			"v",
-			"i",
-			"meshes",
-			"mesh",
-			"-(.*)((?=-))",
-			"-(.*)((?=-)|$)",
-			"-(.*)((?=-))",
-			"Neares",
-			"k",
-			"j",
-			"analyze",
-			"work.",
-			"Scene",
-			"s.root.container",
-			"effect",
-			"lastTransform",
-			"Game.instance",
-			"Jump",
-			"Jump to def",
-			"Jump to defination",
-			"reload",
-			"ctx",
-			"question",
-			"require",
-			"load",
-			"config",
-			"btn_nex",
-			"targetObj"
+			"friends"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1500,16 +1500,52 @@
 		"selected_items":
 		[
 			[
-				"uti",
-				"js\\webShow\\utils.js"
+				"gam",
+				"js\\webShow\\game.js"
 			],
 			[
 				"fir",
 				"projects\\firstroom\\firstroom.js"
 			],
 			[
+				"u",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"game",
+				"js\\webShow\\game.js"
+			],
+			[
 				"ga",
 				"js\\webShow\\game.js"
+			],
+			[
+				"edge",
+				"projects\\firstroom\\scripts\\edge.js"
+			],
+			[
+				"con",
+				"projects\\firstroom\\scripts\\config.js"
+			],
+			[
+				"gern",
+				"projects\\firstroom\\scripts\\general.js"
+			],
+			[
+				"firs",
+				"projects\\firstroom\\firstroom.js"
+			],
+			[
+				"util",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"it",
+				"projects\\firstroom\\scripts\\item.js"
 			],
 			[
 				"gener",
@@ -1520,20 +1556,8 @@
 				"js\\webShow\\utils.js"
 			],
 			[
-				"u",
-				"js\\webShow\\utils.js"
-			],
-			[
-				"util",
-				"js\\webShow\\utils.js"
-			],
-			[
 				"gen",
 				"projects\\firstroom\\scripts\\general.js"
-			],
-			[
-				"game",
-				"js\\webShow\\game.js"
 			],
 			[
 				"config",
@@ -1546,10 +1570,6 @@
 			[
 				"action",
 				"projects\\firstroom\\scripts\\action.js"
-			],
-			[
-				"gern",
-				"projects\\firstroom\\scripts\\general.js"
 			],
 			[
 				"o",
@@ -1626,10 +1646,6 @@
 			[
 				"s8",
 				"projects\\demo\\s8.js"
-			],
-			[
-				"gam",
-				"js\\webShow\\game.js"
 			],
 			[
 				".",
@@ -1832,10 +1848,6 @@
 				"test.js"
 			],
 			[
-				"edge",
-				"gui_edge.js"
-			],
-			[
 				"ocu",
 				"js\\controls\\OculusControls.js"
 			],
@@ -1865,9 +1877,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "l",
+		"last_filter": "o",
 		"selected_items":
 		[
+			[
+				"o",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
 			[
 				"l",
 				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
@@ -1999,10 +2015,6 @@
 			[
 				"re",
 				"E:\\UnityProjects\\shunyi\\Rex_Scene\\Rex.sublime-project"
-			],
-			[
-				"o",
-				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
 			],
 			[
 				"\\",

@@ -317,6 +317,7 @@ utils.fade = function(obj, params) {
 		for (var i = 0; i < mats.length; i++) {
 			var mat = mats[i];
 			mat.transparent = true;
+            // mat.alphaTest = 0;
 			mat.opacity = params.inout ? (params.min + t * delta) : params.max - t * delta;
 		};
 	}, ztc.Tween.easeOutQuad, function() {
@@ -528,6 +529,9 @@ utils.cameraFly = function(to, time, mode, from, cb) {
     });
 };
 
+/**
+ * 在世界坐标系下旋转物体
+ */
 utils.rotateAroundWorldAxis = function ( object, axis, radians ) {
     var rotationMatrix = new THREE.Matrix4();
     rotationMatrix.makeRotationAxis( axis.normalize(), radians );
@@ -535,3 +539,23 @@ utils.rotateAroundWorldAxis = function ( object, axis, radians ) {
     object.matrix = rotationMatrix;
     object.rotation.setFromRotationMatrix( object.matrix );
 }
+
+/**
+ * 因为有部分机型中,声音文件不能自动播放, 所以需要在'按钮'的Click事件中
+ * 执行这个方法, 先让声音无声的播放一下, 方便之后使用
+ */
+utils.prePlayAudio = function( audioSym ) {
+    var auds = audioSym.$('audio');
+    Array.prototype.forEach.call(auds, function(a) {
+        (function(_a) {
+            _a.muted = true;
+            _a.play();
+            setTimeout(function() {
+                _a.muted = false;
+                _a.pause();
+                _a.currentTime = 0;
+            }, 0);
+        })(a);
+    });
+};
+
