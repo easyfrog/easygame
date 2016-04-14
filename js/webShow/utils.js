@@ -504,7 +504,7 @@ if (typeof String.prototype.endsWith != 'function') {
 };
 
 /**
- * 相机飞向另一个相机
+ * 相机飞向另一个相机, 并在过程中相机Controller不可用
  * cameraTarget.name = camera.name + '.Target'
  */
 utils.cameraFly = function(to, time, mode, from, cb) {

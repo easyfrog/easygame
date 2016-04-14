@@ -517,6 +517,17 @@
 			]
 		]
 	},
+	"buffers":
+	[
+		{
+			"file": "projects/firstroom/firstroom.js",
+			"settings":
+			{
+				"buffer_size": 12180,
+				"line_ending": "Windows"
+			}
+		}
+	],
 	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
 	"build_system_choices":
 	[
@@ -545,16 +556,20 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "sni",
+		"last_filter": "edit",
 		"selected_items":
 		[
 			[
-				"sni",
-				"Snippet: wxurl"
+				"edit",
+				"Project: Edit Project"
 			],
 			[
-				"reload",
-				"TernJS: Reload"
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
 			],
 			[
 				"push",
@@ -565,8 +580,12 @@
 				"Git: Status"
 			],
 			[
-				"user",
-				"Preferences: Settings - User"
+				"sni",
+				"Snippet: wxurl"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
 			],
 			[
 				"relo",
@@ -609,10 +628,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"edit",
-				"Project: Edit Project"
-			],
-			[
 				"list",
 				"Package Control: List Packages"
 			],
@@ -635,10 +650,6 @@
 			[
 				"rem",
 				"Package Control: Remove Package"
-			],
-			[
-				"gist",
-				"Gist: Open Gist"
 			],
 			[
 				"pus",
@@ -1132,11 +1143,18 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/E/myhost/inno studio"
+	],
 	"file_history":
 	[
+		"/E/CGLobal/progs/config.txt",
+		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/EdgeWorks/analyze/publish/web/index.html",
 		"/C/Users/easyfrog/Desktop/mongo-admin-20160413-011301.js",
-		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/myhost/inno studio/js/webShow/game.js",
 		"/C/Users/easyfrog/Documents/wxdb.js",
 		"/C/Users/easyfrog/Documents/jump_user.html",
@@ -1158,7 +1176,6 @@
 		"/E/myhost/inno studio/projects/firstroom/scripts/zhuanpan.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/clock.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/item.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/smile.js",
@@ -1207,8 +1224,6 @@
 		"/E/myhost/inno studio/projects/demo/s8.js",
 		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/E/myhost/inno studio/.tern-project",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/E/CGLobal/progs/config.txt",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/UnityJavaScript.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/Default.sublime-keymap",
@@ -1280,6 +1295,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".",
+			"25",
 			"t",
 			"Math.random() - 0.5",
 			"Math.random()",
@@ -1405,9 +1422,7 @@
 			"RotateUp",
 			"rotateUp",
 			"rotateDelta",
-			"addComponent",
-			"this",
-			"friends"
+			"addComponent"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1424,6 +1439,46 @@
 		"whole_word": false,
 		"wrap": false
 	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "projects/firstroom/firstroom.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1374,
+								1374
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Unity3D/UnityJavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
 	"incremental_find":
 	{
 		"height": 40.0
@@ -1488,6 +1543,7 @@
 		"height": 120.0
 	},
 	"pinned_build_system": "",
+	"project": "innoStudio.sublime-project",
 	"replace":
 	{
 		"height": 76.0
@@ -1499,6 +1555,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"f",
+				"projects\\firstroom\\firstroom.js"
+			],
+			[
+				"fri",
+				"projects\\firstroom\\firstroom.js"
+			],
 			[
 				"gam",
 				"js\\webShow\\game.js"
@@ -1877,9 +1941,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "o",
+		"last_filter": "u",
 		"selected_items":
 		[
+			[
+				"u",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"lian",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
 			[
 				"o",
 				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
@@ -1893,20 +1965,12 @@
 				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
 			],
 			[
-				"lian",
-				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
-			],
-			[
 				"lai",
 				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
 			],
 			[
 				"",
 				"E:\\sublime_files\\maxscripts\\maxscripts.sublime-project"
-			],
-			[
-				"u",
-				"E:\\EdgeWorks\\utils\\utils.sublime-project"
 			],
 			[
 				"ut",
@@ -2040,6 +2104,7 @@
 		],
 		"width": 378.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
