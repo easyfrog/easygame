@@ -84,3 +84,5 @@ THREE.ClearMaskPass.prototype = {
 	}
 
 };
+
+module.exports = THREE.MaskPass;

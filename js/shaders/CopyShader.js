@@ -44,3 +44,6 @@ THREE.CopyShader = {
 	].join("\n")
 
 };
+
+
+module.exports = THREE.CopyShader;

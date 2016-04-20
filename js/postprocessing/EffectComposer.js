@@ -137,3 +137,6 @@ THREE.EffectComposer.prototype = {
 	}
 
 };
+
+
+module.exports = THREE.EffectComposer;

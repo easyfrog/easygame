@@ -60,3 +60,5 @@ THREE.SavePass.prototype = {
 	}
 
 };
+
+module.exports = THREE.SavePass;

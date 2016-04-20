@@ -63,6 +63,7 @@
 			alpha: true
 		}
 		s.renderer = new THREE.WebGLRenderer(rendererConfig);
+		s.renderer.autoClear = false;
 		// s.renderer = new THREE.CanvasRenderer(rendererConfig);
 		s.container.appendChild(s.renderer.domElement);
 		s.camera = new THREE.PerspectiveCamera(50, container.offsetWidth/container.offsetHeight, 1, 10000);
@@ -485,8 +486,9 @@
 		this.scene.overrideMaterial = null;
 		this.composer.render(_delta);
 		//*/
+		this.renderer.clear();
 		if (this.custormRenderFunction) {
-			this.custormRenderFunction();	
+			this.custormRenderFunction(_delta);	
 		} else {
 			this.renderer.render(this.scene, this.camera);
 		}

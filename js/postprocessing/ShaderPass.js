@@ -57,3 +57,5 @@ THREE.ShaderPass.prototype = {
 	}
 
 };
+
+module.exports = THREE.ShaderPass;

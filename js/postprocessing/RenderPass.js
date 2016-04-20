@@ -49,3 +49,5 @@ THREE.RenderPass.prototype = {
 	}
 
 };
+
+module.exports = THREE.RenderPass;

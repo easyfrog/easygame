@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ana",
+				"analyzeIncrease(a)"
+			],
+			[
+				"decode",
+				"decodeURIComponent(uri)"
+			],
+			[
 				"dd",
 				"ddd_dmy	{}"
 			],
@@ -506,28 +514,9 @@
 			[
 				"addCo",
 				"addComponent(comNameOrFunc)"
-			],
-			[
-				"tran",
-				"transparent"
-			],
-			[
-				"e",
-				"easeOutQuad(val)"
 			]
 		]
 	},
-	"buffers":
-	[
-		{
-			"file": "projects/firstroom/firstroom.js",
-			"settings":
-			{
-				"buffer_size": 12180,
-				"line_ending": "Windows"
-			}
-		}
-	],
 	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
 	"build_system_choices":
 	[
@@ -555,10 +544,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "edit",
+		"height": 374.0,
+		"last_filter": "push",
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"relo",
+				"TernJS: Reload"
+			],
 			[
 				"edit",
 				"Project: Edit Project"
@@ -572,23 +573,11 @@
 				"Preferences: Settings - User"
 			],
 			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
-				"status",
-				"Git: Status"
-			],
-			[
 				"sni",
 				"Snippet: wxurl"
 			],
 			[
 				"reload",
-				"TernJS: Reload"
-			],
-			[
-				"relo",
 				"TernJS: Reload"
 			],
 			[
@@ -1143,12 +1132,10 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/E/myhost/inno studio"
-	],
 	"file_history":
 	[
+		"/C/Users/easyfrog/Documents/jump_user.html",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
 		"/E/CGLobal/progs/config.txt",
 		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
@@ -1157,7 +1144,6 @@
 		"/C/Users/easyfrog/Desktop/mongo-admin-20160413-011301.js",
 		"/E/myhost/inno studio/js/webShow/game.js",
 		"/C/Users/easyfrog/Documents/wxdb.js",
-		"/C/Users/easyfrog/Documents/jump_user.html",
 		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
 		"/C/Users/easyfrog/Documents/wxuser.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/action.js",
@@ -1240,7 +1226,6 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.no-sublime-package",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.tern-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
 		"/D/libs/three.js-r72/examples/js/libs/stats.min.js",
 		"/C/Users/easyfrog/Desktop/BAO格式文件使用说明.txt",
@@ -1295,6 +1280,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"from",
 			".",
 			"25",
 			"t",
@@ -1421,8 +1407,7 @@
 			"phi",
 			"RotateUp",
 			"rotateUp",
-			"rotateDelta",
-			"addComponent"
+			"rotateDelta"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1439,46 +1424,6 @@
 		"whole_word": false,
 		"wrap": false
 	},
-	"groups":
-	[
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "projects/firstroom/firstroom.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12180,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1374,
-								1374
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Unity3D/UnityJavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 720.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 40.0
@@ -1543,7 +1488,6 @@
 		"height": 120.0
 	},
 	"pinned_build_system": "",
-	"project": "innoStudio.sublime-project",
 	"replace":
 	{
 		"height": 76.0
@@ -1555,6 +1499,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"g",
+				"js\\webShow\\game.js"
+			],
 			[
 				"f",
 				"projects\\firstroom\\firstroom.js"
@@ -1798,10 +1746,6 @@
 			[
 				"x",
 				"projects\\xmas3d\\xmas3d.js"
-			],
-			[
-				"g",
-				"js\\webShow\\game.js"
 			],
 			[
 				"grunt",
@@ -2104,7 +2048,6 @@
 		],
 		"width": 378.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},

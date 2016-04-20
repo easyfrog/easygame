@@ -50,7 +50,6 @@ THREE.BloomPass = function ( strength, kernelSize, sigma, resolution ) {
 	this.convolutionUniforms[ "cKernel" ].value = THREE.ConvolutionShader.buildKernel( sigma );
 
 	this.materialConvolution = new THREE.ShaderMaterial( {
-
 		uniforms: this.convolutionUniforms,
 		vertexShader:  convolutionShader.vertexShader,
 		fragmentShader: convolutionShader.fragmentShader,
