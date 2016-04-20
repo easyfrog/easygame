@@ -4,6 +4,166 @@
 		"selected_items":
 		[
 			[
+				"opa",
+				"opacity"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"add",
+				"addedLights"
+			],
+			[
+				"world",
+				"worldNormal"
+			],
+			[
+				"fre",
+				"fresnelPower	(?)"
+			],
+			[
+				"fr",
+				"fresnelScale	(?)"
+			],
+			[
+				"uni",
+				"uniforms	{}"
+			],
+			[
+				"Un",
+				"UniformsUtils	{}"
+			],
+			[
+				"ver",
+				"vertexShader	(str)"
+			],
+			[
+				"Shader",
+				"ShaderMaterial(parameters, fragmentShader, side, uniforms, vertexShader})"
+			],
+			[
+				"reflec",
+				"reflectColor"
+			],
+			[
+				"Fresnel",
+				"fresnelScale"
+			],
+			[
+				"fresnel",
+				"fresnelBias"
+			],
+			[
+				"vRef",
+				"vReflectionFactor"
+			],
+			[
+				"effe",
+				"effectVignette	(?)"
+			],
+			[
+				"line",
+				"lineCount"
+			],
+			[
+				"blur",
+				"blurX	(num)"
+			],
+			[
+				"su",
+				"subVectors(a, b)"
+			],
+			[
+				"clear",
+				"clear(color, depth, stencil)"
+			],
+			[
+				"gl_",
+				"gl_FragColor"
+			],
+			[
+				"re",
+				"renderToScreen	(?)"
+			],
+			[
+				"e",
+				"easeOutBack(val)"
+			],
+			[
+				"eff",
+				"effectRender	(?)"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"blu",
+				"blurEffect	(?)"
+			],
+			[
+				"cu",
+				"custormRenderFunction(delta)"
+			],
+			[
+				"pass",
+				"passes"
+			],
+			[
+				"last",
+				"lastRTS	(?)"
+			],
+			[
+				"las",
+				"lastRTS	(?)"
+			],
+			[
+				"effec",
+				"effectSepia	(?)"
+			],
+			[
+				"comp",
+				"composer	(?)"
+			],
+			[
+				"Ef",
+				"EffectComposer"
+			],
+			[
+				"po",
+				"PointsMaterial(parameters)"
+			],
+			[
+				"A",
+				"AdditiveBlending	(num)"
+			],
+			[
+				"L",
+				"loadTexture(url, mapping, onLoad, onError)"
+			],
+			[
+				"Imag",
+				"ImageUtils	{}"
+			],
+			[
+				"par",
+				"particleMat	{}"
+			],
+			[
+				"Pa",
+				"ParticleSystem(geometry, material)"
+			],
+			[
+				"parti",
+				"particles	{}"
+			],
+			[
+				"mo",
+				"module	module"
+			],
+			[
 				"ana",
 				"analyzeIncrease(a)"
 			],
@@ -44,24 +204,12 @@
 				"friend_name	(?)"
 			],
 			[
-				"fre",
-				"friend_headimg	(?)"
-			],
-			[
 				"he",
 				"headimgurl"
 			],
 			[
-				"re",
-				"result"
-			],
-			[
 				"unde",
 				"undefined	{}"
-			],
-			[
-				"add",
-				"add(object)"
 			],
 			[
 				"getWo",
@@ -324,20 +472,12 @@
 				"for	for (…) {…}"
 			],
 			[
-				"mo",
-				"modes	{}"
-			],
-			[
 				"tar",
 				"target	{}"
 			],
 			[
 				"m",
 				"mainLight	{}"
-			],
-			[
-				"A",
-				"AmbientLight(color)"
 			],
 			[
 				"progr",
@@ -374,146 +514,6 @@
 			[
 				"qu",
 				"quaternion"
-			],
-			[
-				"lock",
-				"lockAutoBackSpeed	(num)"
-			],
-			[
-				"fa",
-				"FADE	(num)"
-			],
-			[
-				"upda",
-				"updateProjectionMatrix()"
-			],
-			[
-				"mainC",
-				"mainCamTarget	{}"
-			],
-			[
-				"load",
-				"load(url, groupName, callback)"
-			],
-			[
-				"Ori",
-				"OrbitControls(object, domElement)"
-			],
-			[
-				"wo",
-				"works	[]"
-			],
-			[
-				"work",
-				"workComplete"
-			],
-			[
-				"line",
-				"lineMat	{}"
-			],
-			[
-				"Cu",
-				"CubeReflectionMapping	(num)"
-			],
-			[
-				"dis",
-				"distanceToSquared(v)"
-			],
-			[
-				"com",
-				"com_Angel	{}"
-			],
-			[
-				"box",
-				"boxParent (obj)"
-			],
-			[
-				"mai",
-				"mainCam_taget (obj)"
-			],
-			[
-				"ta",
-				"targetPos (fn/1)"
-			],
-			[
-				"fo",
-				"followAnimation"
-			],
-			[
-				"theta",
-				"thetaDelta"
-			],
-			[
-				"max",
-				"maxValue"
-			],
-			[
-				"s",
-				"stepMode	(?)"
-			],
-			[
-				"las",
-				"lastRotateUp	(num)"
-			],
-			[
-				"last",
-				"lastRotateLeft	(num)"
-			],
-			[
-				"mose",
-				"mousedown	.mousedown()"
-			],
-			[
-				"Mou",
-				"MOUSEUP	(str)"
-			],
-			[
-				"Shader",
-				"ShaderLib	{}"
-			],
-			[
-				"RG",
-				"RGBFormat	(num)"
-			],
-			[
-				"Cur",
-				"CubeRefractionMapping	(num)"
-			],
-			[
-				"uti",
-				"ImageUtils	{}"
-			],
-			[
-				"cla",
-				"clamp(min, max)"
-			],
-			[
-				"fad",
-				"fadeSpeed	(num)"
-			],
-			[
-				"phi",
-				"phiDelta"
-			],
-			[
-				"ph",
-				"phiDelta	(num)"
-			],
-			[
-				"the",
-				"thetaDelta	(num)"
-			],
-			[
-				"main",
-				"mainCam_taget	(?)"
-			],
-			[
-				"min",
-				"minOpacity	(num)"
-			],
-			[
-				"addCo",
-				"addComponent(comNameOrFunc)"
 			]
 		]
 	},
@@ -544,10 +544,30 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 374.0,
-		"last_filter": "push",
+		"height": 400.0,
+		"last_filter": "edit",
 		"selected_items":
 		[
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"rel",
+				"TernJS: Reload"
+			],
+			[
+				"edi",
+				"Project: Edit Project"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
+			],
 			[
 				"push",
 				"Git: Push Current Branch"
@@ -557,28 +577,24 @@
 				"Git: Status"
 			],
 			[
-				"relo",
-				"TernJS: Reload"
+				"ssu",
+				"Set Syntax: Unity JavaScript"
 			],
 			[
-				"edit",
-				"Project: Edit Project"
+				"re",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"relo",
+				"TernJS: Reload"
 			],
 			[
 				"gist",
 				"Gist: Open Gist"
 			],
 			[
-				"user",
-				"Preferences: Settings - User"
-			],
-			[
 				"sni",
 				"Snippet: wxurl"
-			],
-			[
-				"reload",
-				"TernJS: Reload"
 			],
 			[
 				"r",
@@ -605,10 +621,6 @@
 				"Color Picker"
 			],
 			[
-				"rel",
-				"TernJS: Reload"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -631,10 +643,6 @@
 			[
 				"ss js",
 				"Set Syntax: JavaScript"
-			],
-			[
-				"re",
-				"Set Syntax: Regular Expression"
 			],
 			[
 				"rem",
@@ -695,10 +703,6 @@
 			[
 				"staut",
 				"Git: Status"
-			],
-			[
-				"edi",
-				"Project: Edit Project"
 			],
 			[
 				"relad",
@@ -1134,17 +1138,70 @@
 	},
 	"file_history":
 	[
+		"/E/myhost/inno studio/js/shaders/EdgeShader2.js",
+		"/E/myhost/inno studio/js/shaders/ColorifyShader.js",
+		"/E/myhost/inno studio/js/shaders/ConvolutionShader.js",
+		"/E/myhost/inno studio/js/shaders/FXAAShader.js",
+		"/E/myhost/inno studio/js/shaders/DOFMipMapShader.js",
+		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/myhost/inno studio/js/shaders/FresnelShader_ztc.js",
+		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.js",
+		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/project_vertex.glsl",
+		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/uv_pars_fragment.glsl",
+		"/E/myhost/inno studio/js/threejs/three.js",
+		"/E/myhost/inno studio/projects/firstroom/firstroom_grunt.js",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/E/myhost/inno studio/build/easygame.min.js",
+		"/E/myhost/inno studio/js/coms/effects/blur.js",
+		"/E/myhost/inno studio/js/shaders/FresnelShader.js",
+		"/E/myhost/inno studio/js/coms/effects/bloom.js",
+		"/E/myhost/inno studio/js/shaders/MirrorShader.js",
+		"/E/myhost/inno studio/js/shaders/BasicShader.js",
+		"/E/myhost/inno studio/js/coms/effects/vignette.js",
+		"/E/myhost/inno studio/js/coms/effects/sepia.js",
+		"/E/myhost/inno studio/js/shaders/BrightnessContrastShader.js",
+		"/E/myhost/inno studio/js/coms/effects/bc.js",
+		"/E/myhost/inno studio/js/coms/effects/film.js",
+		"/E/myhost/inno studio/js/coms/effects/color.js",
+		"/E/myhost/inno studio/js/coms/effects/hue.js",
+		"/E/myhost/inno studio/js/postprocessing/FilmPass.js",
+		"/E/myhost/inno studio/js/postprocessing/BloomPass.js",
+		"/E/myhost/inno studio/js/shaders/SepiaShader.js",
+		"/E/myhost/inno studio/js/shaders/HueSaturationShader.js",
+		"/E/myhost/inno studio/js/shaders/ColorCorrectionShader.js",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/js/shaders/DigitalGlitch.js",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/js/shaders/BlendShader.js",
+		"/E/myhost/inno studio/js/coms/effectRender.js",
+		"/E/UnityProjects/ELIFE_S51_project/Assets/Editor/ztc/ResourceChecker.cs",
+		"/E/myhost/inno studio/js/shaders/CopyShader.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
+		"/E/myhost/inno studio/js/postprocessing/EffectComposer.js",
+		"/E/myhost/inno studio/projects/demo/particle.js",
+		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/mascot.html",
+		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
+		"/E/myhost/inno studio/js/shaders/BokehShader.js",
+		"/E/myhost/inno studio/js/shaders/BokehShader2.js",
+		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
+		"/E/myhost/inno studio/js/postprocessing/SavePass.js",
+		"/E/myhost/inno studio/js/shaders/FilmShader.js",
+		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/lightmap.html",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/E/myhost/inno studio/js/shaders/VignetteShader.js",
+		"/E/myhost/inno studio/js/postprocessing/RenderPass.js",
+		"/E/myhost/inno studio/js/postprocessing/MaskPass.js",
+		"/E/myhost/inno studio/package.json",
+		"/E/myhost/inno studio/projects/demo/landscape.js",
 		"/C/Users/easyfrog/Documents/jump_user.html",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
 		"/E/CGLobal/progs/config.txt",
 		"/C/Users/easyfrog/Desktop/sn.txt",
-		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/EdgeWorks/analyze/publish/web/index.html",
 		"/C/Users/easyfrog/Desktop/mongo-admin-20160413-011301.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/C/Users/easyfrog/Documents/wxdb.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
 		"/C/Users/easyfrog/Documents/wxuser.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/action.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/icon.sublime-snippet",
@@ -1157,13 +1214,10 @@
 		"/C/Users/easyfrog/Documents/jump_user2.html",
 		"/C/Users/easyfrog/Documents/getOpenIDChristmas.html",
 		"/C/Users/easyfrog/AppData/Local/Temp/Rar$DIa0.032/cv.txt",
-		"/E/myhost/inno studio/projects/firstroom/firstroom_grunt.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/door.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/zhuanpan.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/clock.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/item.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
-		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/smile.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/config.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/dumyPick.js",
@@ -1175,14 +1229,12 @@
 		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
 		"/E/myhost/inno studio/LICENSE.txt",
 		"/E/myhost/inno studio/projects/_closed/demo/landscape.js",
-		"/E/myhost/inno studio/build/easygame.min.js",
 		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/data.txt",
 		"/C/Users/easyfrog/Desktop/SuWeb/JumpPage.js",
 		"/E/myhost/inno studio/templates/project.js",
 		"/E/百度云下载/web/buildWeb/20160321/JumpPage.js",
 		"/C/Users/easyfrog/Desktop/JumpPage.js",
 		"/E/UnityProjects/lianzheng/xx/data.txt",
-		"/E/myhost/inno studio/js/threejs/three.js",
 		"/C/Users/easyfrog/Desktop/README.md",
 		"/E/myhost/inno studio/projects/demo/m2.js",
 		"/E/myhost/inno studio/js/coms/com_Angel.js",
@@ -1191,17 +1243,14 @@
 		"/E/myhost/inno studio/projects/demo/demo.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
-		"/E/myhost/inno studio/package.json",
 		"/E/csharp_works/HelloWorld/HelloWorld.sln",
 		"/E/myhost/inno studio/misc/cordovaScreenSaverUsed.md",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/module.sublime-snippet",
 		"/C/Users/easyfrog/Desktop/index.html",
 		"/E/myhost/inno studio/projects/_closed/bone/bone.js",
-		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/projects/demo/changgu2.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/D/setup/FlashFXPliehuo4.2.6/Cache/~flashfxp/64E11184_view.tmp/璇存槑.txt",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/E/myhost/inno studio/projects/demo/changgu.js",
 		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Bridge.java",
 		"/E/百度云同步盘/ztcLibs/Cordova/屏保程序/Receiver.java",
@@ -1216,52 +1265,7 @@
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Themr/Default (Windows).sublime-keymap",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/E/myhost/inno studio/projects/_closed/changhong/com_AutoRot.js",
-		"/E/myhost/inno studio/templates/project_grunt.js",
-		"/E/Away3D/NubiaZ9Mobile/src/NubiaZ9Mobile.as",
-		"/E/myhost/inno studio/.gitignore",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/messages.json",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/TernJS/tern.py",
-		"/E/myhost/inno studio/js/controls/EditorControls.js",
-		"/c/users/easyfrog/appdata/local/temp/.tern-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/.tern-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.no-sublime-package",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.tern-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
-		"/D/libs/three.js-r72/examples/js/libs/stats.min.js",
-		"/C/Users/easyfrog/Desktop/BAO格式文件使用说明.txt",
-		"/E/myhost/inno studio/js/controls/OrbitControls.js",
-		"/E/myhost/inno studio/js/threejs/Detector.js",
-		"/E/EdgeWorks/demo/publish/web/index.html",
-		"/D/libs/mrdoob-three.js-d49bb0e/examples/js/renderers/CanvasRenderer.js",
-		"/C/Users/easyfrog/Desktop/CanvasRenderer.js",
-		"/E/myhost/inno studio/projects/_closed/bone/sceneUp.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/tern-project.sublime-snippet",
-		"/C/Users/easyfrog/Desktop/data.txt",
-		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
-		"/E/myhost/inno studio/README.md",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/node_modules/tern/.jshintrc",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-keymap",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/test/demo/simple/test.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/C#/unity-project.sublime-snippet",
-		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
-		"/E/myhost/inno studio/projects/_closed/chuangwei/chuangwei.js",
-		"/E/myhost/inno studio/projects/demo/com_test.js",
-		"/C/Users/easyfrog/Desktop/LICENSE.txt",
-		"/E/myhost/inno studio/js/controls/VRControls.js",
-		"/E/MyFolder/fuckDelete.txt",
-		"/E/myhost/inno studio/js/tools/edgeToolsBase.js",
-		"/E/UnityProjects/lianzheng/Assets/ztcRes/东海视频截图/2.窑洞对话/说明.txt",
-		"/C/Users/easyfrog/Desktop/参考/年会宗旨.txt",
-		"/E/EdgeWorks/shadow/publish/web/shadow.html",
-		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
-		"/E/myhost/inno studio/js/postprocessing/RenderPass.js",
-		"/E/myhost/inno studio/projects/bone/edgeEvents.js",
-		"/E/myhost/inno studio/projects/bone/bone_grunt.js",
-		"/E/myhost/inno studio/js/controls/MouseControls.js",
-		"/E/myhost/inno studio/projects/bone/config.js",
-		"/E/myhost/inno studio/projects/bone/bone.js",
-		"/E/myhost/inno studio/projects/bone/sceneUp.js"
+		"/E/myhost/inno studio/templates/project_grunt.js"
 	],
 	"find":
 	{
@@ -1280,6 +1284,44 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"spacular",
+			"shaderChunk",
+			"5",
+			"USE_EMISSIVEMAP",
+			"tColor",
+			"THREE.ShaderChunk",
+			"meshphong_frag",
+			"ShaderChunk",
+			"ShaderLib.phong",
+			"THREE.ShaderLib.phong",
+			"ShaderLib.phong",
+			"ShaderLib",
+			"StandardMaterial",
+			"blurY",
+			"blurX",
+			"create",
+			"')",
+			"2",
+			"glowColor",
+			"viewVector",
+			"shaderSepia",
+			"autoClear",
+			" * 1.3",
+			"Game.instance",
+			"effectHorizBlur",
+			"()\n",
+			"effectRenderObject",
+			"CopyShader",
+			"MaskPass",
+			"this.",
+			"kernelSize",
+			"effectCopy",
+			"this",
+			"effectSepia",
+			"composer",
+			"Composer",
+			"composer",
+			"this",
 			"from",
 			".",
 			"25",
@@ -1369,45 +1411,7 @@
 			"addComponent",
 			"visi",
 			"callback",
-			"_js_file_reader",
-			"}\n",
-			"console",
-			"cameraController",
-			"minOpacity",
-			"movement",
-			"Shader",
-			"shader",
-			"Shader",
-			"shader",
-			"Shader",
-			"shader",
-			"Shader",
-			"shader",
-			"Shader",
-			"shader",
-			"movement",
-			"isWheel",
-			"movement",
-			"onMouseWheel",
-			"this",
-			"lastRotateLeft",
-			"rotateStart",
-			"console.log",
-			"rotateStart",
-			"thetaDelta",
-			"fadeMode",
-			"fade",
-			"this.fadeSpeed",
-			"this.isMouseUp",
-			"isMouseUp",
-			"thetaDelta",
-			"phiDelta",
-			"changeEvent",
-			"update",
-			"phi",
-			"RotateUp",
-			"rotateUp",
-			"rotateDelta"
+			"_js_file_reader"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1500,6 +1504,30 @@
 		"selected_items":
 		[
 			[
+				"land",
+				"projects\\demo\\landscape.js"
+			],
+			[
+				"th",
+				"js\\threejs\\three.js"
+			],
+			[
+				"fr",
+				"js\\coms\\materials\\fresnelMaterial.js"
+			],
+			[
+				"l",
+				"projects\\demo\\landscape.js"
+			],
+			[
+				"ga",
+				"js\\webShow\\game.js"
+			],
+			[
+				"gam",
+				"js\\webShow\\game.js"
+			],
+			[
 				"g",
 				"js\\webShow\\game.js"
 			],
@@ -1510,10 +1538,6 @@
 			[
 				"fri",
 				"projects\\firstroom\\firstroom.js"
-			],
-			[
-				"gam",
-				"js\\webShow\\game.js"
 			],
 			[
 				"fir",
@@ -1529,10 +1553,6 @@
 			],
 			[
 				"game",
-				"js\\webShow\\game.js"
-			],
-			[
-				"ga",
 				"js\\webShow\\game.js"
 			],
 			[
@@ -1614,10 +1634,6 @@
 			[
 				"dem",
 				"projects\\demo\\demo.js"
-			],
-			[
-				"land",
-				"projects\\demo\\landscape.js"
 			],
 			[
 				"demo",

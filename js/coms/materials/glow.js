@@ -6,7 +6,7 @@ var vertexShader = [
     'void main()',
     '{',   
         'vec3 vNormal = normal;',
-        'vec3 vNormel = normalize( modelMatrix * vec4(position, 1.0)).xyz - cameraPosition );',   // -- worldPosition
+        'vec3 vNormel = normalize( (modelMatrix * vec4(position, 1.0)).xyz - cameraPosition );',   // -- worldPosition
         'intensity = pow( abs(c - dot(vNormal, vNormel)), p );',
         'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );',
     '}'
