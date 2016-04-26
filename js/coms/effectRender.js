@@ -27,6 +27,7 @@ var effectRender = function( ps ) {
 };
 
 effectRender.prototype.render = function(delta) {
+    if (this.preRender) {this.preRender();}
     this.composer.render(delta);
 };
 
@@ -58,6 +59,8 @@ effectRender.prototype.addPass = function(pass, lastRTS) {
             if ( len > 0 && 'renderToScreen' in s.composer.passes[len - 1] ) {
                 s.composer.passes[len - 1].renderToScreen = lastRTS;
             }
+            if (itm.preRender) {s.preRender = itm.preRender;} // preRender
+
             s.composer.addPass(itm);
         }
     });

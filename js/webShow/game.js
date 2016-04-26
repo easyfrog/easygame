@@ -567,16 +567,23 @@
 			if (gn.name != groupName) {		// if not my groupName return
 				return;
 			}
+
+			var removele = false;	// if remove a listener need to return true
+
 			alldone = false;
 			count ++;
+
 			if (count == seas.length) {
 				alldone = true;
 				s.removeEventListener(Game.LOADCOMPLETE, cb);
+				removele = true;
 			}
 
 			if (callback) {
 				callback(alldone, count, seas.length, gn);
 			}
+
+			return removele;
 		};
 
 		if (callback) {
