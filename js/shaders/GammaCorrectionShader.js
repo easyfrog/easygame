@@ -1,15 +1,15 @@
 /**
- * @author alteredq / http://alteredqualia.com/
+ * @author WestLangley / http://github.com/WestLangley
  *
- * Colorify shader
+ * Gamma Correction Shader
+ * http://en.wikipedia.org/wiki/gamma_correction
  */
 
-THREE.ColorifyShader = {
+THREE.GammaCorrectionShader = {
 
 	uniforms: {
 
 		"tDiffuse": { type: "t", value: null },
-		"color":    { type: "c", value: new THREE.Color( 0xffffff ) }
 
 	},
 
@@ -28,19 +28,15 @@ THREE.ColorifyShader = {
 
 	fragmentShader: [
 
-		"uniform vec3 color;",
 		"uniform sampler2D tDiffuse;",
 
 		"varying vec2 vUv;",
 
 		"void main() {",
 
-			"vec4 texel = texture2D( tDiffuse, vUv );",
+			"vec4 tex = texture2D( tDiffuse, vec2( vUv.x, vUv.y ) );",
 
-			"vec3 luma = vec3( 0.299, 0.587, 0.114 );",
-			"float v = dot( texel.xyz, luma );",
-
-			"gl_FragColor = vec4( v * color, texel.w );",
+			"gl_FragColor = LinearToGamma( tex, float( GAMMA_FACTOR ) );",
 
 		"}"
 

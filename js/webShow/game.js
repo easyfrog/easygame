@@ -263,7 +263,7 @@
 		
 		// console.log(mousePosition.x, s.width * s.stageScale, window.innerWidth);
 
-		var vector = new THREE.Vector3(mx, my, 1);
+		var vector = new THREE.Vector3(mx, my, 0);
 		vector.unproject(s.camera);
 		var ray = new THREE.Raycaster(s.camera.position, vector.sub(s.camera.position).normalize());
 
@@ -457,6 +457,8 @@
 			return;
 		}
 
+		this.renderer.clear();
+
 		var _delta = this.getDeltaTime() * 1000;
 
 		this.sh.update();
@@ -486,7 +488,7 @@
 		this.scene.overrideMaterial = null;
 		this.composer.render(_delta);
 		//*/
-		this.renderer.clear();
+		
 		if (this.custormRenderFunction) {
 			this.custormRenderFunction(_delta);	
 		} else {

@@ -46,7 +46,7 @@ THREE.FresnelShader = {
 
 		"}"
 
-	].join("\n"),
+	].join( "\n" ),
 
 	fragmentShader: [
 
@@ -69,9 +69,6 @@ THREE.FresnelShader = {
 
 		"}"
 
-	].join("\n")
+	].join( "\n" )
 
 };
-
-
-module.exports = THREE.FresnelShader;

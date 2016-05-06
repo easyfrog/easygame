@@ -30,7 +30,8 @@
 				"js/shaders/**.js",
 				"js/postprocessing/**.js",
 				"**/*_grunt.js",
-				"projects/_closed/**/*.js"
+				"projects/_closed/**/*.js",
+				"js/coms/**/*.js"
 			],
 			"libs":
 			[

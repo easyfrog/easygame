@@ -10,11 +10,13 @@
 var game = Game.instance;
 
 // use mudules
-require('../shaders/CopyShader');
+require('../postprocessing/EffectComposer');
+
 require('../postprocessing/ShaderPass');
 require('../postprocessing/MaskPass');
-require('../postprocessing/EffectComposer');
 require('../postprocessing/RenderPass');
+
+require('../shaders/CopyShader');
 
 var effectRender = function( ps ) {
     this.name = 'effectRender';
