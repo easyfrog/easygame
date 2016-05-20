@@ -4,6 +4,150 @@
 		"selected_items":
 		[
 			[
+				"add",
+				"addEventListener(type, listener)"
+			],
+			[
+				"cam",
+				"cameraController (?)"
+			],
+			[
+				"u",
+				"utils (obj)"
+			],
+			[
+				"do",
+				"document (obj)"
+			],
+			[
+				"l",
+				"lensFlare"
+			],
+			[
+				"T",
+				"Text (fn/0)"
+			],
+			[
+				"an",
+				"animationsData"
+			],
+			[
+				"on",
+				"onComplete"
+			],
+			[
+				"ani",
+				"animations"
+			],
+			[
+				"anim",
+				"animations"
+			],
+			[
+				"Cu",
+				"CubeTextureLoader(manager)"
+			],
+			[
+				"build",
+				"buildtjs"
+			],
+			[
+				"fla",
+				"flatShading"
+			],
+			[
+				"fl",
+				"flatShading"
+			],
+			[
+				"nose",
+				"noiseComp"
+			],
+			[
+				"update",
+				"updateCallback"
+			],
+			[
+				"sp",
+				"speedMax"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"particl",
+				"particleMesh"
+			],
+			[
+				"mu",
+				"multiplyVectors"
+			],
+			[
+				"mesh",
+				"meshGoup"
+			],
+			[
+				"par",
+				"particleMesh"
+			],
+			[
+				"worldV",
+				"worldValues"
+			],
+			[
+				"worl",
+				"worldRecord"
+			],
+			[
+				"world",
+				"worldVelocity"
+			],
+			[
+				"particleM",
+				"particleMesh	(?)"
+			],
+			[
+				"lo",
+				"loadTexture(url, mapping, onLoad, onError)"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"cus",
+				"customMesh"
+			],
+			[
+				"Add",
+				"AdditiveBlending	(num)"
+			],
+			[
+				"Lo",
+				"loadTexture(url, mapping, onLoad, onError)"
+			],
+			[
+				"Len",
+				"LensFlare(texture, size, distance, blending, color)"
+			],
+			[
+				"wor",
+				"worldVelocity"
+			],
+			[
+				"ac",
+				"acceler"
+			],
+			[
+				"parti",
+				"particleMesh"
+			],
+			[
 				"depth",
 				"depthTest"
 			],
@@ -44,10 +188,6 @@
 				"opacityArr"
 			],
 			[
-				"parti",
-				"particleGeometry"
-			],
-			[
 				"Par",
 				"ParticleEngine"
 			],
@@ -64,16 +204,8 @@
 				"DirectionalLight(color, intensity)"
 			],
 			[
-				"add",
-				"add(object)"
-			],
-			[
 				"ver",
 				"vertices	[]"
-			],
-			[
-				"sp",
-				"sphere2	{}"
 			],
 			[
 				"appendC",
@@ -122,10 +254,6 @@
 			[
 				"opa",
 				"opacity"
-			],
-			[
-				"world",
-				"worldNormal"
 			],
 			[
 				"uni",
@@ -238,10 +366,6 @@
 			[
 				"Imag",
 				"ImageUtils	{}"
-			],
-			[
-				"par",
-				"particleMat	{}"
 			],
 			[
 				"Pa",
@@ -380,10 +504,6 @@
 				"dialogM	(?)"
 			],
 			[
-				"cam",
-				"cameraBack(time)"
-			],
-			[
 				"getSY",
 				"getSymbolElement"
 			],
@@ -394,168 +514,9 @@
 			[
 				"time",
 				"timeScale	(num)"
-			],
-			[
-				"ca",
-				"camera	{}"
-			],
-			[
-				"fl",
-				"fly2()"
-			],
-			[
-				"addEve",
-				"addEventListener(type, listener)"
-			],
-			[
-				"win",
-				"wing2	(?)"
-			],
-			[
-				"c",
-				"comp	component"
-			],
-			[
-				"setCle",
-				"setClearColor(color, alpha)"
-			],
-			[
-				"ns",
-				"number_seq	(str)"
-			],
-			[
-				"num",
-				"number_seq	(str)"
-			],
-			[
-				"co",
-				"colorMap	{}"
-			],
-			[
-				"col",
-				"color_seq	(str)"
-			],
-			[
-				"sm",
-				"smileComp	(?)"
-			],
-			[
-				"smile",
-				"smile	{}"
-			],
-			[
-				"smi",
-				"smileComp	(?)"
-			],
-			[
-				"enab",
-				"enabled	(bool)"
-			],
-			[
-				"set",
-				"setFromRotationMatrix(m)"
-			],
-			[
-				"rota",
-				"rotationMatrix	{}"
-			],
-			[
-				"makeR",
-				"makeRotationAxis(axis, angle)"
-			],
-			[
-				"Vec",
-				"Vector3(x, y, z)"
-			],
-			[
-				"action",
-				"actionComp	{}"
-			],
-			[
-				"setA",
-				"setAnimationTime(animation, stateName, percent)"
-			],
-			[
-				"ins",
-				"instance"
-			],
-			[
-				"ani",
-				"animObjects	{}"
-			],
-			[
-				"auto",
-				"autoBackDelay"
-			],
-			[
-				"zhu",
-				"zhuan()"
-			],
-			[
-				"fie",
-				"feiStr	(?)"
-			],
-			[
-				"Tex",
-				"Texture(image, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy)"
-			],
-			[
-				"needs",
-				"needsUpdate(value)"
-			],
-			[
-				"n",
-				"normalScale	(?)"
-			],
-			[
-				"is",
-				"isLightOn	(bool)"
-			],
-			[
-				"au",
-				"autoBack	(?)"
 			]
 		]
 	},
-	"buffers":
-	[
-		{
-			"contents": "/**\n* @author Lee Stemkoski   http://www.adelphi.edu/~stemkoski/\n*/\n\n///////////////////////////////////////////////////////////////////////////////\n\n/////////////\n// SHADERS //\n/////////////\n\n// attribute: data that may be different for each particle (such as size and color);\n//      can only be used in vertex shader\n// varying: used to communicate data from vertex shader to fragment shader\n// uniform: data that is the same for each particle (such as texture)\n\nparticleVertexShader = [\n	\"attribute vec3  customColor;\",\n	\"attribute float customOpacity;\",\n	\"attribute float customSize;\",\n	\"attribute float customAngle;\",\n	\"attribute float customVisible;\",  // float used as boolean (0 = false, 1 = true)\n	\"varying vec4  vColor;\",\n	\"varying float vAngle;\",\n	\"void main()\",\n	\"{\",\n		\"if ( customVisible > 0.5 )\", 				// true\n			\"vColor = vec4( customColor, customOpacity);\", //    customOpacity set color associated to vertex; use later in fragment shader.\n		\"else\",							// false\n			\"vColor = vec4(0.0);\", 		//     make particle invisible.\n			\n		\"vAngle = customAngle;\",\n\n		\"vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );\",\n		\"gl_PointSize = customSize * ( 300.0 / length( mvPosition.xyz ) );\",     // scale particles as objects in 3D space\n		\"gl_Position = projectionMatrix * mvPosition;\",\n	\"}\"\n].join(\"\\n\");\n\nparticleFragmentShader = [\n	\"uniform sampler2D texture;\",\n	\"varying vec4 vColor;\", 	\n	\"varying float vAngle;\",   \n	\"void main()\", \n	\"{\",\n		\"vec4 color = vColor;\",\n\n		\"#ifdef TEXTURE\",\n			\"float c = cos(vAngle);\",\n			\"float s = sin(vAngle);\",\n			\"vec2 rotatedUV = vec2(c * (gl_PointCoord.x - 0.5) + s * (gl_PointCoord.y - 0.5) + 0.5,\", \n			                      \"c * (gl_PointCoord.y - 0.5) - s * (gl_PointCoord.x - 0.5) + 0.5);\",  // rotate UV coordinates to rotate texture\n		    \"color = color * texture2D( texture,  rotatedUV );\",\n	    \"#endif\",\n\n		\"gl_FragColor = color;\",    // sets an otherwise white particle texture to desired color\n	\"}\"\n].join(\"\\n\");\n\n///////////////////////////////////////////////////////////////////////////////\n\n/////////////////\n// TWEEN CLASS //\n/////////////////\n\nfunction Tween(timeArray, valueArray) {\n	this.times  = timeArray || [];\n	this.values = valueArray || [];\n}\n\nTween.prototype.lerp = function(t) {\n	var i = 0;\n	var n = this.times.length;\n	while (i < n && t > this.times[i])  \n		i++;\n	if (i == 0) return this.values[0];\n	if (i == n)	return this.values[n-1];\n	var p = (t - this.times[i-1]) / (this.times[i] - this.times[i-1]);\n	if (this.values[0] instanceof THREE.Vector3)\n		return this.values[i-1].clone().lerp( this.values[i], p );\n	else // its a float\n		return this.values[i-1] + p * (this.values[i] - this.values[i-1]);\n}\n\n///////////////////////////////////////////////////////////////////////////////\n\n////////////////////\n// PARTICLE CLASS //\n////////////////////\n\nfunction Particle()\n{\n	this.position     = new THREE.Vector3();\n	this.velocity     = new THREE.Vector3(); // units per second\n	this.acceleration = new THREE.Vector3();\n\n	this.angle             = 0.0;\n	this.angleVelocity     = 0.0; // degrees per second\n	this.angleAcceleration = 0.0; // degrees per second, per second\n	\n	this.size = 16.0;\n\n	this.color   = new THREE.Color();\n	this.opacity = 1.0;\n			\n	this.age   = 0;\n	this.alive = 0.0; // use float instead of boolean for shader purposes	\n}\n\nParticle.prototype.update = function(dt)\n{\n	this.position.add( this.velocity.clone().multiplyScalar(dt) );\n	this.velocity.add( this.acceleration.clone().multiplyScalar(dt) );\n	\n	// convert from degrees to radians: 0.01745329251 = Math.PI/180\n	this.angle         += this.angleVelocity     * 0.01745329251 * dt;\n	this.angleVelocity += this.angleAcceleration * 0.01745329251 * dt;\n\n	this.age += dt;\n	\n	// if the tween for a given attribute is nonempty,\n	//  then use it to update the attribute's value\n\n	if ( this.sizeTween.times.length > 0 )\n		this.size = this.sizeTween.lerp( this.age );\n				\n	if ( this.colorTween.times.length > 0 )\n	{\n		var colorHSL = this.colorTween.lerp( this.age );\n		this.color = new THREE.Color().setHSL( colorHSL.x, colorHSL.y, colorHSL.z );\n	}\n	\n	if ( this.opacityTween.times.length > 0 )\n		this.opacity = this.opacityTween.lerp( this.age );\n}\n	\n///////////////////////////////////////////////////////////////////////////////\n\n///////////////////////////\n// PARTICLE ENGINE CLASS //\n///////////////////////////\n\nvar Type = Object.freeze({ \"CUBE\":1, \"SPHERE\":2 });\n\nfunction ParticleEngine()\n{\n	/////////////////////////\n	// PARTICLE PROPERTIES //\n	/////////////////////////\n	\n	this.positionStyle = Type.CUBE;		\n	this.positionBase   = new THREE.Vector3();\n	// cube shape data\n	this.positionSpread = new THREE.Vector3();\n	// sphere shape data\n	this.positionRadius = 0; // distance from base at which particles start\n	\n	this.velocityStyle = Type.CUBE;	\n	// cube movement data\n	this.velocityBase       = new THREE.Vector3();\n	this.velocitySpread     = new THREE.Vector3(); \n	// sphere movement data\n	//   direction vector calculated using initial position\n	this.speedBase   = 0;\n	this.speedSpread = 0;\n	\n	this.accelerationBase   = new THREE.Vector3();\n	this.accelerationSpread = new THREE.Vector3();	\n	\n	this.angleBase               = 0;\n	this.angleSpread             = 0;\n	this.angleVelocityBase       = 0;\n	this.angleVelocitySpread     = 0;\n	this.angleAccelerationBase   = 0;\n	this.angleAccelerationSpread = 0;\n	\n	this.sizeBase   = 0.0;\n	this.sizeSpread = 0.0;\n	this.sizeTween  = new Tween();\n\n	// ztc 20160505 add 'pause' feature support\n	this.pause = true;\n	this.initialized = false;\n			\n	// store colors in HSL format in a THREE.Vector3 object\n	// http://en.wikipedia.org/wiki/HSL_and_HSV\n	this.colorBase   = new THREE.Vector3(0.0, 1.0, 0.5); \n	this.colorSpread = new THREE.Vector3(0.0, 0.0, 0.0);\n	this.colorTween  = new Tween();\n	\n	this.opacityBase   = 1.0;\n	this.opacitySpread = 0.0;\n	this.opacityTween  = new Tween();\n\n	this.blendStyle = THREE.NormalBlending; // false;\n\n	this.particleArray = [];\n	this.particlesPerSecond = 100;\n	this.particleDeathAge = 1.0;\n	\n	////////////////////////\n	// EMITTER PROPERTIES //\n	////////////////////////\n	\n	this.emitterAge      = 0.0;\n	this.emitterAlive    = true;\n	this.emitterDeathAge = Number.MAX_VALUE; // time (seconds) at which to stop creating particles.\n\n	// How many particles could be active at any time?\n	this.particleCount = this.particlesPerSecond * Math.min( this.particleDeathAge, this.emitterDeathAge );\n\n	//////////////\n	// THREE.JS // // time (seconds) at which to stop creating particles.\n	\n	//////////////\n	\n	this.particleGeometry = new THREE.BufferGeometry();\n	this.particleTexture  = null;\n	this.particleMaterial = new THREE.ShaderMaterial( \n	{\n		uniforms: \n		{\n			texture:   { type: \"t\", value: this.particleTexture },\n		},\n		vertexShader:   particleVertexShader,\n		fragmentShader: particleFragmentShader,\n		transparent: true, // alphaTest: 0.5,  // if having transparency issues, try including: alphaTest: 0.5, \n		blending: THREE.NormalBlending, depthTest: true\n		\n	});\n	this.particleMesh = new THREE.Mesh();\n\n	// auto update particles\n	this.updateCallback = this._update.bind(this);\n\n	var s = this;\n	Game.instance.addEventListener(Game.UPDATE, s.updateCallback);\n}\n\nParticleEngine.Type = Type;\nParticleEngine.Tween = Tween;\n\nParticleEngine.prototype.setValues = function( parameters )\n{\n	if ( parameters === undefined ) return;\n	\n	this.initialized = false;\n	// clear any previous tweens that might exist\n	this.sizeTween    = new Tween();\n	this.colorTween   = new Tween();\n	this.opacityTween = new Tween();\n	\n	for ( var key in parameters ) \n		this[ key ] = parameters[ key ];\n	\n	// attach tweens to particles\n	Particle.prototype.sizeTween    = this.sizeTween;\n	Particle.prototype.colorTween   = this.colorTween;\n	Particle.prototype.opacityTween = this.opacityTween;	\n	\n	// calculate/set derived particle engine values\n	this.particleArray = [];\n	this.emitterAge      = 0.0;\n	this.emitterAlive    = true;\n	this.particleCount = this.particlesPerSecond * Math.min( this.particleDeathAge, this.emitterDeathAge );\n	\n	this.particleGeometry = null;\n	this.particleMaterial = new THREE.ShaderMaterial( \n	{\n		uniforms: \n		{\n			texture:   { type: \"t\", value: this.particleTexture },\n		},\n		vertexShader:   particleVertexShader,\n		fragmentShader: particleFragmentShader,\n		transparent: true, alphaTest: 0.5, // if having transparency issues, try including: alphaTest: 0.5, \n		blending: THREE.NormalBlending, depthTest: true\n	});\n\n	this.particleMaterial.defines = {\n		\"TEXTURE\": this.particleTexture != null\n	};\n\n	// destroy last particles , true : means don't remove update callback\n	this.destroy(true);\n\n	this.particleMesh = new THREE.Points();\n}\n	\n// helper functions for randomization\nParticleEngine.prototype.randomValue = function(base, spread)\n{\n	return base + spread * (Math.random() - 0.5);\n}\nParticleEngine.prototype.randomVector3 = function(base, spread)\n{\n	var rand3 = new THREE.Vector3( Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5 );\n	return new THREE.Vector3().addVectors( base, new THREE.Vector3().multiplyVectors( spread, rand3 ) );\n}\n\nParticleEngine.prototype.resetParticale = function( particle ) {\n	if (this.positionStyle == Type.CUBE)\n		particle.position = this.randomVector3( this.positionBase, this.positionSpread ); \n	if (this.positionStyle == Type.SPHERE)\n	{\n		var z = 2 * Math.random() - 1;\n		var t = 6.2832 * Math.random();\n		var r = Math.sqrt( 1 - z*z );\n		var vec3 = new THREE.Vector3( r * Math.cos(t), r * Math.sin(t), z );\n		particle.position = new THREE.Vector3().addVectors( this.positionBase, vec3.multiplyScalar( this.positionRadius ) );\n	}\n		\n	if ( this.velocityStyle == Type.CUBE )\n	{\n		particle.velocity     = this.randomVector3( this.velocityBase,     this.velocitySpread ); \n	}\n	if ( this.velocityStyle == Type.SPHERE )\n	{\n		var direction = new THREE.Vector3().subVectors( particle.position, this.positionBase );\n		var speed     = this.randomValue( this.speedBase, this.speedSpread );\n		particle.velocity  = direction.normalize().multiplyScalar( speed );\n	}\n	\n	particle.acceleration = this.randomVector3( this.accelerationBase, this.accelerationSpread ); \n\n	particle.angle             = this.randomValue( this.angleBase,             this.angleSpread );\n	particle.angleVelocity     = this.randomValue( this.angleVelocityBase,     this.angleVelocitySpread );\n	particle.angleAcceleration = this.randomValue( this.angleAccelerationBase, this.angleAccelerationSpread );\n\n	particle.size = this.randomValue( this.sizeBase, this.sizeSpread );\n\n	var color = this.randomVector3( this.colorBase, this.colorSpread );\n	particle.color = new THREE.Color().setHSL( color.x, color.y, color.z );\n	\n	particle.opacity = this.randomValue( this.opacityBase, this.opacitySpread );\n\n	particle.age   = 0;\n	particle.alive = 0; // particles initialize as inactive\n};\n\nParticleEngine.prototype.createParticle = function() {\n	var particle = new Particle();\n	this.resetParticale(particle);\n\n	return particle;\n}\n\nParticleEngine.prototype.initialize = function() {\n	this.initialized = true;\n\n	var posArr = [],\n		visibleArr = [],\n		colorArr = [],\n		opacityArr = [],\n		sizeArr = [],\n		angleArr = [];\n\n	// link particle data with geometry/material data\n	for (var i = 0; i < this.particleCount; i++)\n	{\n		// remove duplicate code somehow, here and in update function below.\n		this.particleArray[i] = this.createParticle();\n		// this.particleGeometry.vertices[i] = this.particleArray[i].position;\n		var p = this.particleArray[i];\n		posArr.push(p.position.x, p.position.y, p.position.z);\n		visibleArr.push(p.alive);\n		colorArr.push(p.color.r, p.color.g, p.color.b);\n		opacityArr.push(p.opacity);\n		sizeArr.push(p.size);\n		angleArr.push(p.angle);\n	}\n	this.particleGeometry = new THREE.BufferGeometry();\n\n	this.particleGeometry.addAttribute('position', new THREE.BufferAttribute( new Float32Array(posArr), 3 ));\n	this.particleGeometry.addAttribute('customVisible', new THREE.BufferAttribute( new Float32Array(visibleArr), 1 ));\n	this.particleGeometry.addAttribute('customColor', new THREE.BufferAttribute( new Float32Array(colorArr), 3 ));\n	this.particleGeometry.addAttribute('customOpacity', new THREE.BufferAttribute( new Float32Array(opacityArr), 1 ));\n	this.particleGeometry.addAttribute('customSize', new THREE.BufferAttribute( new Float32Array(sizeArr), 1 ));\n	this.particleGeometry.addAttribute('customAngle', new THREE.BufferAttribute( new Float32Array(angleArr), 1 ));\n	\n	this.particleMaterial.blending = this.blendStyle;\n	if ( this.blendStyle != THREE.NormalBlending) \n		this.particleMaterial.depthTest = false;\n	\n	this.particleMesh = new THREE.Points( this.particleGeometry, this.particleMaterial );\n	// this.particleMesh = new THREE.Points( this.particleGeometry, new THREE.PointsMaterial() );\n	this.particleMesh.dynamic = true;\n	this.particleMesh.sortParticles = true;\n\n	// scene.add( this.particleMesh );\n	Game.instance.scene.add( this.particleMesh );\n\n	console.log('ParticleEngine initialize.');\n}\n\nParticleEngine.prototype.update = function(dt)\n{\n	if (!this.initialized) {\n		return;\n	}\n\n	var recycleIndices = [];\n	\n	// update particle data\n	for (var i = 0; i < this.particleCount; i++)\n	{\n		if ( this.particleArray[i].alive )\n		{\n			this.particleArray[i].update(dt);\n\n			// check if particle should expire\n			// could also use: death by size<0 or alpha<0.\n			if ( this.particleArray[i].age > this.particleDeathAge ) \n			{\n				this.particleArray[i].alive = 0.0;\n				recycleIndices.push(i);\n			}\n			\n			// YOU WILL CHANGE ATTRIBUTE's array !!!!\n			this.particleGeometry.attributes.position.array[i * 3] = this.particleArray[i].position.x;\n			this.particleGeometry.attributes.position.array[i * 3 + 1] = this.particleArray[i].position.y;\n			this.particleGeometry.attributes.position.array[i * 3 + 2] = this.particleArray[i].position.z;\n\n			this.particleGeometry.attributes.customVisible.array[i]       = this.particleArray[i].alive;\n			this.particleGeometry.attributes.customColor.array[i * 3]     = this.particleArray[i].color.r;\n			this.particleGeometry.attributes.customColor.array[i * 3 + 1] = this.particleArray[i].color.g;\n			this.particleGeometry.attributes.customColor.array[i * 3 + 2] = this.particleArray[i].color.b;\n			this.particleGeometry.attributes.customOpacity.array[i]       = this.particleArray[i].opacity;\n			this.particleGeometry.attributes.customSize.array[i]          = this.particleArray[i].size;\n			this.particleGeometry.attributes.customAngle.array[i]         = this.particleArray[i].angle;\n\n			this.particleGeometry.attributes.position.needsUpdate      = true;\n			this.particleGeometry.attributes.customVisible.needsUpdate = true;\n			this.particleGeometry.attributes.customColor.needsUpdate   = true;\n			this.particleGeometry.attributes.customOpacity.needsUpdate = true;\n			this.particleGeometry.attributes.customSize.needsUpdate    = true;\n			this.particleGeometry.attributes.customAngle.needsUpdate   = true;\n		}		\n	}\n\n	// check if particle emitter is still running\n	if ( !this.emitterAlive ) return;\n\n	// if no particles have died yet, then there are still particles to activate\n	if ( this.emitterAge < this.particleDeathAge && !this.pause) {\n		// determine indices of particles to activate\n		var startIndex = Math.round( this.particlesPerSecond * (this.emitterAge +  0) );\n		var   endIndex = Math.round( this.particlesPerSecond * (this.emitterAge + dt) );\n		if  ( endIndex > this.particleCount ) \n			  endIndex = this.particleCount; \n			  \n		for (var i = startIndex; i < endIndex; i++) {\n			this.particleArray[i].alive = 1.0;		\n		}\n	}\n\n	// if any particles have died while the emitter is still running, we imediately recycle them\n	if (!this.pause) {\n		for (var j = 0; j < recycleIndices.length; j++)\n		{\n			var i = recycleIndices[j];\n			this.resetParticale(this.particleArray[i]);\n			this.particleArray[i].alive = 1.0; // activate right away\n			// this.particleGeometry.vertices[i] = this.particleArray[i].position;\n			this.particleGeometry.attributes.position.array[i * 3] = this.particleArray[i].position.x;\n			this.particleGeometry.attributes.position.array[i * 3 + 1] = this.particleArray[i].position.y;\n			this.particleGeometry.attributes.position.array[i * 3 + 2] = this.particleArray[i].position.z;\n		}\n	}\n\n	// stop emitter?\n	this.emitterAge += dt;\n	if ( this.emitterAge > this.emitterDeathAge )  this.emitterAlive = false;\n}\n\nParticleEngine.prototype._update = function(dt) {\n	var s = this;\n	s.update(dt / 1000);\n};\n\nParticleEngine.prototype.stop = function() {\n	this.pause = true;\n};\n\nParticleEngine.prototype.start = function() {\n	if (!this.initialized) {\n		this.initialize();\n	}\n\n	this.pause = false;\n\n	this.emitterAge = 0;\n};\n\nParticleEngine.prototype.destroy = function(boo) {\n	var s = this;\n	if (!boo) {\n		Game.instance.removeEventListener(Game.UPDATE, s.updateCallback);\n	}\n    Game.instance.scene.remove( s.particleMesh );\n}\n\n///////////////////////////////////////////////////////////////////////////////\n\nmodule.exports = ParticleEngine;",
-			"file": "js/coms/particle/ParticleEngine.js",
-			"file_size": 16920,
-			"file_write_time": 131069302101244873,
-			"settings":
-			{
-				"buffer_size": 16920,
-				"line_ending": "Unix",
-				"scratch": true
-			}
-		},
-		{
-			"file": "js/webShow/game.js",
-			"settings":
-			{
-				"buffer_size": 18370,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "projects/demo/particle.js",
-			"settings":
-			{
-				"buffer_size": 3252,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/coms/particle/ParticleEngineExamples.js",
-			"settings":
-			{
-				"buffer_size": 9891,
-				"line_ending": "Unix"
-			}
-		}
-	],
 	"build_system": "Packages/JavaScript & Coffeescript Build Systems/xJs.sublime-build",
 	"build_system_choices":
 	[
@@ -592,6 +553,50 @@
 				"Project: Edit Project"
 			],
 			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"tern",
+				"tern_for_sublime: Describe"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
+			],
+			[
+				"rel",
+				"TernJS: Reload"
+			],
+			[
+				"usre",
+				"Minify::User File Settings"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
 				"use",
 				"Preferences: Settings - User"
 			],
@@ -600,20 +605,8 @@
 				"TernJS: Reload"
 			],
 			[
-				"user",
-				"Preferences: Settings - User"
-			],
-			[
-				"reload",
-				"TernJS: Reload"
-			],
-			[
 				"relo",
 				"TernJS: Reload"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
 			],
 			[
 				"statu",
@@ -624,16 +617,8 @@
 				"Git: Status"
 			],
 			[
-				"rel",
-				"TernJS: Reload"
-			],
-			[
 				"edi",
 				"Project: Edit Project"
-			],
-			[
-				"status",
-				"Git: Status"
 			],
 			[
 				"ssu",
@@ -676,18 +661,6 @@
 				"Color Picker"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"list",
-				"Package Control: List Packages"
-			],
-			[
 				"ss js",
 				"Set Syntax: JavaScript"
 			],
@@ -698,10 +671,6 @@
 			[
 				"pus",
 				"Git: Push Current Branch"
-			],
-			[
-				"tern",
-				"tern_for_sublime: Describe"
 			],
 			[
 				"isnt",
@@ -940,10 +909,6 @@
 				"Gist: Open Gist"
 			],
 			[
-				"upd",
-				"Gist: Update File"
-			],
-			[
 				"gistop",
 				"Gist: Open Gist"
 			],
@@ -1094,10 +1059,6 @@
 			[
 				"set unity",
 				"Set Syntax: Unity C#"
-			],
-			[
-				"packagecontrol: ",
-				"Package Control: List Packages"
 			]
 		],
 		"width": 536.0
@@ -1179,44 +1140,104 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/E/myhost/inno studio",
-		"/E/myhost/inno studio/js",
-		"/E/myhost/inno studio/js/coms",
-		"/E/myhost/inno studio/js/coms/particle",
-		"/E/myhost/inno studio/projects",
-		"/E/myhost/inno studio/projects/demo"
-	],
 	"file_history":
 	[
+		"/E/myhost/inno studio/.tern-project",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/E/myhost/inno studio/js/coms/particle/ParticleEngine.js",
-		"/E/myhost/inno studio/projects/demo/particle.js",
-		"/E/myhost/inno studio/js/webShow/game.js",
-		"/C/Users/easyfrog/Desktop/sn.txt",
-		"/E/myhost/inno studio/projects/demo/demo.js",
+		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
-		"/E/myhost/inno studio/js/coms/materials/fresnelPhong.js",
-		"/E/myhost/inno studio/projects/demo/mirror.js",
-		"/E/myhost/inno studio/projects/demo/bakeTest.js",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
+		"/E/myhost/inno studio/js/webShow/Tween.js",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/myhost/inno studio/projects/firstroom/scripts/edge.js",
+		"/D/libs/three.js-r76/examples/webgl_loader_sea3d.html",
+		"/D/libs/three.js-r76/examples/webgl_loader_sea3d_keyframe.html",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLoader.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DAnimation.js",
+		"/E/myhost/inno studio/js/coms/analyzeScene.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DNodeMaterial.js",
+		"/E/myhost/inno studio/projects/demo/particle.js",
 		"/E/myhost/inno studio/js/coms/effectRender.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/indexSkin.html",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLZMA.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3D.js",
+		"/E/myhost/inno studio/js/loaders/SEA3DNodeMaterial.js",
+		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
+		"/E/myhost/inno studio/js/loaders/SEA3D.js",
+		"/C/Users/easyfrog/Desktop/SEA3DLoader.js",
+		"/E/myhost/inno studio/js/threejs/NodeMaterial.js",
+		"/E/myhost/inno studio/js/loaders/SEA3DAnimation.js",
+		"/E/myhost/inno studio/js/coms/effects/hue.js",
+		"/E/myhost/inno studio/js/effects/StereoEffect.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/index.html",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/indexVA.html",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/E/myhost/inno studio/js/coms/vr/vr.js",
+		"/E/myhost/inno studio/js/controls/VRControls.js",
+		"/D/libs/webvr-polyfill-master/examples/basic/index.html",
+		"/E/myhost/inno studio/projects/demo/demo.js",
+		"/E/myhost/inno studio/projects/demo/landscape.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/Gruntfile.js",
+		"/E/myhost/inno studio/misc/old/17000/threejs/three.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/indexMorph.html",
+		"/E/myhost/inno studio/js/coms/lensFlare.js",
+		"/E/myhost/inno studio/js/coms/modifiers/noise.js",
+		"/E/myhost/inno studio/js/coms/particle/ParticleEngine.js",
+		"/E/myhost/inno studio/projects/demo/skyBox.js",
+		"/E/myhost/inno studio/package.json",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/threejs/three.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/threejs/NodeMaterial.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/ammo.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
+		"/E/myhost/inno studio/projects/demo/panoramas.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.js",
+		"/D/libs/webvr-polyfill-master/src/mouse-keyboard-vr-display.js",
+		"/E/myhost/inno studio/projects/demo/mirror.js",
+		"/C/Users/easyfrog/Downloads/TheAviator/js/game.js",
+		"/E/myhost/inno studio/js/coms/materials/mirror.js",
+		"/E/myhost/inno studio/js/coms/vr/webvr-polyfill.js",
+		"/E/UnityProjects/lianzheng/xx/config.txt",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Minify.sublime-settings",
+		"/E/CGLobal/progs/config.txt",
+		"/C/Users/easyfrog/Downloads/TheAviator/part2.html",
+		"/D/libs/webvr-polyfill-master/src/distortion/distortion.js",
+		"/D/libs/webvr-polyfill-master/src/deps/headtrackr.js",
+		"/D/libs/webvr-polyfill-master/.npmignore",
+		"/D/libs/webvr-polyfill-master/package.json",
+		"/E/myhost/inno studio/js/coms/vr/WebVR.js",
+		"/D/libs/webvr-polyfill-master/build/webvr-polyfill.js",
+		"/D/libs/webvr-polyfill-master/examples/basic/node_modules/three/three.js",
+		"/D/libs/three.js-r76/examples/js/WebVR.js",
+		"/D/libs/three.js-r76/examples/js/effects/VREffect.js",
+		"/D/setup/FlashFXPliehuo4.2.6/Cache/~flashfxp/B0F8A313_view.tmp/HSkyBox.js",
+		"/E/UnityProjects/lianzheng/Demo/20151116_Data/config.txt",
+		"/E/EdgeWorks/demo/publish/web/main.js",
+		"/C/Users/easyfrog/Desktop/sn.txt",
+		"/E/myhost/inno studio/js/coms/materials/glow.js",
+		"/E/myhost/inno studio/js/coms/com_Angel.js",
+		"/E/myhost/inno studio/js/coms/materials/fresnelMaterial.js",
+		"/E/myhost/inno studio/js/coms/materials/fresnelPhong.js",
+		"/E/myhost/inno studio/js/coms/particle/ParticleEngineExamples.js",
+		"/C/Users/easyfrog/Desktop/BVH-labs/index.js",
+		"/C/Users/easyfrog/Desktop/BVH-labs/style.css",
+		"/C/Users/easyfrog/Desktop/BVH-labs/index.html",
+		"/E/myhost/inno studio/projects/demo/bakeTest.js",
 		"/C/Users/easyfrog/Desktop/ParticleEngineExamples.js",
 		"/E/UnityProjects/Vive/Assets/Plugins/openvr_api.cs",
 		"/E/UnityProjects/Vive/Assets/SteamVR/readme.txt",
-		"/E/myhost/inno studio/js/coms/materials/mirror.js",
 		"/C/Users/easyfrog/Desktop/ceshi.max",
-		"/E/myhost/inno studio/js/coms/analyzeScene.js",
 		"/E/myhost/inno studio/js/coms/com_PointLockController.js",
-		"/E/myhost/inno studio/js/coms/materials/fresnelMaterial.js",
 		"/D/libs/three.js-r76/examples/js/Mirror.js",
-		"/E/myhost/inno studio/projects/demo/landscape.js",
 		"/E/myhost/inno studio/projects/demo/ssao.js",
 		"/E/myhost/inno studio/js/shaders/MirrorShader.js",
 		"/E/myhost/inno studio/js/coms/effects/smaa.js",
 		"/E/myhost/inno studio/js/coms/effects/bc.js",
-		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
 		"/E/myhost/inno studio/js/coms/effects/film.js",
 		"/D/libs/three.js-r76/examples/js/GPUParticleSystem.js",
@@ -1227,14 +1248,8 @@
 		"/E/myhost/inno studio/js/coms/stats.js",
 		"/E/myhost/inno studio/js/threejs/stats.min.js",
 		"/E/myhost/inno studio/projects/firstroom/firstroom_grunt.js",
-		"/E/myhost/inno studio/package.json",
-		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/js/coms/utils/db.js",
-		"/E/CGLobal/progs/config.txt",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/js/shaders/BrightnessContrastShader.js",
-		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
 		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_fragment.glsl",
 		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_pars_fragment.glsl",
 		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_vertex.glsl",
@@ -1246,7 +1261,6 @@
 		"/E/myhost/inno studio/js/shaders/FXAAShader.js",
 		"/E/myhost/inno studio/js/shaders/DOFMipMapShader.js",
 		"/E/myhost/inno studio/js/shaders/FresnelShader_ztc.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.js",
 		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/project_vertex.glsl",
 		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/uv_pars_fragment.glsl",
 		"/E/myhost/inno studio/build/easygame.min.js",
@@ -1255,69 +1269,7 @@
 		"/E/myhost/inno studio/js/coms/effects/bloom.js",
 		"/E/myhost/inno studio/js/shaders/BasicShader.js",
 		"/E/myhost/inno studio/js/coms/effects/vignette.js",
-		"/E/myhost/inno studio/js/coms/effects/sepia.js",
-		"/E/myhost/inno studio/js/coms/effects/color.js",
-		"/E/myhost/inno studio/js/coms/effects/hue.js",
-		"/E/myhost/inno studio/js/postprocessing/FilmPass.js",
-		"/E/myhost/inno studio/js/postprocessing/BloomPass.js",
-		"/E/myhost/inno studio/js/shaders/SepiaShader.js",
-		"/E/myhost/inno studio/js/shaders/HueSaturationShader.js",
-		"/E/myhost/inno studio/js/shaders/ColorCorrectionShader.js",
-		"/E/myhost/inno studio/js/shaders/DigitalGlitch.js",
-		"/E/myhost/inno studio/js/shaders/BlendShader.js",
-		"/E/UnityProjects/ELIFE_S51_project/Assets/Editor/ztc/ResourceChecker.cs",
-		"/E/myhost/inno studio/js/shaders/CopyShader.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/mascot.html",
-		"/E/myhost/inno studio/js/shaders/BokehShader.js",
-		"/E/myhost/inno studio/js/shaders/BokehShader2.js",
-		"/E/myhost/inno studio/js/postprocessing/SavePass.js",
-		"/E/myhost/inno studio/js/shaders/FilmShader.js",
-		"/D/libs/Sea3D/sea3d-gh-pages_1025/Examples/Programmer/WebGL/Three.JS/Basics/lightmap.html",
-		"/E/myhost/inno studio/js/shaders/VignetteShader.js",
-		"/E/myhost/inno studio/js/postprocessing/RenderPass.js",
-		"/E/myhost/inno studio/js/postprocessing/MaskPass.js",
-		"/C/Users/easyfrog/Documents/jump_user.html",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/TernJS.sublime-settings",
-		"/E/EdgeWorks/analyze/publish/web/index.html",
-		"/C/Users/easyfrog/Desktop/mongo-admin-20160413-011301.js",
-		"/C/Users/easyfrog/Documents/wxdb.js",
-		"/C/Users/easyfrog/Documents/wxuser.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/action.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/icon.sublime-snippet",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/main.sublime-snippet",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/wxshare.sublime-snippet",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/easyfrogSnippets/html/component.sublime-snippet",
-		"/C/Users/easyfrog/Documents/getOpenID.html",
-		"/C/Users/easyfrog/Documents/index1.html",
-		"/C/Users/easyfrog/Documents/index.html",
-		"/C/Users/easyfrog/Documents/jump_user2.html",
-		"/C/Users/easyfrog/Documents/getOpenIDChristmas.html",
-		"/C/Users/easyfrog/AppData/Local/Temp/Rar$DIa0.032/cv.txt",
-		"/E/myhost/inno studio/projects/firstroom/scripts/door.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/zhuanpan.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/clock.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/item.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/smile.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/config.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/dumyPick.js",
-		"/E/myhost/inno studio/projects/firstroom/scripts/secret.js",
-		"/E/myhost/inno studio/projects/_closed/bone/config.js",
-		"/C/Users/easyfrog/AppData/Local/Temp/Rar$DIa0.533/8uftp.xml",
-		"/E/UnityProjects/lianzheng/Assets/Scripts/ztc/Manager.cs",
-		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
-		"/E/myhost/inno studio/LICENSE.txt",
-		"/E/myhost/inno studio/projects/_closed/demo/landscape.js",
-		"/C/Users/easyfrog/Desktop/SuWeb/Web/Assets/data.txt",
-		"/C/Users/easyfrog/Desktop/SuWeb/JumpPage.js",
-		"/E/myhost/inno studio/templates/project.js",
-		"/E/百度云下载/web/buildWeb/20160321/JumpPage.js",
-		"/C/Users/easyfrog/Desktop/JumpPage.js",
-		"/E/UnityProjects/lianzheng/xx/data.txt",
-		"/C/Users/easyfrog/Desktop/README.md",
-		"/E/myhost/inno studio/projects/demo/m2.js",
-		"/E/myhost/inno studio/js/coms/com_Angel.js",
-		"/E/myhost/inno studio/projects/demo/skyBox.js"
+		"/E/myhost/inno studio/js/coms/effects/sepia.js"
 	],
 	"find":
 	{
@@ -1336,6 +1288,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"window",
+			"AnimationClip",
+			"console",
+			"AnimationHandler",
+			"animationsData",
+			"animationData",
+			"scaleColor",
+			"Morph",
+			"obj.animation",
+			"texture",
+			"PhongNodeMaterial",
+			"repeat",
+			"Camera",
+			"NodeMaterial",
+			"MorphAnimation",
+			"AnimationHandler",
+			"* 3",
+			"sea",
+			"degToRad",
+			"angleBase",
+			"{\n",
+			"HTC",
+			"Vive",
+			"vive",
+			"inverse",
+			"getPickObject",
+			"canPicked",
+			"emisive",
+			"emmisive",
+			" / 20",
+			"add",
+			"this.meshes",
+			"particleMesh",
+			"thi",
+			"512",
+			"acceleration",
+			"Acceleration",
+			"acceleration",
+			"Acceleration",
+			"acceleration",
+			"Acceleration",
+			"acceleration",
+			"getWorldPosition",
+			"engine",
+			"sizeTween",
 			"Tween",
 			"initialized",
 			"particlesPerSecond",
@@ -1418,52 +1415,7 @@
 			"effectRenderObject",
 			"CopyShader",
 			"MaskPass",
-			"this.",
-			"kernelSize",
-			"effectCopy",
-			"this",
-			"effectSepia",
-			"composer",
-			"Composer",
-			"composer",
-			"this",
-			"from",
-			".",
-			"25",
-			"t",
-			"Math.random() - 0.5",
-			"Math.random()",
-			"Math.random() > 0.5",
-			"_all",
-			"pause",
-			"doorCmop",
-			"audio",
-			"index",
-			"curSc",
-			"glo.use",
-			"glo.curName",
-			"curName",
-			"glo.msgOn",
-			"msgOn",
-			"glo.dummy",
-			"glo.dummys",
-			"glo.dummys ",
-			",",
-			"{},",
-			"{}, ",
-			"glo.config.items",
-			"glo.item",
-			"items",
-			"glo",
-			"playAnimation",
-			"glo.actions",
-			"6",
-			"ps",
-			"// Update\naction.prototype.update = function() {\n    \n};\n",
-			"this",
-			"ba",
-			"actions",
-			"animObject"
+			"this."
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1474,144 +1426,12 @@
 			"f0f0c0",
 			""
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
 		"wrap": false
 	},
-	"groups":
-	[
-		{
-			"selected": 2,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "js/coms/particle/ParticleEngine.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16920,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12543,
-								12543
-							]
-						],
-						"settings":
-						{
-							"in_converting": true,
-							"origin_encoding": "GBK",
-							"revert_to_scratch": true,
-							"syntax": "Packages/Unity3D/UnityJavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 6254.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/webShow/game.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18370,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1442,
-								1442
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Unity3D/UnityJavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 960.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "projects/demo/particle.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3252,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								552,
-								552
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/Unity3D/UnityJavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 149.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/coms/particle/ParticleEngineExamples.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9891,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3096,
-								3096
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/Unity3D/UnityJavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2120.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 40.0
@@ -1676,7 +1496,6 @@
 		"height": 120.0
 	},
 	"pinned_build_system": "",
-	"project": "innoStudio.sublime-project",
 	"replace":
 	{
 		"height": 76.0
@@ -1689,16 +1508,60 @@
 		"selected_items":
 		[
 			[
+				".",
+				".tern-project"
+			],
+			[
+				"par",
+				"projects\\demo\\particle.js"
+			],
+			[
+				"pati",
+				"projects\\demo\\particle.js"
+			],
+			[
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
 				"ga",
+				"js\\webShow\\game.js"
+			],
+			[
+				"gam",
+				"js\\webShow\\game.js"
+			],
+			[
+				"de",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"sc",
+				"js\\webShow\\SceneHandler.js"
+			],
+			[
+				"util",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"pa",
+				"js\\coms\\particle\\ParticleEngine.js"
+			],
+			[
+				"g",
+				"js\\webShow\\game.js"
+			],
+			[
+				"u",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"game",
 				"js\\webShow\\game.js"
 			],
 			[
 				"part",
 				"js\\coms\\particle\\ParticleEngine.js"
-			],
-			[
-				"gam",
-				"js\\webShow\\game.js"
 			],
 			[
 				"lan",
@@ -1725,10 +1588,6 @@
 				"projects\\demo\\landscape.js"
 			],
 			[
-				"g",
-				"js\\webShow\\game.js"
-			],
-			[
 				"f",
 				"projects\\firstroom\\firstroom.js"
 			],
@@ -1739,18 +1598,6 @@
 			[
 				"fir",
 				"projects\\firstroom\\firstroom.js"
-			],
-			[
-				"u",
-				"js\\webShow\\utils.js"
-			],
-			[
-				"uti",
-				"js\\webShow\\utils.js"
-			],
-			[
-				"game",
-				"js\\webShow\\game.js"
 			],
 			[
 				"edge",
@@ -1767,10 +1614,6 @@
 			[
 				"firs",
 				"projects\\firstroom\\firstroom.js"
-			],
-			[
-				"util",
-				"js\\webShow\\utils.js"
 			],
 			[
 				"it",
@@ -1841,10 +1684,6 @@
 				"projects\\demo\\skyBox.js"
 			],
 			[
-				"de",
-				"projects\\demo\\demo.js"
-			],
-			[
 				"chang",
 				"projects\\demo\\changgu2.js"
 			],
@@ -1871,10 +1710,6 @@
 			[
 				"s8",
 				"projects\\demo\\s8.js"
-			],
-			[
-				".",
-				".tern-project"
 			],
 			[
 				"com_",
@@ -2098,9 +1933,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "u",
+		"last_filter": "uti",
 		"selected_items":
 		[
+			[
+				"uti",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
 			[
 				"u",
 				"E:\\EdgeWorks\\utils\\utils.sublime-project"
@@ -2144,10 +1983,6 @@
 			[
 				"ope",
 				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
-			],
-			[
-				"uti",
-				"E:\\EdgeWorks\\utils\\utils.sublime-project"
 			],
 			[
 				"util",
@@ -2261,7 +2096,6 @@
 		],
 		"width": 378.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -2269,7 +2103,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 201.0,
+	"side_bar_width": 222.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

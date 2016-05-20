@@ -120,8 +120,8 @@ module.exports = function( ps ) {
 
     // defines
     mat.defines = {
-        USE_MAP: ps.map == undefined ? false : true,
-        USE_CUBE: ps.cube == undefined ? false : true
+        USE_MAP: ps.map != undefined,
+        USE_CUBE: ps.cube != undefined
     }
 
     return mat;

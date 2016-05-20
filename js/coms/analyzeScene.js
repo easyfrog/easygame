@@ -85,6 +85,7 @@ var process = {
         utils.switchFanSheZheShe(o);
     },
     'nearest': function(o, p) {
+        if (!o.map) {return;}
         o.map.minFilter = THREE.NearestFilter;
         o.map.needsUpdate = true;
     },

@@ -112,8 +112,8 @@ THREE.Mirror = function ( renderer, camera, options ) {
 
     this.matrixNeedsUpdate = true;
 
-    var width = options.textureWidth !== undefined ? options.textureWidth : Game.instance ? Game.instance.width : 512;
-    var height = options.textureHeight !== undefined ? options.textureHeight : Game.instance ? Game.instance.height : 512;
+    var width = options.textureWidth !== undefined ? options.textureWidth : 512;
+    var height = options.textureHeight !== undefined ? options.textureHeight : 512;
 
     this.clipBias = options.clipBias !== undefined ? options.clipBias : 0.003;
 

@@ -32,6 +32,9 @@ grunt create:projectName:E\:/projects/projectName
 直接使用 `grunt 工程名` 即可完成工程的打包及发布
 ```
 grunt projectName
+
+// publish with specified version of threejs and sea3d
+grunt projectName:r76 // r72 default
 ```
 
 如果你创建了很多项目时,因为默认ternjs会检测所有projects下面的js文件.所以在提示上会出现很多相似的内容.所以增加了可以`关闭/开启`项目的功能. 关闭的项目会自动的转移到`projects/_closed/`目录下面.相就的如果开启项目.此项目会转移回`projects`目录下.

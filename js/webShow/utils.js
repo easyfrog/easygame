@@ -1,7 +1,7 @@
 ﻿/**
  * 工具类
  */
-var utils = utils || {};
+window.utils = window.utils || {};
 
 /**
  * 将导出的Morph Target的点反转
@@ -30,12 +30,6 @@ utils.fixMorphTargets = function(geometry) {
  * params: {duration: 1000, loop: false}
  */
 utils.morphObject = function(mesh, params) {
-	/*if (mesh.geometry instanceof THREE.BufferGeometry) {
-		var geo = new THREE.Geometry().fromBufferGeometry(mesh.geometry);
-		utils.fixMorphTargets(geo);
-		mesh.geometry = geo;
-	}*/
-
     params = params || {};
 
 	var mor = new THREE.MorphAnimation(mesh);
@@ -48,6 +42,7 @@ utils.morphObject = function(mesh, params) {
 
 	Game.instance.animations.push(mor);
 	return mor;
+
 }
 
 /**
@@ -63,19 +58,19 @@ utils.include = function(file, httpuse) {
 /**
  * 将 from 的位置,旋转,缩放设置为与 to 一至
  */
-utils.sameTransform = function(from, to, inverse, nop, nor, nos) {
+utils.sameTransform = function(from, to, nop, nor, nos) {
 	var toap = to.getWorldPosition();
 	var toaq = to.getWorldQuaternion();
 	var toas = to.getWorldScale();
 
 	if (!nop) {
-		from.position.set(toap.x, toap.y, toap.z);
+		from.position.copy(toap);
 	}
 	if (!nor) {
-		from.quaternion.set(toaq.x, toaq.y, toaq.z, toaq.w);
+		from.quaternion.copy(toaq);
 		}
 	if (!nos) {
-		from.scale.set(toas.x, toas.y, toas.z);
+		from.scale.copy(toas);
 	}
 };
 
@@ -217,28 +212,34 @@ utils.setAllAnimationTime = function(stateName, percent) {
 /**
  * 让物体跟随一个物体的动画去改变位置与旋转
  */
-utils.followAnimation = function(obj, target, stateName, inverse, complete) {
-	(function(obj, target, stateName, inverse, complete) {
-		var oldComplete = target.animation.onComplete;
+utils.followAnimation = function(obj, target, stateName, complete) {
+	(function(obj, target, stateName, complete) {
+        var clip = target.animation.animationsData ? target.animation.animationsData[stateName] : target.animation;
+		var oldComplete = clip.onComplete;
 
 		var _tmp = function() {
-			utils.sameTransform(obj, target, inverse);
+			utils.sameTransform(obj, target);
 		}
 
 		target.animation.play(stateName);
 		Game.instance.addEventListener(Game.UPDATE, _tmp);
 
-		target.animation.onComplete = function() {
-			if (oldComplete) {
-				oldComplete();
-			}
-			target.animation.onComplete = oldComplete;
-			Game.instance.removeEventListener(Game.UPDATE, _tmp);
-			if (complete) {
-				complete();
-			}
-		};
-	})(obj, target, stateName, inverse, complete);
+        function animComplete() {
+                if (oldComplete) {
+                    oldComplete();
+                }
+                clip.onComplete = oldComplete;
+
+                Game.instance.removeEventListener(Game.UPDATE, _tmp);
+
+                if (complete) {
+                    complete();
+                }
+        }
+
+        clip.onComplete = animComplete;
+
+	})(obj, target, stateName, complete);
 }
 
 /**
@@ -539,7 +540,7 @@ utils.rotateAroundWorldAxis = function ( object, axis, radians ) {
     rotationMatrix.multiply( object.matrix );                       // pre-multiply
     object.matrix = rotationMatrix;
     object.rotation.setFromRotationMatrix( object.matrix );
-}
+};
 
 /**
  * 因为有部分机型中,声音文件不能自动播放, 所以需要在'按钮'的Click事件中
@@ -560,3 +561,23 @@ utils.prePlayAudio = function( audioSym ) {
     });
 };
 
+/**
+ * transform a vector from world to local space
+ */
+THREE.Object3D.prototype.inverseTransformVector = function(v) {
+    var _v = v.clone();
+    var wm = this.matrix.clone();
+    wm.setPosition(new THREE.Vector3());            // transform vector need to position origin
+    wm = new THREE.Matrix4().getInverse(wm);        // world to local need inverse matrix
+    return _v.applyMatrix4(wm);
+};
+
+/**
+ * transfrom a vector from local to world space
+ */
+THREE.Object3D.prototype.transformVector = function(v) {
+    var _v = v.clone();
+    var wm = this.matrix.clone();
+    wm.setPosition(new THREE.Vector3());            // transform vector need to position origin
+    return _v.applyMatrix4(wm);
+};

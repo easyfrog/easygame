@@ -52,6 +52,10 @@ particleFragmentShader = [
 		    "color = color * texture2D( texture,  rotatedUV );",
 	    "#endif",
 
+	    "#ifdef USE_MESH",				// use custom mesh object
+	    	"color = vec4(0.0);",
+	    "#endif",
+
 		"gl_FragColor = color;",    // sets an otherwise white particle texture to desired color
 	"}"
 ].join("\n");
@@ -107,27 +111,49 @@ function Particle()
 
 	this.lastPos = new THREE.Vector3();
 	this.worldVelocity = new THREE.Vector3();
+
+	this.mesh = null;
 }
 
 Particle.prototype.update = function(dt, engine)
 {
-	// world effect tween
-	if ( engine.worldEffectTween.times.length > 0 )
-		this.worldVelocity = engine.worldEffectTween.lerp( this.age );
+	var self = this;
 
 	var curPos = engine.particleMesh.getWorldPosition();
 
-	this.position.add( this.velocity.clone().multiplyScalar(dt) ).
-					sub(curPos.clone().sub(this.lastPos)).						// particle world pos
-					add(engine.particleMesh.localToWorld(this.worldVelocity));	// world effect direction simulate wind
+	// world effect tween
+	//*
+	if ( engine.worldEffectTween.times.length > 0 ) {
+		//*
+		if (!engine.worldRecord) {
+			engine.worldRecord = true;
+			engine.worldValues = [];
+			engine.worldEffectTween.values.forEach(function(itm) {
+				engine.worldValues.push(itm.clone());
+			});
+		}
+
+		// update world velocity
+		if (engine.worldSpace) {
+			engine.worldEffectTween.values.forEach(function(itm, index) {
+				var v = engine.worldValues[index].clone();
+				itm.copy(engine.particleMesh.inverseTransformVector(v));
+			});
+		}
+		//*/
+
+		this.worldVelocity = engine.worldEffectTween.lerp( this.age );
+	}
+	//*/
+
+	this.position.add( this.velocity.clone().multiplyScalar(dt) )
+					.sub(curPos.clone().sub(this.lastPos))					// particle world pos
+					.add(this.worldVelocity);								// world effect direction simulate wind
 
 	this.lastPos = curPos;
 
 	// this.vector = engine.particleMesh.worldToLocal(this.velocity);
 	this.velocity.add( this.acceleration.clone().multiplyScalar(dt) );
-
-	// world vector
-	// this.velocity = engine.particleMesh.worldToLocal(this.velocity);
 	
 	// convert from degrees to radians: 0.01745329251 = Math.PI/180
 	this.angle         += this.angleVelocity     * 0.01745329251 * dt;
@@ -149,6 +175,19 @@ Particle.prototype.update = function(dt, engine)
 	
 	if ( engine.opacityTween.times.length > 0 )
 		this.opacity = engine.opacityTween.lerp( this.age );
+
+	// use custom mesh object particle
+	var s = this;
+	if (s.mesh) {
+		s.mesh.position.copy(s.position);
+		var r = this.angle;
+		if (r > 360) {r = 0;}
+		s.mesh.rotation.y = r;
+		s.mesh.rotation.z = -r;
+		s.mesh.scale.set(s.size, s.size, s.size);
+		s.mesh.material.color.copy(s.color);
+		s.mesh.material.opacity = s.opacity;
+	}
 }
 	
 ///////////////////////////////////////////////////////////////////////////////
@@ -198,6 +237,11 @@ function ParticleEngine()
 	// ztc 20160505 add 'pause' feature support
 	this.pause = true;
 	this.initialized = false;
+	this.customMesh = null;
+	// this.meshes = [];
+	this.meshGoup = new THREE.Group();
+	this.worldValues = null;
+	this.worldRecord = false;
 			
 	// store colors in HSL format in a THREE.Vector3 object
 	// http://en.wikipedia.org/wiki/HSL_and_HSV
@@ -294,8 +338,11 @@ ParticleEngine.prototype.setValues = function( parameters )
 		blending: THREE.NormalBlending, depthWrite: false
 	});
 
+	this.customMesh = parameters.customMesh;
+
 	this.particleMaterial.defines = {
-		"TEXTURE": this.particleTexture != null
+		"TEXTURE": this.particleTexture != null,
+		"USE_MESH": this.customMesh != null
 	};
 
 	// destroy last particles , true : means don't remove update callback
@@ -330,6 +377,40 @@ ParticleEngine.prototype.resetParticale = function( particle ) {
 
 	// record particleMesh world postion on particle created
 	particle.lastPos = this.particleMesh.getWorldPosition();
+
+	// clone custom mesh
+	if (this.customMesh && !particle.mesh) {
+		this.emissive = this.emissive || .7;
+
+		if (this.customMesh instanceof THREE.Mesh) {
+			particle.mesh = this.customMesh.clone();
+		} else if (this.customMesh instanceof Array) {	// random mesh array with rate: [mesh, .5, mesh, .2, mesh]
+			if (this.customMesh.length > 2 && typeof this.customMesh[1] == 'number') {
+				var r = Math.random();
+				var index = -1;
+				var all = 0;
+				for (var i = 1; i < this.customMesh.length; i++) {
+					all += this.customMesh[i];
+					if (r <= all) {
+						index = i - 1;
+						break;
+					}
+				}
+				if (index == -1) {
+					index = this.customMesh.length - 1;
+				}
+				particle.mesh = this.customMesh[index].clone();
+			} else {	// random mesh array
+				particle.mesh = this.customMesh[Math.floor(Math.random() * this.customMesh.length)].clone();
+			}
+		}
+
+		particle.mesh.material = particle.mesh.material.clone();
+		particle.mesh.material.emissive.setRGB(this.emissive, this.emissive, this.emissive);
+		particle.mesh.material.depthWrite = false;	// do not write depth
+		this.meshGoup.add(particle.mesh);
+		particle.mesh.material.transparent = true;
+	}
 		
 	if ( this.velocityStyle == Type.CUBE )
 	{
@@ -404,12 +485,10 @@ ParticleEngine.prototype.initialize = function() {
 	// 	this.particleMaterial.depthTest = false;
 	
 	this.particleMesh = new THREE.Points( this.particleGeometry, this.particleMaterial );
-	// this.particleMesh = new THREE.Points( this.particleGeometry, new THREE.PointsMaterial() );
 	this.particleMesh.dynamic = true;
 	this.particleMesh.alphaTest = 0.5;
-	// this.particleMesh.sortParticles = true;
 
-	// scene.add( this.particleMesh );
+	this.particleMesh.add(this.meshGoup);
 	Game.instance.scene.add( this.particleMesh );
 
 	console.log('ParticleEngine initialize.');
@@ -519,8 +598,33 @@ ParticleEngine.prototype.destroy = function(boo) {
 	if (!boo) {
 		Game.instance.removeEventListener(Game.UPDATE, s.updateCallback);
 	}
+
+	// delete old custom meshes
+	if (s.customMesh) {
+		while(s.meshGoup.children.length > 0) {
+			s.meshGoup.remove(s.meshGoup.children[0]);
+		}
+	}
+
     Game.instance.scene.remove( s.particleMesh );
 }
+
+ParticleEngine.prototype.setPosition = function(pos) {
+	switch (arguments.length) {
+		case 1:
+			this.particleMesh.position.copy(pos);
+		break;
+		case 3:
+			this.particleMesh.position.set(arguments[0], arguments[1], arguments[2]);
+		break;
+		default:
+		break;
+	}
+};
+
+ParticleEngine.prototype.setTransform = function(obj) {
+	utils.sameTransform(this.particleMesh, obj);
+};
 
 ///////////////////////////////////////////////////////////////////////////////
 

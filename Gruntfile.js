@@ -42,7 +42,15 @@ module.exports = function(grunt) {
 	grunt.registerTask('withlibs', 'copy libs files first', function() {
 		var taskList;
 		if (grunt.needLibs == true || grunt.needLibs == undefined) {
-			taskList = ['copy:libs'].concat(grunt.currentTask);
+			// libs version
+			if (grunt.needLibsVersion) {
+				var _path = 'misc/versions/' + grunt.needLibsVersion;
+				grunt.file.copy(_path + '/sea3d/sea3d.min.js', grunt.projectFolder + '/libs/se.js');
+				grunt.file.copy(_path + '/threejs/three.min.js', grunt.projectFolder + '/libs/th.js');
+				taskList = grunt.currentTask;
+			} else {
+				taskList = ['copy:libs'].concat(grunt.currentTask);
+			}
 		} else {
 			taskList = grunt.currentTask;
 		}
@@ -106,7 +114,7 @@ module.exports = function(grunt) {
 				var arg = arguments[i];
 				copyDir('projects/' + arg, closedPath + arg, function() {
 					grunt.log.writeln('project "' + arg + '" closed completed.');
-					grunt.file.delete('projects/' + arg);
+					grunt.file.delete('projects/' + arg, {force: true});
 				});
 			};			
 		}
@@ -125,7 +133,7 @@ module.exports = function(grunt) {
 				var arg = arguments[i];
 				copyDir('projects/_closed/' + arg, openPath + arg, function() {
 					grunt.log.writeln('project "' + arg + '" closed completed.');
-					grunt.file.delete('projects/_closed/' + arg);
+					grunt.file.delete('projects/_closed/' + arg, {force: true});
 				});
 			};			
 		}

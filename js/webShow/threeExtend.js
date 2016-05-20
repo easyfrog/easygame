@@ -78,8 +78,9 @@ SEA3D.AnimationHandler.prototype.updateAnimation = function(stateName) {
 					if (!currentNode.repeat && 
 						((this.timeScale > 0 && currentNode.frame == currentNode.numFrames - 1) ||
 						(this.timeScale < 0 && currentNode.frame == 0))) {
-						if (this.onComplete)
+						if (this.onComplete) {
 							this.onComplete( this );
+						}
 
 						// !repeat pause
 						this.pause();
@@ -122,6 +123,25 @@ SEA3D.AnimationHandler.prototype.playWithTimescale = function( name, timeScale, 
 	this.play(name, crossfade, offset);
 };
 
+/*
+THREE.SEA3D.Object3DAnimator.prototype.stop = function() {
+	if ( this.currentAnimation ) {
+		if ( this instanceof THREE.SEA3D.Object3DAnimator ) {
+			var animate = this.object3d.animate;
+			if (animate) {
+				animate.position.set( 0, 0, 0 );
+				animate.quaternion.set( 0, 0, 0, 1 );
+				animate.scale.set( 1, 1, 1 );
+			}
+		}
+	}
+
+	THREE.SEA3D.Animator.prototype.stop.call( this );
+};
+
+//*/
+
+//*/
 THREE.TextureAnimator = function (texture, tilesHoriz, tilesVert, numTiles, tileDispDuration) {	
 	// note: texture passed by reference, will be updated by the update function.
 	this.tilesHorizontal = tilesHoriz;
@@ -175,3 +195,80 @@ THREE.SEA3D.VertexAnimationMesh.prototype.play = function( name, offset, timesca
 	this.resume();
 
 };
+
+
+/**
+ * MorphAnimation in r72
+ * @param {[type]} mesh [description]
+ */
+
+/*
+THREE.MorphAnimation = function ( mesh ) {
+
+	this.mesh = mesh;
+	this.frames = mesh.morphTargetInfluences.length;
+	this.currentTime = 0;
+	this.duration = 1000;
+	this.loop = true;
+	this.lastFrame = 0;
+	this.currentFrame = 0;
+
+	this.isPlaying = false;
+
+};
+
+THREE.MorphAnimation.prototype = {
+
+	constructor: THREE.MorphAnimation,
+
+	play: function () {
+
+		this.isPlaying = true;
+
+	},
+
+	pause: function () {
+
+		this.isPlaying = false;
+
+	},
+
+	update: function ( delta ) {
+
+		if ( this.isPlaying === false ) return;
+
+		this.currentTime += delta;
+
+		if ( this.loop === true && this.currentTime > this.duration ) {
+
+			this.currentTime %= this.duration;
+
+		}
+
+		this.currentTime = Math.min( this.currentTime, this.duration );
+
+		var frameTime = this.duration / this.frames;
+		var frame = Math.floor( this.currentTime / frameTime );
+
+		var influences = this.mesh.morphTargetInfluences;
+
+		if ( frame !== this.currentFrame ) {
+
+			influences[ this.lastFrame ] = 0;
+			influences[ this.currentFrame ] = 1;
+			influences[ frame ] = 0;
+
+			this.lastFrame = this.currentFrame;
+			this.currentFrame = frame;
+
+		}
+
+		var mix = ( this.currentTime % frameTime ) / frameTime;
+
+		influences[ frame ] = mix;
+		influences[ this.lastFrame ] = 1 - mix;
+
+	}
+
+};
+//*/

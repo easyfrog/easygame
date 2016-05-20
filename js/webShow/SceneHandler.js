@@ -42,28 +42,8 @@ SceneHandler.prototype._onComplete = function() {
         s.root.meshes[i].castShadow     = s.castShadow;
         s.root.meshes[i].receiveShadow  = s.receiveShadow;
 
-        // update matrix
-        // s.root.meshes[i].matrixWorldNeedsUpdate = true;
-        // console.log(s.root.meshes[i].name, s.root.meshes[i].matrixWorldNeedsUpdate);
-
-        //////////////////////////////////////////
-        // fix x,y rotation flip bug 2015/09/17 //
-        //////////////////////////////////////////
-        /*
-        if (s.root.meshes[i].animation) {
-            var anims = s.root.meshes[i].animation.animationSet.animations;
-            for (var j = 0; j < anims.length; j++) {
-                var anim = anims[j];
-                if (anim.dataList.length > 1 && anim.dataList[1].type == 106) { // 74: pos 106: rot
-                    var _data = anim.dataList[1].data;
-                    for (var k = 0; k < _data.length; k+=4) {
-                        _data[k] = -_data[k];
-                        _data[k+1] = -_data[k+1];
-                    };
-                }
-            };
-        }
-        //*/
+        // initialize works
+        
     }
     root = s.root;
     s.container.add(s.root.container);
@@ -96,7 +76,7 @@ SceneHandler.prototype.load = function( fileName, groupName ) {
     var s = this;
 
     // 加入载入队列
-    loadSequence.push({fileName:fileName, groupName: groupName});
+    loadSequence.push({fileName: fileName, groupName: groupName});
 
     // 如果当前没有下载
     if (!isLoading) {
@@ -138,7 +118,9 @@ SceneHandler.prototype.update = function () {
     this.deltaTime = this.clock.getDelta();
     if (SEA3D.AnimationHandler != undefined) {
         THREE.SEA3D.AnimationHandler.update(this.deltaTime);
-        THREE.AnimationHandler.update(this.deltaTime);
+        if (THREE.AnimationHandler) {
+            THREE.AnimationHandler.update(this.deltaTime);
+        }
     }
     // var anims = SEA3D.AnimationHandler.animations;
     // for (var i = 0; i < anims.length; i++) {
@@ -158,25 +140,44 @@ SceneHandler.prototype.play = function(name,speed,repeat, callback) {
     var completeAdded = false;
 
     // meshes && dummys
-    var objs = s.root.meshes.concat(s.root.dummys);
+    var objs = s.root.meshes;
+    if (s.root.dummys) {
+        objs.concat(s.root.dummys);
+    }
 
     for (var i = 0;i < objs.length; i ++ ) {
         anim = objs[i].animation;
-        if (anim && anim.animationSet.animations[name] && !anim.onComplete && callback && !completeAdded) {
+
+        var have = false;
+        if (anim) {
+            if (anim.animationSet) {
+                have = anim.animationSet.animations[name];
+            } else {
+                have = anim.animations[name];
+            }
+        }
+        
+        if (have && !anim.onComplete && callback && !completeAdded) {
             completeAdded = true;
-            anim.onComplete = (function(anim, callback) {
-                var _a = anim;
-                var _c = callback;
-                return function() {
-                    _a.onComplete = null;
-                    if (_c) {
-                        _c();
-                    }
-                };
-            })(anim, callback);
+            var fun = (function(anim, callback) {
+                            var _a = anim;
+                            var _c = callback;
+                            return function() {
+                                _a.onComplete = null;
+                                if (_c) {
+                                    _c();
+                                }
+                            };
+                        })(anim, callback);
+            if (anim.animationsData) {
+                anim.animationsData[name] = fun;
+            } else {
+                anim.onComplete = fun;
+            }
         }
 
-        if (anim && anim.animationSet.animations[name]) {
+        // if (anim && anim.animationSet.animations[name]) {
+        if (have) {
             // repeat
             // for (var a in anim.animationSet.animations) {
             //     anim.animationSet.animations[a].repeat = repeat;

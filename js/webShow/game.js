@@ -5,8 +5,8 @@
  *  并定义了流程框架
  *  author: 	easyfrog
  *  date:   	2015/5/10
- *  sea3d: 		17000
- *  threejs: 	r72
+ *  sea3d: 		18000
+ *  threejs: 	r76
  *  url:        https://github.com/easyfrog/easygame
  *
  * container: domElement
@@ -26,29 +26,6 @@
  * mesh: mouseEnabled  是否可以被 getPickedObject
  */
 (function(parent) {
-
-	// ================ private fields Start ================
-	/**
-	 * SSOA
-	*/
-	/*
-	var depthShader = THREE.ShaderLib.depthRGBA;
-	var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
-
-	var depthMaterial = new THREE.ShaderMaterial( { 
-		fragmentShader: depthShader.fragmentShader, 
-		vertexShader: depthShader.vertexShader, 
-		uniforms: depthUniforms 
-	} );
-
-
-	var depthTarget = new THREE.WebGLRenderTarget( 512, 512, { 
-		minFilter: THREE.LinearFilter, 
-		magFilter: THREE.LinearFilter, 
-		format: THREE.RGBAFormat 
-	} );
-	//*/
-	// ================ private fields End ================
 
 	var Game = function(container, config) {
 		var s = this;
@@ -84,20 +61,6 @@
 
 		// custorm render
 		s.custormRenderFunction = null;
-
-		// 效果合成器
-		/*
-		s.composer = new THREE.EffectComposer(s.renderer);
-		s.composer.addPass(new THREE.RenderPass(s.scene, s.camera));
-
-		var effect = new THREE.ShaderPass( THREE.SSAOShader );
-		effect.uniforms[ 'tDepth' ].value = depthTarget;
-		effect.uniforms[ 'size' ].value.set( s.width, s.height );
-		effect.uniforms[ 'cameraNear' ].value = s.camera.near;
-		effect.uniforms[ 'cameraFar' ].value = s.camera.far;
-		effect.renderToScreen = true;
-		s.composer.addPass( effect );
-		//*/
 
 		// 是否暂停
 		s.pause = false;
@@ -258,10 +221,6 @@
 		var s = this;
 		var mx = ((mousePosition.x - s.container.offsetLeft) / (s.width * s.stageScale)) * 2 - 1;
 		var my = -((mousePosition.y - s.container.offsetTop) / (s.height * s.stageScale)) * 2 + 1;
-		// var mx = ((mousePosition.x - s.container.offsetLeft) / window.innerWidth) * 2 - 1;
-		// var my = -((mousePosition.y - s.container.offsetTop) / window.innerHeight) * 2 + 1;
-		
-		// console.log(mousePosition.x, s.width * s.stageScale, window.innerWidth);
 
 		var vector = new THREE.Vector3(mx, my, 0);
 		vector.unproject(s.camera);
@@ -282,27 +241,6 @@
 		}
 		return null;
 	}
-
-	/**
-	 * 注册组件 (弃用)
-	 */
-	Game.prototype.registerComponents = function(componentsArr, path) {
-		path = path || 'js/coms/';
-		for (var i = 0; i < componentsArr.length; i++) {
-			var com = componentsArr[i];
-			utils.include(path + com + '.js');
-		};
-		console.log('registe ' + componentsArr);
-	};
-
-	/**
-	 * 注销组件 (弃用)
-	 */
-	Game.prototype.unregisterComponents = function(componentsArr) {
-		for (var i = 0; i < componentsArr.length; i++) {
-			window[componentsArr[i]] = undefined;
-		};
-	};	
 
 	/**
 	 * 向物体上添加组件
@@ -476,18 +414,6 @@
 		for (var i = 0; i < this.animations.length; i++) {
 			this.animations[i].update(_delta);
 		};
-
-		// if (this.cameraController && this.cameraController.update) {
-		// 	this.cameraController.update();
-		// }
-
-		// composer
-		/*
-		this.scene.overrideMaterial = depthMaterial;
-		this.renderer.render(this.scene, this.camera, depthTarget);
-		this.scene.overrideMaterial = null;
-		this.composer.render(_delta);
-		//*/
 		
 		if (this.custormRenderFunction) {
 			this.custormRenderFunction(_delta);	
@@ -667,6 +593,7 @@
 	};
 
 	function getFromArray(arr, name) {
+		if (!arr) {return null;}
 		for (var i = 0; i < arr.length; i++) {
 			var item = arr[i];
 			if (item.name == name) {
@@ -726,20 +653,28 @@
 			var anim = obj.animation;
 			var animNode;
 			if (anim) {
-				animNode = obj.animation.animationSet.animations[animationName];
+				if (anim.animationSet) {
+					animNode = anim.animationSet.animations[animationName];
+				} else {
+					animNode = anim.animations[animationName];
+				}
 			}
 
 			if (anim && animNode) {
 				if (i == 0) {
-					anim.onComplete = function() {
+					var clip = anim.animationsData ? anim.animationsData[animationName] : anim;
+					var oldAnimComplete = clip.onComplete;
+					clip.onComplete = function() {
 						if (whenFirstComplete) {
 							whenFirstComplete();
 						}
+						clip.onComplete = oldAnimComplete;
 					};
 				}
 				anim.timeScale = timeScale;
 				animNode.repeat = repeat;
 
+				// anim.play(animationName, 0, 0);
 				anim.play(animationName);
 			}
 		};
@@ -750,6 +685,7 @@
 	 */
 	Game.prototype.getObjects = function(nameArr, type) {
 		var res = [];
+		nameArr.concat([]);
 		type = type || 'm3d';
 		for (var i = 0; i < nameArr.length; i++) {
 			res.push(this.sea.objects[type + '/' + nameArr[i]])
