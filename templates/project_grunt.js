@@ -14,8 +14,6 @@ module.exports = function(grunt) {
 					}, {
 						src: [
 							"js/tools/edgeToolsBase.js",
-							// "js/coms/com_*.js",						// 打包easygame默认组件
-							// "projects/<%= grunt.project %>/com_*.js",	// 打包项目组件 *instead with browserify*
 							"build/<%= grunt.project %>.browserify.js" // 合入模块后的 project.js
 						],
 						dest: '<%= grunt.projectFolder %>/main.js'
@@ -34,7 +32,7 @@ module.exports = function(grunt) {
 	});
 
 	(function(project, path) {
-		grunt.registerTask(project, '', function() {
+		grunt.registerTask(project, '', function( version ) {
 			// 先判断项目是否存在或已关闭?
 			if (!grunt.file.exists('projects/' + project)) {
 				grunt.log.writeln('project "' + project + '" NOT EXISTS. OR is CLOSED! use grunt --no-color open:"' + project + '" first.' );
@@ -50,6 +48,9 @@ module.exports = function(grunt) {
 								'deletefile:build/<%= grunt.project %>.browserify.js'];
 			// 是否需要3D库文件
 			grunt.needLibs = true;
+
+			// 库文件版本 r72 | r76
+			grunt.needLibsVersion = version;
 
 			// 先执行将libs文件Copy到工程目录libs/下
 			grunt.task.run('withlibs');
