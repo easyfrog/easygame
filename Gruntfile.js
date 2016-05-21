@@ -44,7 +44,7 @@ module.exports = function(grunt) {
 		if (grunt.needLibs == true || grunt.needLibs == undefined) {
 			// libs version
 			if (grunt.needLibsVersion) {
-				var _path = 'misc/versions/' + grunt.needLibsVersion;
+				var _path = 'js/libs/versions/' + grunt.needLibsVersion;
 				if (grunt.file.exists(_path)) {
 					grunt.file.copy(_path + '/sea3d/sea3d.min.js', grunt.projectFolder + '/libs/se.js');
 					grunt.file.copy(_path + '/threejs/three.min.js', grunt.projectFolder + '/libs/th.js');

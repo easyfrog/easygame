@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"res",
+				"registerTask	(?)"
+			],
+			[
+				"n",
+				"needLibsVersion	(?)"
+			],
+			[
+				"ani",
+				"animationsData"
+			],
+			[
+				"anim",
+				"animationsData	(?)"
+			],
+			[
+				"end",
+				"enabled"
+			],
+			[
+				"cur",
+				"currentAnimationAction	(?)"
+			],
+			[
+				"ti",
+				"timeScale"
+			],
+			[
+				"com",
+				"completed"
+			],
+			[
+				"pla",
+				"playAnimation(objects, animationName, timeScale, repeat, whenFirstComplete)"
+			],
+			[
+				"K",
+				"KEYUP	(str)"
+			],
+			[
+				"no",
+				"noiseComp({mesh, speed, x, y, z})"
+			],
+			[
+				"ca",
+				"cameraController	{}"
+			],
+			[
 				"add",
 				"addEventListener(type, listener)"
 			],
@@ -34,14 +82,6 @@
 			[
 				"on",
 				"onComplete"
-			],
-			[
-				"ani",
-				"animations"
-			],
-			[
-				"anim",
-				"animations"
 			],
 			[
 				"Cu",
@@ -460,10 +500,6 @@
 				"items"
 			],
 			[
-				"cur",
-				"curName	(?)"
-			],
-			[
 				"sho",
 				"showMsg"
 			],
@@ -478,42 +514,6 @@
 			[
 				"ms",
 				"msgTime"
-			],
-			[
-				"clea",
-				"clearTimeout(timeout)"
-			],
-			[
-				"stop",
-				"stopPropagation()"
-			],
-			[
-				"dia",
-				"dialogM	(?)"
-			],
-			[
-				"getm",
-				"getMesh(name)"
-			],
-			[
-				"hide",
-				"hideDialog"
-			],
-			[
-				"dil",
-				"dialogM	(?)"
-			],
-			[
-				"getSY",
-				"getSymbolElement"
-			],
-			[
-				"getSy",
-				"getSymbol"
-			],
-			[
-				"time",
-				"timeScale	(num)"
 			]
 		]
 	},
@@ -557,6 +557,22 @@
 				"Preferences: Settings - User"
 			],
 			[
+				"reload",
+				"TernJS: Reload"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
 				"tern",
 				"tern_for_sublime: Describe"
 			],
@@ -577,20 +593,12 @@
 				"Package Control: List Packages"
 			],
 			[
-				"reload",
-				"TernJS: Reload"
-			],
-			[
 				"rel",
 				"TernJS: Reload"
 			],
 			[
 				"usre",
 				"Minify::User File Settings"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
 			],
 			[
 				"status",
@@ -607,14 +615,6 @@
 			[
 				"relo",
 				"TernJS: Reload"
-			],
-			[
-				"statu",
-				"Git: Status"
-			],
-			[
-				"stat",
-				"Git: Status"
 			],
 			[
 				"edi",
@@ -1142,24 +1142,50 @@
 	},
 	"file_history":
 	[
-		"/E/myhost/inno studio/.tern-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
-		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
+		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/E/myhost/inno studio/Gruntfile.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLoader.js",
+		"/C/Users/easyfrog/Desktop/lib/SEA3DLoader.js",
+		"/C/Users/easyfrog/Desktop/lib/three.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/Gruntfile.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
-		"/E/myhost/inno studio/js/webShow/threeExtend.js",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
+		"/E/myhost/inno studio/js/coms/lensFlare.js",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/myhost/inno studio/projects/firstroom/firstroom_grunt.js",
 		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DAnimation.js",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/E/myhost/inno studio/README.md",
+		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
+		"/E/myhost/inno studio/js/coms/effects/blur.js",
+		"/E/myhost/inno studio/js/coms/effects/bloom.js",
+		"/E/myhost/inno studio/js/coms/effects/bc.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.js",
+		"/C/Users/easyfrog/Desktop/anim.html",
 		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/js/coms/analyzeScene.js",
+		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
+		"/E/myhost/inno studio/projects/demo/demo.js",
+		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
+		"/E/myhost/inno studio/projects/firstroom/scripts/door.js",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
+		"/D/libs/three.js-r76/examples/webgl_loader_sea3d_hierarchy_firstroom.html",
+		"/D/libs/three.js-r76/examples/webgl_loader_sea3d_firstroom.html",
+		"/E/myhost/inno studio/js/coms/com_Angel.js",
+		"/E/myhost/inno studio/js/coms/particle/ParticleEngine.js",
+		"/E/myhost/inno studio/projects/demo/landscape.js",
+		"/E/myhost/inno studio/js/coms/stats.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
+		"/E/myhost/inno studio/.tern-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
 		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/projects/firstroom/scripts/edge.js",
 		"/D/libs/three.js-r76/examples/webgl_loader_sea3d.html",
 		"/D/libs/three.js-r76/examples/webgl_loader_sea3d_keyframe.html",
-		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLoader.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DAnimation.js",
-		"/E/myhost/inno studio/js/coms/analyzeScene.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DNodeMaterial.js",
 		"/E/myhost/inno studio/projects/demo/particle.js",
 		"/E/myhost/inno studio/js/coms/effectRender.js",
@@ -1176,27 +1202,18 @@
 		"/E/myhost/inno studio/js/effects/StereoEffect.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/index.html",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/indexVA.html",
-		"/E/myhost/inno studio/Gruntfile.js",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/E/myhost/inno studio/js/coms/vr/vr.js",
 		"/E/myhost/inno studio/js/controls/VRControls.js",
 		"/D/libs/webvr-polyfill-master/examples/basic/index.html",
-		"/E/myhost/inno studio/projects/demo/demo.js",
-		"/E/myhost/inno studio/projects/demo/landscape.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/Gruntfile.js",
 		"/E/myhost/inno studio/misc/old/17000/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/indexMorph.html",
-		"/E/myhost/inno studio/js/coms/lensFlare.js",
 		"/E/myhost/inno studio/js/coms/modifiers/noise.js",
-		"/E/myhost/inno studio/js/coms/particle/ParticleEngine.js",
 		"/E/myhost/inno studio/projects/demo/skyBox.js",
 		"/E/myhost/inno studio/package.json",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/threejs/NodeMaterial.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/ammo.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
 		"/E/myhost/inno studio/projects/demo/panoramas.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.js",
 		"/D/libs/webvr-polyfill-master/src/mouse-keyboard-vr-display.js",
 		"/E/myhost/inno studio/projects/demo/mirror.js",
 		"/C/Users/easyfrog/Downloads/TheAviator/js/game.js",
@@ -1220,7 +1237,6 @@
 		"/E/EdgeWorks/demo/publish/web/main.js",
 		"/C/Users/easyfrog/Desktop/sn.txt",
 		"/E/myhost/inno studio/js/coms/materials/glow.js",
-		"/E/myhost/inno studio/js/coms/com_Angel.js",
 		"/E/myhost/inno studio/js/coms/materials/fresnelMaterial.js",
 		"/E/myhost/inno studio/js/coms/materials/fresnelPhong.js",
 		"/E/myhost/inno studio/js/coms/particle/ParticleEngineExamples.js",
@@ -1237,17 +1253,13 @@
 		"/E/myhost/inno studio/projects/demo/ssao.js",
 		"/E/myhost/inno studio/js/shaders/MirrorShader.js",
 		"/E/myhost/inno studio/js/coms/effects/smaa.js",
-		"/E/myhost/inno studio/js/coms/effects/bc.js",
-		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
 		"/E/myhost/inno studio/js/coms/effects/film.js",
 		"/D/libs/three.js-r76/examples/js/GPUParticleSystem.js",
 		"/E/myhost/inno studio/js/coms/effects/ssao.js",
 		"/E/myhost/inno studio/js/postprocessing/SMAAPass.js",
 		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
 		"/E/myhost/inno studio/js/postprocessing/EffectComposer.js",
-		"/E/myhost/inno studio/js/coms/stats.js",
 		"/E/myhost/inno studio/js/threejs/stats.min.js",
-		"/E/myhost/inno studio/projects/firstroom/firstroom_grunt.js",
 		"/E/myhost/inno studio/js/coms/utils/db.js",
 		"/E/myhost/inno studio/js/shaders/BrightnessContrastShader.js",
 		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_fragment.glsl",
@@ -1257,19 +1269,7 @@
 		"/D/libs/three.js-r72/src/renderers/shaders/UniformsLib.js",
 		"/E/myhost/inno studio/js/shaders/EdgeShader2.js",
 		"/E/myhost/inno studio/js/shaders/ColorifyShader.js",
-		"/E/myhost/inno studio/js/shaders/ConvolutionShader.js",
-		"/E/myhost/inno studio/js/shaders/FXAAShader.js",
-		"/E/myhost/inno studio/js/shaders/DOFMipMapShader.js",
-		"/E/myhost/inno studio/js/shaders/FresnelShader_ztc.js",
-		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/project_vertex.glsl",
-		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/uv_pars_fragment.glsl",
-		"/E/myhost/inno studio/build/easygame.min.js",
-		"/E/myhost/inno studio/js/coms/effects/blur.js",
-		"/E/myhost/inno studio/js/shaders/FresnelShader.js",
-		"/E/myhost/inno studio/js/coms/effects/bloom.js",
-		"/E/myhost/inno studio/js/shaders/BasicShader.js",
-		"/E/myhost/inno studio/js/coms/effects/vignette.js",
-		"/E/myhost/inno studio/js/coms/effects/sepia.js"
+		"/E/myhost/inno studio/js/shaders/ConvolutionShader.js"
 	],
 	"find":
 	{
@@ -1288,6 +1288,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\",
+			"onBakeTestLoaded",
+			"node",
+			"apply",
+			"PingPong",
+			"pingPong",
+			"this.enabled = false",
+			"this.enabled",
+			"AnimationMi",
+			"currentAnimationAction.enabled",
+			"this.currentAnimationAction.enabled",
+			"SEA3D.AnimationHandler.prototype.updateAnimation",
 			"window",
 			"AnimationClip",
 			"console",
@@ -1403,19 +1415,7 @@
 			"blurX",
 			"create",
 			"')",
-			"2",
-			"glowColor",
-			"viewVector",
-			"shaderSepia",
-			"autoClear",
-			" * 1.3",
-			"Game.instance",
-			"effectHorizBlur",
-			"()\n",
-			"effectRenderObject",
-			"CopyShader",
-			"MaskPass",
-			"this."
+			"2"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1508,12 +1508,48 @@
 		"selected_items":
 		[
 			[
-				".",
-				".tern-project"
+				"ga",
+				"js\\webShow\\game.js"
+			],
+			[
+				"sk",
+				"projects\\demo\\skyBox.js"
+			],
+			[
+				"d",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"util",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"gam",
+				"js\\webShow\\game.js"
+			],
+			[
+				"u",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"demo",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"game",
+				"js\\webShow\\game.js"
 			],
 			[
 				"par",
-				"projects\\demo\\particle.js"
+				"js\\coms\\particle\\ParticleEngine.js"
+			],
+			[
+				"sea3",
+				"js\\loaders\\sea3d.min.js"
+			],
+			[
+				".",
+				".tern-project"
 			],
 			[
 				"pati",
@@ -1524,14 +1560,6 @@
 				"js\\webShow\\utils.js"
 			],
 			[
-				"ga",
-				"js\\webShow\\game.js"
-			],
-			[
-				"gam",
-				"js\\webShow\\game.js"
-			],
-			[
 				"de",
 				"projects\\demo\\demo.js"
 			],
@@ -1540,23 +1568,11 @@
 				"js\\webShow\\SceneHandler.js"
 			],
 			[
-				"util",
-				"js\\webShow\\utils.js"
-			],
-			[
 				"pa",
 				"js\\coms\\particle\\ParticleEngine.js"
 			],
 			[
 				"g",
-				"js\\webShow\\game.js"
-			],
-			[
-				"u",
-				"js\\webShow\\utils.js"
-			],
-			[
-				"game",
 				"js\\webShow\\game.js"
 			],
 			[
@@ -1676,10 +1692,6 @@
 				"projects\\demo\\demo.js"
 			],
 			[
-				"demo",
-				"projects\\demo\\demo.js"
-			],
-			[
 				"sky",
 				"projects\\demo\\skyBox.js"
 			],
@@ -1690,10 +1702,6 @@
 			[
 				"c",
 				"projects\\demo\\changgu2.js"
-			],
-			[
-				"sk",
-				"projects\\demo\\skyBox.js"
 			],
 			[
 				"m2",
@@ -2103,7 +2111,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 222.0,
+	"side_bar_width": 253.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

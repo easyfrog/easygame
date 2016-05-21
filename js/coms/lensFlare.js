@@ -1,7 +1,7 @@
 var have = true;
 
-var tloader = new THREE.TextureLoader();
-var lf0 = tloader.load('images/lensFlare/lensflare0.png', undefined, undefined, function() {
+// var tloader = new THREE.TextureLoader();
+var lf0 = THREE.ImageUtils.loadTexture('images/lensFlare/lensflare0.png', undefined, undefined, function() {
     console.log('LensFlare Not Find Texture ERROR!, Copy resources/textures/lensFlare folder to your "images" folder');
     have = false;
 });
@@ -10,7 +10,7 @@ var lensFlare = null;
 
 if (have) {
     // var lf2 = THREE.ImageUtils.loadTexture('images/lensFlare/lensflare2.png');
-    var lf3 = tloader.load('images/lensFlare/hexangle.png');
+    var lf3 = new THREE.ImageUtils.loadTexture('images/lensFlare/hexangle.png');
 
     lensFlare = new THREE.LensFlare(lf0, 600, 0, THREE.AdditiveBlending);
 

@@ -33,6 +33,7 @@
 				"js/controls/*Controls.js",
 				"js/controls/*Keyboard.js",
 				"js/effects/**",
+				"js/libs/**",
 				"js/coms/**",
 				"js/postprocessing/**",
 				"**/*_grunt.js",
