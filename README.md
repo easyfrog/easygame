@@ -19,6 +19,9 @@ use Grunt to publish.
 ** 目标路径的盘符后要加一个'\'进行转义. 使用'/'进行文件夹的分隔, 并且结尾不要加'/' **
 ```
 grunt create:projectName:E\:/projects/projectName
+
+// with default version r72 | r77
+grunt create:projectName:E\:/projects/projectName:r77
 ```
 
 并会在 `projects` 文件夹中生成工程的目录:  
@@ -34,7 +37,7 @@ grunt create:projectName:E\:/projects/projectName
 grunt projectName
 
 // publish with specified version of threejs and sea3d
-grunt projectName:r76 // r72 default
+grunt projectName:r72 // r72 default
 ```
 
 如果你创建了很多项目时,因为默认ternjs会检测所有projects下面的js文件.所以在提示上会出现很多相似的内容.所以增加了可以`关闭/开启`项目的功能. 关闭的项目会自动的转移到`projects/_closed/`目录下面.相就的如果开启项目.此项目会转移回`projects`目录下.

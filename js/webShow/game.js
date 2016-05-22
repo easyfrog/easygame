@@ -637,12 +637,9 @@
 	/**
 	 * 指定物体(组), 来播放指定的动画
 	 */
-	Game.prototype.playAnimation = function(objects, animationName, timeScale, repeat, whenFirstComplete) {
+	Game.prototype.playAnimation = function(objects, animationName, timeScale, retainPos, whenFirstComplete) {
 		animationName = animationName || 'general';
 		timeScale = timeScale || 1;
-		if (repeat == undefined) {
-			repeat == false;
-		}
 
 		objects = objects || Game.instance.sea.meshes;
 		if (!(objects instanceof Array)) {
@@ -650,7 +647,7 @@
 		}
 		for (var i = 0; i < objects.length; i++) {
 			var obj = objects[i];
-			var anim = obj.animation;
+			var anim = obj.animation || obj.animator;
 			var animNode;
 			if (anim) {
 				if (anim.animationSet) {
@@ -671,11 +668,14 @@
 						clip.onComplete = oldAnimComplete;
 					};
 				}
-				anim.timeScale = timeScale;
-				animNode.repeat = repeat;
+				if (anim.setTimeScale) {
+					anim.setTimeScale(timeScale);
+				} else {
+					anim.timeScale = timeScale;
+				}
 
-				// anim.play(animationName, 0, 0);
-				anim.play(animationName);
+				offset = retainPos && anim.currentAnimationAction ? anim.currentAnimationAction.time : undefined;
+				anim.play(animationName, 0, offset);
 			}
 		};
 	};

@@ -146,7 +146,7 @@ SceneHandler.prototype.play = function(name,speed,repeat, callback) {
     }
 
     for (var i = 0;i < objs.length; i ++ ) {
-        anim = objs[i].animation;
+        anim = objs[i].animation || objs[i].animator;
 
         var have = false;
         if (anim) {
@@ -182,7 +182,11 @@ SceneHandler.prototype.play = function(name,speed,repeat, callback) {
             // for (var a in anim.animationSet.animations) {
             //     anim.animationSet.animations[a].repeat = repeat;
             // }
-            anim.timeScale = speed;
+            if (anim.setTimeScale) {
+                anim.setTimeScale(speed);
+            } else {
+                anim.timeScale = speed;
+            }
             // play
             anim.play(name);
         }

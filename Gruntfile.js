@@ -73,9 +73,11 @@ module.exports = function(grunt) {
 	 * create project
 	 * example: grunt create:project:E\/:projects/xxx
 	 */
-	grunt.registerTask('create', 'create a easygame project', function(name, path) {
+	grunt.registerTask('create', 'create a easygame project', function(name, path, version) {
 		var project = grunt.project = name;
 		var projectFolder = grunt.projectFolder = path;
+
+		grunt.targetVersion = version;
 
 		var jsfile = 'projects/' + project + '/' + project + '.js';
 		var gruntfile = 'projects/' + project + '/' + project + '_grunt.js';

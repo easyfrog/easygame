@@ -49,8 +49,11 @@ module.exports = function(grunt) {
 			// 是否需要3D库文件
 			grunt.needLibs = true;
 
+			var targetVersion = '<%= grunt.targetVersion %>';
+			if (targetVersion == '') {targetVersion = undefined;}
+
 			// 库文件版本 r72 | r76
-			grunt.needLibsVersion = version;
+			grunt.needLibsVersion = version || targetVersion;
 
 			// 先执行将libs文件Copy到工程目录libs/下
 			grunt.task.run('withlibs');

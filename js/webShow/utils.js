@@ -175,8 +175,12 @@ utils.toWorldPosition = function(mousePosition, camera, z) {
  * 设置动画到指定的时间位置(百分比)
  * example: time = 0 ~ 1
  */
-utils.setAnimationTime = function(animation, stateName, percent) {
-	if (stateName in animation.states) {
+utils.setAnimationTime = function(animator, stateName, percent) {
+    var isNew = false;  // r72
+    if (animator.animations) {
+        isNew = true;   // r77
+    }
+	if ((!isNew && stateName in animator.states) || (isNew && stateName in animator.animations)) {
 		try {
 			if (percent < 0) {
 				percent = 0;
@@ -184,11 +188,38 @@ utils.setAnimationTime = function(animation, stateName, percent) {
 				percent = 1;
 			}
 
-			var duration = animation.states[stateName].node.duration;
-			// animation.currentState = animation.states[stateName];
-			animation.stop();
-			animation.states[stateName].node.setTime(percent * duration);
-			animation.updateAnimation(stateName);
+            var clip = isNew ? animator.animations[stateName] : animator.states[stateName];
+			var duration = isNew ? clip.duration : clip.node.duration;
+
+            animator.pause(); // stop first
+            if (isNew) {
+                // get action in new clip system
+                if (!animator.currentAnimationAction) {
+                    animator.currentAnimationAction = animator.mixer.clipAction( clip ).setLoop( animator.loop ? THREE.LoopRepeat : THREE.LoopOnce, Infinity ).reset();
+                }
+                var action = animator.currentAnimationAction;
+                var bindings = animator.mixer._bindings;
+
+                // calculate pose
+                var interpolants = action._interpolants;
+                var propertyMixers = action._propertyBindings;
+
+                for ( var j = 0, m = interpolants.length; j !== m; ++ j ) {
+                    interpolants[ j ].evaluate( percent * duration );
+                    propertyMixers[ j ].accumulate( 0, 1 );
+                }
+
+                // also set to the action's time property
+                action.time = percent;
+
+                // update pose to mesh
+                for ( var i = 0; i < bindings.length; ++ i ) {
+                    bindings[ i ].apply( 0 );
+                }
+            } else {
+    			animator.states[stateName].node.setTime(percent * duration);
+    			animator.updateAnimation(stateName);
+            }
 		} catch (e) {
 			console.log(e.message);	
 		}
@@ -214,14 +245,14 @@ utils.setAllAnimationTime = function(stateName, percent) {
  */
 utils.followAnimation = function(obj, target, stateName, complete) {
 	(function(obj, target, stateName, complete) {
-        var clip = target.animation.animationsData ? target.animation.animationsData[stateName] : target.animation;
+        var clip = target.animator ? target.animator.animationsData[stateName] : target.animation;
 		var oldComplete = clip.onComplete;
 
 		var _tmp = function() {
 			utils.sameTransform(obj, target);
 		}
 
-		target.animation.play(stateName);
+		(target.animation || target.animator).play(stateName);
 		Game.instance.addEventListener(Game.UPDATE, _tmp);
 
         function animComplete() {
