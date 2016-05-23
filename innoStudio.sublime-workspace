@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"anim",
+				"animator"
+			],
+			[
+				"setTime",
+				"setAnimatorTime"
+			],
+			[
+				"bin",
+				"bindings	(?)"
+			],
+			[
+				"state",
+				"stateName	(?)"
+			],
+			[
+				"setTi",
+				"setTimeScale	(?)"
+			],
+			[
+				"setTim",
+				"setTimeScale"
+			],
+			[
+				"Nee",
+				"needLibsVersion	(?)"
+			],
+			[
 				"res",
 				"registerTask	(?)"
 			],
@@ -14,10 +42,6 @@
 			[
 				"ani",
 				"animationsData"
-			],
-			[
-				"anim",
-				"animationsData	(?)"
 			],
 			[
 				"end",
@@ -490,30 +514,6 @@
 			[
 				"getC",
 				"getComponent(comNameOrFunc)"
-			],
-			[
-				"st",
-				"stratagem"
-			],
-			[
-				"it",
-				"items"
-			],
-			[
-				"sho",
-				"showMsg"
-			],
-			[
-				"get",
-				"getSymbolElement"
-			],
-			[
-				"app",
-				"appendIcon"
-			],
-			[
-				"ms",
-				"msgTime"
 			]
 		]
 	},
@@ -557,8 +557,20 @@
 				"Preferences: Settings - User"
 			],
 			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
 				"reload",
 				"TernJS: Reload"
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"status",
+				"Git: Status"
 			],
 			[
 				"push",
@@ -581,10 +593,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"upd",
 				"Package Control: Upgrade Package"
 			],
@@ -599,10 +607,6 @@
 			[
 				"usre",
 				"Minify::User File Settings"
-			],
-			[
-				"status",
-				"Git: Status"
 			],
 			[
 				"use",
@@ -667,10 +671,6 @@
 			[
 				"rem",
 				"Package Control: Remove Package"
-			],
-			[
-				"pus",
-				"Git: Push Current Branch"
 			],
 			[
 				"isnt",
@@ -1142,43 +1142,51 @@
 	},
 	"file_history":
 	[
-		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/RunCommands/runcommands.py",
+		"/E/myhost/inno studio/package.json",
+		"/E/myhost/inno studio/LICENSE.txt",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
 		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/E/myhost/inno studio/Gruntfile.js",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLoader.js",
-		"/C/Users/easyfrog/Desktop/lib/SEA3DLoader.js",
-		"/C/Users/easyfrog/Desktop/lib/three.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/Gruntfile.js",
+		"/E/myhost/inno studio/README.md",
+		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
+		"/E/myhost/inno studio/js/loaders/sea3d.js",
 		"/E/myhost/inno studio/js/threejs/three.js",
+		"/E/myhost/inno studio/projects/demo/newAnim.js",
+		"/E/myhost/inno studio/js/webShow/game.js",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/E/myhost/inno studio/js/webShow/threeExtend.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/Gruntfile.js",
+		"/E/myhost/inno studio/js/libs/versions/r77/threejs/three.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLoader.js",
+		"/C/Users/easyfrog/Desktop/anim.html",
+		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
+		"/C/Users/easyfrog/Desktop/lib/three.js",
+		"/C/Users/easyfrog/Desktop/lib/SEA3DLoader.js",
+		"/C/Users/easyfrog/Desktop/lib/three.min.js",
+		"/E/myhost/inno studio/projects/test/test_grunt.js",
+		"/E/myhost/inno studio/projects/demo/particle.js",
 		"/E/myhost/inno studio/js/coms/lensFlare.js",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/E/myhost/inno studio/projects/firstroom/firstroom_grunt.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DAnimation.js",
-		"/E/myhost/inno studio/js/webShow/threeExtend.js",
-		"/E/myhost/inno studio/README.md",
 		"/E/myhost/inno studio/projects/firstroom/scripts/general.js",
 		"/E/myhost/inno studio/js/coms/effects/blur.js",
 		"/E/myhost/inno studio/js/coms/effects/bloom.js",
 		"/E/myhost/inno studio/js/coms/effects/bc.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.js",
-		"/C/Users/easyfrog/Desktop/anim.html",
-		"/E/myhost/inno studio/js/webShow/game.js",
 		"/E/myhost/inno studio/js/coms/analyzeScene.js",
 		"/E/myhost/inno studio/js/controls/OrbitControls_ztc.js",
 		"/E/myhost/inno studio/projects/demo/demo.js",
 		"/E/myhost/inno studio/projects/firstroom/firstroom.js",
 		"/E/myhost/inno studio/projects/firstroom/scripts/door.js",
-		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/D/libs/three.js-r76/examples/webgl_loader_sea3d_hierarchy_firstroom.html",
 		"/D/libs/three.js-r76/examples/webgl_loader_sea3d_firstroom.html",
 		"/E/myhost/inno studio/js/coms/com_Angel.js",
 		"/E/myhost/inno studio/js/coms/particle/ParticleEngine.js",
 		"/E/myhost/inno studio/projects/demo/landscape.js",
 		"/E/myhost/inno studio/js/coms/stats.js",
-		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
 		"/E/myhost/inno studio/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
 		"/E/myhost/inno studio/js/webShow/Tween.js",
@@ -1187,7 +1195,6 @@
 		"/D/libs/three.js-r76/examples/webgl_loader_sea3d.html",
 		"/D/libs/three.js-r76/examples/webgl_loader_sea3d_keyframe.html",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DNodeMaterial.js",
-		"/E/myhost/inno studio/projects/demo/particle.js",
 		"/E/myhost/inno studio/js/coms/effectRender.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/indexSkin.html",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLZMA.js",
@@ -1209,7 +1216,6 @@
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/indexMorph.html",
 		"/E/myhost/inno studio/js/coms/modifiers/noise.js",
 		"/E/myhost/inno studio/projects/demo/skyBox.js",
-		"/E/myhost/inno studio/package.json",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/threejs/NodeMaterial.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/ammo.js",
@@ -1263,13 +1269,7 @@
 		"/E/myhost/inno studio/js/coms/utils/db.js",
 		"/E/myhost/inno studio/js/shaders/BrightnessContrastShader.js",
 		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_fragment.glsl",
-		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_pars_fragment.glsl",
-		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_vertex.glsl",
-		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_pars_vertex.glsl",
-		"/D/libs/three.js-r72/src/renderers/shaders/UniformsLib.js",
-		"/E/myhost/inno studio/js/shaders/EdgeShader2.js",
-		"/E/myhost/inno studio/js/shaders/ColorifyShader.js",
-		"/E/myhost/inno studio/js/shaders/ConvolutionShader.js"
+		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_pars_fragment.glsl"
 	],
 	"find":
 	{
@@ -1288,6 +1288,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"animation",
+			"Animation",
+			"animation",
+			"Animation",
+			"animation",
+			"Animation",
+			"animation",
+			"Animation",
+			"animation",
+			"Animation",
+			"animation",
+			"Animation",
+			"animation",
+			"this",
+			"\\.animation",
+			"\\.animation(\\W)",
+			".animation.",
 			"\\",
 			"onBakeTestLoaded",
 			"node",
@@ -1398,24 +1415,7 @@
 			"varying",
 			"vReflectionFactor",
 			"fresnelPower",
-			"spacular",
-			"shaderChunk",
-			"5",
-			"USE_EMISSIVEMAP",
-			"tColor",
-			"THREE.ShaderChunk",
-			"meshphong_frag",
-			"ShaderChunk",
-			"ShaderLib.phong",
-			"THREE.ShaderLib.phong",
-			"ShaderLib.phong",
-			"ShaderLib",
-			"StandardMaterial",
-			"blurY",
-			"blurX",
-			"create",
-			"')",
-			"2"
+			"spacular"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1508,16 +1508,24 @@
 		"selected_items":
 		[
 			[
+				"demo",
+				"projects\\demo\\demo_grunt.js"
+			],
+			[
+				"uti",
+				"js\\webShow\\utils.js"
+			],
+			[
+				"d",
+				"projects\\demo\\demo.js"
+			],
+			[
 				"ga",
 				"js\\webShow\\game.js"
 			],
 			[
 				"sk",
 				"projects\\demo\\skyBox.js"
-			],
-			[
-				"d",
-				"projects\\demo\\demo.js"
 			],
 			[
 				"util",
@@ -1530,10 +1538,6 @@
 			[
 				"u",
 				"js\\webShow\\utils.js"
-			],
-			[
-				"demo",
-				"projects\\demo\\demo.js"
 			],
 			[
 				"game",
@@ -1554,10 +1558,6 @@
 			[
 				"pati",
 				"projects\\demo\\particle.js"
-			],
-			[
-				"uti",
-				"js\\webShow\\utils.js"
 			],
 			[
 				"de",

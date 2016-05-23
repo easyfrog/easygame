@@ -182,40 +182,15 @@ utils.setAnimationTime = function(animator, stateName, percent) {
     }
 	if ((!isNew && stateName in animator.states) || (isNew && stateName in animator.animations)) {
 		try {
-			if (percent < 0) {
-				percent = 0;
-			} else if (percent > 1) {
-				percent = 1;
-			}
+			percent = THREE.Math.clamp(percent, 0, 1);
 
             var clip = isNew ? animator.animations[stateName] : animator.states[stateName];
 			var duration = isNew ? clip.duration : clip.node.duration;
 
-            animator.pause(); // stop first
             if (isNew) {
-                // get action in new clip system
-                if (!animator.currentAnimationAction) {
-                    animator.currentAnimationAction = animator.mixer.clipAction( clip ).setLoop( animator.loop ? THREE.LoopRepeat : THREE.LoopOnce, Infinity ).reset();
-                }
-                var action = animator.currentAnimationAction;
-                var bindings = animator.mixer._bindings;
-
-                // calculate pose
-                var interpolants = action._interpolants;
-                var propertyMixers = action._propertyBindings;
-
-                for ( var j = 0, m = interpolants.length; j !== m; ++ j ) {
-                    interpolants[ j ].evaluate( percent * duration );
-                    propertyMixers[ j ].accumulate( 0, 1 );
-                }
-
-                // also set to the action's time property
-                action.time = percent;
-
-                // update pose to mesh
-                for ( var i = 0; i < bindings.length; ++ i ) {
-                    bindings[ i ].apply( 0 );
-                }
+                animator.play(stateName, 0, percent * duration);
+                animator.update();
+                animator.pause();
             } else {
     			animator.states[stateName].node.setTime(percent * duration);
     			animator.updateAnimation(stateName);
