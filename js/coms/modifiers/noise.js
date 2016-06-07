@@ -11,7 +11,8 @@
  *     speedMax,
  *     xMin,
  *     yMin,
- *     zMin
+ *     zMin,
+ *     flatShading
  */
 var Noise = function( ps ) {
     if (!ps.mesh) {return;}

@@ -4,8 +4,12 @@
 		"selected_items":
 		[
 			[
+				"camer",
+				"cameraController	{}"
+			],
+			[
 				"anim",
-				"animator"
+				"animator	(?)"
 			],
 			[
 				"setTime",
@@ -510,10 +514,6 @@
 			[
 				"zh",
 				"zhuanpanComp	(?)"
-			],
-			[
-				"getC",
-				"getComponent(comNameOrFunc)"
 			]
 		]
 	},
@@ -544,10 +544,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "edit",
+		"height": 374.0,
+		"last_filter": "push",
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
+			],
 			[
 				"edit",
 				"Project: Edit Project"
@@ -561,23 +573,11 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"reload",
-				"TernJS: Reload"
-			],
-			[
 				"pus",
 				"Git: Push Current Branch"
 			],
 			[
 				"status",
-				"Git: Status"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
-				"statu",
 				"Git: Status"
 			],
 			[
@@ -1142,13 +1142,22 @@
 	},
 	"file_history":
 	[
+		"/E/myhost/inno studio/js/coms/modifiers/noise.js",
+		"/E/myhost/inno studio/templates/project_grunt.js",
+		"/E/myhost/inno studio/projects/demo/com_test.js",
+		"/E/myhost/inno studio/.tern-project",
+		"/E/myhost/inno studio/templates/project.js",
+		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/Gruntfile.js",
+		"/E/myhost/inno studio/js/webShow/utils.js",
+		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLoader.js",
+		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
+		"/E/myhost/inno studio/js/libs/versions/r77/sea3d/sea3d.min.js",
 		"/E/myhost/inno studio/innoStudio.sublime-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/RunCommands/runcommands.py",
 		"/E/myhost/inno studio/package.json",
 		"/E/myhost/inno studio/LICENSE.txt",
-		"/E/myhost/inno studio/projects/demo/demo_grunt.js",
-		"/E/myhost/inno studio/templates/project_grunt.js",
 		"/E/myhost/inno studio/Gruntfile.js",
 		"/E/myhost/inno studio/README.md",
 		"/E/myhost/inno studio/js/loaders/sea3d.min.js",
@@ -1156,11 +1165,8 @@
 		"/E/myhost/inno studio/js/threejs/three.js",
 		"/E/myhost/inno studio/projects/demo/newAnim.js",
 		"/E/myhost/inno studio/js/webShow/game.js",
-		"/E/myhost/inno studio/js/webShow/utils.js",
 		"/E/myhost/inno studio/js/webShow/threeExtend.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/Gruntfile.js",
 		"/E/myhost/inno studio/js/libs/versions/r77/threejs/three.js",
-		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLoader.js",
 		"/C/Users/easyfrog/Desktop/anim.html",
 		"/E/myhost/inno studio/js/webShow/SceneHandler.js",
 		"/C/Users/easyfrog/Desktop/lib/three.js",
@@ -1187,7 +1193,6 @@
 		"/E/myhost/inno studio/js/coms/particle/ParticleEngine.js",
 		"/E/myhost/inno studio/projects/demo/landscape.js",
 		"/E/myhost/inno studio/js/coms/stats.js",
-		"/E/myhost/inno studio/.tern-project",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/User/Tern.sublime-settings",
 		"/E/myhost/inno studio/js/webShow/Tween.js",
 		"/C/Users/easyfrog/AppData/Roaming/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
@@ -1200,7 +1205,6 @@
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3DLZMA.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/SEA3D.js",
 		"/E/myhost/inno studio/js/loaders/SEA3DNodeMaterial.js",
-		"/E/myhost/inno studio/js/loaders/SEA3DLoader.js",
 		"/E/myhost/inno studio/js/loaders/SEA3D.js",
 		"/C/Users/easyfrog/Desktop/SEA3DLoader.js",
 		"/E/myhost/inno studio/js/threejs/NodeMaterial.js",
@@ -1214,7 +1218,6 @@
 		"/D/libs/webvr-polyfill-master/examples/basic/index.html",
 		"/E/myhost/inno studio/misc/old/17000/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/indexMorph.html",
-		"/E/myhost/inno studio/js/coms/modifiers/noise.js",
 		"/E/myhost/inno studio/projects/demo/skyBox.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/threejs/three.js",
 		"/D/libs/Sea3D/sea3d-gh-pages/Labs/sea3d-1.8/threejs/NodeMaterial.js",
@@ -1266,10 +1269,7 @@
 		"/E/myhost/inno studio/js/postprocessing/ShaderPass.js",
 		"/E/myhost/inno studio/js/postprocessing/EffectComposer.js",
 		"/E/myhost/inno studio/js/threejs/stats.min.js",
-		"/E/myhost/inno studio/js/coms/utils/db.js",
-		"/E/myhost/inno studio/js/shaders/BrightnessContrastShader.js",
-		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_fragment.glsl",
-		"/D/libs/three.js-r72/src/renderers/shaders/ShaderChunk/envmap_pars_fragment.glsl"
+		"/E/myhost/inno studio/js/coms/utils/db.js"
 	],
 	"find":
 	{
@@ -1288,6 +1288,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"this.animators.indexOf( animator )",
+			"clip",
+			"onAnimLoaded",
 			"animation",
 			"Animation",
 			"animation",
@@ -1412,10 +1415,7 @@
 			"ShaderLib",
 			"fragStdMtl",
 			"ShaderLib",
-			"varying",
-			"vReflectionFactor",
-			"fresnelPower",
-			"spacular"
+			"varying"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1508,6 +1508,18 @@
 		"selected_items":
 		[
 			[
+				"par",
+				"projects\\demo\\particle.js"
+			],
+			[
+				"de",
+				"projects\\demo\\demo.js"
+			],
+			[
+				"util",
+				"js\\webShow\\utils.js"
+			],
+			[
 				"demo",
 				"projects\\demo\\demo_grunt.js"
 			],
@@ -1528,10 +1540,6 @@
 				"projects\\demo\\skyBox.js"
 			],
 			[
-				"util",
-				"js\\webShow\\utils.js"
-			],
-			[
 				"gam",
 				"js\\webShow\\game.js"
 			],
@@ -1544,10 +1552,6 @@
 				"js\\webShow\\game.js"
 			],
 			[
-				"par",
-				"js\\coms\\particle\\ParticleEngine.js"
-			],
-			[
 				"sea3",
 				"js\\loaders\\sea3d.min.js"
 			],
@@ -1558,10 +1562,6 @@
 			[
 				"pati",
 				"projects\\demo\\particle.js"
-			],
-			[
-				"de",
-				"projects\\demo\\demo.js"
 			],
 			[
 				"sc",
@@ -2111,7 +2111,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 253.0,
+	"side_bar_width": 209.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -186,10 +186,9 @@ utils.setAnimationTime = function(animator, stateName, percent) {
 
             var clip = isNew ? animator.animations[stateName] : animator.states[stateName];
 			var duration = isNew ? clip.duration : clip.node.duration;
-
             if (isNew) {
                 animator.play(stateName, 0, percent * duration);
-                animator.update();
+                animator.update(0);
                 animator.pause();
             } else {
     			animator.states[stateName].node.setTime(percent * duration);

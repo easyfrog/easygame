@@ -472,7 +472,7 @@ THREE.SEA3D.Animator = function( clips, mixer ) {
 
 THREE.SEA3D.Animator.prototype.update = function( dt ) {
 
-	this.mixer.update( dt || 0 );
+	this.mixer.update( dt );
 
 	if ( this.currentAnimationAction.paused ) {
 
@@ -843,6 +843,11 @@ THREE.SEA3D.Dummy = function( width, height, depth ) {
 
 	var geo = new THREE.BoxGeometry( this.width, this.height, this.depth, 1, 1, 1 );
 
+	// == added ==================================
+	geo.computeBoundingBox();
+	geo.computeBoundingSphere();
+	// ===========================================
+
 	THREE.Mesh.call( this, geo, THREE.SEA3D.Dummy.MATERIAL );
 
 };
@@ -1108,7 +1113,7 @@ THREE.SEA3D.AnimationHandler = {
 
 		var index = this.animators.indexOf( animator );
 
-		if ( index !== - 1 ) this.animators.splice( index, 1 );
+		if ( index !== - 1 ) this.animators.splice( this.animators.indexOf( animator ), 1 );
 
 	}
 
