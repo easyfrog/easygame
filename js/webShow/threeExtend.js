@@ -196,13 +196,33 @@ THREE.SEA3D.VertexAnimationMesh.prototype.play = function( name, offset, timesca
 
 };
 
+/**
+ * transform a vector from world to local space
+ */
+THREE.Object3D.prototype.inverseTransformVector = function(v) {
+    var _v = v.clone();
+    var wm = this.matrix.clone();
+    wm.setPosition(new THREE.Vector3());            // transform vector need to position origin
+    wm = new THREE.Matrix4().getInverse(wm);        // world to local need inverse matrix
+    return _v.applyMatrix4(wm);
+};
+
+/**
+ * transfrom a vector from local to world space
+ */
+THREE.Object3D.prototype.transformVector = function(v) {
+    var _v = v.clone();
+    var wm = this.matrix.clone();
+    wm.setPosition(new THREE.Vector3());            // transform vector need to position origin
+    return _v.applyMatrix4(wm);
+};
 
 /**
  * MorphAnimation in r72
  * @param {[type]} mesh [description]
  */
 
-/*
+//*
 THREE.MorphAnimation = function ( mesh ) {
 
 	this.mesh = mesh;
